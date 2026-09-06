@@ -125,6 +125,17 @@ $F = [
         ['key' => 'job_details', 'label' => 'Full details (HTML)', 'type' => 'textarea', 'full' => true],
         ['key' => 'published', 'label' => 'Published', 'type' => 'checkbox', 'hint' => 'Visible on the careers page'],
     ],
+    'blogs' => [
+        ['key' => 'title', 'label' => 'Post title', 'required' => true, 'full' => true],
+        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
+        ['key' => 'category', 'label' => 'Category'],
+        ['key' => 'author', 'label' => 'Author'],
+        ['key' => 'date', 'label' => 'Date (YYYY-MM-DD)'],
+        ['key' => 'short_description', 'label' => 'Short description', 'type' => 'textarea', 'full' => true],
+        ['key' => 'banner_image', 'label' => 'Banner image URL', 'full' => true, 'file' => true],
+        ['key' => 'content', 'label' => 'Body (HTML)', 'type' => 'textarea', 'full' => true],
+        ['key' => 'published', 'label' => 'Published', 'type' => 'checkbox', 'hint' => 'Visible on the blog'],
+    ],
 ];
 
 $C = [
@@ -177,6 +188,12 @@ $C = [
     'jobs' => [
         ['label' => 'Job', 'kind' => 'strong', 'key' => 'title'],
         ['label' => 'Location', 'kind' => 'dash', 'key' => 'location'],
+        ['label' => 'Published', 'kind' => 'bool', 'key' => 'published'],
+    ],
+    'blogs' => [
+        ['label' => 'Post', 'kind' => 'strong', 'key' => 'title'],
+        ['label' => 'Category', 'kind' => 'text', 'key' => 'category'],
+        ['label' => 'Date', 'kind' => 'dash', 'key' => 'date'],
         ['label' => 'Published', 'kind' => 'bool', 'key' => 'published'],
     ],
 ];

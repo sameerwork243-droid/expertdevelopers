@@ -18,6 +18,28 @@ function localize_links(?string $html): string
     return $html;
 }
 
+/** Map popup-style CTA menu slugs to real local form pages so popups keep working as dedicated contact routes. */
+function popup_slug_route(?array $cta, ?string $fallbackHref = '#'): string
+{
+    $slug = $cta['menu']['slug'] ?? '';
+    if ($slug === '' && ($cta['custom_link'] ?? null) && str_contains((string) $cta['custom_link'], 'popup=')) {
+        $q = parse_url((string) $cta['custom_link'], PHP_URL_QUERY);
+        $params = [];
+        if (is_string($q)) parse_str($q, $params);
+        $slug = (string) ($params['popup'] ?? '');
+    }
+    $map = [
+        'Mortgage' => '/contact/contact-mortgage/',
+        'General_Enquiry' => '/contact/general-enquiry/',
+        'Property_Management' => '/contact/contact-property-management/',
+        'Prism_Popup' => '/contact/contact-prism/',
+        'Snagging' => '/contact/contact-snagging/',
+        'Plots_Form' => '/contact/general-enquiry/',
+        'download-report' => $fallbackHref,
+    ];
+    return $map[$slug] ?? $fallbackHref;
+}
+
 function cta_href(?array $cta, string $fallback = '#'): string
 {
     if (!$cta) return $fallback;
@@ -33,6 +55,9 @@ function cta_href(?array $cta, string $fallback = '#'): string
     }
     if (!empty($cta['menu']['slug'])) {
         $parent = $cta['menu']['strapi_parent'] ?? null;
+        if (!empty($cta['menu']['link_type']) && $cta['menu']['link_type'] === 'popup') {
+            return popup_slug_route($cta, $fallback);
+        }
         if (is_array($parent) && !empty($parent['slug'])) return '/' . $parent['slug'] . '/' . $cta['menu']['slug'] . '/';
         return '/' . $cta['menu']['slug'] . '/';
     }

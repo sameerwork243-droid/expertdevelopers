@@ -375,17 +375,30 @@
     }
     blogRoot.querySelectorAll("[data-blog-category]").forEach(function (opt) {
       opt.addEventListener("click", function () {
+        blogCloseCategoryMenu(true);
         blogState.cat = opt.getAttribute("data-blog-category");
         blogState.page = 1;
         blogRender();
       });
     });
+
+    function blogCloseCategoryMenu(immediate) {
+      var cb = blogRoot.querySelector(".react-select");
+      if (!cb || !cb.classList.contains("react-select--is-open")) return;
+      cb.classList.remove("react-select--is-open");
+      var ct = cb.querySelector("[data-blog-category-toggle]");
+      if (ct) ct.classList.remove("react-select__control--menu-is-open");
+      var cm = cb.querySelector(".react-select__menu");
+      if (cm) cm.style.display = "none";
+    }
+
     document.addEventListener("click", function (e) {
       var target = e.target;
       var back = target.closest ? target.closest("[data-blog-back]") : null;
       var next = target.closest ? target.closest("[data-blog-next]") : null;
       var pg = target.closest ? target.closest("[data-blog-page]") : null;
       var toggle = target.closest ? target.closest("[data-blog-page-toggle]") : null;
+      var catToggle = target.closest ? target.closest("[data-blog-category-toggle]") : null;
       if (back && !back.disabled) {
         var fb = blogFiltered();
         var tp = Math.max(1, Math.ceil(fb.length / blogPerPage));
@@ -413,6 +426,29 @@
             toggle.classList.add("react-select__control--menu-is-open");
             menu.style.display = "block";
           }
+        }
+      } else if (catToggle) {
+        var cbox = catToggle.closest(".react-select");
+        var cmenu = cbox ? cbox.querySelector(".react-select__menu") : null;
+        if (cbox && cmenu) {
+          var cOpen = cbox.classList.contains("react-select--is-open");
+          if (cOpen) {
+            blogCloseCategoryMenu(true);
+          } else {
+            cbox.classList.add("react-select--is-open");
+            catToggle.classList.add("react-select__control--menu-is-open");
+            cmenu.style.display = "block";
+          }
+        }
+      } else {
+        blogCloseCategoryMenu(true);
+        var pbox = blogRoot.querySelector(".pagination-select .react-select");
+        var pmenu = pbox ? pbox.querySelector(".pagination-select__menu") : null;
+        if (pbox && pmenu && pbox.classList.contains("react-select--is-open")) {
+          pbox.classList.remove("react-select--is-open");
+          var pctl = pbox.querySelector("[data-blog-page-toggle]");
+          if (pctl) pctl.classList.remove("react-select__control--menu-is-open");
+          pmenu.style.display = "none";
         }
       }
     });
@@ -484,6 +520,26 @@
         if (menu) menu.style.display = "none";
       });
     });
+    var areaToggle = areaRoot.querySelector("[data-area-amenity-toggle]");
+    if (areaToggle) {
+      areaToggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var box = areaRoot.querySelector(".react-select");
+        var menu = areaRoot.querySelector(".react-select__menu");
+        var open = box ? box.classList.toggle("react-select--is-open") : null;
+        if (areaToggle) areaToggle.classList.toggle("react-select__control--menu-is-open", !!open);
+        if (menu) menu.style.display = open ? "block" : "none";
+      });
+      document.addEventListener("click", function (e) {
+        if (!areaRoot.contains(e.target)) {
+          var box = areaRoot.querySelector(".react-select");
+          var menu = areaRoot.querySelector(".react-select__menu");
+          if (box) box.classList.remove("react-select--is-open");
+          areaToggle.classList.remove("react-select__control--menu-is-open");
+          if (menu) menu.style.display = "none";
+        }
+      });
+    }
     areaRender();
   }
 
@@ -728,6 +784,8 @@
         phone: ((dialEl ? dialEl.value : "+971") + " " + val(phoneEl)).trim(),
         message: val(msgEl),
       };
+      var refEl = form.querySelector('input[name="property_ref"]');
+      if (refEl && refEl.value.trim()) payload.property_ref = refEl.value.trim();
     }
 
     fetch("/api/inquiries", {
@@ -1057,6 +1115,40 @@
         }
         if (window.__slickLite) window.__slickLite.relayoutAll();
       });
+    });
+  });
+
+  /* ---------- Dubai Communities tabs (For Sale / For rent / Off Plan) ---------- */
+
+  Array.prototype.slice.call(document.querySelectorAll("[data-com-tabs]")).forEach(function (root) {
+    var btns = Array.prototype.slice.call(root.querySelectorAll("[data-com-tab]"));
+    btns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var tab = btn.getAttribute("data-com-tab");
+        btns.forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle("selected-tab", on);
+          b.classList.toggle("button-white", !on);
+        });
+        Array.prototype.slice.call(root.querySelectorAll("[data-com-panel]")).forEach(function (p) {
+          p.style.display = p.getAttribute("data-com-panel") === tab ? "" : "none";
+        });
+      });
+    });
+  });
+
+  /* ---------- Dubai Communities mobile accordion ---------- */
+
+  document.querySelectorAll(".dubai-communities-tab-section.accordion .accordion-item").forEach(function (item) {
+    var btn = item.querySelector(".accordion-button");
+    var body = item.querySelector(".accordion-collapse");
+    if (!btn || !body) return;
+    btn.addEventListener("click", function () {
+      var open = body.classList.contains("show");
+      body.classList.toggle("show", !open);
+      body.classList.toggle("collapse", open);
+      btn.classList.toggle("collapsed", open);
+      btn.setAttribute("aria-expanded", open ? "false" : "true");
     });
   });
 

@@ -18,6 +18,12 @@ function admin_crud_dispatch(array $config): never
     $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
     $id = (int) ($_GET['id'] ?? 0);
 
+    $hasUpdatedAt = false;
+    try {
+        $hasUpdatedAt = in_array('updated_at', array_column(db_rows("SHOW COLUMNS FROM `$table`"), 'Field'), true);
+    } catch (Throwable $e) {
+    }
+
     if ($method === 'GET') {
         $q = trim((string) ($_GET['q'] ?? ''));
         if ($q !== '' && $search) {
@@ -88,8 +94,10 @@ function admin_crud_dispatch(array $config): never
             json_response(['ok' => true, 'id' => $res['lastId']], 201);
         }
         if (!$id) json_response(['error' => 'Missing id'], 400);
-        $set[] = 'updated_at = ?';
-        $params[] = now_iso();
+        if ($hasUpdatedAt) {
+            $set[] = 'updated_at = ?';
+            $params[] = now_iso();
+        }
         $params[] = $id;
         db_run("UPDATE `$table` SET " . implode(', ', $set) . " WHERE id = ?", $params);
         if ($after) $after($method, $id);

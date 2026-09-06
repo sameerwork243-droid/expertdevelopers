@@ -590,6 +590,10 @@
 }
 
 /* ===== react-select base structure (restores missing emotion styles) ===== */
+.react-select {
+  position: relative;
+}
+
 .react-select__control {
   display: flex;
   flex-wrap: wrap;
@@ -835,4 +839,667 @@
 }
 .app-row-click:hover td {
   background: #f7fafc;
+}
+
+/* ---------- Listing sort dropdown ---------- */
+.sort-dropdown {
+  position: relative;
+}
+.sort-dropdown .sort-menu {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(7, 35, 75, 0.14);
+  display: none;
+  margin: 8px 0 0;
+  min-width: 200px;
+  padding: 6px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 60;
+}
+.sort-dropdown .sort-menu.show {
+  display: block;
+}
+.sort-dropdown .sort-option {
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  color: #35373c;
+  cursor: pointer;
+  display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 9px 12px;
+  text-align: left;
+  width: 100%;
+}
+.sort-dropdown .sort-option:hover {
+  background: #f2f5f9;
+  color: #005480;
+}
+
+/* ---------- Listing Map / Grid toggle ---------- */
+.info-map-sort-section .map-sort-section .map-button {
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.info-map-sort-section .map-sort-section .map-button.active {
+  background: #07234b;
+}
+.info-map-sort-section .map-sort-section .map-button.active .button-text {
+  color: #fff;
+}
+.info-map-sort-section .map-sort-section .map-button.active svg path {
+  stroke: #fff;
+}
+.listing-map-panel {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(7, 35, 75, 0.12);
+  margin-top: 32px;
+  overflow: hidden;
+}
+.property-list-section.map-open .property-card-wrapper,
+.property-list-section.map-open #sticky-view {
+  display: none;
+}
+.property-list-section.map-open {
+  min-height: 480px;
+}
+.property-list-section.map-open + * + .map-return-bar,
+.listing-map-panel + .map-return-bar {
+  display: flex;
+}
+.map-return-bar {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 16px;
+}
+.map-return-bar .map-button {
+  align-items: center;
+  border: 1px solid #07234b;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  height: 44px;
+  padding: 12px 16px;
+}
+
+/* ---------- Mortgage calculator (listing + mortgages pages) ---------- */
+.results-calculator .property-mortagage-wrap {
+  background: #f4f8fb;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+  padding: 24px;
+}
+.results-calculator .property-mortagage-wrap .heading {
+  color: #07234b;
+  font-family: Lora, serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 110%;
+  margin: 0;
+  text-transform: none;
+}
+.results-calculator .property-mortagage-wrap .property-calc {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  margin-top: 24px;
+}
+.results-calculator .property-mortagage-wrap .property-calc .calculator-section {
+  align-items: flex-start;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  min-width: 60%;
+  padding: 24px;
+}
+.results-calculator .property-mortagage-wrap .property-calc .calculator-section .input-section {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+}
+.results-calculator .property-mortagage-wrap .property-calc .calculator-section .input-section .label-bk {
+  position: relative;
+}
+.results-calculator .property-mortagage-wrap .property-calc .calculator-section .input-section .label-bk label {
+  color: #35373c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.results-calculator .property-mortagage-wrap .property-calc .calculator-section .input-section .input-item {
+  background-color: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  height: 48px;
+  margin-top: 8px;
+  padding: 0 16px;
+  width: 100%;
+}
+.results-calculator .property-mortagage-wrap .property-calc .calculator-section .input-section .label-bk:first-child .input-item {
+  padding-right: 64px;
+}
+.results-calculator .property-mortagage-wrap .property-calc .calculator-section .input-section .label-bk .fix-txt {
+  background: #fff;
+  bottom: 10px;
+  color: #35373c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 160%;
+  position: absolute;
+  right: 2px;
+  top: auto;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section {
+  align-items: stretch;
+  align-self: stretch;
+  background: #fff;
+  border-bottom: 1px solid #e1e8ed;
+  border-radius: 0 4px 4px 0;
+  border-right: 1px solid #e1e8ed;
+  border-top: 1px solid #e1e8ed;
+  display: flex;
+  flex: 1 0;
+  flex-direction: column;
+  padding: 24px;
+  justify-content: center;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .pric-bx .per-txt {
+  color: #35373c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .pric-bx .results {
+  color: #07234b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 8px 0 0;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .div-bor {
+  background: #e1e8ed;
+  height: 1px;
+  margin: 24px 0;
+  width: 100%;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk .tit {
+  color: #07234b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk .con {
+  color: #07234b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk.tif {
+  margin-top: 24px;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk.tif .button {
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .results-calculator .property-mortagage-wrap .property-calc {
+    flex-direction: column;
+  }
+  .results-calculator .property-mortagage-wrap .property-calc .calculator-section {
+    border-radius: 4px;
+    min-width: 0;
+  }
+  .results-calculator .property-mortagage-wrap .property-calc .result-section {
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .results-calculator .property-mortagage-wrap .property-calc .calculator-section .input-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Landing banner bg fallback (missing banner images) ---------- */
+.banner-wrap.banner-landing-wrap .bg-section:not(:has(img)) {
+  background: radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%);
+  min-height: 320px;
+}
+
+/* ---------- Area guides amenity dropdown ---------- */
+.area-guides-select .react-select__menu {
+  display: none;
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(7, 35, 75, 0.18);
+  max-height: 320px;
+  overflow: auto;
+  padding: 6px;
+  position: absolute;
+  top: 100%;
+  z-index: 60;
+}
+.area-guides-select .react-select__menu-list .react-select__option {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+.area-guides-select .react-select__menu-list .react-select__option:hover,
+.area-guides-select .react-select__menu-list .react-select__option--is-focused {
+  background: #f2f5f9;
+  color: #005480;
+  background-color: #f2f5f9;
+}
+.area-guides-select .react-select__menu-list .react-select__option--is-selected {
+  background: #07234b;
+  color: #fff;
+}
+.area-guides-select .react-select__indicator-separator {
+  display: none;
+}
+
+/* ---------- Blog & Insights category + pagination dropdowns ---------- */
+.blog-listing-wrap .react-select {
+  position: relative;
+  width: 100%;
+}
+.blog-listing-wrap .react-select__control,
+.blog-listing-wrap .pagination-select__control {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 6px;
+  box-shadow: none;
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.blog-listing-wrap .react-select__control:hover,
+.blog-listing-wrap .pagination-select__control:hover {
+  border-color: #07234b;
+}
+.blog-listing-wrap .react-select__control--menu-is-open,
+.blog-listing-wrap .pagination-select__control--menu-is-open {
+  border-color: #07234b;
+  box-shadow: 0 0 0 3px rgba(7, 35, 75, 0.08);
+}
+.blog-listing-wrap .react-select__single-value,
+.blog-listing-wrap .pagination-select__single-value {
+  color: #07234b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding-right: 10px;
+}
+.blog-listing-wrap .react-select__indicator-separator,
+.blog-listing-wrap .pagination-select__indicator-separator {
+  display: none;
+}
+.blog-listing-wrap .react-select__menu,
+.blog-listing-wrap .pagination-select__menu {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 6px;
+  box-shadow: 0 12px 32px rgba(7, 35, 75, 0.18);
+  display: none;
+  left: 0;
+  margin: 0;
+  max-height: 288px;
+  overflow: auto;
+  padding: 6px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 60;
+}
+.blog-listing-wrap .react-select__menu-list,
+.blog-listing-wrap .pagination-select__menu-list {
+  padding: 0;
+}
+.blog-listing-wrap .react-select__option,
+.blog-listing-wrap .pagination-select__option {
+  border-radius: 6px;
+  color: #07234b;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+.blog-listing-wrap .react-select__option--is-focused,
+.blog-listing-wrap .react-select__option:hover,
+.blog-listing-wrap .pagination-select__option--is-focused,
+.blog-listing-wrap .pagination-select__option:hover {
+  background: #f2f5f9;
+  color: #005480;
+}
+.blog-listing-wrap .react-select__option--is-selected,
+.blog-listing-wrap .pagination-select__option--is-selected {
+  background: #07234b;
+  color: #fff;
+}
+
+/* ---------- Blog search + category row ---------- */
+.blog-listing-wrap .category-section .max-filter {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+.blog-listing-wrap .max-filter .search-box-comm {
+  flex: 1 1 auto;
+  max-width: 350px;
+  min-width: 220px;
+  position: relative;
+  width: auto;
+}
+.blog-listing-wrap .max-filter .blog-category-wrap {
+  flex: 0 0 auto;
+  width: 232px;
+}
+.blog-listing-wrap .category-section-wrap .blog-category-wrap {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  display: flex;
+  flex: 1 1;
+  min-height: 44px;
+  padding: 0 16px;
+}
+.blog-listing-wrap .category-section-wrap .blog-category-wrap {
+  flex: 0 1;
+  max-height: 46px;
+  min-width: 200px;
+}
+.blog-listing-wrap .category-section-wrap .blog-category-wrap {
+  max-height: 46px;
+}
+.blog-listing-wrap .max-filter .form-control.search {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  height: 44px;
+  padding-left: 44px;
+  padding-right: 16px;
+}
+.blog-listing-wrap .search-box-comm .search-icon {
+  left: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767.98px) {
+  .blog-listing-wrap .category-section .max-filter {
+    gap: 8px;
+  }
+  .blog-listing-wrap .max-filter .search-box-comm,
+  .blog-listing-wrap .max-filter .blog-category-wrap {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* ---------- Listing filters Property Type dropdown ---------- */
+.building-type-select .react-select {
+  position: relative;
+}
+.building-type-select .react-select__control {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 6px;
+  box-shadow: none;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  min-height: 40px;
+  min-width: 168px;
+  padding: 0 14px;
+}
+.building-type-select .react-select__single-value {
+  color: #07234b;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding-right: 8px;
+}
+.building-type-select .react-select__indicator-separator {
+  display: none;
+}
+.building-type-select .react-select__menu {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 6px;
+  box-shadow: 0 12px 32px rgba(7, 35, 75, 0.18);
+  left: 0;
+  margin: 0;
+  max-height: 288px;
+  min-width: 168px;
+  overflow: auto;
+  padding: 6px;
+  position: absolute;
+  right: auto;
+  top: calc(100% + 6px);
+  width: max-content;
+  z-index: 60;
+}
+.building-type-select .react-select__option {
+  border-radius: 6px;
+  color: #07234b;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+.building-type-select .react-select__option--is-focused,
+.building-type-select .react-select__option:hover {
+  background: #f2f5f9;
+  color: #005480;
+}
+.building-type-select .react-select__option--is-selected {
+  background: #07234b;
+  color: #fff;
+}
+
+/* ============================================================
+   GLOBAL FORM SYSTEM — Node.js → PHP conversion layout fix
+   Fixes the shared form primitives so EVERY form is robust:
+   grids use minmax(0,1fr), fields never exceed their column,
+   phone rows/checks wrap, and the desktop contact card stops
+   pushing the right column over the left one.
+   Site-wide; no page-specific hacks.
+   ============================================================ */
+
+/* --- grids: columns can always shrink below intrinsic width --- */
+.custom-form .form-grid,
+.custom-form .form-grid .form-row,
+.bv-form-grid,
+.mortgage-modal .mortgage-modal-body .mortgage-form .form-section {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: 0;
+}
+.custom-form .form-grid {
+  column-gap: 16px;
+  row-gap: 24px;
+}
+.custom-form .checkbox-section {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* --- grid children: allow shrinking, never force the parent wider --- */
+.custom-form .form-grid > *,
+.custom-form .form-grid .form-row > *,
+.bv-form-grid > *,
+.mortgage-modal .mortgage-modal-body .mortgage-form .form-section > *,
+.custom-form .checkbox-section .checkbox {
+  min-width: 0;
+}
+.custom-form .form-grid .input-box-message,
+.custom-form .form-grid .form-bottom,
+.mortgage-modal .mortgage-modal-body .mortgage-form .form-section .input-box-message,
+.bv-form-grid .input-box-message {
+  grid-column: 1 / -1;
+}
+
+/* --- contact form: inner .form-section grid bridge (conversion leftover) --- */
+.custom-form .form-grid > .form-section {
+  align-items: start;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  column-gap: 16px;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  max-width: none;
+  order: 0;
+  padding: 0;
+  row-gap: 24px;
+  width: auto;
+}
+
+/* --- fields: full column width, border-box, shrinkable --- */
+.custom-form .input-field,
+.input-box .input-field,
+.bv-input,
+.bv-country,
+.mortgage-modal .mortgage-modal-body .mortgage-form .input-field {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  width: 100%;
+}
+.input-box .input-textarea,
+.custom-form .input-textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  resize: vertical;
+  width: 100%;
+}
+
+/* --- phone rows --- */
+.phone-field-row,
+.bv-phone-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+}
+.phone-field-row .country-select {
+  flex: 0 1 150px;
+  min-width: 0;
+}
+.phone-field-row .input-field[type="tel"],
+.phone-field-row > .input-field {
+  flex: 1 1 150px;
+  min-width: 0;
+}
+.bv-phone-row .bv-input {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.bv-phone-row .bv-country {
+  flex: 0 0 34%;
+}
+
+/* --- checkboxes / consent --- */
+.form-bottom .bv-check {
+  min-width: 0;
+}
+.bv-check input {
+  flex-shrink: 0;
+}
+.bv-check span {
+  min-width: 0;
+}
+
+/* --- desktop contact page card: flexible, no overlap --- */
+@media (min-width: 1200px) {
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 48px;
+    min-width: 0;
+  }
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container > .content-section {
+    flex: 1 1 320px;
+    min-width: 0;
+  }
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container > .form-section {
+    flex: 1 1 480px;
+    margin-left: 0;
+    max-width: 528px;
+    min-width: 0;
+    width: auto;
+  }
+}
+
+/* --- tablet: stack the contact page layout --- */
+@media (max-width: 1199.98px) and (min-width: 768px) {
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container {
+    flex-direction: column;
+  }
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container > .form-section {
+    margin-left: 0;
+    max-width: none;
+    width: 100%;
+  }
+}
+
+/* --- mobile: every form stacks to one column --- */
+@media (max-width: 767.98px) {
+  .custom-form .form-grid,
+  .custom-form .form-grid .form-row,
+  .custom-form .form-grid > .form-section,
+  .bv-form-grid,
+  .mortgage-modal .mortgage-modal-body .mortgage-form .form-section,
+  .custom-form .checkbox-section {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .phone-field-row,
+  .bv-phone-row {
+    align-items: stretch;
+  }
+  .phone-field-row .country-select,
+  .phone-field-row .input-field[type="tel"],
+  .phone-field-row > .input-field {
+    flex: 1 1 100%;
+  }
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container,
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container > .content-section,
+  .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container > .form-section {
+    min-width: 0;
+  }
 }

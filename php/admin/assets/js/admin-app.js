@@ -168,6 +168,7 @@
       case "agents": return row.slug ? "/team/" + row.slug + "/" : "";
       case "developers": return row.slug ? "/new-projects/developed-by-" + row.slug + "/" : "";
       case "communities": return row.slug ? "/buy/properties-for-sale/in-" + row.slug + "/" : "";
+      case "blogs": return row.slug ? "/blog/" + row.slug + "/" : "";
     }
     return "";
   }
@@ -2126,7 +2127,7 @@ var FIELDS = [
         case "testimonials": initResource(panel, "testimonials", "Testimonials"); break;
         case "faqs": initResource(panel, "faqs", "FAQs"); break;
         case "media": initResource(panel, "media", "Media library"); break;
-        case "blogs": initBlogs(panel); break;
+        case "blogs": initResource(panel, "blogs", "Blog Posts"); break;
         case "jobs": initResource(panel, "jobs", "Careers"); break;
         case "projects": initProjects(panel); break;
         case "categories": initCategories(panel, "categories", "Categories"); break;

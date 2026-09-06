@@ -16,7 +16,7 @@ $content = $model['data']['content'] ?? null;
 $routeBase = (string) ($model['route'] ?? '/new-projects');
 $last = '';
 foreach (array_values(array_filter(explode('/', $routeBase))) as $seg) $last = (string) $seg;
-$isDetail = count($hits) <= 1 && isset($hits[0]) && (str_starts_with($last, 'in-') || $last === (string) ($hits[0]['slug'] ?? ''));
+$isDetail = count($hits) <= 1 && isset($hits[0]) && $last === (string) ($hits[0]['slug'] ?? '');
 
 function project_dev_slug(?string $developer): string
 {
@@ -633,7 +633,7 @@ if ($isDetail && isset($hits[0])) {
         . '<div class="bg-section-gradient"><div class="search-filters-section"><div class="search-filters-container container">'
         . '<div class="mutil-select-wrap"><div class="multi-select-input" id="multi-select-input"><div class="filter search-box">'
         . '<svg class="search-icon" width="17" height="16" viewBox="0 0 17 16" fill="none"><circle cx="7" cy="7" r="5.25" stroke="#07234B" stroke-width="1.2"></circle><path d="m11 11 4.5 4.5" stroke="#07234B" stroke-width="1.2" stroke-linecap="round"></path></svg>'
-        . '<div class="autosuggest__container"><input id="search-input-field" type="text" placeholder="Area, project or community" class="autosuggest__input" autocomplete="off" /></div>'
+        . '<div class="autosuggest__container"><input id="search-input-field" type="text" placeholder="Area, project or community" class="autosuggest__input" autocomplete="off" value="' . esc((string) ($_GET['areas'] ?? '')) . '" /></div>'
         . '</div></div></div>'
         . '<div class="filters-section d-none d-xl-flex">'
         . type_select($typeLinks, 'All Types')
@@ -659,6 +659,7 @@ if ($isDetail && isset($hits[0])) {
             ? '<div class="text-copy-wrap section-p"><div class="text-copy-container container">' . read_more($content['description'], 4, 'description') . '</div></div>'
             : '')
         . '<div class="qes-bk com"><div class="container">' . module_questionnaire(['title' => 'Confused About Where to Buy or Invest in Dubai?']) . '</div></div>'
+        . '<script>(function(){var i=document.getElementById("search-input-field");if(!i)return;var cur="' . esc((string) ($_GET['areas'] ?? '')) . '";i.addEventListener("keydown",function(e){if(e.key!=="Enter")return;e.preventDefault();var v=i.value.trim();if(v===cur)return;location.href="/new-projects/"+(v?"?areas="+encodeURIComponent(v):"");});})();</script>'
         . '</div></div>';
 }
 

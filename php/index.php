@@ -98,6 +98,9 @@ switch ($route) {
     case '/book-a-viewing':
         require __DIR__ . '/pages/book-a-viewing.php';
         exit;
+    case '/book-a-consultation':
+        require __DIR__ . '/pages/book-a-consultation.php';
+        exit;
 }
 
 /* ------------------------------ project hubs ------------------------------ */
@@ -356,6 +359,41 @@ if (!isset($model)) {
         $model['data']['hits'] = $merged;
         $model['data']['nbHits'] = count($merged);
         $model['data']['nbPages'] = max(1, (int) ceil(count($merged) / ($model['data']['hitsPerPage'] ?? 20)));
+    }
+
+    // Project listings (hero search): apply ?areas=&minPrice=&maxPrice=&minBedroom=&maxBedroom=
+    // to the hits so Off-Plan searches filter instead of showing everything.
+    if ($model['kind'] === 'project' && preg_match('#^/new-projects(/(in|type|completion|developed-by)-[a-z0-9-]+)?$#', $routeBase)) {
+        $pn = fn ($v) => ($v !== null && $v !== '' && is_numeric($v)) ? (int) $v : null;
+        $areasQ = trim((string) ($_GET['areas'] ?? ''));
+        $pmin = $pn($_GET['minPrice'] ?? null);
+        $pmax = $pn($_GET['maxPrice'] ?? null);
+        $bmin = $pn($_GET['minBedroom'] ?? null);
+        $bmax = $pn($_GET['maxBedroom'] ?? null);
+        if ($areasQ !== '' || $pmin !== null || $pmax !== null || $bmin !== null || $bmax !== null) {
+            $areaKey = strtolower(preg_replace('/[^a-z0-9]+/', '-', $areasQ) ?? '');
+            $areaNeedle = strtolower($areasQ);
+            $kept = [];
+            foreach ($model['data']['hits'] ?? [] as $h) {
+                if (!is_array($h) || empty($h['slug'])) continue;
+                if ($areasQ !== '') {
+                    $hay = strtolower(implode(' ', array_filter([$h['community'] ?? '', $h['display_address'] ?? '', ...($h['search_areas'] ?? [])], fn ($x) => $x !== '' && $x !== null)));
+                    if (!str_contains($hay, $areaKey) && !str_contains($hay, $areaNeedle)) continue;
+                }
+                $pr = (int) ($h['price'] ?? 0);
+                if ($pmin !== null && $pr < $pmin) continue;
+                if ($pmax !== null && $pr > $pmax) continue;
+                if ($bmin !== null || $bmax !== null) {
+                    $beds = max((int) ($h['min_bedrooms'] ?? 0), (int) ($h['max_bedrooms'] ?? 0));
+                    if ($bmin !== null && $beds < $bmin) continue;
+                    if ($bmax !== null && $beds > $bmax) continue;
+                }
+                $kept[] = $h;
+            }
+            $model['data']['hits'] = $kept;
+            $model['data']['nbHits'] = count($kept);
+            $model['data']['nbPages'] = max(1, (int) ceil(count($kept) / ($model['data']['hitsPerPage'] ?? 20)));
+        }
     }
 
     /* --------------------------- page enrichment (DB) --------------------------- */

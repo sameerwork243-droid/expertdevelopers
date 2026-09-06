@@ -283,6 +283,11 @@ $togBtnClass = 'tog-btn btn btn-primary filter-dropdown-toggle';
                       </p>
                     </div>
                   </button>
+                  <div class="sort-menu dropdown-menu dropdown-menu-right" style="display:none">
+                    <button type="button" class="sort-option" data-sort="most-recent">Most Recent</button>
+                    <button type="button" class="sort-option" data-sort="price-desc">Price: High to Low</button>
+                    <button type="button" class="sort-option" data-sort="price-asc">Price: Low to High</button>
+                  </div>
                 </div>
               </div>
             </div>

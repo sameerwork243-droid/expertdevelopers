@@ -125,7 +125,7 @@ function area_guides_listing_html(array $areas): string
         . '<input class="form-control search" data-area-search placeholder="Search Communities" />'
         . '<span><i class="icon grey-search-icon"></i></span>'
         . '</div>'
-        . '<div class="react-select-wrap"><div class="react-select"><div class="react-select__control" data-area-amenity-toggle>'
+        . '<div class="react-select-wrap"><div class="react-select area-guides-select"><div class="react-select__control" data-area-amenity-toggle>'
         . '<div class="react-select__value-container react-select__value-container--has-value">'
         . '<div class="react-select__single-value" data-area-amenity-value>All</div></div>'
         . '<div class="react-select__indicators"><span class="react-select__indicator-separator"></span>'
@@ -214,9 +214,9 @@ function blog_listing_html(array $posts): string
         . '<div class="category-section-wrap category-section"><div class="category-section container"><div class="max-filter">'
         . '<div class="search-box-comm">'
         . '<input class="form-control search" data-blog-search placeholder="Search by keyword" />'
-        . '<span><i class="icon grey-search-icon"></i></span>'
+        . '<span class="search-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15.75 15.75L12.46 12.46M14.25 8.25C14.25 11.5637 11.5637 14.25 8.25 14.25C4.93629 14.25 2.25 11.5637 2.25 8.25C2.25 4.93629 4.93629 2.25 8.25 2.25C11.5637 2.25 14.25 4.93629 14.25 8.25Z" stroke="#07234B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></span>'
         . '</div>'
-        . '<div class="react-select-wrap"><div class="react-select css-b62m3t-container">'
+        . '<div class="blog-category-wrap"><div class="react-select css-b62m3t-container">'
         . '<div class="react-select__control css-14qho42-control" data-blog-category-toggle>'
         . '<div class="react-select__value-container react-select__value-container--has-value css-hlgwow">'
         . '<div class="react-select__single-value css-1ubv46r-singleValue" data-blog-category-value>All Categories</div></div>'
@@ -224,7 +224,7 @@ function blog_listing_html(array $posts): string
         . '<div class="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">'
         . '<svg class="arrow-down-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 5.5L8 10.5L3 5.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>'
         . '</div></div></div>'
-        . '<div class="react-select__menu"><div class="react-select__menu-list">';
+        . '<div class="react-select__menu" style="display:none"><div class="react-select__menu-list">';
     foreach ($categories as $c) {
         $out .= '<div class="react-select__option' . ($c === 'All Categories' ? ' react-select__option--is-selected' : '') . '" data-blog-category="' . esc($c) . '">' . esc($c) . '</div>';
     }
@@ -258,7 +258,7 @@ function blog_listing_html(array $posts): string
             . '<div class="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">'
             . '<svg class="arrow-down-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 5.5L8 10.5L3 5.5" stroke="#9399A4" stroke-linecap="round" stroke-linejoin="round" /></svg>'
             . '</div></div></div>'
-            . '<div class="pagination-select__menu"><div class="pagination-select__menu-list">';
+            . '<div class="pagination-select__menu" style="display:none"><div class="pagination-select__menu-list">';
         for ($n = 1; $n <= $totalPages; $n++) {
             $out .= '<div class="pagination-select__option' . ($n === 1 ? ' pagination-select__option--is-selected' : '') . '" data-blog-page="' . $n . '">' . $n . '</div>';
         }
@@ -376,6 +376,10 @@ function content_strapi_page(array $page, string $route): string
             . '</div>';
     }
     $out .= '</div></div></div>';
+    if (str_ends_with('/' . trim((string) $route, '/'), '/mortgages')) {
+        require_once __DIR__ . '/listing-ui.php';
+        $out .= mortgage_calculator('3,000,000', 'AED', 'Mortgage Calculator');
+    }
     $out .= content_modules_loop($mods);
     $out .= '</div>';
     return $out;

@@ -128,6 +128,163 @@
     if (next) next.addEventListener("click", function () { idx = (idx + 1) % n; show(); });
   });
 
+  /* ---------- SortDropdown (listing order) ---------- */
+
+  var sortRoot = document.querySelector(".sort-dropdown");
+  if (sortRoot) {
+    var sortBtn = sortRoot.querySelector(".sort-section");
+    var sortMenu = sortRoot.querySelector(".sort-menu");
+    var sortLabel = sortRoot.querySelector(".text.button-text span");
+    var listContainer = document.querySelector("#property-page-1") || document.querySelector(".property-list-section.list-view");
+    var originalOrder = null;
+
+    function closeSort() {
+      if (sortMenu) sortMenu.classList.remove("show");
+      if (sortBtn) sortBtn.setAttribute("aria-expanded", "false");
+    }
+
+    if (sortBtn && sortMenu) sortBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = sortMenu.classList.contains("show");
+      closeSort();
+      if (!open) {
+        sortMenu.classList.add("show");
+        sortBtn.setAttribute("aria-expanded", "true");
+      }
+    });
+
+    function applySort(sortBy) {
+      if (!listContainer) return;
+      var cards = Array.prototype.slice.call(listContainer.querySelectorAll(".property-card-wrapper"));
+      if (!cards.length) return;
+      if (!originalOrder) originalOrder = cards.slice();
+      if (sortBy === "price-desc" || sortBy === "price-asc") {
+        cards.sort(function (a, b) {
+          var paEl = a.querySelector("[data-save-price]");
+          var pbEl = b.querySelector("[data-save-price]");
+          var pa = paEl ? (parseInt(paEl.getAttribute("data-save-price"), 10) || 0) : 0;
+          var pb = pbEl ? (parseInt(pbEl.getAttribute("data-save-price"), 10) || 0) : 0;
+          if (pa === pb) return 0;
+          return sortBy === "price-desc" ? pb - pa : pa - pb;
+        });
+      } else {
+        cards = originalOrder.slice();
+      }
+      for (var i = 0; i < cards.length; i++) listContainer.appendChild(cards[i]);
+    }
+
+    if (sortMenu) sortMenu.addEventListener("click", function (e) {
+      var opt = e.target && e.target.closest ? e.target.closest(".sort-option") : null;
+      if (!opt) return;
+      applySort(opt.getAttribute("data-sort") || "most-recent");
+      if (sortLabel) sortLabel.textContent = opt.textContent;
+      closeSort();
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!sortRoot.contains(e.target)) closeSort();
+    });
+  }
+
+  /* ---------- Map / Grid toggle (listing results) ---------- */
+
+  var resultsRoot = document.querySelector("#property-page-1") || document.querySelector(".property-list-section");
+  var mapButtons = Array.prototype.slice.call(document.querySelectorAll(".map-button"));
+  var mapAreaValue = (function () {
+    var inp = document.querySelector("#search-input-field");
+    var v = inp ? (inp.value || "").trim() : "";
+    return v || "Dubai";
+  })();
+  var MAP_POPUP_SLUGS = {};
+
+  function setCardListView(on) {
+    if (!resultsRoot) return;
+    Array.prototype.slice.call(resultsRoot.querySelectorAll(".property-card")).forEach(function (card) {
+      card.classList.toggle("list-view", on);
+    });
+  }
+
+  function setActiveMapButtons(which) {
+    mapButtons.forEach(function (b) {
+      var isGrid = b.classList.contains("list-grid");
+      var active = (which === "grid" && isGrid) || (which === "map" && !isGrid);
+      b.classList.toggle("active", active);
+    });
+  }
+
+  var mapPanel = null;
+  var returnBar = null;
+  function ensureReturnBar() {
+    if (returnBar || !mapPanel) return returnBar;
+    returnBar = document.createElement("div");
+    returnBar.className = "map-return-bar";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "button map-button";
+    btn.textContent = "Back to Property List";
+    btn.addEventListener("click", showList);
+    returnBar.appendChild(btn);
+    mapPanel.parentNode.insertBefore(returnBar, mapPanel.nextSibling);
+    return returnBar;
+  }
+  function showMap() {
+    if (!resultsRoot) return;
+    if (mapPanel) {
+      mapPanel.style.display = "";
+    } else {
+      mapPanel = document.createElement("div");
+      mapPanel.className = "listing-map-panel";
+      mapPanel.innerHTML = '<iframe src="https://maps.google.com/maps?q=' + encodeURIComponent(mapAreaValue)
+        + '&z=11&output=embed" style="border:0;width:100%;height:100%;min-height:420px" loading="lazy" title="Property locations map"></iframe>';
+      resultsRoot.parentNode.insertBefore(mapPanel, resultsRoot);
+    }
+    ensureReturnBar();
+    if (returnBar) returnBar.style.display = "";
+    resultsRoot.classList.add("map-open");
+    resultsRoot.classList.add("list-view");
+    setCardListView(true);
+    setActiveMapButtons("map");
+  }
+  function hideMap() {
+    if (mapPanel) mapPanel.style.display = "none";
+    if (returnBar) returnBar.style.display = "none";
+    if (resultsRoot) resultsRoot.classList.remove("map-open");
+    setActiveMapButtons(null);
+  }
+  function showGrid() {
+    hideMap();
+    if (!resultsRoot) return;
+    resultsRoot.classList.remove("list-view");
+    setCardListView(false);
+    setActiveMapButtons("grid");
+  }
+  function showList() {
+    hideMap();
+    if (!resultsRoot) return;
+    resultsRoot.classList.add("list-view");
+    setCardListView(true);
+    setActiveMapButtons(null);
+  }
+
+  mapButtons.forEach(function (b) {
+    var isGrid = b.classList.contains("list-grid");
+    b.addEventListener("click", function () {
+      if (isGrid) {
+        if (b.classList.contains("active") && resultsRoot && !resultsRoot.classList.contains("list-view")) {
+          showList();
+        } else {
+          showGrid();
+        }
+      } else {
+        if (b.classList.contains("active") && resultsRoot && resultsRoot.classList.contains("map-open")) {
+          showList();
+        } else {
+          showMap();
+        }
+      }
+    });
+  });
+
   /* ---------- MortgageCalculator ---------- */
 
   document.querySelectorAll("#mortgage-calculator").forEach(function (calc) {

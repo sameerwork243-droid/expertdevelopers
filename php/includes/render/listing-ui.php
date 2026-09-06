@@ -53,8 +53,11 @@ function mortgage_calculator(string $initialPrice = '3,000,000', string $currenc
     $monthly = ($p > 0 && $r > 0 && $n > 0) ? ($principal * $r) / (1 - pow(1 + $r, -$n)) : 0;
     $fmt = fn (float $v) => $v ? number_format((float) round($v), 0, '.', ',') : '0';
 
-    $inputs = fn () =>
-        '<div class="input-section">'
+    return '<div class="results-calculator section-m"><div class="container">'
+        . '<div class="property-mortagage-wrap" id="mortgage-calculator">'
+        . '<h2 class="heading">' . esc($heading) . '</h2>'
+        . '<div class="property-calc"><div class="calculator-section">'
+        . '<div class="input-section">'
         . '<div class="label-bk"><label>Total Price</label>'
         . '<input type="text" inputmode="decimal" class="input-item" value="' . esc($initialPrice) . '">'
         . '<span class="fix-txt">' . esc($currency) . '</span></div>'
@@ -64,39 +67,15 @@ function mortgage_calculator(string $initialPrice = '3,000,000', string $currenc
         . '<input type="number" class="input-item" value="' . $rate . '"></div>'
         . '<div class="label-bk"><label>Loan Period (Years)</label>'
         . '<input type="number" class="input-item" value="' . $years . '"></div>'
-        . '</div>';
-
-    if ($panel) {
-        return '<div class="property-mortagage-wrap" id="mortgage-calculator">'
-            . '<h2 class="heading">' . esc($heading) . '</h2>'
-            . '<div class="property-calc"><div class="calculator-section">' . $inputs() . '</div>'
-            . '<div class="result-section">'
-            . '<div class="pric-bx"><p class="per-txt">Monthly repayment</p>'
-            . '<p class="results">' . esc($currency) . ' ' . $fmt($monthly) . ' /month</p></div>'
-            . '<div class="div-bor"></div>'
-            . '<div class="nn-bt">'
-            . '<div class="one-bk"><p class="tit">Total Loan Amount</p><p class="con">' . esc($currency) . ' ' . $fmt($principal) . '</p></div>'
-            . '<div class="one-bk"><p class="tit">Duration</p><p class="con">' . $years . ' Years</p></div>'
-            . '<div class="one-bk tif"><a class="button button-orange trigger-button" href="/property-services/mortgages/"><span>Get a free consultation</span></a></div>'
-            . '</div></div></div></div>';
-    }
-
-    return '<div class="results-calculator section-m"><div class="container">'
-        . '<div class="property-mortagage-wrap" id="mortgage-calculator">'
-        . '<h2 class="title">' . esc($heading) . '</h2>'
-        . '<p class="content">Calculate your monthly mortgage repayments</p>'
-        . '<div class="calculator-section"><p class="label">Total Price (' . esc($currency) . ')</p>'
-        . '<input type="text" inputmode="decimal" class="input-item" value="' . esc($initialPrice) . '">'
-        . '</div>'
-        . '<div class="input-section"><p class="label">Down Payment (%)</p>'
-        . '<input type="number" class="input-item" value="' . $down . '"></div>'
-        . '<div class="input-section"><p class="label">Interest Rate (%)</p>'
-        . '<input type="number" class="input-item" value="' . $rate . '"></div>'
-        . '<div class="input-section"><p class="label">Loan Period Yearly</p>'
-        . '<input type="number" class="input-item" value="' . $years . '"></div>'
+        . '</div></div>'
         . '<div class="result-section">'
-        . '<div class="left-side"><p class="text">Monthly Payments</p>'
+        . '<div class="pric-bx"><p class="per-txt">Monthly repayment</p>'
         . '<p class="results">' . esc($currency) . ' ' . $fmt($monthly) . ' /month</p></div>'
-        . '<div class="right-side"><a class="button button-orange trigger-button" href="/property-services/mortgages/"><span>Get a free consultation</span></a></div>'
-        . '</div></div><div class="divider"></div></div></div>';
+        . '<div class="div-bor"></div>'
+        . '<div class="nn-bt">'
+        . '<div class="one-bk"><p class="tit">Total Loan Amount</p><p class="con">' . esc($currency) . ' ' . $fmt($principal) . '</p></div>'
+        . '<div class="one-bk"><p class="tit">Duration</p><p class="con">' . $years . ' Years</p></div>'
+        . '<div class="one-bk tif"><a class="button button-orange trigger-button" href="/property-services/mortgages/"><span>Get a free consultation</span></a></div>'
+        . '</div></div></div></div>'
+        . '</div></div>';
 }

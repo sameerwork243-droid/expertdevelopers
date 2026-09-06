@@ -97,7 +97,7 @@ function module_developer_slider(array $m): string
 function module_reviews_slider(): string
 {
     $hj = home_json();
-    $reviews = $hj['reviews'] ?? [];
+    $reviews = [...db_testimonials(), ...($hj['reviews'] ?? [])];
     $clean = [];
     foreach ($reviews as $i => $r) {
         if (!is_array($r)) continue;
@@ -110,7 +110,7 @@ function module_reviews_slider(): string
             . '<div class="icons-wrap">' . review_stars(5) . '</div></div></div>'
             . '<p class="title-review">' . esc((string) ($r['title'] ?? '')) . '</p>';
         if (!empty($r['description'])) {
-            $card .= '<p class="review">' . esc((string) $r['description']) . '<span class="read-more">more</span></p>';
+            $card .= read_more('<p class="review">' . esc((string) $r['description']) . '</p>', 3, '', 'more', 'less');
         }
         $card .= '</div>';
         $clean[] = $card;
@@ -130,25 +130,36 @@ function module_reviews_slider(): string
 function module_dubai_communities(): string
 {
     $coms = communities();
-    $links = '';
-    foreach ($coms as $c) {
-        $links .= '<a href="/buy/properties-for-sale/in-' . esc($c['slug']) . '/">' . esc($c['label']) . '</a>';
-    }
+    if (!count($coms)) return '';
+
+    $linkSets = [
+        ['For Sale', '/buy/properties-for-sale/in-'],
+        ['For rent', '/let/properties-for-rent/in-'],
+        ['Off Plan', '/new-projects/in-'],
+    ];
+    $bodies = [];
     $tabs = '';
-    foreach (['For Sale', 'For rent', 'Off Plan'] as $t) {
+    foreach ($linkSets as $i => [$tab, $prefix]) {
+        $links = '';
+        foreach ($coms as $c) {
+            $links .= '<a href="' . $prefix . esc($c['slug']) . '/">' . esc($c['label']) . '</a>';
+        }
+        $bodies[$tab] = '<div class="tab-body" data-com-panel="' . esc($tab) . '"' . ($i === 0 ? '' : ' style="display:none"') . '>' . $links . '</div>';
         $tabs .= '<div class="accordion-item"><h2 class="title accordion-header">'
-            . '<button type="button" aria-expanded="false" class="accordion-button collapsed">' . esc($t) . '</button></h2>'
+            . '<button type="button" aria-expanded="false" class="accordion-button collapsed">' . esc($tab) . '</button></h2>'
             . '<div class="accordion-collapse collapse"><div class="cta-section accordion-body"><div class="tab-body">' . $links . '</div></div></div></div>';
     }
     return '<div class="dubai-communities-wrap section-p">'
         . '<div class="dubai-communities-container container">'
         . '<h2 class="title">Popular Properties in Dubai Communities</h2>'
-        . '<div class="dubai-communities-tab-section d-none d-md-block">'
+        . '<div class="dubai-communities-tab-section d-none d-md-block" data-com-tabs>'
         . '<div class="tab-header-section"><div class="custom-tabs tab-header">'
-        . '<button class="tab-button button selected-tab" type="button">For Sale</button>'
-        . '<button class="tab-button button button-white" type="button">For rent</button>'
-        . '<button class="tab-button button button-white" type="button">Off Plan</button>'
-        . '</div></div><div class="tab-body">' . $links . '</div></div>'
+        . '<button class="tab-button button selected-tab" type="button" data-com-tab="For Sale">For Sale</button>'
+        . '<button class="tab-button button button-white" type="button" data-com-tab="For rent">For rent</button>'
+        . '<button class="tab-button button button-white" type="button" data-com-tab="Off Plan">Off Plan</button>'
+        . '</div></div>'
+        . $bodies['For Sale'] . $bodies['For rent'] . $bodies['Off Plan']
+        . '</div>'
         . '<div class="dubai-communities-tab-section d-block d-md-none accordion">' . $tabs . '</div>'
         . '</div></div>';
 }
@@ -374,6 +385,8 @@ function module_tile_block($m)
         ? ' ' . $bgColor
         : ($alignRight ? ' white' : '');
     $magic = is_string($m['cta']['custom_link'] ?? null) && (str_starts_with($m['cta']['custom_link'], '#') || str_starts_with($m['cta']['custom_link'], '$'));
+    $magicAnchor = (is_string($m['cta']['custom_link'] ?? null) && str_starts_with($m['cta']['custom_link'], '#'))
+        ? esc((string) $m['cta']['custom_link']) : '';
     $isAward = $style === 'award' || str_contains($style, 'award');
     $isYoutube = is_string($m['video_url'] ?? null) && (bool) preg_match('/youtu\.?be/', $m['video_url']);
     $out = '<div class="tile-block-wrapper ' . ($style ? $style . ' ' : '') . 'section-m' . $bgClass . '">'
@@ -420,7 +433,12 @@ function module_tile_block($m)
     }
     if (!empty($m['cta'])) {
         $label = ($m['cta']['cta_label'] ?? '') ?: 'Find out more';
-        if ($magic) {
+        if ($magic && $magicAnchor !== '') {
+            $out .= '<a href="' . $magicAnchor . '" class="button  button-orange">'
+                . '<span>' . esc((string) $label) . '</span>'
+                . '<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-right-icon">'
+                . '<path d="M9.5 3L14.5 8M14.5 8L9.5 13M14.5 8H2.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" /></svg></a>';
+        } elseif ($magic) {
             $out .= '<button class="button  button-orange"><span>' . esc((string) $label) . '</span></button>';
         } else {
             $out .= '<a href="' . esc(cta_href($m['cta'])) . '" class="button  ' . ($isAward ? 'button-blue' : 'button-orange') . '">'
@@ -733,14 +751,18 @@ function module_form_module($m)
         . '</div></div></div>'
         . '</div>'
         . '<div class="form-section">'
-        . ($isValuation ? list_property_form() : contact_enquiry_form())
+        . ($isValuation ? list_property_form($m['form'] ?? 'Book_a_Valuation') : contact_enquiry_form($m['form'] ?? null))
         . '</div></div></div>';
     return $out;
 }
 
-function contact_enquiry_form(): string
+function contact_enquiry_form(?string $propertyRef = null): string
 {
-    $out = '<form class="custom-form" data-enquiry-form="contact" novalidate>'
+    $hidden = '';
+    if ($propertyRef !== null && $propertyRef !== '') {
+        $hidden = '<input type="hidden" name="property_ref" value="' . esc($propertyRef) . '" />';
+    }
+    $out = '<form class="custom-form" data-enquiry-form="contact" novalidate>' . $hidden
         . '<div class="form-grid"><div class="form-section">'
         . '<div class="input-box input-box-name">'
         . '<label class="input-label" for="cef-name-1">Full Name</label>'
@@ -770,8 +792,12 @@ function contact_enquiry_form(): string
     return $out;
 }
 
-function list_property_form(): string
+function list_property_form(?string $propertyRef = null): string
 {
+    $hidden = '';
+    if ($propertyRef !== null && $propertyRef !== '') {
+        $hidden = '<input type="hidden" name="property_ref" value="' . esc($propertyRef) . '" />';
+    }
     $propertyTypes = ['Apartment', 'Villa', 'Townhouse', 'Penthouse', 'Office', 'Shop', 'Studio', 'Plot / Land', 'Warehouse', 'Other'];
     $bedrooms = ['Studio', '1', '2', '3', '4', '5', '6', '7+'];
     $bathrooms = ['1', '2', '3', '4', '5', '6+'];
@@ -784,7 +810,7 @@ function list_property_form(): string
         }
         return $o;
     };
-    $out = '<form class="custom-form" data-enquiry-form="listing" novalidate>'
+    $out = '<form class="custom-form" data-enquiry-form="listing" novalidate>' . $hidden
         . '<div class="form-grid">'
         . '<div class="input-box input-box-name">'
         . '<label class="input-label" for="lp-name-1">Full Name</label>'

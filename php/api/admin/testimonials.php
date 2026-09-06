@@ -1,5 +1,5 @@
 <?php
-// api/admin/testimonials.php — CRUD for the testimonials table
+// api/admin/testimonials.php — CRUD for the testimonials table (MySQL-backed)
 require_once __DIR__ . '/_crud.php';
 admin_crud_dispatch([
     'table' => 'testimonials',

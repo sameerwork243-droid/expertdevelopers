@@ -833,6 +833,32 @@ function home_json(): ?array
     return $cache;
 }
 
+/** DB-backed testimonials (published), home-review shape. */
+function db_testimonials(int $limit = 8): array
+{
+    static $cache = null;
+    if ($cache !== null) return $cache;
+    $out = [];
+    if (db_enabled()) {
+        try {
+            foreach (db_rows("SELECT author, role, content, rating, published FROM testimonials WHERE published = 1 ORDER BY id DESC LIMIT $limit") as $t) {
+                $name = trim((string) ($t['author'] ?? ''));
+                if ($name === '') continue;
+                $out[] = [
+                    'name' => $name,
+                    'date' => (string) ($t['role'] ?? ''),
+                    'title' => $name,
+                    'description' => (string) ($t['content'] ?? ''),
+                ];
+            }
+        } catch (Throwable $e) {
+            error_log('[testimonials] ' . $e->getMessage());
+        }
+    }
+    $cache = $out;
+    return $out;
+}
+
 /** Unique community list from the extracted homepage (label + slug). */
 function communities(): array
 {
