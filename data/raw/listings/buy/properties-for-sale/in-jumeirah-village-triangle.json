@@ -24,42 +24,42 @@
             "display_bedrooms": "1,2,3,4",
             "min_bedrooms": 1,
             "max_bedrooms": 4,
-            "about": "<p>Valia at <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-creek-harbour/\">Dubai Creek Harbour</a> is a residential complex developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://prov",
+            "about": "<p>Valia at <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-creek-harbour/\">Dubai Creek Harbour</a> is a residential complex developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://prov",
             "price": "2,140,000",
             "display_price": "2.14M",
             "virtual_tour_url": null,
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_9_03a5e2ace9.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_9_03a5e2ace9.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_0e49a0f373.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_0e49a0f373.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_7_2bd3d6cc3b.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_7_2bd3d6cc3b.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_6_5e2f8ab40b.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_6_5e2f8ab40b.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_5_5fb703c369.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_5_5fb703c369.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_3_5a2b45fa8c.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_3_5a2b45fa8c.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_4_be46f3d197.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_4_be46f3d197.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Feaure_image_3f2db87ea7.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Feaure_image_3f2db87ea7.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Banner_6799f762ee.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Banner_6799f762ee.jpg"
             },
             "banner_image_mobile": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Mobile_ee9a89ada0.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Mobile_ee9a89ada0.jpg"
             },
             "ggfx_results": [
               {
@@ -67,49 +67,49 @@
                 "src_cftle": "i/General_Brochure_90d7160d65.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/General_Brochure_90d7160d65.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/General_Brochure_90d7160d65.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2025-08-26 15:11:19.440",
                     "updated_at": "2025-08-27 02:18:19.016"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/General_Brochure_90d7160d65.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/General_Brochure_90d7160d65.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2025-08-26 15:11:19.440",
                     "updated_at": "2025-08-27 02:18:19.016"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/General_Brochure_90d7160d65.png",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/General_Brochure_90d7160d65.png",
                     "format": "png",
                     "transform": "1504x",
                     "created_at": "2024-06-19 09:14:46.636",
                     "updated_at": "2025-08-27 02:18:19.016"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/General_Brochure_90d7160d65.png",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/General_Brochure_90d7160d65.png",
                     "format": "png",
                     "transform": "340x",
                     "created_at": "2024-06-19 10:25:01.489",
                     "updated_at": "2025-08-27 02:18:19.016"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1968x/General_Brochure_90d7160d65.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1968x/General_Brochure_90d7160d65.webp",
                     "format": "webp",
                     "transform": "1968x",
                     "created_at": "2025-08-26 15:11:19.440",
                     "updated_at": "2025-08-27 02:18:19.016"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/696x/General_Brochure_90d7160d65.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/696x/General_Brochure_90d7160d65.webp",
                     "format": "webp",
                     "transform": "696x",
                     "created_at": "2025-08-26 22:38:44.243",
                     "updated_at": "2025-08-27 02:18:19.016"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/336x/General_Brochure_90d7160d65.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/336x/General_Brochure_90d7160d65.webp",
                     "format": "webp",
                     "transform": "336x",
                     "created_at": "2025-08-27 02:18:19.016",
@@ -127,7 +127,7 @@
                 "src_cftle": "i/Feaure_image_3f2db87ea7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Feaure_image_3f2db87ea7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Feaure_image_3f2db87ea7.webp",
                     "alias": "images",
                     "format": "webp",
                     "transform": "340x252",
@@ -135,7 +135,7 @@
                     "updated_at": "2026-07-31 12:47:54.403"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Feaure_image_3f2db87ea7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Feaure_image_3f2db87ea7.webp",
                     "alias": "images",
                     "format": "webp",
                     "transform": "464x312",
@@ -143,14 +143,14 @@
                     "updated_at": "2026-07-31 12:47:54.403"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Feaure_image_3f2db87ea7.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Feaure_image_3f2db87ea7.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2026-08-03 08:02:06.230",
                     "updated_at": "2026-08-03 08:02:06.230"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Feaure_image_3f2db87ea7.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Feaure_image_3f2db87ea7.jpg",
                     "format": "jpg",
                     "transform": "340x252",
                     "created_at": "2026-08-03 10:55:31.453",
@@ -161,21 +161,21 @@
                 "updated_at": "2026-08-03T09:55:31.453Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Feaure_image_3f2db87ea7.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Feaure_image_3f2db87ea7.jpg"
               },
               {
                 "id": 6122982,
                 "src_cftle": "i/Mobile_ee9a89ada0.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/Mobile_ee9a89ada0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/Mobile_ee9a89ada0.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2026-07-31 12:47:54.404",
                     "updated_at": "2026-07-31 12:47:54.404"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/Mobile_ee9a89ada0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/Mobile_ee9a89ada0.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2026-07-31 12:47:54.404",
@@ -186,63 +186,63 @@
                 "updated_at": "2026-07-31T11:47:54.404Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Mobile_ee9a89ada0.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Mobile_ee9a89ada0.jpg"
               },
               {
                 "id": 6122983,
                 "src_cftle": "i/Banner_6799f762ee.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/Banner_6799f762ee.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/Banner_6799f762ee.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2026-07-31 12:47:54.404",
                     "updated_at": "2026-07-31 12:47:54.404"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/Banner_6799f762ee.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/Banner_6799f762ee.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2026-07-31 12:47:54.404",
                     "updated_at": "2026-07-31 12:47:54.404"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/Banner_6799f762ee.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/Banner_6799f762ee.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2026-07-31 12:47:54.404",
                     "updated_at": "2026-07-31 12:47:54.404"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/Banner_6799f762ee.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/Banner_6799f762ee.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2026-07-31 12:47:54.404",
                     "updated_at": "2026-07-31 12:47:54.404"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/Banner_6799f762ee.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/Banner_6799f762ee.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2026-07-31 12:52:07.600",
                     "updated_at": "2026-07-31 12:52:07.600"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/Banner_6799f762ee.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/Banner_6799f762ee.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2026-07-31 12:54:16.118",
                     "updated_at": "2026-07-31 12:54:16.118"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/Banner_6799f762ee.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/Banner_6799f762ee.jpg",
                     "format": "jpg",
                     "transform": "1300x500",
                     "created_at": "2026-07-31 13:06:11.536",
                     "updated_at": "2026-07-31 13:06:11.536"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/Banner_6799f762ee.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/Banner_6799f762ee.jpg",
                     "format": "jpg",
                     "transform": "600x",
                     "created_at": "2026-07-31 13:29:38.777",
@@ -253,14 +253,14 @@
                 "updated_at": "2026-07-31T12:29:38.777Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Banner_6799f762ee.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Banner_6799f762ee.jpg"
               },
               {
                 "id": 6122985,
                 "src_cftle": "i/Gallery_5_5fb703c369.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_5_5fb703c369.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_5_5fb703c369.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -268,7 +268,7 @@
                     "updated_at": "2026-07-31 12:53:30.449"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_5_5fb703c369.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_5_5fb703c369.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -276,14 +276,14 @@
                     "updated_at": "2026-07-31 12:53:30.449"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_5_5fb703c369.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_5_5fb703c369.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-07-31 13:00:41.824",
                     "updated_at": "2026-07-31 13:00:41.824"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_5_5fb703c369.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_5_5fb703c369.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:04:21.265",
@@ -294,14 +294,14 @@
                 "updated_at": "2026-07-31T12:04:21.265Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_5_5fb703c369.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_5_5fb703c369.jpg"
               },
               {
                 "id": 6122986,
                 "src_cftle": "i/Gallery_6_5e2f8ab40b.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_6_5e2f8ab40b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_6_5e2f8ab40b.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -309,7 +309,7 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_6_5e2f8ab40b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_6_5e2f8ab40b.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -317,14 +317,14 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_6_5e2f8ab40b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_6_5e2f8ab40b.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-07-31 13:00:42.123",
                     "updated_at": "2026-07-31 13:00:42.123"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_6_5e2f8ab40b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_6_5e2f8ab40b.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:04:21.204",
@@ -335,14 +335,14 @@
                 "updated_at": "2026-07-31T12:04:21.204Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_6_5e2f8ab40b.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_6_5e2f8ab40b.jpg"
               },
               {
                 "id": 6122987,
                 "src_cftle": "i/Gallery_7_2bd3d6cc3b.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_7_2bd3d6cc3b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_7_2bd3d6cc3b.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252",
@@ -350,7 +350,7 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_7_2bd3d6cc3b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_7_2bd3d6cc3b.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312",
@@ -358,14 +358,14 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_7_2bd3d6cc3b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_7_2bd3d6cc3b.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-07-31 13:00:41.715",
                     "updated_at": "2026-07-31 13:00:41.715"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_7_2bd3d6cc3b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_7_2bd3d6cc3b.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:04:21.273",
@@ -376,14 +376,14 @@
                 "updated_at": "2026-07-31T12:04:21.273Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_7_2bd3d6cc3b.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_7_2bd3d6cc3b.jpg"
               },
               {
                 "id": 6122988,
                 "src_cftle": "i/Gallery_0e49a0f373.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_0e49a0f373.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_0e49a0f373.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252",
@@ -391,7 +391,7 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_0e49a0f373.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_0e49a0f373.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312",
@@ -399,28 +399,28 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_0e49a0f373.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_0e49a0f373.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-07-31 13:00:41.830",
                     "updated_at": "2026-07-31 13:00:41.830"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_0e49a0f373.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_0e49a0f373.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:04:21.270",
                     "updated_at": "2026-07-31 13:04:21.270"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_0e49a0f373.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_0e49a0f373.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2026-08-03 08:02:06.244",
                     "updated_at": "2026-08-03 08:02:06.244"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_0e49a0f373.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_0e49a0f373.jpg",
                     "format": "jpg",
                     "transform": "340x252",
                     "created_at": "2026-08-03 10:55:31.472",
@@ -431,14 +431,14 @@
                 "updated_at": "2026-08-03T09:55:31.472Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_0e49a0f373.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_0e49a0f373.jpg"
               },
               {
                 "id": 6122989,
                 "src_cftle": "i/Gallery_3_5a2b45fa8c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_3_5a2b45fa8c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_3_5a2b45fa8c.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -446,7 +446,7 @@
                     "updated_at": "2026-07-31 12:53:30.449"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_3_5a2b45fa8c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_3_5a2b45fa8c.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -454,14 +454,14 @@
                     "updated_at": "2026-07-31 12:53:30.449"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_3_5a2b45fa8c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_3_5a2b45fa8c.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:00:41.496",
                     "updated_at": "2026-07-31 13:00:41.496"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_3_5a2b45fa8c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_3_5a2b45fa8c.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-07-31 13:00:42.128",
@@ -472,14 +472,14 @@
                 "updated_at": "2026-07-31T12:00:42.128Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_3_5a2b45fa8c.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_3_5a2b45fa8c.jpg"
               },
               {
                 "id": 6122990,
                 "src_cftle": "i/Gallery_4_be46f3d197.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_4_be46f3d197.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_4_be46f3d197.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -487,7 +487,7 @@
                     "updated_at": "2026-07-31 12:53:30.449"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_4_be46f3d197.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_4_be46f3d197.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -495,14 +495,14 @@
                     "updated_at": "2026-07-31 12:53:30.449"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_4_be46f3d197.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_4_be46f3d197.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-07-31 14:30:37.277",
                     "updated_at": "2026-07-31 14:30:37.277"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_4_be46f3d197.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_4_be46f3d197.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 14:30:38.796",
@@ -513,14 +513,14 @@
                 "updated_at": "2026-07-31T13:30:38.796Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_4_be46f3d197.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_4_be46f3d197.jpg"
               },
               {
                 "id": 6122991,
                 "src_cftle": "i/Gallery_9_03a5e2ace9.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_9_03a5e2ace9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_9_03a5e2ace9.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252",
@@ -528,7 +528,7 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_9_03a5e2ace9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_9_03a5e2ace9.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312",
@@ -536,28 +536,28 @@
                     "updated_at": "2026-07-31 12:53:30.448"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_9_03a5e2ace9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_9_03a5e2ace9.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-07-31 13:00:41.604",
                     "updated_at": "2026-07-31 13:00:41.604"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_9_03a5e2ace9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_9_03a5e2ace9.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:04:21.279",
                     "updated_at": "2026-07-31 13:04:21.279"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_9_03a5e2ace9.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_9_03a5e2ace9.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2026-08-03 08:02:06.211",
                     "updated_at": "2026-08-03 08:02:06.211"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_9_03a5e2ace9.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_9_03a5e2ace9.jpg",
                     "format": "jpg",
                     "transform": "340x252",
                     "created_at": "2026-08-03 10:55:31.466",
@@ -568,21 +568,21 @@
                 "updated_at": "2026-08-03T09:55:31.466Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_9_03a5e2ace9.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_9_03a5e2ace9.jpg"
               },
               {
                 "id": 6123010,
                 "src_cftle": "i/Map_1_641e2cd210.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Map_1_641e2cd210.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Map_1_641e2cd210.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:00:41.508",
                     "updated_at": "2026-07-31 13:00:41.508"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/Map_1_641e2cd210.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/Map_1_641e2cd210.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2026-07-31 13:00:42.290",
@@ -600,14 +600,14 @@
                 "src_cftle": "i/Unique_selling_point_08291946e3.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/Unique_selling_point_08291946e3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/Unique_selling_point_08291946e3.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2026-07-31 13:00:42.278",
                     "updated_at": "2026-07-31 13:00:42.278"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Unique_selling_point_08291946e3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Unique_selling_point_08291946e3.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-07-31 13:04:21.271",
@@ -705,45 +705,45 @@
             "display_bedrooms": null,
             "min_bedrooms": 1,
             "max_bedrooms": 3,
-            "about": "<p>RAW District 2 by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/developed-by-imtiaz-developments/\">Imtiaz Developments</a> is a modern mixed-use project in Downtown Jebel Ali, positioned along <a targe",
+            "about": "<p>RAW District 2 by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/developed-by-imtiaz-developments/\">Imtiaz Developments</a> is a modern mixed-use project in Downtown Jebel Ali, positioned along <a targe",
             "price": "666,000",
             "display_price": "666K",
             "virtual_tour_url": null,
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_5_a84fbbd46f.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_5_a84fbbd46f.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_3_bea6dc211e.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_3_bea6dc211e.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_2_78b1e3f9af.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_2_78b1e3f9af.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_4_0fa2cd14d1.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_4_0fa2cd14d1.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_1_6f9c2b7260.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_1_6f9c2b7260.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_6_4ae2ed20f7.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_6_4ae2ed20f7.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Feature_874855a212.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Feature_874855a212.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Banner_108d3d702d.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Banner_108d3d702d.jpg"
             },
             "banner_image_mobile": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Mobile_8ee998ec20.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Mobile_8ee998ec20.jpg"
             },
             "ads_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Sponsored_30f7e69118.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Sponsored_30f7e69118.jpg"
             },
             "ads_mobile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Mobile_3edab8bc93.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Mobile_3edab8bc93.jpg"
             },
             "ggfx_results": [
               {
@@ -751,7 +751,7 @@
                 "src_cftle": "i/Gallery_1_6f9c2b7260.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_1_6f9c2b7260.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_1_6f9c2b7260.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -759,7 +759,7 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_1_6f9c2b7260.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_1_6f9c2b7260.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -767,28 +767,28 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_1_6f9c2b7260.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_1_6f9c2b7260.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-06-22 11:41:02.755",
                     "updated_at": "2026-06-22 11:41:02.755"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_1_6f9c2b7260.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_1_6f9c2b7260.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-06-22 13:29:32.755",
                     "updated_at": "2026-06-22 13:29:32.755"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_1_6f9c2b7260.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_1_6f9c2b7260.jpg",
                     "format": "jpg",
                     "transform": "1504x",
                     "created_at": "2026-07-07 13:15:07.361",
                     "updated_at": "2026-07-07 13:15:07.361"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_1_6f9c2b7260.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_1_6f9c2b7260.jpg",
                     "format": "jpg",
                     "transform": "340x",
                     "created_at": "2026-07-07 15:59:52.102",
@@ -799,14 +799,14 @@
                 "updated_at": "2026-07-07T14:59:52.102Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_1_6f9c2b7260.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_1_6f9c2b7260.jpg"
               },
               {
                 "id": 6064121,
                 "src_cftle": "i/Gallery_6_4ae2ed20f7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_6_4ae2ed20f7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_6_4ae2ed20f7.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -814,7 +814,7 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_6_4ae2ed20f7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_6_4ae2ed20f7.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -822,21 +822,21 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_6_4ae2ed20f7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_6_4ae2ed20f7.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-06-22 11:41:02.727",
                     "updated_at": "2026-06-22 11:41:02.727"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_6_4ae2ed20f7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_6_4ae2ed20f7.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-06-22 13:29:31.814",
                     "updated_at": "2026-06-22 13:29:31.814"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_6_4ae2ed20f7.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_6_4ae2ed20f7.jpg",
                     "format": "jpg",
                     "transform": "1504x",
                     "created_at": "2026-07-07 13:15:07.329",
@@ -847,14 +847,14 @@
                 "updated_at": "2026-07-07T12:15:07.329Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_6_4ae2ed20f7.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_6_4ae2ed20f7.jpg"
               },
               {
                 "id": 6064122,
                 "src_cftle": "i/Gallery_3_bea6dc211e.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_3_bea6dc211e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_3_bea6dc211e.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252",
@@ -862,7 +862,7 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_3_bea6dc211e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_3_bea6dc211e.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312",
@@ -870,42 +870,42 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_3_bea6dc211e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_3_bea6dc211e.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-06-22 11:41:02.971",
                     "updated_at": "2026-06-22 11:41:02.971"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_3_bea6dc211e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_3_bea6dc211e.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-06-22 13:29:22.870",
                     "updated_at": "2026-06-22 13:29:22.870"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_3_bea6dc211e.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_3_bea6dc211e.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2026-06-22 16:55:50.630",
                     "updated_at": "2026-06-22 16:55:50.630"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_3_bea6dc211e.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_3_bea6dc211e.jpg",
                     "format": "jpg",
                     "transform": "340x252",
                     "created_at": "2026-06-23 07:28:02.934",
                     "updated_at": "2026-06-23 07:28:02.934"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_3_bea6dc211e.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_3_bea6dc211e.jpg",
                     "format": "jpg",
                     "transform": "1504x",
                     "created_at": "2026-07-07 13:15:07.378",
                     "updated_at": "2026-07-07 13:15:07.378"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_3_bea6dc211e.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_3_bea6dc211e.jpg",
                     "format": "jpg",
                     "transform": "340x",
                     "created_at": "2026-07-07 15:59:52.100",
@@ -916,14 +916,14 @@
                 "updated_at": "2026-07-07T14:59:52.100Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_3_bea6dc211e.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_3_bea6dc211e.jpg"
               },
               {
                 "id": 6064124,
                 "src_cftle": "i/Gallery_2_78b1e3f9af.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_2_78b1e3f9af.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_2_78b1e3f9af.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252",
@@ -931,7 +931,7 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_2_78b1e3f9af.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_2_78b1e3f9af.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312",
@@ -939,28 +939,28 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_2_78b1e3f9af.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_2_78b1e3f9af.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-06-22 11:41:02.940",
                     "updated_at": "2026-06-22 11:41:02.940"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_2_78b1e3f9af.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_2_78b1e3f9af.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-06-22 13:29:34.588",
                     "updated_at": "2026-06-22 13:29:34.588"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_2_78b1e3f9af.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_2_78b1e3f9af.jpg",
                     "format": "jpg",
                     "transform": "1504x",
                     "created_at": "2026-07-07 13:15:07.234",
                     "updated_at": "2026-07-07 13:15:07.234"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_2_78b1e3f9af.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_2_78b1e3f9af.jpg",
                     "format": "jpg",
                     "transform": "340x",
                     "created_at": "2026-07-07 15:59:52.058",
@@ -971,14 +971,14 @@
                 "updated_at": "2026-07-07T14:59:52.058Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_2_78b1e3f9af.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_2_78b1e3f9af.jpg"
               },
               {
                 "id": 6064125,
                 "src_cftle": "i/Gallery_4_0fa2cd14d1.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_4_0fa2cd14d1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_4_0fa2cd14d1.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -986,7 +986,7 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_4_0fa2cd14d1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_4_0fa2cd14d1.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -994,28 +994,28 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_4_0fa2cd14d1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_4_0fa2cd14d1.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-06-22 11:41:02.525",
                     "updated_at": "2026-06-22 11:41:02.525"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_4_0fa2cd14d1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_4_0fa2cd14d1.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-06-22 13:29:23.636",
                     "updated_at": "2026-06-22 13:29:23.636"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_4_0fa2cd14d1.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_4_0fa2cd14d1.jpg",
                     "format": "jpg",
                     "transform": "340x",
                     "created_at": "2026-07-07 13:15:07.218",
                     "updated_at": "2026-07-07 13:15:07.218"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_4_0fa2cd14d1.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_4_0fa2cd14d1.jpg",
                     "format": "jpg",
                     "transform": "1504x",
                     "created_at": "2026-07-07 15:59:52.108",
@@ -1026,14 +1026,14 @@
                 "updated_at": "2026-07-07T14:59:52.108Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_4_0fa2cd14d1.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_4_0fa2cd14d1.jpg"
               },
               {
                 "id": 6064126,
                 "src_cftle": "i/Gallery_5_a84fbbd46f.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_5_a84fbbd46f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_5_a84fbbd46f.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252",
@@ -1041,7 +1041,7 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_5_a84fbbd46f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_5_a84fbbd46f.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312",
@@ -1049,35 +1049,35 @@
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_5_a84fbbd46f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_5_a84fbbd46f.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2026-06-22 11:41:02.492",
                     "updated_at": "2026-06-22 11:41:02.492"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Gallery_5_a84fbbd46f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Gallery_5_a84fbbd46f.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-06-22 13:29:22.431",
                     "updated_at": "2026-06-22 13:29:22.431"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Gallery_5_a84fbbd46f.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Gallery_5_a84fbbd46f.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2026-06-22 16:55:50.657",
                     "updated_at": "2026-06-22 16:55:50.657"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Gallery_5_a84fbbd46f.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Gallery_5_a84fbbd46f.jpg",
                     "format": "jpg",
                     "transform": "340x252",
                     "created_at": "2026-06-23 07:28:02.894",
                     "updated_at": "2026-06-23 07:28:02.894"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Gallery_5_a84fbbd46f.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Gallery_5_a84fbbd46f.jpg",
                     "format": "jpg",
                     "transform": "1504x",
                     "created_at": "2026-07-07 13:15:07.290",
@@ -1088,35 +1088,35 @@
                 "updated_at": "2026-07-07T12:15:07.290Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Gallery_5_a84fbbd46f.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Gallery_5_a84fbbd46f.jpg"
               },
               {
                 "id": 6064128,
                 "src_cftle": "i/Banner_108d3d702d.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/Banner_108d3d702d.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/Banner_108d3d702d.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2026-06-22 11:32:54.645",
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/Banner_108d3d702d.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/Banner_108d3d702d.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2026-06-22 11:32:54.645",
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/Banner_108d3d702d.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/Banner_108d3d702d.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2026-06-22 11:32:54.645",
                     "updated_at": "2026-06-22 11:32:54.645"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/Banner_108d3d702d.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/Banner_108d3d702d.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2026-06-22 11:32:54.645",
@@ -1127,35 +1127,35 @@
                 "updated_at": "2026-06-22T10:32:54.645Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Banner_108d3d702d.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Banner_108d3d702d.jpg"
               },
               {
                 "id": 6064135,
                 "src_cftle": "i/Map_Location_2_c3ab668679.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x600/Map_Location_2_c3ab668679.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x600/Map_Location_2_c3ab668679.webp",
                     "format": "webp",
                     "transform": "1392x600",
                     "created_at": "2026-06-22 11:41:02.988",
                     "updated_at": "2026-06-22 11:41:02.988"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x250/Map_Location_2_c3ab668679.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x250/Map_Location_2_c3ab668679.webp",
                     "format": "webp",
                     "transform": "340x250",
                     "created_at": "2026-06-22 13:29:32.369",
                     "updated_at": "2026-06-22 13:29:32.369"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x600/Map_Location_2_c3ab668679.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x600/Map_Location_2_c3ab668679.jpg",
                     "format": "jpg",
                     "transform": "1392x600",
                     "created_at": "2026-07-07 13:15:07.109",
                     "updated_at": "2026-07-07 13:15:07.109"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x250/Map_Location_2_c3ab668679.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x250/Map_Location_2_c3ab668679.jpg",
                     "format": "jpg",
                     "transform": "340x250",
                     "created_at": "2026-07-07 15:59:52.104",
@@ -1173,14 +1173,14 @@
                 "src_cftle": "i/Selling_Point_211599fed3.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/Selling_Point_211599fed3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/Selling_Point_211599fed3.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2026-06-22 11:41:02.910",
                     "updated_at": "2026-06-22 11:41:02.910"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Selling_Point_211599fed3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Selling_Point_211599fed3.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2026-06-22 13:29:32.188",
@@ -1198,7 +1198,7 @@
                 "src_cftle": "i/Feature_874855a212.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Feature_874855a212.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Feature_874855a212.webp",
                     "alias": "images",
                     "format": "webp",
                     "transform": "340x252",
@@ -1206,7 +1206,7 @@
                     "updated_at": "2026-06-26 10:19:12.520"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Feature_874855a212.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Feature_874855a212.webp",
                     "alias": "images",
                     "format": "webp",
                     "transform": "464x312",
@@ -1214,14 +1214,14 @@
                     "updated_at": "2026-06-26 10:19:12.520"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Feature_874855a212.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Feature_874855a212.jpg",
                     "format": "jpg",
                     "transform": "340x252",
                     "created_at": "2026-06-26 16:40:58.464",
                     "updated_at": "2026-06-26 16:40:58.464"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Feature_874855a212.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Feature_874855a212.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2026-06-26 23:44:11.437",
@@ -1232,21 +1232,21 @@
                 "updated_at": "2026-06-26T22:44:11.437Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Feature_874855a212.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Feature_874855a212.jpg"
               },
               {
                 "id": 6071217,
                 "src_cftle": "i/Mobile_8ee998ec20.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/Mobile_8ee998ec20.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/Mobile_8ee998ec20.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2026-06-26 10:19:12.521",
                     "updated_at": "2026-06-26 10:19:12.521"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/Mobile_8ee998ec20.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/Mobile_8ee998ec20.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2026-06-26 10:19:12.521",
@@ -1257,14 +1257,14 @@
                 "updated_at": "2026-06-26T09:19:12.521Z",
                 "created_by_id": null,
                 "updated_by_id": null,
-                "src_url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Mobile_8ee998ec20.jpg"
+                "src_url": "https://d3h330vgpwpjr8.cloudfront.net/i/Mobile_8ee998ec20.jpg"
               },
               {
                 "id": 6107415,
                 "src_cftle": "i/Mobile_3edab8bc93.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/420x/Mobile_3edab8bc93.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/420x/Mobile_3edab8bc93.webp",
                     "format": "webp",
                     "transform": "420x",
                     "created_at": "2026-07-14 13:16:55.631",
@@ -1282,14 +1282,14 @@
                 "src_cftle": "i/Sponsored_30f7e69118.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/Sponsored_30f7e69118.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/Sponsored_30f7e69118.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2026-07-20 06:37:45.167",
                     "updated_at": "2026-07-20 06:37:45.167"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/Sponsored_30f7e69118.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/Sponsored_30f7e69118.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2026-07-27 11:46:38.712",
@@ -1375,7 +1375,7 @@
             "title": "Looking to Buy a Property in Jumeirah Village Triangle (JVT)?",
             "area": "jumeirah-village-triangle",
             "building_type": null,
-            "description": "<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/jumeirah-village-triangle/\">Jumeirah Village Triangle (JVT)</a> offers a unique blend of luxury, convenience, and community living. If you're looking for a property in one of Dubai's most sought-after residential areas, JVT is the perfect location. Known for its tranquil ambiance and picturesque surroundings, this community boasts a wide range of properties for sale, making it a popular choice for investors and residents.</p><p>Located conveniently between Al Khail Road and Mohammed Bin Zayed Road, JVT is a central hub in Dubai, offering easy access to the city's major highways. This well-established community is home to spacious properties, ideal for families, with lush gardens and a wealth of recreational options.</p><p>For those seeking a balanced lifestyle, the area provides green parks, jogging tracks, tennis courts, and a fishing lake, perfect for outdoor enthusiasts. The nearby golf course and excellent educational and healthcare facilities further enhance its appeal. <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/\">Properties for sale in Dubai</a>, including those in Jumeirah Village Triangle, offer a strategic location and top-notch amenities. This community provides a serene living environment, making it not only a peaceful retreat but also a sound investment opportunity.</p><h2>Why Should You Buy a Townhouse in Jumeirah Village Triangle?</h2><p>Jumeirah Village Triangle offers an exceptional living experience for families, professionals, and investors. The spacious properties in JVT are perfect for those who value privacy, comfort, and a strong sense of community. The well-connected infrastructure ensures you are always close to key attractions, business hubs, and leisure destinations.</p><p>Additionally, the vast array of recreational facilities, such as parks, sports courts, and cycling tracks, make it ideal for an active lifestyle. JVT's strategic location and growing demand make it a great long-term investment choice.</p><h2>Popular Areas to Buy Properties in Jumeirah Village Triangle</h2><h3>Lum1nar Tower – JVT</h3><p>Starting at AED 1.6 million, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/lum1nar-tower-object1-jvt/\">Lum1nar Tower</a> offers modern, well-designed units with options for multiple bedrooms. Located centrally in Jumeirah Village Triangle, the units are spacious and have state-of-the-art amenities, including a fitness center, swimming pool, and 24/7 security. With proximity to the Al Khail Road and Sheikh Zayed Road, the project provides easy access to other parts of Dubai. Lum1nar Tower is ideal for luxury and convenience in a family-friendly neighborhood.</p><h3>Bali Residences</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/bali-residences/\">Bali Residences</a> in Jumeirah Village Triangle offers modern units with starting prices from AED 1.5 million. These units boast a blend of traditional Balinese design and contemporary architecture. The development features spacious layouts with multiple bedrooms, a gym, a swimming pool, and landscaped gardens. Located near crucial highways, residents enjoy quick access to the city’s business districts, schools, and leisure spots, making it an excellent choice for those seeking a serene yet connected lifestyle.</p><h3>Volga Tower</h3><p>Volga Tower offers stylish units starting from AED 1.4 million, with options for 2 to 3 bedrooms. Located in a prime area of JVT, these units feature modern designs, spacious living areas, and high-end finishes. Amenities include a fitness center, outdoor pool, and dedicated parking. The location offers easy access to major roads, shopping centers, and schools, making it a convenient choice for families looking for a high-quality living space in Dubai.</p><h2>Investment Potential in Jumeirah Village Triangle</h2><p>Jumeirah Village Triangle is an attractive option for both buyers and investors. Here's why:</p><ul><li><strong>High Demand</strong>: JVT's popularity continues to grow, driven by its central location and excellent amenities.</li><li><strong>Strong Rental Yields</strong>: Properties in JVT offer high rental returns due to its family-friendly atmosphere and proximity to critical areas like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-marina/\">Dubai Marina</a> and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/downtown-dubai/\">Downtown Dubai</a> Community.</li><li><strong>Future Growth</strong>: With further development in the area, including retail and leisure facilities, JVT's property value is expected to rise over time.</li><li><strong>Well-Connected</strong>: The strategic location near major roads enhances accessibility, boosting the area's appeal to renters and buyers alike.</li></ul><h2>Types of Properties in Jumeirah Village Triangle</h2><p>Jumeirah Village Triangle offers a variety of unit options to suit different tastes and needs. Whether you're looking for a cozy one-bedroom unit or a spacious five-bedroom property, there's something for everyone. Many properties in JVT feature private gardens, large terraces, and ample living space, making them ideal for families. Modern interiors, high-quality finishes, and community-centric amenities are the hallmarks of properties here.</p><h2>Advantages of Buying Properties for Sale in Jumeirah Village Triangle</h2><p>Buying properties in JVT comes with several benefits:</p><ul><li><strong>Tranquil Environment</strong>: JVT’s lush green spaces and well-maintained parks provide a peaceful setting for families.</li><li><strong>Access to Top Amenities</strong>: Enjoy access to various recreational and fitness facilities such as gyms, tennis courts, and walking tracks.</li><li><strong>Proximity to Major Areas</strong>: JVT’s central location ensures you are close to Dubai’s business hubs, shopping areas, and entertainment zones.</li><li><strong>Investment Opportunities</strong>: The area's ongoing development and high demand make it a solid long-term investment.</li></ul><h2>How to Find the Best Properties for Sale in Jumeirah Village Triangle?</h2><p>Research available listings and compare options to find the best properties for sale in Jumeirah Village Triangle. Visiting properties is crucial to get a firsthand feel for the community and surrounding amenities. Consulting with our real estate agent specializing in JVT can help you navigate the market and find the best deals. When deciding, consider the property's size, layout, and proximity to essential services.</p><h2>Properties for Sale in Nearby Areas of Jumeirah Village Triangle</h2><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-dubai-marina/\">Properties for Sale in Dubai Marina</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-dubai-hills-estate/\">Properties for Sale in Dubai Hills Estate</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-motor-city/\">Properties for Sale in Motor City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-arabian-ranches/\">Properties for Sale in Arabian Ranches</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-downtown-dubai/\">Properties for Sale in Downtown Dubai</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-palm-jumeirah/\">Properties for Sale in Palm Jumeirah</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-business-bay/\">Properties for Sale in Business Bay</a></li></ul><h2>FAQ's</h2><h3>1. What is the average price of properties in the Jumeirah Village Triangle?</h3><p>The average price for properties in JVT ranges from AED 1.5 million to AED 3.5 million, depending on the size and location.</p><h3>2. Are Jumeirah Village Triangle properties suitable for families?</h3><p>Yes, JVT properties are ideal for families due to their spacious layouts, private gardens, and family-friendly amenities like parks and schools.</p><h3>Is Jumeirah Village Triangle an excellent place to invest in property?</h3><p>Yes, JVT offers excellent investment potential due to its prime location, high rental yields, and ongoing development.</p><h3>What amenities are available in the Jumeirah Village Triangle?</h3><p>JVT features parks, fitness centers, tennis courts, cycling tracks, a golf course, and excellent access to schools and healthcare facilities.</p><h3>Can I find a property with a garden in the Jumeirah Village Triangle?</h3><p>Yes, many properties in JVT come with private gardens, providing residents with outdoor space for relaxation and recreation.</p><h3>How accessible is Jumeirah Village Triangle to other parts of Dubai?</h3><p>JVT is well-connected by significant roads like Al Khail Road and Mohammed Bin Zayed Road, making it easy to access popular areas like Dubai Marina, Downtown Dubai, and the airport.</p><h3>Is there a variety of property sizes in the Jumeirah Village Triangle?</h3><p>Yes, JVT offers properties in various sizes, from smaller one-bedroom units to larger four- and five-bedroom options.</p>"
+            "description": "<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/jumeirah-village-triangle/\">Jumeirah Village Triangle (JVT)</a> offers a unique blend of luxury, convenience, and community living. If you're looking for a property in one of Dubai's most sought-after residential areas, JVT is the perfect location. Known for its tranquil ambiance and picturesque surroundings, this community boasts a wide range of properties for sale, making it a popular choice for investors and residents.</p><p>Located conveniently between Al Khail Road and Mohammed Bin Zayed Road, JVT is a central hub in Dubai, offering easy access to the city's major highways. This well-established community is home to spacious properties, ideal for families, with lush gardens and a wealth of recreational options.</p><p>For those seeking a balanced lifestyle, the area provides green parks, jogging tracks, tennis courts, and a fishing lake, perfect for outdoor enthusiasts. The nearby golf course and excellent educational and healthcare facilities further enhance its appeal. <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/\">Properties for sale in Dubai</a>, including those in Jumeirah Village Triangle, offer a strategic location and top-notch amenities. This community provides a serene living environment, making it not only a peaceful retreat but also a sound investment opportunity.</p><h2>Why Should You Buy a Townhouse in Jumeirah Village Triangle?</h2><p>Jumeirah Village Triangle offers an exceptional living experience for families, professionals, and investors. The spacious properties in JVT are perfect for those who value privacy, comfort, and a strong sense of community. The well-connected infrastructure ensures you are always close to key attractions, business hubs, and leisure destinations.</p><p>Additionally, the vast array of recreational facilities, such as parks, sports courts, and cycling tracks, make it ideal for an active lifestyle. JVT's strategic location and growing demand make it a great long-term investment choice.</p><h2>Popular Areas to Buy Properties in Jumeirah Village Triangle</h2><h3>Lum1nar Tower – JVT</h3><p>Starting at AED 1.6 million, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/lum1nar-tower-object1-jvt/\">Lum1nar Tower</a> offers modern, well-designed units with options for multiple bedrooms. Located centrally in Jumeirah Village Triangle, the units are spacious and have state-of-the-art amenities, including a fitness center, swimming pool, and 24/7 security. With proximity to the Al Khail Road and Sheikh Zayed Road, the project provides easy access to other parts of Dubai. Lum1nar Tower is ideal for luxury and convenience in a family-friendly neighborhood.</p><h3>Bali Residences</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/bali-residences/\">Bali Residences</a> in Jumeirah Village Triangle offers modern units with starting prices from AED 1.5 million. These units boast a blend of traditional Balinese design and contemporary architecture. The development features spacious layouts with multiple bedrooms, a gym, a swimming pool, and landscaped gardens. Located near crucial highways, residents enjoy quick access to the city’s business districts, schools, and leisure spots, making it an excellent choice for those seeking a serene yet connected lifestyle.</p><h3>Volga Tower</h3><p>Volga Tower offers stylish units starting from AED 1.4 million, with options for 2 to 3 bedrooms. Located in a prime area of JVT, these units feature modern designs, spacious living areas, and high-end finishes. Amenities include a fitness center, outdoor pool, and dedicated parking. The location offers easy access to major roads, shopping centers, and schools, making it a convenient choice for families looking for a high-quality living space in Dubai.</p><h2>Investment Potential in Jumeirah Village Triangle</h2><p>Jumeirah Village Triangle is an attractive option for both buyers and investors. Here's why:</p><ul><li><strong>High Demand</strong>: JVT's popularity continues to grow, driven by its central location and excellent amenities.</li><li><strong>Strong Rental Yields</strong>: Properties in JVT offer high rental returns due to its family-friendly atmosphere and proximity to critical areas like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-marina/\">Dubai Marina</a> and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/downtown-dubai/\">Downtown Dubai</a> Community.</li><li><strong>Future Growth</strong>: With further development in the area, including retail and leisure facilities, JVT's property value is expected to rise over time.</li><li><strong>Well-Connected</strong>: The strategic location near major roads enhances accessibility, boosting the area's appeal to renters and buyers alike.</li></ul><h2>Types of Properties in Jumeirah Village Triangle</h2><p>Jumeirah Village Triangle offers a variety of unit options to suit different tastes and needs. Whether you're looking for a cozy one-bedroom unit or a spacious five-bedroom property, there's something for everyone. Many properties in JVT feature private gardens, large terraces, and ample living space, making them ideal for families. Modern interiors, high-quality finishes, and community-centric amenities are the hallmarks of properties here.</p><h2>Advantages of Buying Properties for Sale in Jumeirah Village Triangle</h2><p>Buying properties in JVT comes with several benefits:</p><ul><li><strong>Tranquil Environment</strong>: JVT’s lush green spaces and well-maintained parks provide a peaceful setting for families.</li><li><strong>Access to Top Amenities</strong>: Enjoy access to various recreational and fitness facilities such as gyms, tennis courts, and walking tracks.</li><li><strong>Proximity to Major Areas</strong>: JVT’s central location ensures you are close to Dubai’s business hubs, shopping areas, and entertainment zones.</li><li><strong>Investment Opportunities</strong>: The area's ongoing development and high demand make it a solid long-term investment.</li></ul><h2>How to Find the Best Properties for Sale in Jumeirah Village Triangle?</h2><p>Research available listings and compare options to find the best properties for sale in Jumeirah Village Triangle. Visiting properties is crucial to get a firsthand feel for the community and surrounding amenities. Consulting with our real estate agent specializing in JVT can help you navigate the market and find the best deals. When deciding, consider the property's size, layout, and proximity to essential services.</p><h2>Properties for Sale in Nearby Areas of Jumeirah Village Triangle</h2><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-dubai-marina/\">Properties for Sale in Dubai Marina</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-dubai-hills-estate/\">Properties for Sale in Dubai Hills Estate</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-motor-city/\">Properties for Sale in Motor City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-arabian-ranches/\">Properties for Sale in Arabian Ranches</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-downtown-dubai/\">Properties for Sale in Downtown Dubai</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-palm-jumeirah/\">Properties for Sale in Palm Jumeirah</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-business-bay/\">Properties for Sale in Business Bay</a></li></ul><h2>FAQ's</h2><h3>1. What is the average price of properties in the Jumeirah Village Triangle?</h3><p>The average price for properties in JVT ranges from AED 1.5 million to AED 3.5 million, depending on the size and location.</p><h3>2. Are Jumeirah Village Triangle properties suitable for families?</h3><p>Yes, JVT properties are ideal for families due to their spacious layouts, private gardens, and family-friendly amenities like parks and schools.</p><h3>Is Jumeirah Village Triangle an excellent place to invest in property?</h3><p>Yes, JVT offers excellent investment potential due to its prime location, high rental yields, and ongoing development.</p><h3>What amenities are available in the Jumeirah Village Triangle?</h3><p>JVT features parks, fitness centers, tennis courts, cycling tracks, a golf course, and excellent access to schools and healthcare facilities.</p><h3>Can I find a property with a garden in the Jumeirah Village Triangle?</h3><p>Yes, many properties in JVT come with private gardens, providing residents with outdoor space for relaxation and recreation.</p><h3>How accessible is Jumeirah Village Triangle to other parts of Dubai?</h3><p>JVT is well-connected by significant roads like Al Khail Road and Mohammed Bin Zayed Road, making it easy to access popular areas like Dubai Marina, Downtown Dubai, and the airport.</p><h3>Is there a variety of property sizes in the Jumeirah Village Triangle?</h3><p>Yes, JVT offers properties in various sizes, from smaller one-bedroom units to larger four- and five-bedroom options.</p>"
           }
         ]
       },

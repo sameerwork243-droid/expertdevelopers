@@ -3,6 +3,17 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { HeaderAccountButton } from "@/components/account/header-account-button";
+import {
+  DEFAULT_PREFS,
+  FOOTER_CURRENCIES,
+  loadLiveRates,
+  SitePrefs,
+  applyDom,
+  emitPrefs,
+  readPrefs,
+  subscribePrefs,
+  writePrefs,
+} from "@/lib/site-prefs";
 
 const CF = "https://d3h330vgpwpjr8.cloudfront.net/x/16x16/";
 
@@ -316,7 +327,7 @@ function Logo({ white }: { white?: boolean }) {
 }
 
 const WA_LINK =
-  "https://wa.provident.ae/inquire?phone=971568308221&text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.&utm_source=Browser%20Direct&gclid=%22%22&event_type=Whatsapp%20Click&utm_platform=%22%22";
+  "https://wa.me/971568308221?text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.";
 
 export function SiteHeader({ transparent }: { transparent: boolean }) {
   const [scrolled, setScrolled] = useState(false);
@@ -339,6 +350,26 @@ export function SiteHeader({ transparent }: { transparent: boolean }) {
   const t = transparent && !scrolled;
   const btn = t ? "button-white-outline" : "button-white";
 
+  const [prefs, setPrefs] = useState<SitePrefs>(DEFAULT_PREFS);
+  const [devOpen, setDevOpen] = useState(false);
+
+  useEffect(() => {
+    setPrefs(readPrefs());
+    const unsub = subscribePrefs((p) => setPrefs(p));
+    applyDom();
+    loadLiveRates();
+    return unsub;
+  }, []);
+
+  const pick = (partial: Partial<SitePrefs>) => {
+    const next = { ...prefs, ...partial };
+    writePrefs(next);
+    setPrefs(next);
+    emitPrefs(next);
+    applyDom();
+    setDevOpen(false);
+  };
+
   return (
     <div className={t ? "header-wrap header-transparent" : "header-wrap"}>
       <div className="header container">
@@ -348,7 +379,14 @@ export function SiteHeader({ transparent }: { transparent: boolean }) {
             <MegaMenu key={i} m={m} />
           ))}
           <div className="dev-to d-none d-md-block">
-            <div className="dev-toggle">
+            <div
+              className="dev-toggle"
+              role="button"
+              tabIndex={0}
+              aria-haspopup="true"
+              aria-expanded={devOpen}
+              onClick={() => setDevOpen(!devOpen)}
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path
                   d="M17.4107 11.1607L16.4652 10.2152C16.3226 10.0726 16.2041 9.90811 16.1139 9.72785L15.2139 7.92775C15.1087 7.71732 14.8282 7.6718 14.6618 7.83817C14.4848 8.0152 14.2257 8.08234 13.985 8.01356L12.9242 7.71049C12.5214 7.59539 12.1033 7.83687 12.0017 8.24333C11.9257 8.54718 12.049 8.86597 12.3095 9.0397L12.7985 9.36566C13.2907 9.69383 13.3597 10.3903 12.9414 10.8086L12.7746 10.9754C12.5988 11.1512 12.5 11.3897 12.5 11.6383V11.9807C12.5 12.3205 12.4076 12.6539 12.2328 12.9453L11.1373 14.7712C10.8195 15.3009 10.247 15.625 9.6293 15.625C9.14368 15.625 8.75 15.2313 8.75 14.7457V13.7694C8.75 13.0027 8.28322 12.3133 7.57136 12.0285L7.02624 11.8105C6.20812 11.4832 5.72825 10.6305 5.87311 9.76135L5.87897 9.72616C5.91765 9.49413 5.99964 9.27144 6.12066 9.06973L6.19517 8.94555C6.60286 8.26607 7.39368 7.91624 8.17069 8.07164L9.15223 8.26795C9.63113 8.36373 10.1033 8.0758 10.2375 7.6062L10.4113 6.99812C10.5352 6.56434 10.3326 6.1038 9.92909 5.90204L9.375 5.625L9.29917 5.70083C8.94754 6.05246 8.47063 6.25 7.97335 6.25H7.82258C7.61603 6.25 7.41746 6.33254 7.27141 6.47859C7.03519 6.71481 6.67345 6.77423 6.37465 6.62483C5.97027 6.42264 5.82361 5.91899 6.05622 5.53131L7.2328 3.57033C7.3502 3.37467 7.43041 3.16006 7.47044 2.93728M17.4107 11.1607C17.4695 10.7824 17.5 10.3948 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C9.11236 2.5 8.26073 2.6542 7.47044 2.93728M17.4107 11.1607C16.8528 14.7517 13.7474 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 6.74551 4.57291 3.97517 7.47044 2.93728"
@@ -357,11 +395,31 @@ export function SiteHeader({ transparent }: { transparent: boolean }) {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="">AED</span>
+              <span className="js-dev-currency-code">{prefs.cur}</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M13 5.5L8 10.5L3 5.5" stroke="#9399A4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
+            {devOpen && (
+              <div className="dev-to-open">
+                <p className="label">Currency</p>
+                <div className="react-select-wrap filter-select currency-type-select">
+                  <div className="react-select css-b62m3t-container">
+                    {FOOTER_CURRENCIES.map((c) => (
+                      <div
+                        key={c.code}
+                        className={"react-select__option" + (c.code === prefs.cur ? " react-select__option--is-focused" : "")}
+                        data-code={c.code}
+                        role="option"
+                        onClick={() => pick({ cur: c.code })}
+                      >
+                        {c.label}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <div className="d-none d-xl-flex log-in-btn">
             <HeaderAccountButton className={btn} />

@@ -26,14 +26,14 @@ foreach ($p['images'] ?? [] as $im) {
     if ($src) $images[] = $src;
 }
 
-$title = $p['title'] ?? (($p['building'][0] ?? 'Property') . ' in ' . ($p['display_address'] ?? 'Dubai'));
+$title = $p['title'] ?? (($p['building'][0] ?? 'Property') . ' in ' . ($p['display_address'] ?? 'Pakistan'));
 $completion = str_replace('-', ' ', (string) ($p['status'] ?? 'Ready'));
 $furnishing = $p['furnishing'] ?? 'N/A';
 if (is_array($furnishing)) $furnishing = $furnishing[0] ?? 'N/A';
 $building = is_array($p['building'] ?? null) ? ($p['building'][0] ?? null) : ($p['building'] ?? null);
 $neg = neg_of($p);
 if ($neg === []) $neg = [];
-$phone = $neg['phone'] ?? '+971 568 308 221';
+$phone = $neg['phone'] ?? '+92 312 5170194';
 $type = $building ?? $p['building_type'] ?? 'Property';
 $size = $p['floorarea_min'] ?? $p['floorarea_max'] ?? null;
 $amenities = is_array($p['accommodation_summary'] ?? null)
@@ -47,15 +47,19 @@ $isSignature = ((int) ($p['price'] ?? 0)) >= 20000000;
 $status = $p['status'] ?? 'Ready';
 $qualifier = is_array($p['price_qualifier'] ?? null) ? ($p['price_qualifier'][0] ?? 'AED') : ($p['price_qualifier'] ?? 'AED');
 $qualifier = $qualifier !== '' ? $qualifier : 'AED';
+$priceInt = (int) ($p['price'] ?? 0);
+$isYearly = stripos($qualifier, 'yearly') !== false;
+$perSq = expert_sqf($size) > 0 ? round($priceInt * expert_rate() / expert_sqf($size)) : 0;
+$unitLabel = expert_unit() === 'Sqm' ? 'sq m' : 'sq ft';
 $waHit = $p;
 $waHit['search_type'] = $sale ? 'rent' : 'sale';
 $waHref = wa_link_property($waHit);
 $negUrl = $neg['url'] ?? '';
 $bedroom = $p['bedroom'] ?? null;
 
-function key_info(string $label, string $value): string
+function key_info(string $label, string $value, string $extra = ''): string
 {
-    return '<div class="key-info-item"><div><p class="label">' . esc($label) . '</p><p class="value">' . esc($value) . '</p></div></div>';
+    return '<div class="key-info-item"><div><p class="label">' . esc($label) . '</p><p class="value"' . $extra . '>' . esc($value) . '</p></div></div>';
 }
 ?><!DOCTYPE html>
 <html lang="en">
@@ -112,17 +116,16 @@ function key_info(string $label, string $value): string
         <div class="property-info-wrapper">
           <div class="property-info-container">
             <h1 style="position:absolute;top:0;opacity:0;font-size:10px">
-              <?= esc($type) ?> for <?= $sale ? 'rent' : 'sale' ?> with <?= esc((string) $bedroom) ?> bedroom in <?= esc($p['display_address'] ?? 'Dubai') ?> at <?= !empty($p['price']) ? 'AED ' . number_format((int) $p['price'], 0, '.', ',') : '' ?> [<?= esc((string) ($p['crm_id'] ?? '')) ?>]
+              <?= esc($type) ?> for <?= $sale ? 'rent' : 'sale' ?> with <?= esc((string) $bedroom) ?> bedroom in <?= esc($p['display_address'] ?? 'Pakistan') ?> at <?= !empty($p['price']) ? 'PKR ' . number_format((int) round($p['price'] * 76), 0, '.', ',') : '' ?> [<?= esc((string) ($p['crm_id'] ?? '')) ?>]
             </h1>
             <div class="price-section">
-              <h2 class="price">
-                <?= esc(($qualifier !== 'AED' ? $qualifier . ' ' : 'AED ')) ?><?= number_format((int) ($p['price'] ?? 0), 0, '.', ',') ?>
+              <h2 class="price"<?= data_aed($priceInt) ?><?= $isYearly ? ' data-qual="yearly"' : '' ?>>
+                <?= esc(expert_price_text($priceInt) . ($isYearly ? ' / yearly' : '')) ?>
               </h2>
               <?php if ($pricePerSqFt): ?>
-                <p class="price-per-sqft">AED <?= number_format($pricePerSqFt, 0, '.', ',') ?> / sq ft</p>
+                <p class="price-per-sqft"<?= data_aed($priceInt) ?><?= data_sqft($size) ?>><?= esc(expert_symbol() . number_format($perSq) . ' / ' . $unitLabel) ?></p>
               <?php endif; ?>
             </div>
-            <button class="mortgage-link" type="button">Calculate your mortgage repayments</button>
             <div class="detail-save-wrap">
               <?= save_button_markup($route . '/', (string) ($p['slug'] ?? ''), $title, (int) ($p['price'] ?? 0), $images[0] ?? '', 'button') ?>
             </div>
@@ -149,7 +152,7 @@ function key_info(string $label, string $value): string
                   <svg width="16" height="16" class="arrow-4-icon" viewBox="0 0 16 16" fill="none">
                     <path d="M2.5 2.5V5.5M2.5 2.5H5.5M2.5 2.5L6 6M2.5 13.5V10.5M2.5 13.5H5.5M2.5 13.5L6 10M13.5 2.5L10.5 2.5M13.5 2.5V5.5M13.5 2.5L10 6M13.5 13.5H10.5M13.5 13.5V10.5M13.5 13.5L10 10" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
-                  <span><?= number_format((int) $size, 0, '.', ',') ?> sq ft</span>
+                  <span<?= data_sqft((int) $size) ?>><?= esc(expert_area_text((int) $size)) ?></span>
                 </p>
               <?php endif; ?>
             </div>
@@ -161,7 +164,7 @@ function key_info(string $label, string $value): string
                 <?= key_info('Completion', $completion) ?>
                 <?= key_info('Completion Year', (string) $completionYear) ?>
                 <?= key_info('Furnishing Type', (string) $furnishing) ?>
-                <?php if ($size): ?><?= key_info('Size', number_format((int) $size, 0, '.', ',') . ' sq ft') ?><?php endif; ?>
+                <?php if ($size): ?><?= key_info('Size', expert_area_text((int) $size), data_sqft((int) $size)) ?><?php endif; ?>
                 <?= key_info('Property ID', (string) ($p['crm_id'] ?? '')) ?>
               </div>
             </div>
@@ -200,13 +203,6 @@ function key_info(string $label, string $value): string
                   </div>
                 </div>
               <?php endif; ?>
-
-              <?= mortgage_calculator(
-                  !empty($p['price']) ? number_format((int) $p['price'], 0, '.', ',') : '3,000,000',
-                  (string) $qualifier,
-                  'Calculate Mortgage Repayments',
-                  true
-              ) ?>
 
               <div class="similar-properties-section">
                 <p class="heading">Similar Properties</p>
@@ -255,7 +251,7 @@ function key_info(string $label, string $value): string
                 </a>
                 <div class="nego-info">
                   <a href="/team/">
-                    <p class="name"><?= esc($neg['name'] ?? 'Zoya Ventures Real Estate') ?></p>
+                    <p class="name"><?= esc($neg['name'] ?? 'Expert Marketing & Developers') ?></p>
                     <p class="designation"><?= esc($neg['designation'] ?? 'Property Consultant') ?></p>
                     <?php if (!empty($neg['brn_number'])): ?>
                       <p class="orn-no">BRN No: <?= esc((string) $neg['brn_number']) ?></p>

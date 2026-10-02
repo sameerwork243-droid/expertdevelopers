@@ -52,7 +52,7 @@ function blog_write_file(string $file, array $d, string $slug): void
     $content = (string) ($d['content'] ?? '');
     $banner = trim((string) ($d['banner_image'] ?? ''));
     $short = trim((string) ($d['short_description'] ?? ''));
-    if ($short === '') $short = 'Latest news and insights from Zoya Ventures.';
+    if ($short === '') $short = 'Latest news and insights from Expert Marketing & Developers.';
     $b = [
         'id' => blog_file_id($slug),
         'strapi_id' => blog_file_id($slug),
@@ -65,7 +65,7 @@ function blog_write_file(string $file, array $d, string $slug): void
         'publish' => !empty($d['published']),
         'video_url' => null,
         'banner_image' => $banner !== '' ? ['url' => $banner] : null,
-        'tile_image' => ['url' => $banner !== '' ? $banner : '/lloo.png'],
+        'tile_image' => ['url' => $banner !== '' ? $banner : '/images/expertlogo.png'],
         'seo' => [],
         'createdAt' => $now,
         'updatedAt' => $now,

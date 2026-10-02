@@ -13,7 +13,7 @@ public_html/
 ├── config/
 │   ├── config.php             # site constants, paths, upload limits
 │   ├── database.php           # PDO MySQL singleton
-│   └── env.php                # .env loader (PROVIDENT_DATABASE_URL etc.)
+│   └── env.php                # .env loader (ZOYA_DATABASE_URL etc.)
 ├── includes/
 │   ├── functions.php          # helpers: esc, fmt_price, wa_link, cdn_url, etc.
 │   ├── auth.php               # sessions, scrypt→password_hash, login/register/logout
@@ -54,7 +54,7 @@ public_html/
 ├── portal/
 │   └── assets/js/portal.js     # portal shell + dashboard-app port
 ├── assets/
-│   ├── css/  provident.css, header-styles.css, developer-styles.css,
+│   ├── css/  zoya.css, header-styles.css, developer-styles.css,
 │   │          app-styles.css, portal.css, app-shell.css   (copied verbatim)
 │   ├── js/   main.js (vanilla ports of gsap/framer-motion effects), slick.js,
 │   │          quiz.js, forms.js, gallery.js, filters.js, admin-app.js
@@ -72,7 +72,7 @@ public_html/
 │   └── raw/... (pages, listings, projects, properties, developers.json)
 ├── uploads/                     # admin media uploads (replaces @vercel/blob)
 │   ├── images/…
-├── .env                        # PROVIDENT_DATABASE_URL (mysql://), ADMIN_EMAIL/PASSWORD
+├── .env                        # ZOYA_DATABASE_URL (mysql://), ZOYA_ADMIN_EMAIL/PASSWORD
 └── schema.sql                  # full MySQL schema + seed
 ```
 
@@ -110,7 +110,7 @@ public_html/
 | `projects.tsx` | `pages/projects.php` |
 | `search-hero.tsx` | `includes/render/search-hero.php` + search.js |
 | `dream-home-quiz.tsx` | `assets/js/quiz.js` + section in content pages |
-| `slick.tsx` | slick.js (CDN/vanilla) + slick.css already in provident.css |
+| `slick.tsx` | slick.js (CDN/vanilla) + slick.css already in zoya.css |
 | `newsletter.tsx` | footer.php form + api/inquiries.php |
 | `save-button.tsx` | `assets/js/save-button.js` + api/user/saved.php |
 | Forms (list-property, contact, property-enquiry, book-viewing) | `assets/js/forms.js` + `api/inquiries.php` |
@@ -123,7 +123,7 @@ public_html/
 
 | Node endpoint | PHP endpoint | Notes |
 |---|---|---|
-| `/api/auth/login` | `api/auth/login.php` | session cookie `provident_session`; password_verify |
+| `/api/auth/login` | `api/auth/login.php` | session cookie `zoya_session`; password_verify |
 | `/api/auth/register` | `api/auth/register.php` | validate email, role=user |
 | `/api/auth/logout` | `api/auth/logout.php` | destroy session |
 | `/api/auth/me` | `api/auth/me.php` | GET current user |
@@ -170,7 +170,7 @@ public_html/
 |---|---|
 | `public/media/hero.mp4` | `media/hero.mp4` |
 | `public/images/*`, `public/icons/*`, `public/login/*` | `assets/images/*`, `assets/icons/*`, `assets/login/*` (or `assets/images/login/login-bg.jpg`) |
-| `public/static/*` (hashed) | `static/*` — **keep exact filenames** (referenced by provident.css @font-face and JS) |
+| `public/static/*` (hashed) | `static/*` — **keep exact filenames** (referenced by zoya.css @font-face and JS) |
 | `src/data/home.json`, `data/raw/**` | `data/` (fallback; optionally seeded into DB) |
 | `src/app/*.css` ×6 | `assets/css/` verbatim |
 | Google Fonts (if any in layout) | keep Google Fonts link or local woff2 (local preferred for performance) |
@@ -212,7 +212,7 @@ public_html/
 15. **Phase 18 – Security**: PDO prepared statements, CSRF tokens on forms, session hardening, file upload validation, .htaccess protections (no listing, no .env access).
 16. **Phase 19 – Hosting**: upload to WPArena public_html, configure .env, test with real domain.
 17. **Phase 20 – Testing**: checklist per page/form/API (inventory §2–§6).
-18. **Phase 21 – Final QA**: compare vs provident.ae and detail.html/list.html snapshots; final report.
+18. **Phase 21 – Final QA**: compare vs zoyaventures.com and detail.html/list.html snapshots; final report.
 
 ## 9. Risks & Decisions to Confirm
 - **Data source**: use `data/raw` JSON fallback as primary content source (fastest, zero-risk fidelity), DB for dynamic data (users, inquiries, saved, admin CRUD). Confirm with client.

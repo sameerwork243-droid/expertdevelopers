@@ -1,4 +1,4 @@
-﻿import { Slick } from "./slick";
+import { Slick } from "./slick";
 import { PropertyCard, MoreBox } from "./property-card";
 import { Rich, ctaHref, stripHtml } from "./rich";
 import { FaqList } from "./faq";
@@ -359,7 +359,7 @@ export function TileBlock({ m }: { m: any }) {
 function AwardBadge() {
   return (
     <>
-      <a href="/blog/provident-estate-great-place-to-work-certification/" aria-label="Great Place to Work certification">
+      <a href="/blog/great-place-to-work-certification/" aria-label="Great Place to Work certification">
         <svg xmlns="http://www.w3.org/2000/svg" width="77" height="131" viewBox="0 0 77 131" fill="none">
           <path d="M0 0V110.311L38.4164 131L76.8328 110.311V0H0Z" fill="#002171"></path>
           <path d="M72.4851 117.064H71.7341V118.707H71.0474V117.064H70.3031V116.402H72.4861V117.064H72.4851ZM75.5354 118.707H74.8487V117.757L74.3291 118.682H74.0208L73.5012 117.757V118.707H72.8145V116.402H73.3985L74.1754 117.795L74.9524 116.402H75.5363V118.707H75.5354Z" fill="#002171"></path>
@@ -842,7 +842,7 @@ function FormModule({ m }: { m: any }) {
                 <p className="cta-label">WhatsApp</p>
                 <a
                   className="cta-value"
-                  href="https://wa.provident.ae/inquire?phone=971568308221&text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.&utm_source=Browser%20Direct&gclid=%22%22&event_type=Whatsapp%20Click&utm_platform=%22%22"
+                  href="https://wa.me/971568308221?text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent."
                   target="_blank"
                   rel="noreferrer"
                 >

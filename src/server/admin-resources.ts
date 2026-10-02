@@ -4,7 +4,7 @@ export const SERVICES: CrudConfig = {
   table: "services",
   fields: [
     { name: "title", required: true },
-    { name: "slug", required: true },
+    { name: "slug" },
     { name: "icon" },
     { name: "banner_image" },
     { name: "description", type: "text" },
@@ -22,7 +22,7 @@ export const AGENTS: CrudConfig = {
   table: "agents",
   fields: [
     { name: "name", required: true },
-    { name: "slug", required: true },
+    { name: "slug" },
     { name: "role" },
     { name: "phone" },
     { name: "email" },
@@ -41,7 +41,7 @@ export const DEVELOPERS: CrudConfig = {
   table: "developers",
   fields: [
     { name: "name", required: true },
-    { name: "slug", required: true },
+    { name: "slug" },
     { name: "region" },
     { name: "founded", type: "int" },
     { name: "deliveries", type: "int" },
@@ -57,7 +57,7 @@ export const COMMUNITIES: CrudConfig = {
   table: "communities",
   fields: [
     { name: "name", required: true },
-    { name: "slug", required: true },
+    { name: "slug" },
     { name: "region" },
     { name: "published", type: "int" },
   ],
@@ -107,7 +107,7 @@ export const JOBS: CrudConfig = {
   table: "jobs",
   fields: [
     { name: "title", required: true },
-    { name: "slug", required: true },
+    { name: "slug" },
     { name: "location" },
     { name: "summary", type: "text" },
     { name: "job_details", type: "text" },
@@ -121,7 +121,7 @@ export const PROJECTS: CrudConfig = {
   table: "projects",
   fields: [
     { name: "title", required: true },
-    { name: "slug", required: true },
+    { name: "slug" },
     { name: "status" },
     { name: "price", type: "int" },
     { name: "currency" },

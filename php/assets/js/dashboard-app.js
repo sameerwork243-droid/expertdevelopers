@@ -2,6 +2,7 @@
 
 (function () {
   "use strict";
+  var APP_BASE = (window.EXPERT_BASE || "");
 
   const $ = (sel, root) => (root || document).querySelector(sel);
   const $$ = (sel, root) => Array.prototype.slice.call((root || document).querySelectorAll(sel));
@@ -23,9 +24,9 @@
   }
 
   function postLogout() {
-    fetch("/api/auth/logout", { method: "POST", credentials: "same-origin" })
+    fetch(APP_BASE + "/api/auth/logout", { method: "POST", credentials: "same-origin" })
       .catch(function () {})
-      .finally(function () { window.location.href = "/"; });
+      .finally(function () { window.location.href = APP_BASE + "/"; });
   }
 
   function setPanel(key) {
@@ -100,7 +101,7 @@
         '<div class="myprop-card-body">' +
         "<h3>You do not have any saved properties yet</h3>" +
         "<p>Tap the heart icon on any property to save it here, so you can compare options and shortlist your favourites.</p>" +
-        '</div><a class="myprop-cta" href="/">Search &amp; Save</a></div>';
+        '</div><a class="myprop-cta" href="' + APP_BASE + '/">Search &amp; Save</a></div>';
       return;
     }
     let html =
@@ -110,7 +111,7 @@
       const title = it.title || it.property_slug || it.property_ref || "";
       const price = fmtPrice(it.price);
       const date = fmtDate(it.created_at);
-      const href = it.property_ref || "/";
+      const href = it.property_ref || APP_BASE + "/";
       html +=
         '<div class="myprop-item" data-ref="' + escHtml(it.property_ref) + '">' +
         '<div class="myprop-item-main">' +
@@ -128,7 +129,7 @@
       '<div class="myprop-card-body">' +
       "<h3>Looking for something new?</h3>" +
       "<p>Head back to the property search to shortlist more homes.</p>" +
-      '</div><a class="myprop-cta" href="/">Search &amp; Save</a></div>';
+      '</div><a class="myprop-cta" href="' + APP_BASE + '/">Search &amp; Save</a></div>';
     savedRender.innerHTML = html;
     $$("[data-remove-ref]", savedRender).forEach(function (b) {
       b.addEventListener("click", function () { removeSaved(b.getAttribute("data-remove-ref")); });
@@ -136,14 +137,14 @@
   }
 
   function loadSaved() {
-    fetch("/api/user/saved", { credentials: "same-origin" })
+    fetch(APP_BASE + "/api/user/saved", { credentials: "same-origin" })
       .then(function (r) { return r.json(); })
       .then(function (d) { renderSaved(d.items || []); })
       .catch(function () { renderSaved([]); });
   }
 
   function removeSaved(ref) {
-    fetch("/api/user/saved", {
+    fetch(APP_BASE + "/api/user/saved", {
       method: "DELETE",
       credentials: "same-origin",
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
@@ -180,7 +181,7 @@
   const deleteForm = $("[data-delete-form]");
   const countrySelect = $("[data-country-select]");
   const phoneInput = profileForm ? $('input[name="phone"]', profileForm) : null;
-  let selectedDial = "+971";
+  let selectedDial = "+92";
   let prefs = { subscribe_news: true, email_notifications: true, property_alerts: true };
 
   function showProfileToast(ok, text) {
@@ -193,7 +194,7 @@
   }
 
   function loadProfile() {
-    fetch("/api/user/profile", { credentials: "same-origin" })
+    fetch(APP_BASE + "/api/user/profile", { credentials: "same-origin" })
       .then(function (r) { return r.json(); })
       .then(function (d) {
         const u = d.user || {};
@@ -260,7 +261,7 @@
       };
       const btn = $('button[type="submit"]', profileForm);
       btn.disabled = true;
-      fetch("/api/user/profile", {
+      fetch(APP_BASE + "/api/user/profile", {
         method: "PUT",
         credentials: "same-origin",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
@@ -293,7 +294,7 @@
       e.preventDefault();
       const btn = $('button[type="submit"]', prefsForm);
       btn.disabled = true;
-      fetch("/api/user/notifications", {
+      fetch(APP_BASE + "/api/user/notifications", {
         method: "PUT",
         credentials: "same-origin",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
@@ -364,7 +365,7 @@
       }
       const btn = $('button[type="submit"]', passwordForm);
       btn.disabled = true;
-      fetch("/api/user/password", {
+      fetch(APP_BASE + "/api/user/password", {
         method: "POST",
         credentials: "same-origin",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
@@ -394,14 +395,14 @@
       e.preventDefault();
       if (!window.confirm("Are you sure you want to delete your account? This cannot be undone.")) return;
       const reason = $('textarea[name="reason"]', deleteForm).value;
-      fetch("/api/user/account", {
+      fetch(APP_BASE + "/api/user/account", {
         method: "DELETE",
         credentials: "same-origin",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
         body: "json=" + encodeURIComponent(JSON.stringify({ reason: reason })),
       })
         .then(function (r) {
-          if (r.ok) { window.location.href = "/"; }
+          if (r.ok) { window.location.href = APP_BASE + "/"; }
           else {
             return r.json().catch(function () { return {}; }).then(function (d) {
               showProfileToast(false, d.error || "Deletion failed");

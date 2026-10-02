@@ -7,7 +7,7 @@ require_once __DIR__ . '/../functions.php';
 function property_enquiry_form(string $propertyRef, string $propertySlug, string $route): string
 {
     $countries = [
-        ['code' => 'AE', 'dial' => '+971'], ['code' => 'GB', 'dial' => '+44'], ['code' => 'US', 'dial' => '+1'],
+        ['code' => 'PK', 'dial' => '+92'], ['code' => 'GB', 'dial' => '+44'], ['code' => 'US', 'dial' => '+1'],
         ['code' => 'IN', 'dial' => '+91'], ['code' => 'PK', 'dial' => '+92'], ['code' => 'SA', 'dial' => '+966'],
         ['code' => 'EG', 'dial' => '+20'], ['code' => 'PH', 'dial' => '+63'], ['code' => 'BD', 'dial' => '+880'],
         ['code' => 'LK', 'dial' => '+94'], ['code' => 'JO', 'dial' => '+962'], ['code' => 'LB', 'dial' => '+961'],
@@ -20,7 +20,7 @@ function property_enquiry_form(string $propertyRef, string $propertySlug, string
 
     $opts = '';
     foreach ($countries as $c) {
-        $sel = $c['dial'] === '+971' ? ' selected' : '';
+        $sel = $c['dial'] === '+92' ? ' selected' : '';
         $opts .= '<option value="' . esc($c['dial']) . '"' . $sel . '>' . $flags[$c['code']] . ' ' . esc($c['dial']) . '</option>';
     }
 

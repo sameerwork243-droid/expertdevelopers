@@ -189,6 +189,18 @@ function developer_listing_html(array $devs): string
 }
 
 /** BlogListing port (static initial state: no query, All Categories, page 1). */
+function blog_page_numbers(int $page, int $total): array
+{
+    if ($total <= 8) return range(1, $total);
+    if ($page <= 6) return [1, 2, 3, 4, 5, 6, '…', $total];
+    if ($page >= $total - 4) {
+        $out = [1, '…'];
+        for ($i = $total - 4; $i <= $total; $i++) $out[] = $i;
+        return $out;
+    }
+    return [1, '…', $page - 2, $page - 1, $page, $page + 1, $page + 2, '…', $total];
+}
+
 function blog_listing_html(array $posts): string
 {
     $perPage = 12;
@@ -245,29 +257,21 @@ function blog_listing_html(array $posts): string
     }
     $out .= '</div>';
     if ($totalPages > 1) {
-        $out .= '<nav class="pagination-wrapper"><div><div class="pagination-container">'
-            . '<button class="button button-white pagination-button button-back button-disabled" data-blog-back disabled type="button">'
-            . '<svg class="arrow-left-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.75 19.5L8.25 12L15.75 4.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>'
-            . '<span>Back</span></button>'
-            . '<div class="pagination-select-wrap"><span class="page-text">Page:</span>'
-            . '<div class="pagination-select"><div class="react-select css-b62m3t-container">'
-            . '<div class="pagination-select__control css-13cymwt-control" data-blog-page-toggle>'
-            . '<div class="pagination-select__value-container pagination-select__value-container--has-value css-hlgwow">'
-            . '<div class="pagination-select__single-value css-1dimb5e-singleValue" data-blog-page-value>1</div></div>'
-            . '<div class="pagination-select__indicators css-1wy0on6"><span class="pagination-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>'
-            . '<div class="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">'
-            . '<svg class="arrow-down-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 5.5L8 10.5L3 5.5" stroke="#9399A4" stroke-linecap="round" stroke-linejoin="round" /></svg>'
-            . '</div></div></div>'
-            . '<div class="pagination-select__menu" style="display:none"><div class="pagination-select__menu-list">';
-        for ($n = 1; $n <= $totalPages; $n++) {
-            $out .= '<div class="pagination-select__option' . ($n === 1 ? ' pagination-select__option--is-selected' : '') . '" data-blog-page="' . $n . '">' . $n . '</div>';
+        $left = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.75 19.5L8.25 12L15.75 4.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+        $right = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+        $out .= '<nav class="pagination-wrapper search-pagination-wrapper"><div><div class="pagination-container">'
+            . '<button class="button button-white pagination-button button-back button-disabled" data-blog-back disabled type="button" aria-label="Previous page">' . $left . '</button>'
+            . '<div class="pagination-numbers">';
+        foreach (blog_page_numbers(1, $totalPages) as $n) {
+            if ($n === '…') {
+                $out .= '<span class="pagination-dots">...</span>';
+            } else {
+                $out .= '<button type="button" class="pagination-number' . ($n === 1 ? ' active' : '') . '" data-blog-page="' . $n . '"' . ($n === 1 ? ' aria-current="page"' : '') . '>' . $n . '</button>';
+            }
         }
-        $out .= '</div></div></div></div>'
-            . '<span class="page-text">of ' . $totalPages . '</span></div>'
-            . '<button class="button button-white pagination-button button-next' . ($totalPages <= 1 ? ' button-disabled' : '') . '" data-blog-next type="button">'
-            . '<span>Next</span>'
-            . '<svg class="arrow-right-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>'
-            . '</button></div></div></nav>';
+        $out .= '</div>'
+            . '<button class="button button-white pagination-button button-next' . ($totalPages <= 1 ? ' button-disabled' : '') . '" data-blog-next type="button" aria-label="Next page">' . $right . '</button>'
+            . '</div></div></nav>';
     }
     $out .= '</div></div>';
     return $out;
@@ -332,7 +336,7 @@ function content_strapi_page(array $page, string $route): string
                 . '<img loading="lazy" draggable="false" src="' . esc(cfw((string) $videoThumb, 1968)) . '" '
                 . 'srcSet="' . esc(cfw((string) $videoThumb, 336)) . ' 336w, ' . esc(cfw((string) $videoThumb, 696)) . ' 696w, ' . esc(cfw((string) $videoThumb, 1968)) . ' 1968w" '
                 . 'sizes="(max-width: 480px) 336px, (max-width: 1100px) 696px, (min-width: 1100px) 1968px" '
-                . 'alt="banner-video - Zoya Ventures Real Estate" class="video-thumbnail" />'
+                . 'alt="banner-video - Expert Marketing & Developers" class="video-thumbnail" />'
                 . '<button class="play-button" aria-label="play button"></button></div>';
         }
         $out .= '</div></div></div>';
@@ -362,7 +366,7 @@ function content_strapi_page(array $page, string $route): string
         $out .= '<img loading="eager" draggable="false" src="' . esc(cfw((string) $bg, 1773)) . '" '
             . 'srcSet="' . esc(cfw((string) $bg, 376)) . ' 376w, ' . esc(cfw((string) $bg, 744)) . ' 744w, ' . esc(cfw((string) $bg, 1773)) . ' 1773w" '
             . 'sizes="(max-width: 480px) 376px, (max-width: 1100px) 744px, (min-width: 1100px) 1773px" '
-            . 'alt="banner-bg - Zoya Ventures Real Estate" />';
+            . 'alt="banner-bg - Expert Marketing & Developers" />';
     }
     $out .= '<div class="overlay"></div></div>';
     $out .= '<div class="breadcrumbs-wrap white-color">' . $crumbNav . '</div>';
@@ -376,10 +380,6 @@ function content_strapi_page(array $page, string $route): string
             . '</div>';
     }
     $out .= '</div></div></div>';
-    if (str_ends_with('/' . trim((string) $route, '/'), '/mortgages')) {
-        require_once __DIR__ . '/listing-ui.php';
-        $out .= mortgage_calculator('3,000,000', 'AED', 'Mortgage Calculator');
-    }
     $out .= content_modules_loop($mods);
     $out .= '</div>';
     return $out;
@@ -478,7 +478,7 @@ function content_news_listing_page(array $page, string $route): string
     $banner = is_array($page['banner'] ?? null) ? $page['banner'] : [];
     $title = $banner['title'] ?? $page['page_name'] ?? 'News, Media Gallery & Insights';
     $descHtml = $banner['description']['data']['description'] ?? null;
-    $out = '<div class="listing-page-wrap"><div class="listing-page-top"><div class="bg-section-gradient"></div>';
+    $out = '<div class="listing-page-wrap news_landing_page"><div class="listing-page-top"><div class="bg-section-gradient"></div>';
     $out .= mobile_banner_menu(true, '/blog/');
     $out .= breadcrumbs_html(route_crumbs($route, 'News & Insight'));
     $out .= '<div class="banner-listing-wrap"><div class="banner-listing-container container">'
@@ -590,7 +590,7 @@ function content_team_detail(array $t, string $route): string
         $out .= '<a class="property-cta" href="tel:' . esc($phone) . '">' . country_flag('AE') . '<span>Call</span></a>';
     }
     if ($waPhone) {
-        $out .= '<a class="property-cta whats" target="_blank" rel="noreferrer" href="https://wa.provident.ae/inquire?phone=' . rawurlencode($waPhone) . '&text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.">'
+        $out .= '<a class="property-cta whats" target="_blank" rel="noreferrer" href="https://wa.me/' . rawurlencode($waPhone) . '?text=Hello%20Expert%20Marketing%20%26%20Developers%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.">'
             . '<span>WhatsApp</span></a>';
     }
     if (!empty($t['email'])) {
@@ -639,7 +639,7 @@ function content_area_guide_detail(array $a, string $route): string
         $out .= '<img loading="eager" src="' . esc(cfw((string) $bg, 1773)) . '" '
             . 'srcSet="' . esc(cfw((string) $bg, 376)) . ' 376w, ' . esc(cfw((string) $bg, 744)) . ' 744w, ' . esc(cfw((string) $bg, 1773)) . ' 1773w" '
             . 'sizes="(max-width: 480px) 376px, (max-width: 1100px) 744px, (min-width: 1100px) 1773px" '
-            . 'alt="banner-bg - Zoya Ventures Real Estate" />';
+            . 'alt="banner-bg - Expert Marketing & Developers" />';
     }
     $out .= '<div class="overlay"></div></div>';
     $out .= '<div class="breadcrumbs-wrap white-color">' . breadcrumbs_html($crumbs) . '</div>';
@@ -686,7 +686,7 @@ function content_area_guide_detail(array $a, string $route): string
             if ($img) $out .= '<img loading="lazy" src="' . esc($img) . '" alt="' . esc((string) ($p['title'] ?? '')) . '" />';
             $out .= '</a></div><div class="content-section">'
                 . '<a class="title" href="' . esc($link) . '">' . esc((string) ($p['title'] ?? '')) . '</a>'
-                . '<div class="price"><span>Starting Price </span>' . (!empty($p['display_price']) ? 'AED ' . esc($p['display_price']) : '') . '</div>';
+                . project_price_markup($p);
             if (!empty($p['display_address'])) $out .= '<p class="location">' . esc($p['display_address']) . '</p>';
             $out .= '</div></div>';
         }
@@ -712,7 +712,7 @@ function content_area_guide_detail(array $a, string $route): string
             if (!empty($p['developer'])) {
                 $card .= '<a class="developer" href="/new-projects/developed-by-' . rawurlencode((string) $p['developer']) . '/">by <span>' . esc($p['developer']) . '</span></a>';
             }
-            $card .= '<div class="price"><span>Starting Price </span>' . (!empty($p['display_price']) ? 'AED ' . esc($p['display_price']) : '') . '</div>'
+            $card .= project_price_markup($p)
                 . '<div class="more-info">';
             if (!empty($p['display_address'])) $card .= '<p class="location">' . esc($p['display_address']) . '</p>';
             $card .= '</div></div></div>';

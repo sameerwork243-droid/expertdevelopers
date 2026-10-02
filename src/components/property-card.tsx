@@ -14,6 +14,9 @@ export function PropertyCard({ hit, list = false, signature = false }: { hit: an
   const desc = longDesc(hit);
   const neg = Array.isArray(hit.crm_negotiator_id) ? hit.crm_negotiator_id[0] || {} : hit.crm_negotiator_id || {};
   const cardPhone = neg.phone || "+971 50 440 2783";
+  const cardQualifier = Array.isArray(hit.price_qualifier) ? hit.price_qualifier[0] : hit.price_qualifier;
+  const cardYearly = typeof cardQualifier === "string" && cardQualifier.toLowerCase().includes("yearly");
+  const areaVal = hit.floorarea_min ?? hit.floorarea_max ?? undefined;
   return (
     <div className="property-card-wrapper">
       <div
@@ -28,7 +31,7 @@ export function PropertyCard({ hit, list = false, signature = false }: { hit: an
         </div>
         <div className="content-section">
             <div className="pr-bk">
-              <a className="price" href={link}>
+              <a className="price" href={link} data-aed={hit.price || undefined} data-qual={cardYearly ? "yearly" : undefined}>
                 <PriceFmt value={hit.price} qualifier={hit.price_qualifier} />
               </a>
               <SaveButton
@@ -74,7 +77,7 @@ export function PropertyCard({ hit, list = false, signature = false }: { hit: an
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-4-icon">
                   <path d="M2.5 2.5V5.5M2.5 2.5H5.5M2.5 2.5L6 6M2.5 13.5V10.5M2.5 13.5H5.5M2.5 13.5L6 10M13.5 2.5L10.5 2.5M13.5 2.5V5.5M13.5 2.5L10 6M13.5 13.5H10.5M13.5 13.5V10.5M13.5 13.5L10 10" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round"></path>
                 </svg>
-                <span>
+                <span data-sqft={areaVal}>
                   {hit.floorarea_min != null && hit.floorarea_min !== hit.floorarea_max
                     ? hit.floorarea_min.toLocaleString("en-US")
                     : hit.floorarea_min ?? hit.floorarea_max != null

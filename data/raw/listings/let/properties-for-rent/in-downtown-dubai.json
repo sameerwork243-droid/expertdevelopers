@@ -38,16 +38,16 @@
               "id": "11267",
               "url": "https://storage.googleapis.com/prov-email-signatures/Preslava-Petrova-PFB.png",
               "name": "Preslava Petrova",
-              "email": "preslava@providentestate.com",
+              "email": "preslava@zoyaventures.com",
               "phone": "+971 50 334 7093",
               "brn_number": "81852"
             },
             "crm_negotiator_id": [
               {
                 "id": "11267",
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/property/PR-15072616/crm_negotiator_id/prov-email-signatures/Preslava-Petrova-PFB.png",
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/property/PR-15072616/crm_negotiator_id/prov-email-signatures/Preslava-Petrova-PFB.png",
                 "name": "Preslava Petrova",
-                "email": "preslava@providentestate.com",
+                "email": "preslava@zoyaventures.com",
                 "phone": "+971 50 334 7093",
                 "srcUrl": "https://storage.googleapis.com/prov-email-signatures/Preslava-Petrova-PFB.png",
                 "brn_number": "81852",
@@ -130,29 +130,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/vela_1_ca25b9aaf5.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/vela_1_ca25b9aaf5.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/vela_2_65f1cfcbb5.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/vela_2_65f1cfcbb5.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/vela_3_b0eafcf9c2.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/vela_3_b0eafcf9c2.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/vela_4_e27f8e97cb.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/vela_4_e27f8e97cb.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/vela_5_676c0109b2.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/vela_5_676c0109b2.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/vela_6_0b166279bd.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/vela_6_0b166279bd.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/vela_by_omniyat_796c36d16e.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/vela_by_omniyat_796c36d16e.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/banner_9a754b94b4.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/banner_9a754b94b4.jpg"
             },
             "ggfx_results": [
               {
@@ -160,35 +160,35 @@
                 "src_cftle": "i/vela_by_omniyat_796c36d16e.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/260x200/vela_by_omniyat_796c36d16e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/260x200/vela_by_omniyat_796c36d16e.webp",
                     "format": "webp",
                     "transform": "260x200",
                     "created_at": "2024-06-03 05:28:57.828",
                     "updated_at": "2025-02-05 06:48:24.164"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_by_omniyat_796c36d16e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_by_omniyat_796c36d16e.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-02-05 06:48:24.164",
                     "updated_at": "2025-02-05 06:48:24.164"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_by_omniyat_796c36d16e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_by_omniyat_796c36d16e.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-09-20 13:48:22.575",
                     "updated_at": "2025-02-05 06:48:24.164"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_by_omniyat_796c36d16e.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_by_omniyat_796c36d16e.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2025-02-05 06:48:24.164",
                     "updated_at": "2025-02-05 06:48:24.164"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/260x200/vela_by_omniyat_796c36d16e.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/260x200/vela_by_omniyat_796c36d16e.jpg",
                     "format": "jpg",
                     "transform": "260x200",
                     "created_at": "2025-02-05 06:48:24.164",
@@ -206,84 +206,84 @@
                 "src_cftle": "i/banner_9a754b94b4.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-06-19 21:05:15.921",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-06-20 13:37:16.896",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-06-21 11:31:46.569",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "1300x",
                     "created_at": "2025-04-09 19:45:59.009",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-04-09 19:45:59.009",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-04-09 19:45:59.009",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-04-09 19:45:59.009",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-04-09 19:45:59.009",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-04-09 19:45:59.009",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/banner_9a754b94b4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/banner_9a754b94b4.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-05-29 14:05:00.700",
                     "updated_at": "2025-05-29 14:05:00.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/banner_9a754b94b4.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/banner_9a754b94b4.jpg",
                     "format": "jpg",
                     "transform": "1300x500",
                     "created_at": "2026-02-07 20:14:42.369",
                     "updated_at": "2026-02-07 20:14:42.369"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/banner_9a754b94b4.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/banner_9a754b94b4.jpg",
                     "format": "jpg",
                     "transform": "600x",
                     "created_at": "2026-02-08 08:18:28.752",
@@ -301,33 +301,33 @@
                 "src_cftle": "i/vela_1_ca25b9aaf5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/vela_1_ca25b9aaf5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/vela_1_ca25b9aaf5.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-19 21:05:16.055",
                     "updated_at": "2024-06-19 21:05:16.055"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/vela_1_ca25b9aaf5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/vela_1_ca25b9aaf5.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-19 21:05:20.523",
                     "updated_at": "2024-06-19 21:05:20.523"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_1_ca25b9aaf5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_1_ca25b9aaf5.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_1_ca25b9aaf5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_1_ca25b9aaf5.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-09-20 13:48:22.801",
                     "updated_at": "2024-09-20 13:48:22.801"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_1_ca25b9aaf5.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_1_ca25b9aaf5.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   }
@@ -343,31 +343,31 @@
                 "src_cftle": "i/vela_2_65f1cfcbb5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/vela_2_65f1cfcbb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/vela_2_65f1cfcbb5.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-19 21:05:16.326",
                     "updated_at": "2024-06-19 21:05:16.326"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/vela_2_65f1cfcbb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/vela_2_65f1cfcbb5.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-19 21:05:20.713",
                     "updated_at": "2024-06-19 21:05:20.713"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_2_65f1cfcbb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_2_65f1cfcbb5.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_2_65f1cfcbb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_2_65f1cfcbb5.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_2_65f1cfcbb5.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_2_65f1cfcbb5.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -383,26 +383,26 @@
                 "src_cftle": "i/vela_3_b0eafcf9c2.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/vela_3_b0eafcf9c2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/vela_3_b0eafcf9c2.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-19 21:05:16.701",
                     "updated_at": "2024-06-19 21:05:16.701"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/vela_3_b0eafcf9c2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/vela_3_b0eafcf9c2.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-19 21:05:21.919",
                     "updated_at": "2024-06-19 21:05:21.919"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_3_b0eafcf9c2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_3_b0eafcf9c2.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_3_b0eafcf9c2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_3_b0eafcf9c2.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -418,26 +418,26 @@
                 "src_cftle": "i/vela_4_e27f8e97cb.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/vela_4_e27f8e97cb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/vela_4_e27f8e97cb.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-19 21:05:18.324",
                     "updated_at": "2024-06-19 21:05:18.324"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/vela_4_e27f8e97cb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/vela_4_e27f8e97cb.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-19 21:05:22.152",
                     "updated_at": "2024-06-19 21:05:22.152"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_4_e27f8e97cb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_4_e27f8e97cb.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_4_e27f8e97cb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_4_e27f8e97cb.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -453,26 +453,26 @@
                 "src_cftle": "i/vela_5_676c0109b2.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/vela_5_676c0109b2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/vela_5_676c0109b2.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-19 21:05:18.342",
                     "updated_at": "2024-06-19 21:05:18.342"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/vela_5_676c0109b2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/vela_5_676c0109b2.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-19 21:05:22.380",
                     "updated_at": "2024-06-19 21:05:22.380"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_5_676c0109b2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_5_676c0109b2.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_5_676c0109b2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_5_676c0109b2.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -488,26 +488,26 @@
                 "src_cftle": "i/vela_6_0b166279bd.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/vela_6_0b166279bd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/vela_6_0b166279bd.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-19 21:05:19.062",
                     "updated_at": "2024-06-19 21:05:19.062"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/vela_6_0b166279bd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/vela_6_0b166279bd.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-19 21:05:22.421",
                     "updated_at": "2024-06-19 21:05:22.421"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/vela_6_0b166279bd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/vela_6_0b166279bd.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/vela_6_0b166279bd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/vela_6_0b166279bd.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -523,14 +523,14 @@
                 "src_cftle": "i/vela_7_0d1ebdd050.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/vela_7_0d1ebdd050.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/vela_7_0d1ebdd050.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-11 20:34:51.710",
                     "updated_at": "2024-07-11 20:34:51.710"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/vela_7_0d1ebdd050.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/vela_7_0d1ebdd050.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-20 13:37:16.918",
@@ -548,14 +548,14 @@
                 "src_cftle": "i/map_ab2b83026f.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/map_ab2b83026f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/map_ab2b83026f.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-15 22:04:56.436",
                     "updated_at": "2024-07-15 22:04:56.436"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/map_ab2b83026f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/map_ab2b83026f.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-20 13:37:17.077",
@@ -573,14 +573,14 @@
                 "src_cftle": "i/A4_Brochure_Cover_Mockup_2_a5d073611c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/A4_Brochure_Cover_Mockup_2_a5d073611c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/A4_Brochure_Cover_Mockup_2_a5d073611c.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-11 20:34:51.973",
                     "updated_at": "2024-07-11 20:34:51.973"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/A4_Brochure_Cover_Mockup_2_a5d073611c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/A4_Brochure_Cover_Mockup_2_a5d073611c.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-20 13:37:17.388",
@@ -598,14 +598,14 @@
                 "src_cftle": "i/off-plan/null/images/i/vela_3_b0eafcf9c2.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/vela_3_b0eafcf9c2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/vela_3_b0eafcf9c2.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:34.980",
                     "updated_at": "2024-07-23 07:41:34.980"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/vela_3_b0eafcf9c2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/vela_3_b0eafcf9c2.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:34.980",
@@ -623,14 +623,14 @@
                 "src_cftle": "i/off-plan/null/images/i/vela_2_65f1cfcbb5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/vela_2_65f1cfcbb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/vela_2_65f1cfcbb5.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:34.980",
                     "updated_at": "2024-07-23 07:41:34.980"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/vela_2_65f1cfcbb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/vela_2_65f1cfcbb5.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:34.980",
@@ -648,14 +648,14 @@
                 "src_cftle": "i/off-plan/null/images/i/vela_by_omniyat_796c36d16e.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/vela_by_omniyat_796c36d16e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/vela_by_omniyat_796c36d16e.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:05:34.369",
                     "updated_at": "2024-10-11 07:05:34.369"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/vela_by_omniyat_796c36d16e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/vela_by_omniyat_796c36d16e.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:05:34.369",
@@ -673,13 +673,13 @@
                 "src_cftle": "i/off-plan/null/images/i/vela_5_676c0109b2.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/vela_5_676c0109b2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/vela_5_676c0109b2.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/vela_5_676c0109b2.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/vela_5_676c0109b2.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -696,13 +696,13 @@
                 "src_cftle": "i/off-plan/null/images/i/vela_6_0b166279bd.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/vela_6_0b166279bd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/vela_6_0b166279bd.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/vela_6_0b166279bd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/vela_6_0b166279bd.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -719,13 +719,13 @@
                 "src_cftle": "i/off-plan/null/images/i/vela_4_e27f8e97cb.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/vela_4_e27f8e97cb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/vela_4_e27f8e97cb.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/vela_4_e27f8e97cb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/vela_4_e27f8e97cb.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -742,13 +742,13 @@
                 "src_cftle": "i/off-plan/null/images/i/vela_1_ca25b9aaf5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/vela_1_ca25b9aaf5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/vela_1_ca25b9aaf5.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/vela_1_ca25b9aaf5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/vela_1_ca25b9aaf5.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -858,29 +858,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residences_9_77d2bebc03.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residences_9_77d2bebc03.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residences_3_07232ff198.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residences_3_07232ff198.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residences_4_71bf967cb5.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residences_4_71bf967cb5.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residences_6_904ee75f67.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residences_6_904ee75f67.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residences_5_d66464dd79.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residences_5_d66464dd79.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residences_8_4be4bdcc30.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residences_8_4be4bdcc30.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residence_feature_41a6c44e69.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residence_feature_41a6c44e69.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/residences_banner_db36150a81.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/residences_banner_db36150a81.jpg"
             },
             "ggfx_results": [
               {
@@ -888,14 +888,14 @@
                 "src_cftle": "i/map_1e1f476562.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/map_1e1f476562.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/map_1e1f476562.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-24 09:09:10.741",
                     "updated_at": "2024-07-24 09:09:10.741"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/map_1e1f476562.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/map_1e1f476562.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-06-19 21:06:44.242",
@@ -913,14 +913,14 @@
                 "src_cftle": "i/brochure_1_9925f733c1.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/brochure_1_9925f733c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/brochure_1_9925f733c1.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-24 09:09:06.619",
                     "updated_at": "2024-07-24 09:09:06.619"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/brochure_1_9925f733c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/brochure_1_9925f733c1.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-18 19:59:09.769",
@@ -938,26 +938,26 @@
                 "src_cftle": "i/residences_5_d66464dd79.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/residences_5_d66464dd79.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/residences_5_d66464dd79.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-18 19:59:11.280",
                     "updated_at": "2024-06-18 19:59:11.280"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/residences_5_d66464dd79.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/residences_5_d66464dd79.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-18 19:59:13.424",
                     "updated_at": "2024-06-18 19:59:13.424"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_5_d66464dd79.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_5_d66464dd79.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_5_d66464dd79.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_5_d66464dd79.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -973,26 +973,26 @@
                 "src_cftle": "i/residences_4_71bf967cb5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/residences_4_71bf967cb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/residences_4_71bf967cb5.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-18 19:59:11.682",
                     "updated_at": "2024-06-18 19:59:11.682"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/residences_4_71bf967cb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/residences_4_71bf967cb5.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-18 19:59:17.993",
                     "updated_at": "2024-06-18 19:59:17.993"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_4_71bf967cb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_4_71bf967cb5.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_4_71bf967cb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_4_71bf967cb5.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -1008,26 +1008,26 @@
                 "src_cftle": "i/residences_6_904ee75f67.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/residences_6_904ee75f67.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/residences_6_904ee75f67.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-18 19:59:12.138",
                     "updated_at": "2024-06-18 19:59:12.138"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/residences_6_904ee75f67.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/residences_6_904ee75f67.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-18 19:59:16.486",
                     "updated_at": "2024-06-18 19:59:16.486"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_6_904ee75f67.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_6_904ee75f67.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_6_904ee75f67.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_6_904ee75f67.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -1043,14 +1043,14 @@
                 "src_cftle": "i/residence_1d6a989fe8.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/residence_1d6a989fe8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/residence_1d6a989fe8.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-24 09:09:11.694",
                     "updated_at": "2024-07-24 09:09:11.694"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/residence_1d6a989fe8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/residence_1d6a989fe8.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-18 19:59:16.967",
@@ -1068,84 +1068,84 @@
                 "src_cftle": "i/residences_banner_db36150a81.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-06-18 19:59:13.865",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-06-18 19:59:14.586",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-06-18 19:59:17.472",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-04-01 17:04:08.930",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "1300x",
                     "created_at": "2025-04-01 17:04:08.930",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-04-01 17:04:08.930",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-04-01 17:04:08.930",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-04-01 17:04:08.930",
                     "updated_at": "2025-04-01 17:04:08.930"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2026-02-02 12:53:10.043",
                     "updated_at": "2026-02-02 12:53:10.043"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/residences_banner_db36150a81.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/residences_banner_db36150a81.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2026-02-02 12:53:27.798",
                     "updated_at": "2026-02-02 12:53:27.798"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_banner_db36150a81.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_banner_db36150a81.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2026-02-07 20:14:42.381",
                     "updated_at": "2026-02-07 20:14:42.381"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_banner_db36150a81.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_banner_db36150a81.jpg",
                     "format": "jpg",
                     "transform": "340x252",
                     "created_at": "2026-02-08 08:18:28.758",
@@ -1163,36 +1163,36 @@
                 "src_cftle": "i/residences_3_07232ff198.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/residences_3_07232ff198.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/residences_3_07232ff198.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-18 19:59:14.123",
                     "updated_at": "2024-06-18 19:59:14.123"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/residences_3_07232ff198.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/residences_3_07232ff198.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-18 19:59:18.510",
                     "updated_at": "2024-06-18 19:59:18.510"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_3_07232ff198.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_3_07232ff198.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_3_07232ff198.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_3_07232ff198.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_3_07232ff198.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_3_07232ff198.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_3_07232ff198.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_3_07232ff198.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   }
@@ -1208,21 +1208,21 @@
                 "src_cftle": "i/video_6310af8204.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/336x/video_6310af8204.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/336x/video_6310af8204.webp",
                     "format": "webp",
                     "transform": "336x",
                     "created_at": "2024-06-18 19:59:15.072",
                     "updated_at": "2024-06-18 19:59:15.072"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1968x/video_6310af8204.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1968x/video_6310af8204.webp",
                     "format": "webp",
                     "transform": "1968x",
                     "created_at": "2024-06-18 19:59:19.037",
                     "updated_at": "2024-06-18 19:59:19.037"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/696x/video_6310af8204.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/696x/video_6310af8204.webp",
                     "format": "webp",
                     "transform": "696x",
                     "created_at": "2024-07-24 09:09:11.214",
@@ -1240,49 +1240,49 @@
                 "src_cftle": "i/residences_9_77d2bebc03.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/residences_9_77d2bebc03.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-18 19:59:15.517",
                     "updated_at": "2025-01-25 11:41:55.394"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/residences_9_77d2bebc03.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-18 19:59:19.570",
                     "updated_at": "2025-01-25 11:41:55.394"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_9_77d2bebc03.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-01-24 14:33:04.044",
                     "updated_at": "2025-01-25 11:41:55.394"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_9_77d2bebc03.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-01-24 14:33:04.044",
                     "updated_at": "2025-01-25 11:41:55.394"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_9_77d2bebc03.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_9_77d2bebc03.jpg",
                     "format": "jpg",
                     "transform": "464x312",
                     "created_at": "2025-01-24 14:33:04.044",
                     "updated_at": "2025-01-25 11:41:55.394"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/residences_9_77d2bebc03.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-01-24 14:33:04.044",
                     "updated_at": "2025-01-25 11:41:55.394"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/residences_9_77d2bebc03.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-01-25 11:41:55.394",
@@ -1300,26 +1300,26 @@
                 "src_cftle": "i/residences_8_4be4bdcc30.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/residences_8_4be4bdcc30.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/residences_8_4be4bdcc30.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-18 19:59:16.015",
                     "updated_at": "2024-06-18 19:59:16.015"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/residences_8_4be4bdcc30.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/residences_8_4be4bdcc30.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-19 21:06:44.093",
                     "updated_at": "2024-06-19 21:06:44.093"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residences_8_4be4bdcc30.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residences_8_4be4bdcc30.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residences_8_4be4bdcc30.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residences_8_4be4bdcc30.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -1335,14 +1335,14 @@
                 "src_cftle": "i/off-plan/null/images/i/residences_4_71bf967cb5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/residences_4_71bf967cb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/residences_4_71bf967cb5.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:42:20.506",
                     "updated_at": "2024-07-23 07:42:20.506"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/residences_4_71bf967cb5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/residences_4_71bf967cb5.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:42:20.506",
@@ -1360,14 +1360,14 @@
                 "src_cftle": "i/off-plan/null/images/i/residences_3_07232ff198.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/residences_3_07232ff198.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/residences_3_07232ff198.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:42:20.506",
                     "updated_at": "2024-07-23 07:42:20.506"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/residences_3_07232ff198.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/residences_3_07232ff198.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:42:20.506",
@@ -1385,14 +1385,14 @@
                 "src_cftle": "i/off-plan/null/images/i/residence_feature_41a6c44e69.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/residence_feature_41a6c44e69.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/residence_feature_41a6c44e69.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:06:18.626",
                     "updated_at": "2024-10-11 07:06:18.626"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/residence_feature_41a6c44e69.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/residence_feature_41a6c44e69.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:06:18.626",
@@ -1410,13 +1410,13 @@
                 "src_cftle": "i/off-plan/null/images/i/residences_8_4be4bdcc30.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/residences_8_4be4bdcc30.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/residences_8_4be4bdcc30.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/residences_8_4be4bdcc30.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/residences_8_4be4bdcc30.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1433,13 +1433,13 @@
                 "src_cftle": "i/off-plan/null/images/i/residences_5_d66464dd79.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/residences_5_d66464dd79.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/residences_5_d66464dd79.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/residences_5_d66464dd79.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/residences_5_d66464dd79.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1456,13 +1456,13 @@
                 "src_cftle": "i/off-plan/null/images/i/residences_6_904ee75f67.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/residences_6_904ee75f67.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/residences_6_904ee75f67.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/residences_6_904ee75f67.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/residences_6_904ee75f67.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1479,13 +1479,13 @@
                 "src_cftle": "i/off-plan/null/images/i/residences_9_77d2bebc03.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/residences_9_77d2bebc03.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/residences_9_77d2bebc03.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/residences_9_77d2bebc03.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1502,27 +1502,27 @@
                 "src_cftle": "i/residence_feature_41a6c44e69.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/residence_feature_41a6c44e69.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/residence_feature_41a6c44e69.webp",
                     "format": "webp",
                     "transform": "1300x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/residence_feature_41a6c44e69.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/residence_feature_41a6c44e69.webp",
                     "format": "webp",
                     "transform": "600x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residence_feature_41a6c44e69.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residence_feature_41a6c44e69.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/residence_feature_41a6c44e69.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/residence_feature_41a6c44e69.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/residence_feature_41a6c44e69.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/residence_feature_41a6c44e69.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -1619,7 +1619,7 @@
             "title": "Looking for Rental Properties in Downtown Dubai?",
             "area": "downtown-dubai",
             "building_type": null,
-            "description": "<p>Downtown Dubai is a perfect neighborhood to call home. Featuring iconic landmarks and world-class amenities, Downtown Dubai is a prime destination for tenants seeking an upscale city life. <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/let/apartment-for-rent/\">Renting an apartment in Downtown Dubai</a> offers an unmatched urban living experience. From the iconic Burj Khalifa to the expansive Dubai Mall, the area boasts numerous attractions within walking distance.</p><p>Moreover, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/downtown-dubai/\">Downtown Dubai</a> offers other residential options, like stylish penthouses and duplex apartments. The area's excellent connectivity and transportation links ensure convenient access to other parts of the city, making it an ideal choice for those seeking both convenience and sophistication. You can also search for available commercial properties in the area, which provide an exceptional working environment with proximity to upscale commercial towers and major road networks. The choices among the commercial properties in Downtown Dubai include stores, offices, and retail outlets.</p>"
+            "description": "<p>Downtown Dubai is a perfect neighborhood to call home. Featuring iconic landmarks and world-class amenities, Downtown Dubai is a prime destination for tenants seeking an upscale city life. <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/let/apartment-for-rent/\">Renting an apartment in Downtown Dubai</a> offers an unmatched urban living experience. From the iconic Burj Khalifa to the expansive Dubai Mall, the area boasts numerous attractions within walking distance.</p><p>Moreover, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/downtown-dubai/\">Downtown Dubai</a> offers other residential options, like stylish penthouses and duplex apartments. The area's excellent connectivity and transportation links ensure convenient access to other parts of the city, making it an ideal choice for those seeking both convenience and sophistication. You can also search for available commercial properties in the area, which provide an exceptional working environment with proximity to upscale commercial towers and major road networks. The choices among the commercial properties in Downtown Dubai include stores, offices, and retail outlets.</p>"
           }
         ]
       },

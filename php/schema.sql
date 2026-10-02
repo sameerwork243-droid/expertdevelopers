@@ -1,5 +1,5 @@
--- schema.sql — MySQL schema for Zoya Ventures (ported verbatim from src/server/db.ts MIGRATIONS + ALTER_MIGRATIONS)
--- Target: MySQL 8.x, utf8mb4_unicode_ci. Run once against the provident DB.
+-- schema.sql — MySQL schema for Expert Marketing & Developers (ported verbatim from src/server/db.ts MIGRATIONS + ALTER_MIGRATIONS)
+-- Target: MySQL 8.x, utf8mb4_unicode_ci. Run once against the expert_marketing_developers DB.
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;

@@ -1,6 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import {
+  DEFAULT_PREFS,
+  FOOTER_UNITS,
+  applyDom,
+  emitPrefs,
+  readPrefs,
+  subscribePrefs,
+  writePrefs,
+  type SitePrefs,
+} from "@/lib/site-prefs";
 
 const COLS: { title: string; links: [string, string][] }[] = [
   {
@@ -8,7 +18,7 @@ const COLS: { title: string; links: [string, string][] }[] = [
     links: [
       ["Properties for Sale", "/buy/properties-for-sale/"],
       ["Guide to Buying", "/property-buying-dubai-guide/"],
-      ["Signature Collection", "https://providentestate.com/#singnature"],
+      ["Signature Collection", "/#singnature"],
       ["Mortgages", "/property-services/mortgages/"],
       ["Property Management", "/property-services/property-management/"],
       ["Legal Services", "/property-services/conveyancing/"],
@@ -76,57 +86,37 @@ const COLS: { title: string; links: [string, string][] }[] = [
 ];
 
 const WA_LINK =
-  "https://wa.provident.ae/inquire?phone=971568308221&text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.&utm_source=Browser%20Direct&gclid=%22%22&event_type=Whatsapp%20Click&utm_platform=%22%22";
-
-const CURRENCIES = [
-  "Pound Sterling - GBP £",
-  "UAE Dirams - AED د.إ",
-  "USD - $",
-  "EUR - €",
-  "SAR - ر.س",
-];
-
-const UNITS = ["SQ M", "SQ FT"];
+  "https://wa.me/971568308221?text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.";
 
 function SettingsSelects() {
-  const [curOpen, setCurOpen] = useState(false);
+  const [prefs, setPrefs] = useState<SitePrefs>(DEFAULT_PREFS);
   const [unitOpen, setUnitOpen] = useState(false);
-  const [cur, setCur] = useState(0);
-  const [unit, setUnit] = useState(0);
+  useEffect(() => {
+    const fromCookie = readPrefs();
+    setPrefs(fromCookie);
+    applyDom();
+    const unsub = subscribePrefs((p) => {
+      setPrefs(p);
+      applyDom();
+    });
+    return unsub;
+  }, []);
+  const pick = (partial: Partial<SitePrefs>) => {
+    const next = { ...prefs, ...partial };
+    writePrefs(next);
+    setPrefs(next);
+    emitPrefs(next);
+    setUnitOpen(false);
+  };
+  const unitLabel = FOOTER_UNITS.find((u) => u.code === prefs.unit)?.label ?? prefs.unit;
   return (
     <div className="footer-cta-section-wrap settings">
       <p className="settings-heading">Settings</p>
       <div className="react-select-wrap filter-select currency-type-select">
         <div className="react-select css-b62m3t-container">
-          <div className="react-select__control css-14qho42-control" onClick={() => setCurOpen(!curOpen)}>
+          <div className="react-select__control css-14qho42-control" data-role="unit" onClick={() => setUnitOpen(!unitOpen)}>
             <div className="react-select__value-container react-select__value-container--has-value css-hlgwow">
-              <div className="react-select__single-value css-1ubv46r-singleValue">{CURRENCIES[cur]}</div>
-            </div>
-            <div className="react-select__indicators css-1wy0on6">
-              <span className="react-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>
-              <div className="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">
-                <svg width="16" height="16" className="arrow-down-icon">
-                  <path d="M13 5.5L8 10.5L3 5.5" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          {curOpen && (
-            <div className="react-select__menu">
-              {CURRENCIES.map((c, i) => (
-                <div key={c} className="react-select__option" onClick={() => { setCur(i); setCurOpen(false); }}>
-                  {c}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-      <div className="react-select-wrap filter-select currency-type-select">
-        <div className="react-select css-b62m3t-container">
-          <div className="react-select__control css-14qho42-control" onClick={() => setUnitOpen(!unitOpen)}>
-            <div className="react-select__value-container react-select__value-container--has-value css-hlgwow">
-              <div className="react-select__single-value css-1ubv46r-singleValue">{UNITS[unit]}</div>
+              <div className="react-select__single-value css-1ubv46r-singleValue">{unitLabel}</div>
             </div>
             <div className="react-select__indicators css-1wy0on6">
               <span className="react-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>
@@ -138,10 +128,10 @@ function SettingsSelects() {
             </div>
           </div>
           {unitOpen && (
-            <div className="react-select__menu">
-              {UNITS.map((u, i) => (
-                <div key={u} className="react-select__option" onClick={() => { setUnit(i); setUnitOpen(false); }}>
-                  {u}
+            <div className="react-select__menu" data-role="unit">
+              {FOOTER_UNITS.map((u) => (
+                <div key={u.code} className="react-select__option" data-code={u.code} onClick={() => pick({ unit: u.code })}>
+                  {u.label}
                 </div>
               ))}
             </div>
@@ -208,7 +198,7 @@ export function SiteFooter() {
           </div>
           <div className="bottom-section new-logo-gptw">
             <div className="gptw">
-              <a href="/blog/provident-estate-great-place-to-work-certification/">
+              <a href="/blog/great-place-to-work-certification/">
                 <svg width="77" height="131" viewBox="0 0 77 131" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Great Place To Work">
                   <rect width="77" height="131" fill="#002171" />
                   <path d="M38.5 16 14 38.5V94.5L38.5 117 63 94.5V38.5L38.5 16Z" stroke="#FF1628" strokeWidth="2.5" />
@@ -229,11 +219,11 @@ export function SiteFooter() {
             </div>
             <div className="no-top">
               <div className="socials-section">
-                <a href="https://facebook.com/providentestate" target="_blank" rel="noreferrer" aria-label="Facebook" className="fb-icon"></a>
-                <a href="https://twitter.com/providentagents" target="_blank" rel="noreferrer" aria-label="Twitter" className="tw-icon"></a>
-                <a href="https://instagram.com/providentestate/" target="_blank" rel="noreferrer" aria-label="Instagram" className="ig-icon"></a>
-                <a href="https://ae.linkedin.com/company/providentestate" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="in-icon"></a>
-                <a href="https://youtube.com/@Providentestate" target="_blank" rel="noreferrer" aria-label="YouTube" className="yt-icon"></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook" className="fb-icon"></a>
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter" className="tw-icon"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram" className="ig-icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="in-icon"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube" className="yt-icon"></a>
                 <a href="https://t.me/dubaipropertynews" target="_blank" rel="noreferrer" aria-label="Telegram" className="tg-icon"></a>
                 <a href={WA_LINK} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="wa-icon"></a>
               </div>
@@ -250,7 +240,7 @@ export function SiteFooter() {
                 </p>
               </div>
               <div className="copyright-section">
-                <p>PROVIDENT® is a registered trademark since 2008</p>
+                <p>Zoya Ventures is a registered trademark since 2008</p>
               </div>
               <p className="site-by">
                 Site by <a rel="nofollow" href="https://www.starberry.tv" target="_blank" className="site-by-name">Starberry</a>

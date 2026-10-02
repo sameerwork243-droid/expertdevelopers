@@ -38,16 +38,16 @@
               "id": "11966",
               "url": "https://storage.googleapis.com/prov-email-signatures/Liberty-Dudzayi-PFB.jpg",
               "name": "Liberty Dudzayi",
-              "email": "liberty@providentestate.com",
+              "email": "liberty@zoyaventures.com",
               "phone": "+971 56 219 4574",
               "brn_number": "50887"
             },
             "crm_negotiator_id": [
               {
                 "id": "11966",
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/property/PS-06022615/crm_negotiator_id/prov-email-signatures/Liberty-Dudzayi-PFB.jpg",
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/property/PS-06022615/crm_negotiator_id/prov-email-signatures/Liberty-Dudzayi-PFB.jpg",
                 "name": "Liberty Dudzayi",
-                "email": "liberty@providentestate.com",
+                "email": "liberty@zoyaventures.com",
                 "phone": "+971 56 219 4574",
                 "srcUrl": "https://storage.googleapis.com/prov-email-signatures/Liberty-Dudzayi-PFB.jpg",
                 "brn_number": "50887",
@@ -130,29 +130,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_1_6b2154dddd.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_1_6b2154dddd.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_5_0f60d0d499.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_5_0f60d0d499.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_3_af128b9f1c.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_3_af128b9f1c.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_2_ffbee6be96.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_2_ffbee6be96.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_4_977d06d48f.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_4_977d06d48f.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_6_245e0e9584.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_6_245e0e9584.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Untitled_2_1d95f9743a.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Untitled_2_1d95f9743a.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/banner_ac4c77f63e.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/banner_ac4c77f63e.jpg"
             },
             "ggfx_results": [
               {
@@ -160,70 +160,70 @@
                 "src_cftle": "i/banner_ac4c77f63e.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-07-03 17:11:09.070",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-07-14 07:54:56.344",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-07-14 07:55:03.811",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-01-26 08:51:52.287",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "1300x",
                     "created_at": "2025-01-26 08:51:52.287",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-01-26 08:51:52.287",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-01-26 08:51:52.287",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-01-26 08:51:52.287",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-01-26 08:51:52.287",
                     "updated_at": "2025-04-21 14:05:51.511"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/banner_ac4c77f63e.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/banner_ac4c77f63e.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-04-21 14:05:51.511",
@@ -241,26 +241,26 @@
                 "src_cftle": "i/golf_5_0f60d0d499.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_5_0f60d0d499.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_5_0f60d0d499.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-03 17:11:24.920",
                     "updated_at": "2024-07-03 17:11:24.920"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_5_0f60d0d499.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_5_0f60d0d499.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-14 07:54:56.868",
                     "updated_at": "2024-07-14 07:54:56.868"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_5_0f60d0d499.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_5_0f60d0d499.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_5_0f60d0d499.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_5_0f60d0d499.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -276,26 +276,26 @@
                 "src_cftle": "i/golf_3_af128b9f1c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_3_af128b9f1c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_3_af128b9f1c.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-03 17:11:26.883",
                     "updated_at": "2024-07-03 17:11:26.883"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_3_af128b9f1c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_3_af128b9f1c.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-03 17:11:27.417",
                     "updated_at": "2024-07-03 17:11:27.417"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_3_af128b9f1c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_3_af128b9f1c.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_3_af128b9f1c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_3_af128b9f1c.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -311,26 +311,26 @@
                 "src_cftle": "i/golf_2_ffbee6be96.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_2_ffbee6be96.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_2_ffbee6be96.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-03 17:11:28.550",
                     "updated_at": "2024-07-03 17:11:28.550"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_2_ffbee6be96.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_2_ffbee6be96.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-03 17:11:29.114",
                     "updated_at": "2024-07-03 17:11:29.114"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_2_ffbee6be96.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_2_ffbee6be96.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_2_ffbee6be96.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_2_ffbee6be96.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -346,26 +346,26 @@
                 "src_cftle": "i/golf_4_977d06d48f.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_4_977d06d48f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_4_977d06d48f.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-03 17:11:30.251",
                     "updated_at": "2024-07-03 17:11:30.251"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_4_977d06d48f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_4_977d06d48f.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-03 17:11:31.011",
                     "updated_at": "2024-07-03 17:11:31.011"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_4_977d06d48f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_4_977d06d48f.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_4_977d06d48f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_4_977d06d48f.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -381,26 +381,26 @@
                 "src_cftle": "i/golf_6_245e0e9584.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_6_245e0e9584.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_6_245e0e9584.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-03 17:11:32.126",
                     "updated_at": "2024-07-03 17:11:32.126"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_6_245e0e9584.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_6_245e0e9584.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-03 17:11:32.805",
                     "updated_at": "2024-07-03 17:11:32.805"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_6_245e0e9584.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_6_245e0e9584.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_6_245e0e9584.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_6_245e0e9584.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -416,14 +416,14 @@
                 "src_cftle": "i/golf_7_489b8acbc4.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_7_489b8acbc4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_7_489b8acbc4.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-14 07:55:05.411",
                     "updated_at": "2024-07-14 07:55:05.411"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/golf_7_489b8acbc4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/golf_7_489b8acbc4.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-03 17:11:35.285",
@@ -441,14 +441,14 @@
                 "src_cftle": "i/gr_78545b47af.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/gr_78545b47af.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/gr_78545b47af.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-14 07:55:00.544",
                     "updated_at": "2024-07-14 07:55:00.544"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/gr_78545b47af.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/gr_78545b47af.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-14 07:54:45.480",
@@ -466,14 +466,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_5_0f60d0d499.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_5_0f60d0d499.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_5_0f60d0d499.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:29.655",
                     "updated_at": "2024-07-23 07:41:29.655"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_5_0f60d0d499.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_5_0f60d0d499.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:29.655",
@@ -491,14 +491,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_3_af128b9f1c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_3_af128b9f1c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_3_af128b9f1c.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:29.655",
                     "updated_at": "2024-07-23 07:41:29.655"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_3_af128b9f1c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_3_af128b9f1c.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:29.655",
@@ -516,14 +516,14 @@
                 "src_cftle": "i/The_Golf_Residence_1_60f5e79f44.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/The_Golf_Residence_1_60f5e79f44.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/The_Golf_Residence_1_60f5e79f44.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-14 07:54:55.809",
                     "updated_at": "2024-07-14 07:54:55.809"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/The_Golf_Residence_1_60f5e79f44.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/The_Golf_Residence_1_60f5e79f44.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-14 07:55:01.883",
@@ -541,36 +541,36 @@
                 "src_cftle": "i/golf_1_6b2154dddd.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_1_6b2154dddd.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-14 07:54:57.269",
                     "updated_at": "2024-07-14 07:54:57.269"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_1_6b2154dddd.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-14 07:54:58.176",
                     "updated_at": "2024-07-14 07:54:58.176"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_1_6b2154dddd.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/golf_1_6b2154dddd.webp",
                     "format": "webp",
                     "transform": "1300x500"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_1_6b2154dddd.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/golf_1_6b2154dddd.webp",
                     "format": "webp",
                     "transform": "600x"
                   }
@@ -586,14 +586,14 @@
                 "src_cftle": "i/off-plan/null/images/i/Untitled_2_1d95f9743a.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/Untitled_2_1d95f9743a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/Untitled_2_1d95f9743a.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:05:29.054",
                     "updated_at": "2024-10-11 07:05:29.054"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/Untitled_2_1d95f9743a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/Untitled_2_1d95f9743a.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:05:29.054",
@@ -611,13 +611,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_6_245e0e9584.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_6_245e0e9584.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_6_245e0e9584.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_6_245e0e9584.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_6_245e0e9584.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -634,13 +634,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_4_977d06d48f.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_4_977d06d48f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_4_977d06d48f.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_4_977d06d48f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_4_977d06d48f.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -657,13 +657,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_2_ffbee6be96.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_2_ffbee6be96.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_2_ffbee6be96.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_2_ffbee6be96.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_2_ffbee6be96.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -680,13 +680,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_1_6b2154dddd.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_1_6b2154dddd.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_1_6b2154dddd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_1_6b2154dddd.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -703,22 +703,22 @@
                 "src_cftle": "i/Untitled_2_1d95f9743a.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Untitled_2_1d95f9743a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Untitled_2_1d95f9743a.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/Untitled_2_1d95f9743a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/Untitled_2_1d95f9743a.webp",
                     "format": "webp",
                     "transform": "1300x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/Untitled_2_1d95f9743a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/Untitled_2_1d95f9743a.webp",
                     "format": "webp",
                     "transform": "600x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Untitled_2_1d95f9743a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Untitled_2_1d95f9743a.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -827,29 +827,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_1_5fc08e9c35.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_1_5fc08e9c35.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_2_1dbc692b82.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_2_1dbc692b82.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_3_3b12e8fe52.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_3_3b12e8fe52.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_4_c4edfd8a43.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_4_c4edfd8a43.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_5_fee53cd27a.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_5_fee53cd27a.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_6_d08fdb172a.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_6_d08fdb172a.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_feature_fb62ef77e8.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_feature_fb62ef77e8.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_grand_banner_36677dbe09.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_grand_banner_36677dbe09.jpg"
             },
             "ggfx_results": [
               {
@@ -857,21 +857,21 @@
                 "src_cftle": "i/golf_grand_video_ad88705a1b.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1968x/golf_grand_video_ad88705a1b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1968x/golf_grand_video_ad88705a1b.webp",
                     "format": "webp",
                     "transform": "1968x",
                     "created_at": "2024-07-07 18:41:25.450",
                     "updated_at": "2024-07-07 18:41:25.450"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/696x/golf_grand_video_ad88705a1b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/696x/golf_grand_video_ad88705a1b.webp",
                     "format": "webp",
                     "transform": "696x",
                     "created_at": "2024-07-07 18:41:38.046",
                     "updated_at": "2024-07-07 18:41:38.046"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/336x/golf_grand_video_ad88705a1b.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/336x/golf_grand_video_ad88705a1b.webp",
                     "format": "webp",
                     "transform": "336x",
                     "created_at": "2024-08-09 20:19:10.791",
@@ -889,26 +889,26 @@
                 "src_cftle": "i/golf_grand_4_c4edfd8a43.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_grand_4_c4edfd8a43.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_grand_4_c4edfd8a43.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-07 18:41:33.927",
                     "updated_at": "2024-07-07 18:41:33.927"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_grand_4_c4edfd8a43.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_grand_4_c4edfd8a43.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-07 18:41:44.094",
                     "updated_at": "2024-07-07 18:41:44.094"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_4_c4edfd8a43.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_4_c4edfd8a43.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_4_c4edfd8a43.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_4_c4edfd8a43.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -924,70 +924,70 @@
                 "src_cftle": "i/golf_grand_banner_36677dbe09.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-07-07 18:41:35.763",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-07-07 18:41:38.601",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-08-09 20:19:09.579",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "1300x",
                     "created_at": "2025-04-29 11:53:13.614",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-04-29 11:53:13.614",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-04-29 11:53:13.614",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-04-29 11:53:13.614",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-04-29 11:53:13.614",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-04-29 11:53:13.614",
                     "updated_at": "2025-04-29 11:53:13.614"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/golf_grand_banner_36677dbe09.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/golf_grand_banner_36677dbe09.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-04-29 11:53:13.614",
@@ -1005,26 +1005,26 @@
                 "src_cftle": "i/golf_grand_3_3b12e8fe52.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_grand_3_3b12e8fe52.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_grand_3_3b12e8fe52.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-07 18:41:39.169",
                     "updated_at": "2024-07-07 18:41:39.169"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_grand_3_3b12e8fe52.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_grand_3_3b12e8fe52.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-08-09 20:19:09.939",
                     "updated_at": "2024-08-09 20:19:09.939"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_3_3b12e8fe52.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_3_3b12e8fe52.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_3_3b12e8fe52.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_3_3b12e8fe52.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -1040,26 +1040,26 @@
                 "src_cftle": "i/golf_grand_6_d08fdb172a.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_grand_6_d08fdb172a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_grand_6_d08fdb172a.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-07 18:41:39.927",
                     "updated_at": "2024-07-07 18:41:39.927"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_grand_6_d08fdb172a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_grand_6_d08fdb172a.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-07 18:41:47.499",
                     "updated_at": "2024-07-07 18:41:47.499"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_6_d08fdb172a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_6_d08fdb172a.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_6_d08fdb172a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_6_d08fdb172a.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -1075,26 +1075,26 @@
                 "src_cftle": "i/golf_grand_5_fee53cd27a.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_grand_5_fee53cd27a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_grand_5_fee53cd27a.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-07 18:41:41.772",
                     "updated_at": "2024-07-07 18:41:41.772"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_grand_5_fee53cd27a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_grand_5_fee53cd27a.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-07 18:41:45.179",
                     "updated_at": "2024-07-07 18:41:45.179"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_5_fee53cd27a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_5_fee53cd27a.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_5_fee53cd27a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_5_fee53cd27a.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -1110,36 +1110,36 @@
                 "src_cftle": "i/golf_grand_1_5fc08e9c35.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_grand_1_5fc08e9c35.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-07 18:41:42.462",
                     "updated_at": "2024-07-07 18:41:42.462"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_grand_1_5fc08e9c35.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-08-09 20:19:09.565",
                     "updated_at": "2024-08-09 20:19:09.565"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_1_5fc08e9c35.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_1_5fc08e9c35.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/golf_grand_1_5fc08e9c35.webp",
                     "format": "webp",
                     "transform": "1300x500"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/golf_grand_1_5fc08e9c35.webp",
                     "format": "webp",
                     "transform": "600x"
                   }
@@ -1155,14 +1155,14 @@
                 "src_cftle": "i/golf_grand_selling_8d3e100182.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/golf_grand_selling_8d3e100182.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/golf_grand_selling_8d3e100182.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-07 18:41:42.935",
                     "updated_at": "2024-07-07 18:41:42.935"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_grand_selling_8d3e100182.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_grand_selling_8d3e100182.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-08-22 08:00:30.074",
@@ -1180,14 +1180,14 @@
                 "src_cftle": "i/Golf_grand_brochure_f74f805b2c.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Golf_grand_brochure_f74f805b2c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Golf_grand_brochure_f74f805b2c.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-08-09 20:19:10.967",
                     "updated_at": "2024-08-09 20:19:10.967"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Golf_grand_brochure_f74f805b2c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Golf_grand_brochure_f74f805b2c.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-07 18:41:48.082",
@@ -1205,26 +1205,26 @@
                 "src_cftle": "i/golf_grand_2_1dbc692b82.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_grand_2_1dbc692b82.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_grand_2_1dbc692b82.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-07 18:41:45.768",
                     "updated_at": "2024-07-07 18:41:45.768"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_grand_2_1dbc692b82.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_grand_2_1dbc692b82.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-08-09 20:19:09.958",
                     "updated_at": "2024-08-09 20:19:09.958"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_2_1dbc692b82.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_2_1dbc692b82.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_2_1dbc692b82.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_2_1dbc692b82.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -1240,14 +1240,14 @@
                 "src_cftle": "i/dubai_hills_location_8bf8fed73d.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/dubai_hills_location_8bf8fed73d.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/dubai_hills_location_8bf8fed73d.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-07 18:41:46.911",
                     "updated_at": "2024-07-07 18:41:46.911"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/dubai_hills_location_8bf8fed73d.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/dubai_hills_location_8bf8fed73d.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-08-09 20:19:10.809",
@@ -1265,14 +1265,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_grand_2_1dbc692b82.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_grand_2_1dbc692b82.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_grand_2_1dbc692b82.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:42:00.179",
                     "updated_at": "2024-07-23 07:42:00.179"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_grand_2_1dbc692b82.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_grand_2_1dbc692b82.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:42:00.179",
@@ -1290,14 +1290,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_grand_3_3b12e8fe52.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_grand_3_3b12e8fe52.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_grand_3_3b12e8fe52.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:42:00.179",
                     "updated_at": "2024-07-23 07:42:00.179"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_grand_3_3b12e8fe52.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_grand_3_3b12e8fe52.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:42:00.179",
@@ -1315,14 +1315,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_grand_feature_fb62ef77e8.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_grand_feature_fb62ef77e8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_grand_feature_fb62ef77e8.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:05:59.497",
                     "updated_at": "2024-10-11 07:05:59.497"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_grand_feature_fb62ef77e8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_grand_feature_fb62ef77e8.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:05:59.497",
@@ -1340,13 +1340,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_grand_5_fee53cd27a.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_grand_5_fee53cd27a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_grand_5_fee53cd27a.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_grand_5_fee53cd27a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_grand_5_fee53cd27a.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1363,13 +1363,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_grand_6_d08fdb172a.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_grand_6_d08fdb172a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_grand_6_d08fdb172a.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_grand_6_d08fdb172a.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_grand_6_d08fdb172a.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1386,13 +1386,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_grand_4_c4edfd8a43.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_grand_4_c4edfd8a43.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_grand_4_c4edfd8a43.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_grand_4_c4edfd8a43.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_grand_4_c4edfd8a43.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1409,13 +1409,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_grand_1_5fc08e9c35.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_grand_1_5fc08e9c35.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_grand_1_5fc08e9c35.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_grand_1_5fc08e9c35.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1432,12 +1432,12 @@
                 "src_cftle": "i/golf_grand_feature_fb62ef77e8.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_grand_feature_fb62ef77e8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_grand_feature_fb62ef77e8.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_grand_feature_fb62ef77e8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_grand_feature_fb62ef77e8.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -1534,7 +1534,7 @@
             "title": "Looking to Buy a Property in Dubai Hills Estate?",
             "area": "dubai-hills-estate",
             "building_type": null,
-            "description": "<p>Dubai Hills Estate is one of Dubai’s most prestigious residential destinations, offering a wide selection of properties for sale. This master-planned community, developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/developed-by-emaar-properties/\">Emaar Properties</a>, is renowned for its elegant neighborhoods, expansive green spaces, and world-class amenities. Designed to cater to discerning buyers, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-hills-estate/\">Dubai Hills Estate</a> combines luxury, comfort, and convenience, making it an ideal choice for families and investors.&nbsp;</p><p>Whether you are looking for a modern villa, a sophisticated apartment, or an upscale townhouse, properties for sale in Dubai Hills Estate are crafted to meet the highest standards of living. Dubai Hills properties for sale reflect modern architecture with a focus on seamless integration with nature. Residents can enjoy unparalleled access to lush parks, serene lakes, and the expansive Dubai Hills Golf Club.&nbsp;</p><p>The area is well-equipped with top-tier schools, healthcare facilities, retail centers, and entertainment hubs, creating a self-sufficient and vibrant community. With its strategic location along Al Khail Road (E44) and easy access to areas like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/downtown-dubai/\">Downtown Dubai</a>, Dubai Marina, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/business-bay/\">Business Bay</a>, Dubai Hills Estate offers unmatched connectivity while maintaining a tranquil environment.</p><h2>Why Should You Buy a Property in Dubai Hills Estate?&nbsp;</h2><p>Investing in properties for sale in Dubai Hills Estate is an excellent opportunity to enjoy a luxurious lifestyle in one of Dubai’s most sought-after locations. The community's unique blend of urban sophistication and suburban tranquility appeals to both families and investors. Its proximity to key areas and premium amenities ensures a high potential for capital appreciation and rental income, making Dubai Hills properties a sound investment choice.</p><h2>Popular Areas to Buy Properties in Dubai Hills Estate</h2><h3>Sidra Villas&nbsp;</h3><p>Sidra Villas is an exclusive collection of modern villas set amidst lush greenery. These luxurious properties are designed with contemporary interiors and spacious layouts, offering a serene and private lifestyle. Residents enjoy access to private gardens, community parks, and swimming pools, making Sidra Villas a top choice for those seeking a Dubai Hills property for sale.</p><h3>Maple Townhouses&nbsp;</h3><p>Maple at Dubai Hills Estate features a selection of townhouses ideal for families. These homes are crafted to offer comfort and elegance, with open-plan living spaces and modern finishes. The community boasts tree-lined pathways, cycling tracks, and family-friendly amenities, making it an ideal location for those exploring properties for sale in Dubai Hills Estate.</p><h3>Park Heights&nbsp;</h3><p>Park Heights offers a collection of contemporary apartments with stunning views of the Dubai Hills Golf Club and the iconic skyline. With easy access to Dubai Hills Mall and numerous dining and entertainment options, Park Heights is perfect for those who appreciate urban living within a suburban setting. The area is well-connected, making it a popular choice for those looking for properties for sale in Dubai Hills Estate.</p><h3>Golf Place&nbsp;</h3><p>Golf Place is a prestigious villa community overlooking the 18-hole championship golf course. These luxurious villas are designed for those who seek an exclusive lifestyle surrounded by greenery. With spacious layouts, private pools, and premium finishes, Golf Place properties are among the most sought-after Dubai Hills properties for sale.</p><h3>Acacia Apartments&nbsp;</h3><p>Acacia offers an elegant selection of apartments nestled in the heart of Dubai Hills Estate. With its proximity to the Dubai Hills Park and its tranquil surroundings, Acacia is ideal for families and professionals seeking <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/\">properties for sale in Dubai</a>. Residents enjoy modern facilities, including fitness centers, swimming pools, and retail outlets, ensuring a lifestyle of comfort and convenience.</p><h2>Investment Potential in Dubai Hills Estate</h2><p>Dubai Hills Estate stands out as a top investment destination due to its prime location, luxurious properties, and strong community infrastructure. Key advantages include:</p><ul><li>High demand for rentals driven by its proximity to business districts and top-rated schools.</li><li>Seamless access to major highways like Al Khail Road and Sheikh Mohammed Bin Zayed Road, ensuring connectivity to key areas including Business Bay and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-marina/\">Dubai Marina</a>.</li><li>Properties for sale in Dubai Hills Estate are developed by Emaar, ensuring exceptional quality and strong market value.</li><li>Developments like Dubai Hills Mall and other infrastructure projects further enhance its appeal, promising significant capital growth.</li></ul><h2>Types of Properties in Dubai Hills Estate&nbsp;</h2><p>Dubai Hills Estate offers a diverse range of properties, including expansive villas, stylish townhouses, and contemporary apartments. Each property features modern interiors, high-quality finishes, and thoughtful designs to suit different lifestyles. Whether you are looking for a spacious villa with a private garden or a sleek apartment with city views, properties in Dubai Hills Estate provide the perfect blend of luxury and functionality.</p><h2>Advantages of Buying Properties for Sale in Dubai Hills Estate&nbsp;</h2><p>Investing in properties for sale in Dubai Hills Estate offers numerous benefits, including:</p><ul><li><strong>Family-friendly amenities</strong>: The community is designed with parks, schools, healthcare centers, and retail outlets to ensure a holistic living experience.</li><li><strong>Strategic connectivity</strong>: With easy access to major roads, residents enjoy quick commutes to Downtown Dubai, Dubai Marina, and other prime areas.</li><li><strong>Diverse property options</strong>: From luxurious villas to modern apartments, Dubai Hills Estate offers properties to suit various preferences and budgets.</li><li><strong>High rental returns</strong>: The area’s premium lifestyle offerings attract families and professionals, ensuring consistent demand and strong investment potential.</li></ul><h2>How to Find the Best Property for Sale in Dubai Hills Estate&nbsp;</h2><p>To find your dream property in Dubai Hills Estate, collaborating with trusted real estate experts like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/\">Zoya Ventures Real Estate</a> is essential. The listings on Zoya Ventures Real Estate’s website feature a curated selection of properties. This will ensure a seamless buying experience for those exploring properties for sale in Dubai Hills Estate.</p><h2>Properties for Sale in Nearby Areas of Dubai Hills Estate&nbsp;</h2><p>If you are considering other options beyond Dubai Hills Estate, explore these popular communities:</p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-motor-city/\">Properties for Sale in Motor City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-jumeirah-village-circle/\">Properties for Sale in Jumeirah Village Circle (JVC)</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-arabian-ranches-3/\">Properties for Sale in Arabian Ranches 3</a></li></ul><p>These nearby areas offer diverse property options and easy access to the key destinations within Dubai, providing excellent alternatives for those looking to invest in the city's thriving real estate market.</p><h2>Frequently Asked Questions (FAQs)</h2><h3>What types of properties are available for sale in Dubai Hills Estate?&nbsp;</h3><p>Dubai Hills Estate offers a diverse range of properties, including luxurious villas, stylish townhouses, and contemporary apartments. These properties are designed to meet various lifestyle needs, featuring modern interiors, spacious layouts, and high-quality finishes.</p><h3>Why should I consider investing in a property in Dubai Hills Estate?&nbsp;</h3><p>Dubai Hills Estate is an ideal choice for both families and investors due to its premium amenities, strategic location, and strong potential for capital appreciation. The area’s seamless connectivity to key destinations like Downtown Dubai and Dubai Marina, combined with top-tier schools, parks, and healthcare facilities, makes it an excellent investment opportunity.</p><h3>What are the most popular communities within Dubai Hills Estate for buying properties?</h3><p>Some of the top communities and projects include Sidra Villas, Maple Townhouses, Park Heights, Golf Place, and Acacia Apartments. Each of these areas offers distinct property types, from modern villas to elegant apartments, catering to different lifestyle preferences.</p><h3>What amenities can residents expect in Dubai Hills Estate?&nbsp;</h3><p>Dubai Hills Estate provides a comprehensive range of amenities, including access to the Dubai Hills Golf Club, lush parks, cycling tracks, top-tier schools, healthcare centers, and the Dubai Hills Mall. The community is designed to ensure a holistic and convenient lifestyle for residents.</p><h3>Is Dubai Hills Estate a good location for rental investment?&nbsp;</h3><p>Yes, Dubai Hills Estate is highly sought after for rental properties due to its family-friendly environment, proximity to business districts, and premium facilities. The high demand for rentals, combined with strong infrastructure and continuous development, ensures attractive rental yields and long-term growth potential.</p>"
+            "description": "<p>Dubai Hills Estate is one of Dubai’s most prestigious residential destinations, offering a wide selection of properties for sale. This master-planned community, developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/developed-by-emaar-properties/\">Emaar Properties</a>, is renowned for its elegant neighborhoods, expansive green spaces, and world-class amenities. Designed to cater to discerning buyers, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-hills-estate/\">Dubai Hills Estate</a> combines luxury, comfort, and convenience, making it an ideal choice for families and investors.&nbsp;</p><p>Whether you are looking for a modern villa, a sophisticated apartment, or an upscale townhouse, properties for sale in Dubai Hills Estate are crafted to meet the highest standards of living. Dubai Hills properties for sale reflect modern architecture with a focus on seamless integration with nature. Residents can enjoy unparalleled access to lush parks, serene lakes, and the expansive Dubai Hills Golf Club.&nbsp;</p><p>The area is well-equipped with top-tier schools, healthcare facilities, retail centers, and entertainment hubs, creating a self-sufficient and vibrant community. With its strategic location along Al Khail Road (E44) and easy access to areas like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/downtown-dubai/\">Downtown Dubai</a>, Dubai Marina, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/business-bay/\">Business Bay</a>, Dubai Hills Estate offers unmatched connectivity while maintaining a tranquil environment.</p><h2>Why Should You Buy a Property in Dubai Hills Estate?&nbsp;</h2><p>Investing in properties for sale in Dubai Hills Estate is an excellent opportunity to enjoy a luxurious lifestyle in one of Dubai’s most sought-after locations. The community's unique blend of urban sophistication and suburban tranquility appeals to both families and investors. Its proximity to key areas and premium amenities ensures a high potential for capital appreciation and rental income, making Dubai Hills properties a sound investment choice.</p><h2>Popular Areas to Buy Properties in Dubai Hills Estate</h2><h3>Sidra Villas&nbsp;</h3><p>Sidra Villas is an exclusive collection of modern villas set amidst lush greenery. These luxurious properties are designed with contemporary interiors and spacious layouts, offering a serene and private lifestyle. Residents enjoy access to private gardens, community parks, and swimming pools, making Sidra Villas a top choice for those seeking a Dubai Hills property for sale.</p><h3>Maple Townhouses&nbsp;</h3><p>Maple at Dubai Hills Estate features a selection of townhouses ideal for families. These homes are crafted to offer comfort and elegance, with open-plan living spaces and modern finishes. The community boasts tree-lined pathways, cycling tracks, and family-friendly amenities, making it an ideal location for those exploring properties for sale in Dubai Hills Estate.</p><h3>Park Heights&nbsp;</h3><p>Park Heights offers a collection of contemporary apartments with stunning views of the Dubai Hills Golf Club and the iconic skyline. With easy access to Dubai Hills Mall and numerous dining and entertainment options, Park Heights is perfect for those who appreciate urban living within a suburban setting. The area is well-connected, making it a popular choice for those looking for properties for sale in Dubai Hills Estate.</p><h3>Golf Place&nbsp;</h3><p>Golf Place is a prestigious villa community overlooking the 18-hole championship golf course. These luxurious villas are designed for those who seek an exclusive lifestyle surrounded by greenery. With spacious layouts, private pools, and premium finishes, Golf Place properties are among the most sought-after Dubai Hills properties for sale.</p><h3>Acacia Apartments&nbsp;</h3><p>Acacia offers an elegant selection of apartments nestled in the heart of Dubai Hills Estate. With its proximity to the Dubai Hills Park and its tranquil surroundings, Acacia is ideal for families and professionals seeking <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/\">properties for sale in Dubai</a>. Residents enjoy modern facilities, including fitness centers, swimming pools, and retail outlets, ensuring a lifestyle of comfort and convenience.</p><h2>Investment Potential in Dubai Hills Estate</h2><p>Dubai Hills Estate stands out as a top investment destination due to its prime location, luxurious properties, and strong community infrastructure. Key advantages include:</p><ul><li>High demand for rentals driven by its proximity to business districts and top-rated schools.</li><li>Seamless access to major highways like Al Khail Road and Sheikh Mohammed Bin Zayed Road, ensuring connectivity to key areas including Business Bay and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-marina/\">Dubai Marina</a>.</li><li>Properties for sale in Dubai Hills Estate are developed by Emaar, ensuring exceptional quality and strong market value.</li><li>Developments like Dubai Hills Mall and other infrastructure projects further enhance its appeal, promising significant capital growth.</li></ul><h2>Types of Properties in Dubai Hills Estate&nbsp;</h2><p>Dubai Hills Estate offers a diverse range of properties, including expansive villas, stylish townhouses, and contemporary apartments. Each property features modern interiors, high-quality finishes, and thoughtful designs to suit different lifestyles. Whether you are looking for a spacious villa with a private garden or a sleek apartment with city views, properties in Dubai Hills Estate provide the perfect blend of luxury and functionality.</p><h2>Advantages of Buying Properties for Sale in Dubai Hills Estate&nbsp;</h2><p>Investing in properties for sale in Dubai Hills Estate offers numerous benefits, including:</p><ul><li><strong>Family-friendly amenities</strong>: The community is designed with parks, schools, healthcare centers, and retail outlets to ensure a holistic living experience.</li><li><strong>Strategic connectivity</strong>: With easy access to major roads, residents enjoy quick commutes to Downtown Dubai, Dubai Marina, and other prime areas.</li><li><strong>Diverse property options</strong>: From luxurious villas to modern apartments, Dubai Hills Estate offers properties to suit various preferences and budgets.</li><li><strong>High rental returns</strong>: The area’s premium lifestyle offerings attract families and professionals, ensuring consistent demand and strong investment potential.</li></ul><h2>How to Find the Best Property for Sale in Dubai Hills Estate&nbsp;</h2><p>To find your dream property in Dubai Hills Estate, collaborating with trusted real estate experts like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/\">Zoya Ventures Real Estate</a> is essential. The listings on Zoya Ventures Real Estate’s website feature a curated selection of properties. This will ensure a seamless buying experience for those exploring properties for sale in Dubai Hills Estate.</p><h2>Properties for Sale in Nearby Areas of Dubai Hills Estate&nbsp;</h2><p>If you are considering other options beyond Dubai Hills Estate, explore these popular communities:</p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-motor-city/\">Properties for Sale in Motor City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-jumeirah-village-circle/\">Properties for Sale in Jumeirah Village Circle (JVC)</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-arabian-ranches-3/\">Properties for Sale in Arabian Ranches 3</a></li></ul><p>These nearby areas offer diverse property options and easy access to the key destinations within Dubai, providing excellent alternatives for those looking to invest in the city's thriving real estate market.</p><h2>Frequently Asked Questions (FAQs)</h2><h3>What types of properties are available for sale in Dubai Hills Estate?&nbsp;</h3><p>Dubai Hills Estate offers a diverse range of properties, including luxurious villas, stylish townhouses, and contemporary apartments. These properties are designed to meet various lifestyle needs, featuring modern interiors, spacious layouts, and high-quality finishes.</p><h3>Why should I consider investing in a property in Dubai Hills Estate?&nbsp;</h3><p>Dubai Hills Estate is an ideal choice for both families and investors due to its premium amenities, strategic location, and strong potential for capital appreciation. The area’s seamless connectivity to key destinations like Downtown Dubai and Dubai Marina, combined with top-tier schools, parks, and healthcare facilities, makes it an excellent investment opportunity.</p><h3>What are the most popular communities within Dubai Hills Estate for buying properties?</h3><p>Some of the top communities and projects include Sidra Villas, Maple Townhouses, Park Heights, Golf Place, and Acacia Apartments. Each of these areas offers distinct property types, from modern villas to elegant apartments, catering to different lifestyle preferences.</p><h3>What amenities can residents expect in Dubai Hills Estate?&nbsp;</h3><p>Dubai Hills Estate provides a comprehensive range of amenities, including access to the Dubai Hills Golf Club, lush parks, cycling tracks, top-tier schools, healthcare centers, and the Dubai Hills Mall. The community is designed to ensure a holistic and convenient lifestyle for residents.</p><h3>Is Dubai Hills Estate a good location for rental investment?&nbsp;</h3><p>Yes, Dubai Hills Estate is highly sought after for rental properties due to its family-friendly environment, proximity to business districts, and premium facilities. The high demand for rentals, combined with strong infrastructure and continuous development, ensures attractive rental yields and long-term growth potential.</p>"
           }
         ]
       },

@@ -25,7 +25,7 @@ if ($method === 'GET') {
     $q = trim((string) ($_GET['q'] ?? ''));
     if ($q !== '') {
         $rows = db_rows(
-            "SELECT p.*, (SELECT COUNT(*) FROM property_media m WHERE m.property_id = p.id) AS image_count,
+            "SELECT p.*, (SELECT COUNT(*) FROM property_media m WHERE m.property_id = p.id AND m.kind = 'image') AS image_count,
                     (SELECT COUNT(*) FROM property_amenities pa WHERE pa.property_id = p.id) AS amenity_count
              FROM properties p WHERE p.title LIKE ? OR p.slug LIKE ? OR p.developer LIKE ? OR p.community LIKE ?
              ORDER BY p.id DESC",
@@ -33,7 +33,7 @@ if ($method === 'GET') {
         );
     } else {
         $rows = db_rows(
-            "SELECT p.*, (SELECT COUNT(*) FROM property_media m WHERE m.property_id = p.id) AS image_count,
+            "SELECT p.*, (SELECT COUNT(*) FROM property_media m WHERE m.property_id = p.id AND m.kind = 'image') AS image_count,
                     (SELECT COUNT(*) FROM property_amenities pa WHERE pa.property_id = p.id) AS amenity_count
              FROM properties p ORDER BY p.id DESC"
         );

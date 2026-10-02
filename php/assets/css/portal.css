@@ -1,5 +1,5 @@
 /* ============================================================
-   My Account Portal — replica of myaccount.providentestate.com
+   My Account Portal
    Design tokens: primary #005480 · text #35373C · dark #142121
    border #D8D8D8 · muted #9399A4 · font Plus Jakarta Sans
    ============================================================ */
@@ -62,7 +62,7 @@
 
 .portal-appbar .portal-brand img {
   display: block;
-  height: 20px;
+  height: 40px;
   width: auto;
 }
 
@@ -391,7 +391,7 @@
 
 .portal-auth-card .portal-auth-logo {
   display: block;
-  height: 26px;
+  height: 56px;
   margin-bottom: 24px;
   width: auto;
 }

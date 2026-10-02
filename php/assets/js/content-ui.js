@@ -4,6 +4,7 @@
 // list-property-form.tsx and the slick prev/next arrows.
 (function () {
   "use strict";
+  var APP_BASE = (window.EXPERT_BASE || "");
 
   function jsonEmbed(sel) {
     var el = document.querySelector(sel);
@@ -231,8 +232,10 @@
     });
 
     function heroGo() {
-      var tabBase = heroTab === 0 ? "/buy/properties-for-sale" : heroTab === 1 ? "/let/properties-for-rent" : "/new-projects";
-      var target = heroAreaSlug ? tabBase + "/in-" + heroAreaSlug + "/" : tabBase + "/";
+      var tabBase = "/buy/properties-for-sale";
+      if (heroTab === 1) tabBase = "/let/properties-for-rent";
+      else if (heroTab === 2) tabBase = "/new-projects";
+      var target = APP_BASE + (heroAreaSlug ? tabBase + "/in-" + heroAreaSlug + "/" : tabBase + "/");
       var params = [];
       if (heroVals.minBed) params.push("minBedroom=" + encodeURIComponent(heroVals.minBed));
       if (heroVals.maxBed) params.push("maxBedroom=" + encodeURIComponent(heroVals.maxBed));
@@ -280,7 +283,7 @@
       if (list) {
         list.innerHTML = "";
         items.forEach(function (b) {
-          var href = "/blog/" + encodeURIComponent(b.slug) + "/";
+          var href = APP_BASE + "/blog/" + encodeURIComponent(b.slug) + "/";
           var html = '<div class="news-card-wrapper"><div class="news-card">'
             + '<div class="img-section-wrap img-zoom"><a class="img-section" href="' + esc(href) + '">';
           if (b.image) html += '<img loading="lazy" src="' + esc(b.image) + '" alt="' + esc(b.title) + '" />';
@@ -415,7 +418,7 @@
       if (!list) return;
       list.innerHTML = "";
       visible.forEach(function (a) {
-        var href = "/area-guides/" + encodeURIComponent(a.slug) + "/";
+        var href = APP_BASE + "/area-guides/" + encodeURIComponent(a.slug) + "/";
         var html = '<div class="areaguide-card" data-area-card="' + esc(a.slug) + '">'
           + '<div class="img-section img-zoom"><a class="tt-fi" href="' + esc(href) + '">';
         if (a.image) {
@@ -521,7 +524,7 @@
       if (inner) {
         inner.innerHTML = "";
         pageItems.forEach(function (m) {
-          var href = "/team/" + encodeURIComponent(m.slug) + "/";
+          var href = APP_BASE + "/team/" + encodeURIComponent(m.slug) + "/";
           var html = '<div class="team-card-wrap"><div class="team-card rounded-card">'
             + '<a class="img-section img-zoom" href="' + esc(href) + '">';
           if (m.image) html += '<img loading="lazy" draggable="false" src="' + esc(m.image) + '" alt="' + esc(m.name) + '" />';
@@ -662,7 +665,7 @@
         kind: "listing",
         name: val(nameEl),
         email: val(emailEl),
-        phone: ((dialEl ? dialEl.value : "+971") + " " + val(phoneEl)).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + val(phoneEl)).trim(),
         property_slug: "List Your Property",
         message: JSON.stringify({
           transaction: txEl ? txEl.value : "",
@@ -686,7 +689,7 @@
         kind: "project",
         name: val(nameEl),
         email: val(emailEl),
-        phone: ((dialEl ? dialEl.value : "+971") + " " + val(phoneEl)).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + val(phoneEl)).trim(),
         message: "Register interest: " + projTitle,
         property_ref: projTitle,
       };
@@ -695,12 +698,12 @@
         kind: "contact",
         name: val(nameEl),
         email: val(emailEl),
-        phone: ((dialEl ? dialEl.value : "+971") + " " + val(phoneEl)).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + val(phoneEl)).trim(),
         message: val(msgEl),
       };
     }
 
-    fetch("/api/inquiries", {
+    fetch(APP_BASE + "/api/inquiries", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
@@ -745,7 +748,7 @@
     var phone = item.getAttribute("data-phone") || "";
     var phoneTel = item.getAttribute("data-phone-tel") || "";
     var maps = item.getAttribute("data-maps") || "";
-    var href = item.getAttribute("data-href") || "/contact/";
+    var href = item.getAttribute("data-href") || APP_BASE + "/contact/";
     var modal = document.createElement("div");
     modal.className = "modal fade show d-block";
     modal.setAttribute("role", "dialog");
@@ -860,7 +863,7 @@
           + '<div class="dhq-field"><label>Preferred Language</label><select name="lang">' + langOpts + "</select></div>"
           + (state.fail ? '<div class="dhq-fail">' + esc(state.fail) + "</div>" : "")
           + '<button type="submit" class="dhq-submit">' + (state.busy ? "Submitting…" : "Submit Details") + "</button>"
-          + '<p class="dhq-terms">By submitting you agree to our <a href="/privacy-policy">Privacy Policy</a> and consent to being contacted about your property preferences.</p>'
+          + '<p class="dhq-terms">By submitting you agree to our <a href="' + APP_BASE + '/privacy-policy">Privacy Policy</a> and consent to being contacted about your property preferences.</p>'
           + "</form>";
       }
 
@@ -972,7 +975,7 @@
         "Preferred time: " + (a.preferredContactTime || "-"),
         "Preferred language: " + (state.lang || "-"),
       ].join("\n");
-      fetch("/api/inquiries", {
+      fetch(APP_BASE + "/api/inquiries", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -6,7 +6,7 @@ require_once __DIR__ . '/../includes/functions.php';
 require_once __DIR__ . '/../includes/head.php';
 $user = require_user();
 if (in_array($user['role'] ?? '', ['admin', 'agent'], true)) {
-    header('Location: /admin/', true, 302);
+    header('Location: ' . url('/admin/'), true, 302);
     exit;
 }
 
@@ -20,11 +20,10 @@ $welcome = $firstName !== '' ? $firstName : explode(' ', (string) ($user['name']
 $initials = implode('', array_slice(array_filter(array_map(fn ($p) => mb_substr($p, 0, 1), explode(' ', $fullName))), 0, 2));
 
 $COUNTRIES = [
-    ['AE', 'United Arab Emirates', '+971', "\u{1F1E6}\u{1F1EA}"],
+    ['PK', 'Pakistan', '+92', "\u{1F1F5}\u{1F1F0}"],
     ['GB', 'United Kingdom', '+44', "\u{1F1EC}\u{1F1E7}"],
     ['US', 'United States', '+1', "\u{1F1FA}\u{1F1F8}"],
     ['IN', 'India', '+91', "\u{1F1EE}\u{1F1F3}"],
-    ['PK', 'Pakistan', '+92', "\u{1F1F5}\u{1F1F0}"],
     ['SA', 'Saudi Arabia', '+966', "\u{1F1F8}\u{1F1E6}"],
     ['EG', 'Egypt', '+20', "\u{1F1EA}\u{1F1EC}"],
     ['PH', 'Philippines', '+63', "\u{1F1F5}\u{1F1ED}"],
@@ -65,8 +64,8 @@ $ic = [
 <div class="shell-root">
   <aside class="shell-sidebar" data-portal-sidebar>
     <div class="shell-brand">
-      <a href="/" aria-label="Zoya Ventures Real Estate">
-        <img draggable="false" src="/lloo.png" alt="Zoya Ventures Real Estate" />
+      <a href="/" aria-label="Expert Marketing & Developers">
+        <img draggable="false" src="/images/expertlogo.png" alt="Expert Marketing & Developers" style="border-radius:50%;background:#ffffff;padding:6px;box-sizing:border-box;object-fit:contain" />
       </a>
     </div>
     <nav class="shell-nav">
@@ -315,7 +314,7 @@ $ic = [
     <footer class="portal-footer">
       <div class="portal-footer-inner">
         <div class="portal-copy">
-          &copy; 2026, Zoya Ventures Real Estate
+          &copy; 2026, Expert Marketing & Developers
           <a href="/privacy-policy/">Privacy Policy</a>
         </div>
         <div class="portal-siteby">Site by <a rel="nofollow" href="https://hifimarketing.co" target="_blank">hifi</a></div>

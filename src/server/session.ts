@@ -4,7 +4,7 @@ import { getDb } from "./db";
 import { ensureSeeded } from "./seed";
 import { AuthUser, createSessionToken, deleteSession, getUserByToken, touchLastLogin } from "./auth-core";
 
-export const SESSION_COOKIE = "provident_session";
+export const SESSION_COOKIE = "zoya_session";
 
 async function ensure() {
   await ensureSeeded();

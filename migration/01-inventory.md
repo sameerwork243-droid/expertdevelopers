@@ -1,4 +1,4 @@
-# Migration Inventory — Zoya Ventures Real Estate (provident-next)
+# Migration Inventory — Zoya Ventures Real Estate (zoya-ventures-next)
 
 Phase 1 deliverable. Complete audit of the existing Next.js application to be migrated to PHP 8.x + MySQL + Apache (shared hosting).
 
@@ -10,11 +10,11 @@ Audit date: 2026-08-17. Project root: `D:\hifi_marketing\New folder\zoyaventures
 
 | Item | Value |
 |---|---|
-| Domain | provident.ae |
+| Domain | zoyaventures.com |
 | Site name | Zoya Ventures Real Estate |
 | Original stack | Next.js 16.3.0, React 19.2.8, TypeScript, Tailwind 4, framer-motion 12.43.0, gsap 3.15.0, mysql2 3.12.0, pg 8.23.0, @vercel/blob 2.7.0 |
 | Target stack | PHP 8.x (PDO MySQL), Apache, `.htaccess`, shared hosting (WPArena), no Node runtime |
-| Env keys | `PROVIDENT_DATABASE_URL` (mysql:// or postgres://), `PROVIDENT_ADMIN_EMAIL`, `PROVIDENT_ADMIN_PASSWORD`, `BLOB_READ_WRITE_TOKEN` (legacy, drop) |
+| Env keys | `ZOYA_DATABASE_URL` (mysql:// or postgres://), `ZOYA_PG_SSL`, `ZOYA_ADMIN_EMAIL`, `BLOB_READ_WRITE_TOKEN` (legacy, drop) |
 | DB fallback | `dbEnabled()` false → JSON fallback from `data/raw` (must be replicated as PHP fallback mode) |
 
 ## 2. Routing / Page Inventory
@@ -61,7 +61,7 @@ Area/sub-filter listings (buy 18 + let 1):
 | `projects.tsx` | Project hub pages | `/new-projects/{slug}/` |
 | `search-hero.tsx` | Search hero | buy/rent toggle + search inputs |
 | `dream-home-quiz.tsx` | Quiz module | multi-step quiz |
-| `slick.tsx` | Slick carousel wrapper | slick.css embedded in provident.css |
+| `slick.tsx` | Slick carousel wrapper | slick.css embedded in zoya.css |
 | `newsletter.tsx` | Newsletter form | |
 | `save-button.tsx` | Saved property button | requires auth |
 | `logo-data.ts` | Logo SVGs | |
@@ -75,7 +75,7 @@ Area/sub-filter listings (buy 18 + let 1):
 ## 4. API Endpoint Inventory (`src/app/api/`, 23 routes)
 
 ### Auth (`/api/auth/*`)
-- `login` (POST), `register` (POST), `logout` (POST), `me` (GET), `change-password` (POST). Auth: cookie `provident_session`, httpOnly, sameSite=lax, secure on HTTPS; scrypt `salt:hash` hex; SHA-256 token hash stored in `sessions`; TTL 7d, remember 30d. Roles: `user`, `agent`, `admin`.
+- `login` (POST), `register` (POST), `logout` (POST), `me` (GET), `change-password` (POST). Auth: cookie `zoya_session`, httpOnly, sameSite=lax, secure on HTTPS; scrypt `salt:hash` hex; SHA-256 token hash stored in `sessions`; TTL 7d, remember 30d. Roles: `user`, `agent`, `admin`.
 
 ### User (`/api/user/*`)
 - `account` (GET/PATCH), `saved` (GET/POST/DELETE), `viewings` (GET/POST), `inquiries` (GET), `notifications` (GET/PATCH), `password` (POST), `profile` (GET/PATCH).
@@ -92,7 +92,7 @@ Area/sub-filter listings (buy 18 + let 1):
 
 Key port notes:
 - `src/server/db.ts`: `dbEnabled()` + dual-driver (mysql2/pg). PHP: PDO MySQL only; keep JSON fallback mode reading `data/raw`.
-- `src/server/seed.ts`: DEFAULT_AMENITIES list, seed user (from `PROVIDENT_ADMIN_EMAIL`/`PROVIDENT_ADMIN_PASSWORD`), content seeding.
+- `src/server/seed.ts`: DEFAULT_AMENITIES list, seed user (from `ZOYA_ADMIN_EMAIL`/`ZOYA_ADMIN_PASSWORD`), content seeding.
 - `src/server/crud.ts`: generic list/create/get/update/delete with validation + pagination.
 - `src/server/property-bridge.ts`: DbHit shape, DEPARTMENT map, DEFAULT_NEGOTIATOR.
 - `src/server/content-bridge.ts`: page_content, team, jobs, projects, developers, communities, site stats.
@@ -112,7 +112,7 @@ Fields (exact order): Full Name; "I want to" (Sale/Rent radio); Phone Number + c
 - `ref.ts` — getPageData/classify (route resolution).
 - `filtering.ts` — PER_PAGE=9, FilterState {qtype, area, beds, price, sort}, TYPE_MAP, price bands (e.g. above-20000000).
 - `image.ts` — CDN helpers `cft()/cfw()`: `https://d3h330vgpwpjr8.cloudfront.net/x/{w}x{h}/...` and `/x/{w}/...`; local override list (2 assets: careers-banner, about-video).
-- `site.ts` — constants: name, domain provident.ae, phone +971 568 308 221, email zoyaventure15@gmail.com, WhatsApp 971568308221, socials [instagram, facebook, linkedin, x, youtube]; brand colors #EE7133 / #07234B.
+- `site.ts` — constants: name, domain zoyaventures.com, phone +971 568 308 221, email zoyaventure15@gmail.com, WhatsApp 971568308221, socials [instagram, facebook, linkedin, x, youtube]; brand colors #EE7133 / #07234B.
 - `url.ts` — toCloudFrontUrl.
 - `utils.ts` — fmtPrice, waLink, mailto, esc, faqSchema.
 - `data.ts`, `types.ts`, `props.tsx`, `legal-content.ts` (legal pages content).
@@ -123,13 +123,13 @@ Alt-text convention: `"{label} - Zoya Ventures Real Estate"`; lazy loading excep
 
 - `media/hero.mp4` (hero video), `images/logo.png`, `images/lloo.png`, `favicon-32x32.png`, `icons/icon-512x512.png`, `images/video-thumbnail.webp`, `images/property-placeholder.svg`, `login/login-bg.jpg`, `images/banners/careers-banner.webp`, trustpilot/google stars SVGs, `data/signature-badge.svg`, `data/more-box.svg`.
 - `static/` (hashed, must keep names): `PlusJakartaSans-4e71a2a40bfc8bd5b5660abd58f37aa6.woff2`, `LoraBold-b58b749a7082c19e8aae0d73b3fec68c.woff2`, `loader-90672f1deffccbcdf4f1be54ee7cd7ea.gif`, `bg_bro-*.png` ×2, `bg_stats-*.jpg`, `family-community-*.svg`, `Signature-*.svg`.
-- Fonts: `@font-face` in provident.css → `/static/PlusJakartaSans-*.woff2` (Plus Jakarta Sans), `/static/LoraBold-*.woff2` (Lora).
+- Fonts: `@font-face` in zoya.css → `/static/PlusJakartaSans-*.woff2` (Plus Jakarta Sans), `/static/LoraBold-*.woff2` (Lora).
 
 ## 9. Stylesheets
 
 | File | Size | Role |
 |---|---|---|
-| `src/app/provident.css` | ~1,021,308 bytes (minified, single-line) | Primary stylesheet: destyle.css reset, Bootstrap vars, slick, swiper icons, fonts, `.icon` background-icon system, header, footer, listing, property detail, forms, portal, admin, responsive |
+| `src/app/zoya.css` | ~1,021,308 bytes (minified, single-line) | Primary stylesheet: destyle.css reset, Bootstrap vars, slick, swiper icons, fonts, `.icon` background-icon system, header, footer, listing, property detail, forms, portal, admin, responsive |
 | `header-styles.css` | — | Header-specific |
 | `developer-styles.css` | — | Developers pages |
 | `app-styles.css` | — | App shell |
@@ -140,19 +140,19 @@ CSS is plain CSS (no CSS modules) — copy verbatim to `assets/css/`. Icons are 
 
 ## 10. Third-Party / Analytics
 - GTM: `GTM-PGNHTGZ5` (in `layout.tsx`). Keep same GTM container ID in PHP.
-- Slick slider (slick.css embedded in provident.css), swiper icons, gsap + framer-motion (must be ported to vanilla JS/animations).
+- Slick slider (slick.css embedded in zoya.css), swiper icons, gsap + framer-motion (must be ported to vanilla JS/animations).
 
 ## 11. Reference Files
 - `detail.html` (93KB) and `list.html` (682KB) — pre-rendered property detail and listing page snapshots for fidelity QA.
 - `data/raw/html/` — page snapshots.
-- `.env.local` — production Vercel env (Postgres Neon + BLOB token). Migration note: real credentials live here; the MySQL local fallback line is commented (`mysql://root@127.0.0.1:3306/providentnext`) — use for local dev.
-- `data/provident.db` (SQLite with WAL/SHM, active) — possible data source for direct import if DB not reachable.
+- `.env.local` — production Vercel env (Postgres Neon + BLOB token). Migration note: real credentials live here; the MySQL local fallback line is commented (`mysql://root@127.0.0.1:3306/zoyaventures`) — use for local dev.
+- `a legacy SQLite snapshot (removed)` (SQLite with WAL/SHM, active) — possible data source for direct import if DB not reachable.
 
 ## 12. Gaps / Open Questions
 1. `.env.local` DB URL is Postgres (Neon) in production — confirm whether final PHP deployment uses the MySQL XAMPP fallback schema or requires a fresh MySQL dump/import from `data/raw` JSON snapshots.
 2. `data/raw/html/` contents not yet enumerated (page snapshots for fidelity checks).
 3. Admin uploads use @vercel/blob → must be replaced with local `uploads/` + `api/upload.php` (or simple file upload endpoint) and URL rewriting in content JSON.
-4. Whether `data/provident.db` (SQLite) should be the canonical import source — it contains live DB state incl. users/sessions.
+4. Whether `a legacy SQLite snapshot (removed)` (SQLite) should be the canonical import source — it contains live DB state incl. users/sessions.
 5. PHP version on target WPArena hosting (8.0 vs 8.1/8.2/8.3) affects available functions (e.g. `str_contains` needs 8.0+, enums 8.1+).
 6. Email sending (forms → notifications) — check existing email flow (currently likely no SMTP in Node app; PHP must add mail()/SMTP with same From: zoyaventure15@gmail.com).
 

@@ -1,4 +1,4 @@
-﻿# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -46,14 +46,14 @@ next-env.d.ts
 /data/raw/html/
 /tmp/
 /dev/
-/data/provident.db-shm
-/data/provident.db-wal
+/data/legacy-sqlite.db-shm
+/data/legacy-sqlite.db-wal
 
 .vercel
 .env*
-/data/provident.db
-/data/provident.db-wal
-/data/provident.db-shm
+/data/legacy-sqlite.db
+/data/legacy-sqlite.db-wal
+/data/legacy-sqlite.db-shm
 
 tiny.png
 

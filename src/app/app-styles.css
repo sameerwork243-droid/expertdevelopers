@@ -2,7 +2,7 @@
    The base media query applies margin-left:80px to the page-level
    .form-section, which fights the flexible content | form side-by-side
    layout. These overrides keep the container deterministic regardless of
-   load order. The form itself is a single centered column (see provident.css). */
+   load order. The form itself is a single centered column (see zoya.css). */
 @media screen and (min-width: 1200px) {
   #Book_a_Valuation.contact-form-wrapper .content-section,
   #Book_a_Valuation.contact-form-wrapper .form-section {
@@ -827,4 +827,207 @@
 }
 .app-row-click:hover td {
   background: #f7fafc;
+}
+
+/* ---------- Mortgage calculator: results grid + a11y (scoped to #mortgage-calculator) ---------- */
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt {
+  align-items: start;
+  display: grid;
+  gap: 18px 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk {
+  min-width: 0;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk .tit {
+  margin-bottom: 2px;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk.tif {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+}
+.results-calculator .property-mortagage-wrap .input-item:focus,
+.results-calculator .property-mortagage-wrap .input-item:focus-visible {
+  border-color: #005480;
+  box-shadow: 0 0 0 1px #005480;
+  outline: none;
+}
+@media screen and (max-width: 560px) {
+  .results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- 40x40 square pagination ---------- */
+.bp40 {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.bp40-btn {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  color: #4b5563;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  width: 40px;
+}
+
+.bp40-btn:hover:not(:disabled):not(.is-active) {
+  background: #f3f4f6;
+}
+
+.bp40-btn:focus-visible {
+  outline: 2px solid #0f2a5c;
+  outline-offset: 2px;
+}
+
+.bp40-btn.is-active {
+  background: #0f2a5c;
+  border-color: #0f2a5c;
+  color: #fff;
+}
+
+.bp40-btn.is-active:hover:not(:disabled) {
+  background: #0b2147;
+}
+
+.bp40-btn:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.bp40-chevron {
+  display: block;
+}
+
+.bp40-ellipsis {
+  align-items: center;
+  color: #9ca3af;
+  display: inline-flex;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+/* ---------- Landing / service hero: full-bleed bg, no top gap ---------- */
+.banner-wrap.banner-landing-wrap {
+  background-color: #07234b;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 0;
+}
+.banner-wrap.banner-landing-wrap .bg-section {
+  bottom: 0;
+  left: 0;
+  min-height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.banner-wrap.banner-landing-wrap .bg-section:not(:has(img)) {
+  background-image: var(--hero-bg, radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-wrap.banner-home-wrap {
+  background-color: #07234b;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 0;
+}
+.banner-wrap.banner-home-wrap .bg-section-gradient {
+  background-image: var(--hero-bg, radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.listing-page-wrap .listing-page-top {
+  position: relative;
+}
+.listing-page-wrap .listing-page-top .bg-section-gradient {
+  background-image: var(--hero-bg, radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: -1;
+}
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap,
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap a.breadcrumb-link,
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap a.breadcrumb-link:hover,
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap .breadcrumb-item.active a {
+  color: #fff;
+}
+.listing-page-wrap .listing-page-top .banner-listing-wrap .title,
+.listing-page-wrap .listing-page-top .banner-listing-wrap .description {
+  color: #fff;
+}
+.news_landing_page .banner-listing-wrap {
+  padding-bottom: 120px;
+}
+.sort-dropdown {
+  position: relative;
+}
+.sort-menu {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(7, 35, 75, 0.14);
+  display: none;
+  margin: 8px 0 0;
+  min-width: 200px;
+  padding: 6px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 60;
+}
+.sort-menu.show {
+  display: block;
+}
+.sort-option {
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  color: #35373c;
+  cursor: pointer;
+  display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 9px 12px;
+  text-align: left;
+  width: 100%;
+}
+.sort-option:hover {
+  background: #f2f5f9;
+  color: #005480;
 }

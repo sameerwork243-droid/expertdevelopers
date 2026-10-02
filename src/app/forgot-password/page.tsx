@@ -10,7 +10,7 @@ export default async function ForgotPasswordPage() {
       <h1>Reset your password</h1>
       <p className="auth-subtitle">
         For security reasons, self-service password reset is not available on this demo. Please contact support at
-        support@providentestate.com.
+        zoyaventure15@gmail.com.
       </p>
     </PortalAuthLayout>
   );

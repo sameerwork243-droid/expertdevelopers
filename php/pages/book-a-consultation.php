@@ -9,7 +9,7 @@ require_once __DIR__ . '/../includes/render/modules.php';
 require_once __DIR__ . '/../includes/head.php';
 
 $page_title = 'Book a Consultation';
-$page_description = 'Speak with one of our Zoya Ventures property consultants about buying, selling or investing in Dubai real estate.';
+$page_description = 'Speak with one of our Expert Marketing & Developers property consultants about buying, selling or investing in Pakistan real estate.';
 
 $contact = contact_enquiry_form();
 $contact = str_replace(
@@ -38,7 +38,7 @@ $body = '<div class="bv-page">'
     . '</div></div>'
     . '</div></div>'
     . '<div class="bv-preview-col"><div class="bv-preview bv-preview-empty">'
-    . '<p class="bv-preview-note">Our team covers buying, selling, renting, off-plan investments, mortgages and property management in Dubai.</p>'
+    . '<p class="bv-preview-note">Our team covers buying, selling, renting, off-plan investments and property management in Pakistan.</p>'
     . '<a class="button button-orange" href="/property-services/"><span>Explore Services</span></a>'
     . '</div></div>'
     . '</div></div></div>';

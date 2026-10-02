@@ -521,7 +521,6 @@ function FormPage({ title, backLabel, fields, initial, busy, onCancel, onSave }:
 
 const PROPERTY_FIELDS: FieldDef[] = [
   { key: "title", label: "Title", required: true, full: true, hint: "e.g. 2 Bedroom Apartment in Dubai Marina" },
-  { key: "slug", label: "Slug (optional — auto-generated from title)", full: true },
   { key: "transaction_type", label: "Transaction", type: "select", options: ["buy", "rent"] },
   { key: "property_type", label: "Property type", type: "select", options: ["apartment", "villa", "townhouse", "penthouse", "studio", "duplex", "mansion", "commercial-property", "plot"] },
   { key: "category", label: "Category", type: "select", options: ["apartments", "villas", "townhouses", "penthouses", "studios", "duplexes", "mansions", "commercial-properties", "plots"] },
@@ -533,8 +532,6 @@ const PROPERTY_FIELDS: FieldDef[] = [
   { key: "agent_id", label: "Assigned agent", type: "agent", full: true, hint: "Shown as the negotiator on the public property page" },
   { key: "location", label: "Location", full: true },
   { key: "display_address", label: "Display address", full: true },
-  { key: "latitude", label: "Latitude", type: "number" },
-  { key: "longitude", label: "Longitude", type: "number" },
   { key: "bedroom", label: "Bedrooms", type: "number" },
   { key: "bathroom", label: "Bathrooms", type: "number" },
   { key: "area_sqft", label: "Area (sq ft)", type: "number" },
@@ -551,7 +548,6 @@ const PROPERTY_FIELDS: FieldDef[] = [
 
 const SERVICE_FIELDS: FieldDef[] = [
   { key: "title", label: "Title", required: true, full: true },
-  { key: "slug", label: "Slug", required: true, full: true },
   { key: "icon", label: "Icon URL", full: true, file: true },
   { key: "banner_image", label: "Banner image URL", full: true, file: true },
   { key: "description", label: "Description", type: "textarea", full: true },
@@ -564,7 +560,6 @@ const SERVICE_FIELDS: FieldDef[] = [
 
 const AGENT_FIELDS: FieldDef[] = [
   { key: "name", label: "Name", required: true, full: true },
-  { key: "slug", label: "Slug", required: true, full: true },
   { key: "role", label: "Role" },
   { key: "phone", label: "Phone" },
   { key: "email", label: "Email", full: true },
@@ -578,7 +573,6 @@ const AGENT_FIELDS: FieldDef[] = [
 
 const DEVELOPER_FIELDS: FieldDef[] = [
   { key: "name", label: "Name", required: true, full: true },
-  { key: "slug", label: "Slug", required: true, full: true },
   { key: "region", label: "Region" },
   { key: "founded", label: "Founded", type: "number" },
   { key: "deliveries", label: "Deliveries", type: "number" },
@@ -589,7 +583,6 @@ const DEVELOPER_FIELDS: FieldDef[] = [
 
 const COMMUNITY_FIELDS: FieldDef[] = [
   { key: "name", label: "Name", required: true, full: true },
-  { key: "slug", label: "Slug", required: true, full: true },
   { key: "region", label: "Region", full: true },
   { key: "published", label: "Published", type: "checkbox", hint: "Visible on the public site" },
 ];
@@ -619,7 +612,6 @@ const MEDIA_FIELDS: FieldDef[] = [
 
 const JOB_FIELDS: FieldDef[] = [
   { key: "title", label: "Job title", required: true, full: true },
-  { key: "slug", label: "Slug", required: true, full: true },
   { key: "location", label: "Location" },
   { key: "summary", label: "Summary", type: "textarea", full: true },
   { key: "job_details", label: "Full details (HTML)", type: "textarea", full: true },
@@ -628,7 +620,6 @@ const JOB_FIELDS: FieldDef[] = [
 
 const PROJECT_FIELDS: FieldDef[] = [
   { key: "title", label: "Project name", required: true, full: true },
-  { key: "slug", label: "Slug", required: true, full: true },
   { key: "status", label: "Status", type: "select", options: ["ready", "pending", "under_construction", "future_launch", "off-plan"] },
   { key: "price", label: "Price (AED)", type: "number" },
   { key: "currency", label: "Currency" },
@@ -778,7 +769,7 @@ function PropertiesManager() {
                       <td>{row.property_type}</td>
                       <td>{"AED " + Number(row.price).toLocaleString()}</td>
                       <td>{row.bedroom} bd / {row.bathroom} ba</td>
-                      <td>{row.image_count} img · {row.amenity_count} am.</td>
+                      <td>{row.image_count} img</td>
                       <td>
                         <span className={"app-badge " + (Number(row.published) ? "active" : "inactive")}>
                           {Number(row.published) ? "published" : "draft"}

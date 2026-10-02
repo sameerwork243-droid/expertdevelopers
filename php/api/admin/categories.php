@@ -23,6 +23,7 @@ $body = json_body();
 if ($method === 'POST' || $method === 'PUT') {
     $name = trim((string) ($body['name'] ?? ''));
     $slug = trim((string) ($body['slug'] ?? ''));
+    if ($slug === '') $slug = preg_replace('/-+/', '-', trim(preg_replace('/[^a-z0-9]+/', '-', strtolower($name)), '-'));
     $type = trim((string) ($body['type'] ?? ''));
     $sort = (int) ($body['sort'] ?? 0);
     if ($name === '') json_response(['error' => 'Name is required'], 400);

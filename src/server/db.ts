@@ -5,7 +5,7 @@ let mysqlPool: MyPool | null = null;
 let pgPool: PgPool | null = null;
 let ready: Promise<void> | null = null;
 
-const DATABASE_URL = process.env.PROVIDENT_DATABASE_URL || process.env.DATABASE_URL || "";
+const DATABASE_URL = process.env.ZOYA_DATABASE_URL || process.env.DATABASE_URL || "";
 
 const isPgUrl = (u: string) => u.startsWith("postgres://") || u.startsWith("postgresql://");
 const isMyUrl = (u: string) => u.startsWith("mysql://");
@@ -69,7 +69,7 @@ async function queryWithRetry<T>(
 }
 
 function pgSsl(): boolean | { rejectUnauthorized: boolean } {
-  const flag = process.env.PROVIDENT_DB_SSL;
+  const flag = process.env.ZOYA_DB_SSL;
   if (flag === "1") return { rejectUnauthorized: false };
   if (flag === "0") return false;
   const m = DATABASE_URL.match(/[?&]sslmode=([^&]+)/i);
@@ -80,7 +80,7 @@ function pgSsl(): boolean | { rejectUnauthorized: boolean } {
 
 function getMyPool(): MyPool {
   if (!mysqlPool) {
-    const ssl = process.env.PROVIDENT_DB_SSL === "1" ? { rejectUnauthorized: false } : undefined;
+    const ssl = process.env.ZOYA_DB_SSL === "1" ? { rejectUnauthorized: false } : undefined;
     mysqlPool = createPool({
       uri: DATABASE_URL,
       connectionLimit: 10,

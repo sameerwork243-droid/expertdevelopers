@@ -16,7 +16,7 @@ function property_gallery(array $srcs, string $type, ?string $location = null, ?
     $mapsUrl = $location ? 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($location) : null;
     $photosLabel = $n > 1 ? 'Photos (' . $n . ')' : 'Photo';
     $lightboxSrcs = array_map(fn ($s) => cft($s, 1200, 675), $srcs);
-    $shareTitle = $title ? $title : $type . ' - Zoya Ventures Real Estate';
+    $shareTitle = $title ? $title : $type . ' - Expert Marketing & Developers';
 
     $html = '<div class="pe-gallery" data-srcs="' . esc(json_encode($lightboxSrcs, JSON_UNESCAPED_SLASHES)) . '">';
 

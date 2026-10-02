@@ -9,12 +9,10 @@ function rich(?string $html): string
     return '<div>' . localize_links($html) . '</div>';
 }
 
-/** Rewrite https://providentestate.com/<path> links to local <path> so nothing sends visitors to the original site. */
+/** Internal links are already local/CDN-safe, so passthrough. */
 function localize_links(?string $html): string
 {
     if ($html === null || $html === '') return '';
-    $html = preg_replace('#https?://(?:www\.)?providentestate\.com(?=/|#|\?)#i', '', $html) ?? $html;
-    $html = preg_replace('#https?://(?:www\.)?providentestate\.com\b#i', '/', $html) ?? $html;
     return $html;
 }
 
@@ -29,7 +27,7 @@ function popup_slug_route(?array $cta, ?string $fallbackHref = '#'): string
         $slug = (string) ($params['popup'] ?? '');
     }
     $map = [
-        'Mortgage' => '/contact/contact-mortgage/',
+        'Mortgage' => '/contact/general-enquiry/',
         'General_Enquiry' => '/contact/general-enquiry/',
         'Property_Management' => '/contact/contact-property-management/',
         'Prism_Popup' => '/contact/contact-prism/',

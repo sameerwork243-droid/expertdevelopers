@@ -61,7 +61,7 @@ function register_interest_form(string $title): string
     return '<form class="contact-form" data-enquiry-form="project" data-project-title="' . esc($title) . '" novalidate>'
         . '<div class="input-section">'
         . '<input type="text" name="name" placeholder="Full Name" required />'
-        . '<select name="dial" class="country-select" aria-label="Country code">' . countries_options('+971') . '</select>'
+        . '<select name="dial" class="country-select" aria-label="Country code">' . countries_options('+92') . '</select>'
         . '<input type="tel" name="phone" placeholder="Phone Number" />'
         . '<input type="email" name="email" placeholder="Email Address" required />'
         . '</div>'
@@ -94,7 +94,7 @@ elseif (!empty($h['price'])) $price = number_format((float) $h['price']);
     foreach (array_slice($allImages, 0, 3) as $i => $src) {
         $slides .= '<div class="swiper-slide"><img loading="' . ($i === 0 ? 'eager' : 'lazy') . '" src="' . esc($src) . '" alt="' . esc($btLabel) . '" /></div>';
     }
-    $out = '<div class="offplan-card-wrap">';
+    $out = '<div class="offplan-card-wrap"' . (!empty($h['price']) ? ' data-sort-price="' . (int) $h['price'] . '"' : '') . '>';
     $out .= '<div class="img-section ttf">';
     $out .= '<div class="flag-section"><p class="img-tag"><span>' . esc($btLabel) . '</span></p></div>';
     if (!empty($h['completion_year'])) {
@@ -109,8 +109,9 @@ elseif (!empty($h['price'])) $price = number_format((float) $h['price']);
         $out .= '<a class="developer" href="/new-projects/developed-by-' . esc($devSlug) . '/">by <span>' . esc((string) $h['developer']) . '</span></a>';
     }
     $out .= '<div class="price">';
-    if (!empty($h['display_price'])) $out .= '<span>Starting Price </span>';
-    $out .= esc($price) . '</div>';
+    if (!empty($h['display_price'])) $out .= '<span>Starting Price </span>' . project_price_text((string) $h['display_price'], (int) ($h['price'] ?? 0));
+    elseif ($price !== '') $out .= project_price_text($price, (int) ($h['price'] ?? 0));
+    $out .= '</div>';
     $out .= '<div class="more-info">';
     if (!empty($h['display_address'])) {
         $out .= '<p class="location"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 7C10 8.10457 9.10457 9 8 9C6.89543 9 6 8.10457 6 7C6 5.89543 6.89543 5 8 5C9.10457 5 10 5.89543 10 7Z" stroke="#9399A4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13 7C13 11.7614 8 14.5 8 14.5C8 14.5 3 11.7614 3 7C3 4.23858 5.23858 2 8 2C10.7614 2 13 4.23858 13 7Z" stroke="#9399A4" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>' . esc((string) $h['display_address']) . '</span></p>';
@@ -224,9 +225,9 @@ function project_simple_detail(array $hit, string $route): string
     if (!empty($hit['display_address'])) $out .= '<p class="location">' . esc((string) $hit['display_address']) . '</p>';
     $out .= '</div>';
     $out .= '<div class="cta-section">';
-    if (!empty($hit['display_price'])) $out .= '<p class="price">' . esc((string) $hit['display_price']) . '</p>';
+    if (!empty($hit['display_price'])) $out .= '<p class="price">' . project_price_text((string) $hit['display_price'], (int) ($hit['price'] ?? 0)) . '</p>';
     $out .= '<a class="button button-orange" href="#register"><span>Register Interest</span></a>';
-    $out .= '<a class="button button-white" href="tel:+971568308221"><span>&#127482;&#127480; Call Us</span></a>';
+    $out .= '<a class="button button-white" href="tel:+923125170194"><span>&#127477;&#127472; Call Us</span></a>';
     $out .= '</div></div></div>';
     $out .= '<div class="breadcrumbs-wrap white-color"><div class="breadcrumbs-container container"><nav class="breadcrumbs"><ol class="breadcrumb">';
     $out .= '<li class="enable-link-home breadcrumb-item"><a class="breadcrumb-link enable-link" href="/">Home</a></li>';
@@ -241,7 +242,8 @@ function project_simple_detail(array $hit, string $route): string
     $out .= '</div></div>';
     $out .= '<div class="col-xl-4 col-lg-12"><div class="right-section">';
     $price = !empty($hit['display_price']) ? (string) $hit['display_price'] : (!empty($hit['price']) ? number_format((float) $hit['price']) : '&#8212;');
-    $out .= '<div class="item-wrap"><p class="label">Starting Price</p><p class="value">' . $price . '</p></div>';
+    $projNum = project_price_aed((string) ($hit['display_price'] ?? ''), (int) ($hit['price'] ?? 0));
+    $out .= '<div class="item-wrap"><p class="label">Starting Price</p><p class="value"' . data_aed($projNum) . '>' . ($projNum > 0 ? esc(expert_price_text($projNum)) : esc($price)) . '</p></div>';
     if ($beds !== '') $out .= '<div class="item-wrap"><p class="label">Bedrooms</p><p class="value">' . esc($beds) . '</p></div>';
     if (!empty($hit['completion_year'])) $out .= '<div class="item-wrap"><p class="label">Completion</p><p class="value">' . esc((string) $hit['completion_year']) . '</p></div>';
     if (!empty($hit['status'])) $out .= '<div class="item-wrap"><p class="label">Status</p><p class="value">' . esc(str_replace('-', ' ', (string) $hit['status'])) . '</p></div>';
@@ -308,7 +310,7 @@ function project_tile(array $tile, string $title, string $id = ''): string
 function project_amenity_fallback_image(string $text): string
 {
     $t = strtolower($text);
-    $base = 'https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/';
+    $base = CDN_BASE . '/i/';
     $rules = [
         ['infinity', $base . 'Infinity_Pool_0b195de8ff.jpg'],
         ['pool', $base . 'Poool_bc852acb3e.jpg'],
@@ -476,8 +478,8 @@ function project_live_detail(array $hit, array $detail, string $route): string
         }
     }
     $videoUrl = (string) ($detail['video_module']['video_url'] ?? '');
-    $whatsapp = 'https://wa.provident.ae/inquire?phone=971568308221';
-    $tel = 'tel:+971568308221';
+    $whatsapp = 'https://wa.me/923125170194';
+    $tel = 'tel:+923125170194';
     $navIds = [
         ['label' => 'Details', 'id' => 'offplan-details'],
         ['label' => 'Gallery', 'id' => 'offplan-gallery'],
@@ -502,7 +504,7 @@ function project_live_detail(array $hit, array $detail, string $route): string
     $out .= '</div></div></div>';
     $out .= '<div class="breadcrumbs-wrap white-color"><div class="breadcrumbs-container container"><nav class="breadcrumbs"><ol class="breadcrumb">';
     $out .= '<li class="breadcrumb-item"><a class="breadcrumb-link enable-link" href="/">Home</a></li>';
-    $out .= '<li class="breadcrumb-item"><a class="breadcrumb-link enable-link" href="/new-projects/">All Projects in Dubai</a></li>';
+    $out .= '<li class="breadcrumb-item"><a class="breadcrumb-link enable-link" href="/new-projects/">All Projects in Pakistan</a></li>';
     $out .= '<li class="breadcrumb-item active"><a aria-current="page" class="breadcrumb-link disable-link" href="' . esc($route . '/') . '">' . esc($title) . '</a></li>';
     $out .= '</ol></nav></div></div></div>';
 
@@ -585,7 +587,7 @@ if ($isDetail && isset($hits[0])) {
     $page_title = (string) ($hits[0]['title'] ?? '');
     $body = $detail ? project_live_detail($hits[0], $detail, $routeBase) : project_simple_detail($hits[0], $routeBase);
 } else {
-    $page_title = is_array($content) && !empty($content['title']) ? (string) $content['title'] : 'Off-Plan Projects in Dubai';
+    $page_title = is_array($content) && !empty($content['title']) ? (string) $content['title'] : 'Off-Plan Projects in Pakistan';
     $count = $model['data']['nbHits'] ?? count($hits);
 
     // Build filter links ONLY from projects that exist (curated), so no link 404s.
@@ -651,19 +653,27 @@ if ($isDetail && isset($hits[0])) {
         . '<div class="fit-bk-search"><div class="h1-section"><h1>' . esc($page_title) . '</h1></div>'
         . '<p class="info d-none d-xl-block"><span>' . number_format((int) $count) . '</span> projects</p></div>'
         . '<div class="map-sort-section"><div class="d-block d-xl-none info"><span>' . number_format((int) $count) . '</span> projects</div>'
-        . '<div class="sort-divider"></div><div class="d-flex align-items-center"><div class="sort-dropdown dropdown"><div class="sort-field">'
-        . '<svg width="16" height="16" class="sort-icon" viewBox="0 0 16 16" fill="none"><path d="M3 4h10M6 8h4M8.5 12h-1" stroke="#07234B" stroke-linecap="round"></path></svg><span>Sort By</span>'
+        . '<div class="sort-divider"></div><div class="d-flex align-items-center"><div class="sort-dropdown dropdown">'
+        . '<button type="button" class="sort-section" aria-expanded="false"><div class="sort-field"><p class="text button-text"><span>Most Recent</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-down-icon"><path d="M13 5.5L8 10.5L3 5.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round"></path></svg></p></div></button>'
+        . '<div class="sort-menu dropdown-menu dropdown-menu-right">'
+        . '<button type="button" class="sort-option" data-sort="most-recent">Most Recent</button>'
+        . '<button type="button" class="sort-option" data-sort="price-desc">Price: High to Low</button>'
+        . '<button type="button" class="sort-option" data-sort="price-asc">Price: Low to High</button>'
+        . '<button type="button" class="sort-option" data-sort="bed-desc">Bedrooms: High to Low</button>'
+        . '<button type="button" class="sort-option" data-sort="bed-asc">Bedrooms: Low to High</button>'
+        . '<button type="button" class="sort-option" data-sort="size-desc">Size: High to Low</button>'
+        . '<button type="button" class="sort-option" data-sort="size-asc">Size: Low to High</button>'
         . '</div></div></div></div></div></div></div>'
         . '<div class="property-list-container container"><div class="property-list-section isoffplan">' . $cards . '</div></div>'
         . (is_array($content) && !empty($content['description'])
             ? '<div class="text-copy-wrap section-p"><div class="text-copy-container container">' . read_more($content['description'], 4, 'description') . '</div></div>'
             : '')
-        . '<div class="qes-bk com"><div class="container">' . module_questionnaire(['title' => 'Confused About Where to Buy or Invest in Dubai?']) . '</div></div>'
+        . '<div class="qes-bk com"><div class="container">' . module_questionnaire(['title' => 'Confused About Where to Buy or Invest in Pakistan?']) . '</div></div>'
         . '<script>(function(){var i=document.getElementById("search-input-field");if(!i)return;var cur="' . esc((string) ($_GET['areas'] ?? '')) . '";i.addEventListener("keydown",function(e){if(e.key!=="Enter")return;e.preventDefault();var v=i.value.trim();if(v===cur)return;location.href="/new-projects/"+(v?"?areas="+encodeURIComponent(v):"");});})();</script>'
         . '</div></div>';
 }
 
-$page_description = 'Off-plan projects and new developments in Dubai by Zoya Ventures Real Estate.';
+$page_description = 'Off-plan projects and new developments in Pakistan by Expert Marketing & Developers.';
 ?>
 <!DOCTYPE html>
 <html lang="en">

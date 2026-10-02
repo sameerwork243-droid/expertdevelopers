@@ -14,7 +14,7 @@ $page_title = 'Sign In';
 <body>
 <div class="portal-root portal-auth-nofoot">
   <header class="portal-appbar">
-    <a class="portal-brand" href="/" aria-label="Zoya Ventures Real Estate"><img draggable="false" src="/lloo.png" alt="Zoya Ventures Real Estate" /></a>
+    <a class="portal-brand" href="/" aria-label="Expert Marketing & Developers"><img draggable="false" src="/images/expertlogo.png" alt="Expert Marketing & Developers" /></a>
     <div class="portal-title">My Account</div>
     <a class="portal-back" href="/">Back to Website</a>
   </header>
@@ -23,7 +23,7 @@ $page_title = 'Sign In';
   <div class="portal-auth">
     <div class="portal-auth-inner">
       <div class="portal-auth-card">
-        <img class="portal-auth-logo" draggable="false" src="/lloo.png" alt="Zoya Ventures Real Estate" />
+        <img class="portal-auth-logo" draggable="false" src="/images/expertlogo.png" alt="Expert Marketing & Developers" />
         <h1>Login to your account</h1>
         <p class="auth-subtitle">Welcome back. Enter your details to access your account.</p>
 

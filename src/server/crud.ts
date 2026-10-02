@@ -71,6 +71,12 @@ export async function getRow(cfg: CrudConfig, id: number): Promise<Record<string
 }
 
 export async function createRow(cfg: CrudConfig, data: Record<string, unknown>): Promise<{ ok: boolean; error?: string; id?: number }> {
+  if (cfg.fields.some((f) => f.name === "slug") && !String(data.slug ?? "").trim()) {
+    const source = String(data.title ?? data.name ?? "").trim();
+    if (source) {
+      data.slug = source.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
+    }
+  }
   const v = validate(data, cfg);
   if (!v.ok) return { ok: false, error: v.error };
   const cols = cfg.fields.map((f) => f.name);

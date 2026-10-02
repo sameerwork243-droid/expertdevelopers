@@ -109,10 +109,18 @@ export function MortgageCalculator({
   const [years, setYears] = useState(25);
 
   const p = parseFloat(price.replace(/,/g, "")) || 0;
-  const principal = p * (1 - (down || 0) / 100);
+  const principal = Math.max(0, p * (1 - (down || 0) / 100));
   const r = (rate || 0) / 12 / 100;
   const n = (years || 0) * 12;
-  const monthly = p > 0 && r > 0 && n > 0 ? (principal * r) / (1 - Math.pow(1 + r, -n)) : 0;
+  let monthly = 0;
+  let totalPaid = 0;
+  let interest = 0;
+  if (p > 0 && n > 0) {
+    monthly = r > 0 ? (principal * r) / (1 - Math.pow(1 + r, -n)) : principal / n;
+    totalPaid = monthly * n;
+    interest = Math.max(0, totalPaid - principal);
+  }
+  const downAmt = p * ((down || 0) / 100);
   const fmt = (v: number) => (v ? Math.round(v).toLocaleString("en-US") : "0");
 
   if (panel) {
@@ -123,34 +131,38 @@ export function MortgageCalculator({
           <div className="calculator-section">
             <div className="input-section">
               <div className="label-bk">
-                <label>Total Price</label>
+                <label htmlFor="mort-price">Total Price</label>
                 <input
                   type="text"
                   inputMode="decimal"
+                  id="mort-price"
                   className="input-item"
                   value={price}
+                  autoComplete="off"
+                  data-min="100000"
+                  data-max="1000000000"
                   onChange={(e) => setPrice(e.target.value)}
                 />
-                <span className="fix-txt">{currency}</span>
+                <span className="fix-txt" aria-hidden="true">{currency}</span>
               </div>
               <div className="label-bk">
-                <label>Down Payment (%)</label>
-                <input type="number" className="input-item" value={down} onChange={(e) => setDown(parseFloat(e.target.value))} />
+                <label htmlFor="mort-down">Down Payment (%)</label>
+                <input type="number" id="mort-down" className="input-item" min={0} max={100} step={0.1} value={down} onChange={(e) => setDown(parseFloat(e.target.value))} />
               </div>
               <div className="label-bk">
-                <label>Interest Rate (%)</label>
-                <input type="number" className="input-item" value={rate} onChange={(e) => setRate(parseFloat(e.target.value))} />
+                <label htmlFor="mort-rate">Interest Rate (%)</label>
+                <input type="number" id="mort-rate" className="input-item" min={0} max={25} step={0.01} value={rate} onChange={(e) => setRate(parseFloat(e.target.value))} />
               </div>
               <div className="label-bk">
-                <label>Loan Period (Years)</label>
-                <input type="number" className="input-item" value={years} onChange={(e) => setYears(parseFloat(e.target.value))} />
+                <label htmlFor="mort-years">Loan Period (Years)</label>
+                <input type="number" id="mort-years" className="input-item" min={1} max={30} step={1} value={years} onChange={(e) => setYears(parseFloat(e.target.value))} />
               </div>
             </div>
           </div>
-          <div className="result-section">
+          <div className="result-section" aria-live="polite">
             <div className="pric-bx">
               <p className="per-txt">Monthly repayment</p>
-              <p className="results">
+              <p className="results" data-out="monthly">
                 {currency} {fmt(monthly)} /month
               </p>
             </div>
@@ -158,13 +170,33 @@ export function MortgageCalculator({
             <div className="nn-bt">
               <div className="one-bk">
                 <p className="tit">Total Loan Amount</p>
-                <p className="con">
+                <p className="con" data-out="loan">
                   {currency} {fmt(principal)}
                 </p>
               </div>
               <div className="one-bk">
+                <p className="tit">Down Payment Amount</p>
+                <p className="con" data-out="down">
+                  {currency} {fmt(downAmt)}
+                </p>
+              </div>
+              <div className="one-bk">
+                <p className="tit">Total Interest</p>
+                <p className="con" data-out="interest">
+                  {currency} {fmt(interest)}
+                </p>
+              </div>
+              <div className="one-bk">
+                <p className="tit">Total Amount Paid</p>
+                <p className="con" data-out="total">
+                  {currency} {fmt(totalPaid)}
+                </p>
+              </div>
+              <div className="one-bk">
                 <p className="tit">Duration</p>
-                <p className="con">{years || 0} Years</p>
+                <p className="con" data-out="duration">
+                  {years || 0} Years
+                </p>
               </div>
               <div className="one-bk tif">
                 <a className="button button-orange trigger-button" href="/property-services/mortgages/">
@@ -192,26 +224,29 @@ export function MortgageCalculator({
                 inputMode="decimal"
                 className="input-item"
                 value={price}
+                autoComplete="off"
+                data-min="100000"
+                data-max="1000000000"
                 onChange={(e) => setPrice(e.target.value)}
               />
             </div>
             <div className="input-section">
               <p className="label">Down Payment (%)</p>
-              <input type="number" className="input-item" value={down} onChange={(e) => setDown(parseFloat(e.target.value))} />
+              <input type="number" className="input-item" min={0} max={100} step={0.1} value={down} onChange={(e) => setDown(parseFloat(e.target.value))} />
             </div>
             <div className="input-section">
               <p className="label">Interest Rate (%)</p>
-              <input type="number" className="input-item" value={rate} onChange={(e) => setRate(parseFloat(e.target.value))} />
+              <input type="number" className="input-item" min={0} max={25} step={0.01} value={rate} onChange={(e) => setRate(parseFloat(e.target.value))} />
             </div>
             <div className="input-section">
               <p className="label">Loan Period Yearly</p>
-              <input type="number" className="input-item" value={years} onChange={(e) => setYears(parseFloat(e.target.value))} />
+              <input type="number" className="input-item" min={1} max={30} step={1} value={years} onChange={(e) => setYears(parseFloat(e.target.value))} />
             </div>
           </div>
-          <div className="result-section">
+          <div className="result-section" aria-live="polite">
             <div className="left-side">
               <p className="text">Monthly Payments</p>
-              <p className="results"> {currency} {fmt(monthly)} /month</p>
+              <p className="results" data-out="monthly"> {currency} {fmt(monthly)} /month</p>
             </div>
             <div className="right-side">
               <a className="button button-orange trigger-button" href="/property-services/mortgages/">

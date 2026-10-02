@@ -811,7 +811,7 @@
           h += '<tr class="app-row-click" data-url="' + esc(path) + '"><td><strong>' + esc(p.title) + "</strong><div style=\"font-size:12px;color:#9399a4\">" + path + "</div></td>" +
             "<td>" + esc(p.property_type) + "</td><td>" + fmtPrice(p.price) + "</td>" +
             "<td>" + esc(p.bedroom) + " bd / " + esc(p.bathroom) + " ba</td>" +
-            "<td>" + esc(p.image_count || 0) + " img &middot; " + esc(p.amenity_count || 0) + " am.</td>" +
+            "<td>" + esc(p.image_count || 0) + " img</td>" +
             "<td>" + statusBadge + "</td>" +
             '<td><div class="row-actions">' +
             '<button type="button" class="app-btn ghost sm" data-edit="' + p.id + '">Edit</button>' +
@@ -883,7 +883,6 @@
 
     var FIELDS = [
       { key: "title", label: "Title", required: true, full: true, hint: "e.g. 2 Bedroom Apartment in Dubai Marina" },
-      { key: "slug", label: "Slug (optional — auto-generated from title)", full: true },
       { key: "transaction_type", label: "Transaction", type: "select", options: ["buy", "rent"] },
       { key: "property_type", label: "Property type", type: "select", options: ["apartment", "villa", "townhouse", "penthouse", "studio", "duplex", "mansion", "commercial-property", "plot"] },
       { key: "category", label: "Category", type: "select", options: ["apartments", "villas", "townhouses", "penthouses", "studios", "duplexes", "mansions", "commercial-properties", "plots"] },
@@ -894,8 +893,6 @@
       { key: "developer", label: "Developer", full: true },
       { key: "location", label: "Location", full: true },
       { key: "display_address", label: "Display address", full: true },
-      { key: "latitude", label: "Latitude", type: "number" },
-      { key: "longitude", label: "Longitude", type: "number" },
       { key: "bedroom", label: "Bedrooms", type: "number" },
       { key: "bathroom", label: "Bathrooms", type: "number" },
       { key: "area_sqft", label: "Area (sq ft)", type: "number" },
@@ -1699,7 +1696,6 @@
         card.innerHTML = "";
         var fields = [
           { key: "name", label: "Name", full: true },
-          { key: "slug", label: "Slug", full: true },
           { key: "type", label: "Type" },
           { key: "sort", label: "Sort order", type: "number" },
         ];

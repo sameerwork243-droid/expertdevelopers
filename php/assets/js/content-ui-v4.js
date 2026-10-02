@@ -4,6 +4,7 @@
 // list-property-form.tsx and the slick prev/next arrows.
 (function () {
   "use strict";
+  var APP_BASE = (window.EXPERT_BASE || "");
 
   function jsonEmbed(sel) {
     var el = document.querySelector(sel);
@@ -261,8 +262,10 @@
     });
 
     function heroGo() {
-      var tabBase = heroTab === 0 ? "/buy/properties-for-sale" : heroTab === 1 ? "/let/properties-for-rent" : "/new-projects";
-      var target = heroAreaSlug ? tabBase + "/in-" + heroAreaSlug + "/" : tabBase + "/";
+      var tabBase = "/buy/properties-for-sale";
+      if (heroTab === 1) tabBase = "/let/properties-for-rent";
+      else if (heroTab === 2) tabBase = "/new-projects";
+      var target = APP_BASE + (heroAreaSlug ? tabBase + "/in-" + heroAreaSlug + "/" : tabBase + "/");
       var params = [];
       if (heroVals.minBed) params.push("minBedroom=" + encodeURIComponent(heroVals.minBed));
       if (heroVals.maxBed) params.push("maxBedroom=" + encodeURIComponent(heroVals.maxBed));
@@ -310,7 +313,7 @@
       if (list) {
         list.innerHTML = "";
         items.forEach(function (b) {
-          var href = "/blog/" + encodeURIComponent(b.slug) + "/";
+          var href = APP_BASE + "/blog/" + encodeURIComponent(b.slug) + "/";
           var html = '<div class="news-card-wrapper"><div class="news-card">'
             + '<div class="img-section-wrap img-zoom"><a class="img-section" href="' + esc(href) + '">';
           if (b.image) html += '<img loading="lazy" src="' + esc(b.image) + '" alt="' + esc(b.title) + '" />';
@@ -339,29 +342,38 @@
       }
     }
 
-    function blogNav(totalPages, safePage) {
-      var opts = "";
-      for (var n = 1; n <= totalPages; n++) {
-        opts += '<div class="pagination-select__option' + (n === safePage ? " pagination-select__option--is-selected" : "") + '" data-blog-page="' + n + '">' + n + "</div>";
+    function blogPageNumbers(page, total) {
+      var nums = [];
+      if (total <= 8) {
+        for (var n = 1; n <= total; n++) nums.push(n);
+      } else if (page <= 6) {
+        nums = [1, 2, 3, 4, 5, 6, "…", total];
+      } else if (page >= total - 4) {
+        nums = [1, "…"];
+        for (var i = total - 4; i <= total; i++) nums.push(i);
+      } else {
+        nums = [1, "…", page - 2, page - 1, page, page + 1, page + 2, "…", total];
       }
-      return '<nav class="pagination-wrapper"><div><div class="pagination-container">'
-        + '<button class="button button-white pagination-button button-back' + (safePage === 1 ? " button-disabled" : "") + '" data-blog-back' + (safePage === 1 ? " disabled" : "") + ' type="button">'
-        + '<svg class="arrow-left-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.75 19.5L8.25 12L15.75 4.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>'
-        + '<span>Back</span></button>'
-        + '<div class="pagination-select-wrap"><span class="page-text">Page:</span>'
-        + '<div class="pagination-select"><div class="react-select css-b62m3t-container">'
-        + '<div class="pagination-select__control css-13cymwt-control" data-blog-page-toggle>'
-        + '<div class="pagination-select__value-container pagination-select__value-container--has-value css-hlgwow">'
-        + '<div class="pagination-select__single-value css-1dimb5e-singleValue" data-blog-page-value>' + safePage + '</div></div>'
-        + '<div class="pagination-select__indicators css-1wy0on6"><span class="pagination-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>'
-        + '<div class="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">'
-        + '<svg class="arrow-down-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 5.5L8 10.5L3 5.5" stroke="#9399A4" stroke-linecap="round" stroke-linejoin="round" /></svg>'
-        + '</div></div></div>'
-        + '<div class="pagination-select__menu"><div class="pagination-select__menu-list">' + opts + '</div></div></div></div>'
-        + '<span class="page-text">of ' + totalPages + '</span></div>'
-        + '<button class="button button-white pagination-button button-next' + (safePage >= totalPages ? " button-disabled" : "") + '" data-blog-next' + (safePage >= totalPages ? " disabled" : "") + ' type="button">'
-        + '<span>Next</span>'
-        + '<svg class="arrow-right-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>'
+      return nums;
+    }
+
+    function blogNav(totalPages, safePage) {
+      var nums = blogPageNumbers(safePage, totalPages);
+      var cells = "";
+      nums.forEach(function (n) {
+        if (n === "…") {
+          cells += '<span class="pagination-dots">...</span>';
+        } else {
+          cells += '<button type="button" class="pagination-number' + (n === safePage ? " active" : "") + '" data-blog-page="' + n + '"' + (n === safePage ? ' aria-current="page"' : '') + ">" + n + "</button>";
+        }
+      });
+      return '<nav class="pagination-wrapper search-pagination-wrapper"><div><div class="pagination-container">'
+        + '<button class="button button-white pagination-button button-back' + (safePage === 1 ? " button-disabled" : "") + '" data-blog-back' + (safePage === 1 ? " disabled" : "") + ' type="button" aria-label="Previous page">'
+        + '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.75 19.5L8.25 12L15.75 4.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>'
+        + '</button>'
+        + '<div class="pagination-numbers">' + cells + '</div>'
+        + '<button class="button button-white pagination-button button-next' + (safePage >= totalPages ? " button-disabled" : "") + '" data-blog-next' + (safePage >= totalPages ? " disabled" : "") + ' type="button" aria-label="Next page">'
+        + '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round" /></svg>'
         + '</button></div></div></nav>';
     }
 
@@ -481,7 +493,7 @@
       if (!list) return;
       list.innerHTML = "";
       visible.forEach(function (a) {
-        var href = "/area-guides/" + encodeURIComponent(a.slug) + "/";
+        var href = APP_BASE + "/area-guides/" + encodeURIComponent(a.slug) + "/";
         var html = '<div class="areaguide-card" data-area-card="' + esc(a.slug) + '">'
           + '<div class="img-section img-zoom"><a class="tt-fi" href="' + esc(href) + '">';
         if (a.image) {
@@ -607,7 +619,7 @@
       if (inner) {
         inner.innerHTML = "";
         pageItems.forEach(function (m) {
-          var href = "/team/" + encodeURIComponent(m.slug) + "/";
+          var href = APP_BASE + "/team/" + encodeURIComponent(m.slug) + "/";
           var html = '<div class="team-card-wrap"><div class="team-card rounded-card">'
             + '<a class="img-section img-zoom" href="' + esc(href) + '">';
           if (m.image) html += '<img loading="lazy" draggable="false" src="' + esc(m.image) + '" alt="' + esc(m.name) + '" />';
@@ -748,7 +760,7 @@
         kind: "listing",
         name: val(nameEl),
         email: val(emailEl),
-        phone: ((dialEl ? dialEl.value : "+971") + " " + val(phoneEl)).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + val(phoneEl)).trim(),
         property_slug: "List Your Property",
         message: JSON.stringify({
           transaction: txEl ? txEl.value : "",
@@ -772,7 +784,7 @@
         kind: "project",
         name: val(nameEl),
         email: val(emailEl),
-        phone: ((dialEl ? dialEl.value : "+971") + " " + val(phoneEl)).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + val(phoneEl)).trim(),
         message: "Register interest: " + projTitle,
         property_ref: projTitle,
       };
@@ -781,14 +793,14 @@
         kind: "contact",
         name: val(nameEl),
         email: val(emailEl),
-        phone: ((dialEl ? dialEl.value : "+971") + " " + val(phoneEl)).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + val(phoneEl)).trim(),
         message: val(msgEl),
       };
       var refEl = form.querySelector('input[name="property_ref"]');
       if (refEl && refEl.value.trim()) payload.property_ref = refEl.value.trim();
     }
 
-    fetch("/api/inquiries", {
+    fetch(APP_BASE + "/api/inquiries", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
       body: "json=" + encodeURIComponent(JSON.stringify(payload)),
@@ -833,7 +845,7 @@
     var phone = item.getAttribute("data-phone") || "";
     var phoneTel = item.getAttribute("data-phone-tel") || "";
     var maps = item.getAttribute("data-maps") || "";
-    var href = item.getAttribute("data-href") || "/contact/";
+    var href = item.getAttribute("data-href") || APP_BASE + "/contact/";
     var modal = document.createElement("div");
     modal.className = "modal fade show d-block";
     modal.setAttribute("role", "dialog");
@@ -948,7 +960,7 @@
           + '<div class="dhq-field"><label>Preferred Language</label><select name="lang">' + langOpts + "</select></div>"
           + (state.fail ? '<div class="dhq-fail">' + esc(state.fail) + "</div>" : "")
           + '<button type="submit" class="dhq-submit">' + (state.busy ? "Submitting…" : "Submit Details") + "</button>"
-          + '<p class="dhq-terms">By submitting you agree to our <a href="/privacy-policy">Privacy Policy</a> and consent to being contacted about your property preferences.</p>'
+          + '<p class="dhq-terms">By submitting you agree to our <a href="' + APP_BASE + '/privacy-policy">Privacy Policy</a> and consent to being contacted about your property preferences.</p>'
           + "</form>";
       }
 
@@ -1060,7 +1072,7 @@
         "Preferred time: " + (a.preferredContactTime || "-"),
         "Preferred language: " + (state.lang || "-"),
       ].join("\n");
-      fetch("/api/inquiries", {
+      fetch(APP_BASE + "/api/inquiries", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
         body: "json=" + encodeURIComponent(JSON.stringify({
@@ -1118,7 +1130,7 @@
     });
   });
 
-  /* ---------- Dubai Communities tabs (For Sale / For rent / Off Plan) ---------- */
+  /* ---------- Communities tabs (For Sale / For rent / Off Plan) ---------- */
 
   Array.prototype.slice.call(document.querySelectorAll("[data-com-tabs]")).forEach(function (root) {
     var btns = Array.prototype.slice.call(root.querySelectorAll("[data-com-tab]"));
@@ -1137,7 +1149,7 @@
     });
   });
 
-  /* ---------- Dubai Communities mobile accordion ---------- */
+  /* ---------- Communities mobile accordion ---------- */
 
   document.querySelectorAll(".dubai-communities-tab-section.accordion .accordion-item").forEach(function (item) {
     var btn = item.querySelector(".accordion-button");
@@ -1324,8 +1336,9 @@
     var drag = null;
     function startDrag(e) {
       if (e.pointerType === "mouse" && e.button !== 0) return;
-      drag = { startX: e.clientX, startIdx: index, moved: false };
-      if (list.setPointerCapture) list.setPointerCapture(e.pointerId);
+      var t = e.target;
+      if (t && t.closest && t.closest("a, button, input, textarea, select, label, [role='button']")) return;
+      drag = { startX: e.clientX, startIdx: index, moved: false, id: e.pointerId };
     }
     function moveDrag(e) {
       if (!drag) return;
@@ -1333,6 +1346,7 @@
       if (!drag.moved && Math.abs(dx) > 8) {
         drag.moved = true;
         track.style.transition = "none";
+        if (list.setPointerCapture) { try { list.setPointerCapture(drag.id); } catch (err) { } }
       }
       if (drag.moved) {
         track.style.transform = "translateX(" + (-(drag.startIdx * stepPx()) + dx) + "px)";

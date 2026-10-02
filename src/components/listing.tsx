@@ -226,6 +226,15 @@ export function ListingPage({ data, route, page = 1 }: { data: any; route: strin
                         </p>
                       </div>
                     </button>
+                    <div className="sort-menu dropdown-menu dropdown-menu-right">
+                      <button type="button" className="sort-option" data-sort="most-recent">Most Recent</button>
+                      <button type="button" className="sort-option" data-sort="price-desc">Price: High to Low</button>
+                      <button type="button" className="sort-option" data-sort="price-asc">Price: Low to High</button>
+                      <button type="button" className="sort-option" data-sort="bed-desc">Bedrooms: High to Low</button>
+                      <button type="button" className="sort-option" data-sort="bed-asc">Bedrooms: Low to High</button>
+                      <button type="button" className="sort-option" data-sort="size-desc">Size: High to Low</button>
+                      <button type="button" className="sort-option" data-sort="size-asc">Size: Low to High</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -331,7 +340,7 @@ export function ListingPage({ data, route, page = 1 }: { data: any; route: strin
                       </a>
                       <a
                         className="button button-white"
-                        href={`https://wa.provident.ae/inquire?phone=${String(expert.phone || "").replace(/\D/g, "")}`}
+                        href={`https://wa.me/${String(expert.phone || "").replace(/\D/g, "")}`}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -341,37 +350,39 @@ export function ListingPage({ data, route, page = 1 }: { data: any; route: strin
                   </div>
                 </div>
               )}
-              <div className="card-view">
-                <img
-                  loading="lazy"
-                  draggable="false"
-                  src="https://d3h330vgpwpjr8.cloudfront.net/x/368x220/Rectangle_551_3ae6d0ae77_2f860c8381.webp"
-                  srcSet="https://d3h330vgpwpjr8.cloudfront.net/x/368x220/Rectangle_551_3ae6d0ae77_2f860c8381.webp 368w"
-                  sizes="(min-width: 180px) 368px"
-                  alt="Find The Best Mortgage in Dubai - Zoya Ventures Real Estate"
-                />
-                <div className="content">
-                  <h4>Find The Best Mortgage in Dubai</h4>
-                  <div className="description">
-                    <p>
-                      <span style={{ whiteSpace: "pre-wrap" }}>
-                        Get the best mortgage rates and terms in the UAE.
-                        {"\n"}Your journey begins here.
-                      </span>
-                    </p>
+              {!rent && (
+                <div className="card-view">
+                  <img
+                    loading="lazy"
+                    draggable="false"
+                    src="https://d3h330vgpwpjr8.cloudfront.net/x/368x220/Rectangle_551_3ae6d0ae77_2f860c8381.webp"
+                    srcSet="https://d3h330vgpwpjr8.cloudfront.net/x/368x220/Rectangle_551_3ae6d0ae77_2f860c8381.webp 368w"
+                    sizes="(min-width: 180px) 368px"
+                    alt="Find The Best Mortgage in Dubai - Zoya Ventures Real Estate"
+                  />
+                  <div className="content">
+                    <h4>Find The Best Mortgage in Dubai</h4>
+                    <div className="description">
+                      <p>
+                        <span style={{ whiteSpace: "pre-wrap" }}>
+                          Get the best mortgage rates and terms in the UAE.
+                          {"\n"}Your journey begins here.
+                        </span>
+                      </p>
+                    </div>
+                    <a className="button button-orange" href="/property-services/mortgages/">
+                      <span>Get Pre-Approved Now</span>
+                    </a>
                   </div>
-                  <a className="button button-orange" href="/property-services/mortgages/">
-                    <span>Get Pre-Approved Now</span>
-                  </a>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
       </div>
     </div>
 
-      <MortgageCalculator />
+      {!rent && <MortgageCalculator />}
 
       <div className="container">
         <div className="qes-bk com">

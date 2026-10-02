@@ -85,11 +85,11 @@ export async function ensureSeeded(): Promise<void> {
   const userCount = Number((await rows("SELECT COUNT(*) AS n FROM users"))[0]?.n ?? 0);
   if (userCount === 0) {
     const isProd = process.env.NODE_ENV === "production";
-    const adminEmail = (process.env.PROVIDENT_ADMIN_EMAIL || (!isProd ? "sameerwork243@gmail.com" : "")).toLowerCase();
-    const adminPassword = process.env.PROVIDENT_ADMIN_PASSWORD || (!isProd ? "Sameer@12" : "");
+    const adminEmail = (process.env.ZOYA_ADMIN_EMAIL || (!isProd ? "sameerwork243@gmail.com" : "")).toLowerCase();
+    const adminPassword = process.env.ZOYA_ADMIN_PASSWORD || (!isProd ? "Sameer@12" : "");
     if (!adminEmail || !adminPassword) {
       throw new Error(
-        "[seed] Cannot create the initial admin user: set PROVIDENT_ADMIN_EMAIL and PROVIDENT_ADMIN_PASSWORD. This only runs against an empty users table."
+        "[seed] Cannot create the initial admin user: set ZOYA_ADMIN_EMAIL and ZOYA_ADMIN_PASSWORD. This only runs against an empty users table."
       );
     }
     const adminRole = Number((await rows<{ id: number }>("SELECT id FROM roles WHERE name = 'admin'"))[0]?.id ?? 1);
@@ -105,7 +105,7 @@ export async function ensureSeeded(): Promise<void> {
     if (!isProd) {
       await run(
         "INSERT INTO users (email, password_hash, name, role_id, is_active, created_at) VALUES (?, ?, ?, ?, 1, ?)",
-        "demo@provident.ae",
+        "demo@zoyaventures.com",
         hashPassword("Demo@1234"),
         "Demo User",
         userRole,
@@ -156,8 +156,8 @@ export async function ensureSeeded(): Promise<void> {
   if (contactCount === 0) {
     const pairs: [string, string][] = [
       ["phone", "+971 50 539 0249"],
-      ["email", "info@providentestate.com"],
-      ["whatsapp", "https://wa.provident.ae/inquire?phone=971505423503"],
+      ["email", "zoyaventure15@gmail.com"],
+      ["whatsapp", "https://wa.me/971568308221"],
       ["address", "Dubai, United Arab Emirates"],
     ];
     for (const [k, v] of pairs) {

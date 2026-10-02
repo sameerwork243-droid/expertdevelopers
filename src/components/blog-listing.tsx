@@ -12,11 +12,33 @@ function ArrowDownIcon({ stroke = "#07234B" }: { stroke?: string }) {
   );
 }
 
+function PageArrow({ dir }: { dir: "left" | "right" }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      {dir === "left" ? (
+        <path d="M15.75 19.5L8.25 12L15.75 4.5" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round" />
+      ) : (
+        <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round" />
+      )}
+    </svg>
+  );
+}
+
+function blogPageNumbers(page: number, total: number): (number | "…")[] {
+  if (total <= 8) return Array.from({ length: total }, (_, i) => i + 1);
+  if (page <= 6) return [1, 2, 3, 4, 5, 6, "…", total];
+  if (page >= total - 4) {
+    const out: (number | "…")[] = [1, "…"];
+    for (let i = total - 4; i <= total; i++) out.push(i);
+    return out;
+  }
+  return [1, "…", page - 2, page - 1, page, page + 1, page + 2, "…", total];
+}
+
 export function BlogListing({ posts }: { posts: any[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All Categories");
   const [catOpen, setCatOpen] = useState(false);
-  const [pageOpen, setPageOpen] = useState(false);
   const [page, setPage] = useState(1);
 
   const categories = useMemo(() => {
@@ -122,68 +144,45 @@ export function BlogListing({ posts }: { posts: any[] }) {
           ))}
         </div>
         {totalPages > 1 && (
-          <nav className="pagination-wrapper">
+          <nav className="pagination-wrapper search-pagination-wrapper">
             <div>
               <div className="pagination-container">
                 <button
+                  type="button"
                   className={"button button-white pagination-button button-back" + (safePage === 1 ? " button-disabled" : "")}
+                  aria-label="Previous page"
                   disabled={safePage === 1}
                   onClick={() => go(safePage - 1)}
                 >
-                  <svg className="arrow-left-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M15.75 19.5L8.25 12L15.75 4.5" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  <span>Back</span>
+                  <PageArrow dir="left" />
                 </button>
-                <div className="pagination-select-wrap">
-                  <span className="page-text">Page:</span>
-                  <div className="pagination-select">
-                    <div className={"react-select css-b62m3t-container" + (pageOpen ? " react-select--is-open" : "")}>
-                      <div
-                        className={"pagination-select__control css-13cymwt-control" + (pageOpen ? " react-select__control--menu-is-open" : "")}
-                        onClick={() => setPageOpen(!pageOpen)}
+                <div className="pagination-numbers">
+                  {blogPageNumbers(safePage, totalPages).map((n, i) =>
+                    n === "…" ? (
+                      <span className="pagination-dots" key={`d${i}`}>
+                        ...
+                      </span>
+                    ) : (
+                      <button
+                        type="button"
+                        className={"pagination-number" + (n === safePage ? " active" : "")}
+                        aria-current={n === safePage ? "page" : undefined}
+                        key={n}
+                        onClick={() => go(n as number)}
                       >
-                        <div className="pagination-select__value-container pagination-select__value-container--has-value css-hlgwow">
-                          <div className="pagination-select__single-value css-1dimb5e-singleValue">{safePage}</div>
-                        </div>
-                        <div className="pagination-select__indicators css-1wy0on6">
-                          <span className="pagination-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>
-                          <div className="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">
-                            <ArrowDownIcon stroke="#9399A4" />
-                          </div>
-                        </div>
-                      </div>
-                      {pageOpen && (
-                        <div className="pagination-select__menu">
-                          <div className="pagination-select__menu-list">
-                            {Array.from({ length: totalPages }, (_, n) => (
-                              <div
-                                key={n + 1}
-                                className={"pagination-select__option" + (n + 1 === safePage ? " pagination-select__option--is-selected" : "")}
-                                onClick={() => {
-                                  go(n + 1);
-                                  setPageOpen(false);
-                                }}
-                              >
-                                {n + 1}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                  <span className="page-text">of {totalPages}</span>
+                        {n}
+                      </button>
+                    ),
+                  )}
                 </div>
                 <button
-                  className={"button button-white pagination-button button-next" + (safePage === totalPages ? " button-disabled" : "")}
-                  disabled={safePage === totalPages}
+                  type="button"
+                  className={"button button-white pagination-button button-next" + (safePage >= totalPages ? " button-disabled" : "")}
+                  aria-label="Next page"
+                  disabled={safePage >= totalPages}
                   onClick={() => go(safePage + 1)}
                 >
-                  <span>Next</span>
-                  <svg className="arrow-right-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <PageArrow dir="right" />
                 </button>
               </div>
             </div>

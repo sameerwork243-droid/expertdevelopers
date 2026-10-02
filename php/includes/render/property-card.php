@@ -81,7 +81,7 @@ function property_card(array $hit, bool $list = false, bool $signature = false):
     if (!is_array($imgs)) $imgs = [];
     $desc = long_desc($hit);
     $neg = neg_of($hit);
-    $cardPhone = $neg['phone'] ?? '+971 50 440 2783';
+    $cardPhone = $neg['phone'] ?? '+92 312 5170194';
     $alt = hit_type_label($hit);
     $count = $hit['imageCount'] ?? count($imgs);
 
@@ -96,7 +96,12 @@ function property_card(array $hit, bool $list = false, bool $signature = false):
     $html .= '</div>';
     $html .= '<div class="content-section">';
     $html .= '<div class="pr-bk">';
-    $html .= '<a class="price" href="' . esc($link) . '">' . price_fmt_html($hit['price'] ?? null, $hit['price_qualifier'] ?? null) . '</a>';
+    $cardPrice = (int) ($hit['price'] ?? 0);
+    $cardQual = $hit['price_qualifier'] ?? null;
+    if (is_array($cardQual)) $cardQual = $cardQual[0] ?? null;
+    $cardYearly = is_string($cardQual) && stripos((string) $cardQual, 'yearly') !== false;
+    $cardPriceText = $cardPrice > 0 ? expert_price_text($cardPrice) . ($cardYearly ? ' / yearly' : '') : (string) $cardQual;
+    $html .= '<a class="price"' . data_aed($cardPrice) . ($cardYearly ? ' data-qual="yearly"' : '') . ' href="' . esc($link) . '">' . esc($cardPriceText) . '</a>';
     $html .= save_button_markup($link, (string) ($hit['slug'] ?? ''), (string) ($hit['title'] ?? $hit['building'][0] ?? 'Property'), (int) ($hit['price'] ?? 0), (string) ($imgs[0]['340x252'] ?? ''));
     $html .= '</div>';
     $html .= '<a class="ammenities" href="' . esc($link) . '">' . esc($hit['description'] ?? hit_type_label($hit)) . '</a>';
@@ -116,7 +121,7 @@ function property_card(array $hit, bool $list = false, bool $signature = false):
     $fmax = $hit['floorarea_max'] ?? null;
     if ($fmin !== null || $fmax !== null) {
         $v = ($fmin !== null && $fmin !== $fmax) ? (int) $fmin : (int) $fmax;
-        $html .= '<p class="size"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-4-icon"><path d="M2.5 2.5V5.5M2.5 2.5H5.5M2.5 2.5L6 6M2.5 13.5V10.5M2.5 13.5H5.5M2.5 13.5L6 10M13.5 2.5L10.5 2.5M13.5 2.5V5.5M13.5 2.5L10 6M13.5 13.5H10.5M13.5 13.5V10.5M13.5 13.5L10 10" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>' . number_format($v, 0, '.', ',') . ' sq ft</span></p>';
+        $html .= '<p class="size"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-4-icon"><path d="M2.5 2.5V5.5M2.5 2.5H5.5M2.5 2.5L6 6M2.5 13.5V10.5M2.5 13.5H5.5M2.5 13.5L6 10M13.5 2.5L10.5 2.5M13.5 2.5V5.5M13.5 2.5L10 6M13.5 13.5H10.5M13.5 13.5V10.5M13.5 13.5L10 10" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round"></path></svg><span' . data_sqft($v) . '>' . esc(expert_area_text((int) $v)) . '</span></p>';
     }
     $html .= '</div>';
     if (!$signature) {

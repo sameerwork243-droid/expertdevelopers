@@ -1,4 +1,4 @@
-# Deployment Guide — provident-next
+# Deployment Guide — zoya-ventures-next
 
 Production build, hosting requirements, and operational notes.
 
@@ -13,7 +13,7 @@ Production build, hosting requirements, and operational notes.
   upgraded automatically on first query (`CREATE TABLE IF NOT EXISTS …`,
   `ALTER TABLE … ADD COLUMN IF NOT EXISTS …`). No migration tool required.
 - **Auth**: db-backed session tokens (scrypt password hashing) in an httpOnly
-  cookie `provident_session`. No external auth provider.
+  cookie `zoya_session`. No external auth provider.
 - **Uploads (admin media library)**: `@vercel/blob` (Vercel-only). See §5.
 
 ## 2. Hosting requirement (read before choosing a plan)
@@ -47,10 +47,10 @@ If your plan cannot run Node processes, the alternatives are:
 
 | Variable | Required | Purpose |
 |---|---|---|
-| `PROVIDENT_DATABASE_URL` | yes | Postgres connection string (`sslmode=require`) |
-| `PROVIDENT_ADMIN_EMAIL` | first boot only | Initial admin email (empty-users seeding) |
-| `PROVIDENT_ADMIN_PASSWORD` | first boot only | Initial admin password — **never use a default**; seeding fails in production without it |
-| `PROVIDENT_PG_SSL` | no | `0` disables TLS (local Postgres only) |
+| `ZOYA_DATABASE_URL` | yes | Postgres connection string (`sslmode=require`) |
+| `ZOYA_ADMIN_EMAIL` | first boot only | Initial admin email (empty-users seeding) |
+| `ZOYA_ADMIN_PASSWORD` | first boot only | Initial admin password — **never use a default**; seeding fails in production without it |
+| `ZOYA_PG_SSL` | no | `0` disables TLS (local Postgres only) |
 | `BLOB_READ_WRITE_TOKEN` | no | Vercel Blob token for admin uploads (see §5) |
 
 See `.env.example` (checked in, values not committed).
@@ -61,13 +61,13 @@ See `.env.example` (checked in, values not committed).
   pooled + direct hosts both work, `sslmode=require` is stripped internally and
   SSL handled explicitly, transient connection errors retry 3×.
 - **Self-hosted Postgres**: must allow your app's IP; create a db + user, grant
-  privileges, set `PROVIDENT_DATABASE_URL`.
+  privileges, set `ZOYA_PG_SSL`.
 - Seeding: on first boot with an empty DB the app inserts roles, categories,
-  amenities, admin user (`PROVIDENT_ADMIN_EMAIL`/`PROVIDENT_ADMIN_PASSWORD`),
+  amenities, admin user (`ZOYA_ADMIN_EMAIL`/`ZOYA_ADMIN_PASSWORD`),
   and loads `data/raw/**` corpora (agents, jobs, projects, properties,
   developers, communities). A `properties_imported` marker prevents re-import.
   In development only an extra demo user is created.
-- Note: `data/provident.db` (SQLite) is a dead artifact — not used by the app.
+- Note: `a legacy SQLite snapshot (removed)` (SQLite) is a dead artifact — not used by the app.
 
 ## 5. Gotchas by area
 
@@ -100,7 +100,7 @@ npm run build        # verified: compiles, TS clean, 3728 static leaves generate
 npm run start        # production server on :3000 (PORT env to change)
 
 # process manager (example, PM2)
-pm2 start npm --name provident-next -- start
+pm2 start npm --name zoya-ventures-next -- start
 pm2 save && pm2 startup
 ```
 
@@ -115,8 +115,8 @@ Important:
 ## 7. Verification checklist
 
 - [ ] `node --version` ≥ 20.9 on the host
-- [ ] `PROVIDENT_DATABASE_URL` set and reachable from the host (outbound 5432)
-- [ ] `PROVIDENT_ADMIN_EMAIL` / `PROVIDENT_ADMIN_PASSWORD` set (production)
+- [ ] `ZOYA_DATABASE_URL` set and reachable from the host (outbound 5432)
+- [ ] `ZOYA_ADMIN_EMAIL` / `ZOYA_ADMIN_PASSWORD` set (production)
 - [ ] HTTPS enabled (login cookie requires Secure)
 - [ ] `/api/auth/me` returns JSON without error
 - [ ] Login → dashboard → admin round-trip works (scrypt sessions)

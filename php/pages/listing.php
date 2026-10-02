@@ -11,12 +11,12 @@ require_once __DIR__ . '/../includes/head.php';
 
 const LISTING_TYPES = ['apartment', 'villa', 'townhouse', 'penthouse', 'duplex', 'commercial-properties', 'whole-building', 'plots', 'short-term', 'office-space'];
 const LISTING_PRICES = [
-    ['label' => 'Under AED 1M', 'suffix' => 'under-1000000'],
-    ['label' => 'Above AED 20M', 'suffix' => 'above-20000000'],
-    ['label' => 'Above AED 10M', 'suffix' => 'above-10000000'],
-    ['label' => 'Above AED 5M', 'suffix' => 'above-5000000'],
-    ['label' => 'Above AED 3M', 'suffix' => 'above-3000000'],
-    ['label' => 'Above AED 2M', 'suffix' => 'above-2000000'],
+    ['label' => 'Under PKR 76M', 'suffix' => 'under-1000000'],
+    ['label' => 'Above PKR 1.5B', 'suffix' => 'above-20000000'],
+    ['label' => 'Above PKR 760M', 'suffix' => 'above-10000000'],
+    ['label' => 'Above PKR 380M', 'suffix' => 'above-5000000'],
+    ['label' => 'Above PKR 228M', 'suffix' => 'above-3000000'],
+    ['label' => 'Above PKR 152M', 'suffix' => 'above-2000000'],
 ];
 const LISTING_BEDS = [
     ['label' => 'Studio', 'suffix' => 'under-0-bedrooms'],
@@ -89,12 +89,12 @@ function listing_amenity_options(string $route): array
 }
 
 const LISTING_POPULAR_RENT = [
-    ['label' => 'Apartments to rent in Dubai', 'href' => '/let/apartment-for-rent/'],
-    ['label' => 'Villas to rent in Dubai', 'href' => '/let/villa-for-rent/'],
-    ['label' => 'Townhouses to rent in Dubai', 'href' => '/let/townhouse-for-rent/'],
-    ['label' => 'Penthouses to rent in Dubai', 'href' => '/let/penthouse-for-rent/'],
-    ['label' => 'Short terms to rent in Dubai', 'href' => '/let/short-term-for-rent/'],
-    ['label' => 'Duplexes to rent in Dubai', 'href' => '/let/duplex-for-rent/'],
+    ['label' => 'Apartments to rent in Pakistan', 'href' => '/let/apartment-for-rent/'],
+    ['label' => 'Villas to rent in Pakistan', 'href' => '/let/villa-for-rent/'],
+    ['label' => 'Townhouses to rent in Pakistan', 'href' => '/let/townhouse-for-rent/'],
+    ['label' => 'Penthouses to rent in Pakistan', 'href' => '/let/penthouse-for-rent/'],
+    ['label' => 'Short terms to rent in Pakistan', 'href' => '/let/short-term-for-rent/'],
+    ['label' => 'Duplexes to rent in Pakistan', 'href' => '/let/duplex-for-rent/'],
 ];
 const LISTING_USEFUL_LINKS = [
     ['label' => 'Off Plan Projects', 'href' => '/new-projects/'],
@@ -283,10 +283,14 @@ $togBtnClass = 'tog-btn btn btn-primary filter-dropdown-toggle';
                       </p>
                     </div>
                   </button>
-                  <div class="sort-menu dropdown-menu dropdown-menu-right" style="display:none">
+                  <div class="sort-menu dropdown-menu dropdown-menu-right">
                     <button type="button" class="sort-option" data-sort="most-recent">Most Recent</button>
                     <button type="button" class="sort-option" data-sort="price-desc">Price: High to Low</button>
                     <button type="button" class="sort-option" data-sort="price-asc">Price: Low to High</button>
+                    <button type="button" class="sort-option" data-sort="bed-desc">Bedrooms: High to Low</button>
+                    <button type="button" class="sort-option" data-sort="bed-asc">Bedrooms: Low to High</button>
+                    <button type="button" class="sort-option" data-sort="size-desc">Size: High to Low</button>
+                    <button type="button" class="sort-option" data-sort="size-asc">Size: Low to High</button>
                   </div>
                 </div>
               </div>
@@ -390,42 +394,25 @@ $togBtnClass = 'tog-btn btn btn-primary filter-dropdown-toggle';
                     <a class="button button-orange" href="<?= esc('tel:' . $expPhone) ?>">
                       <span><?= country_flag() ?> Call <?= esc(explode(' ', (string) ($expert['name'] ?? ''))[0]) ?></span>
                     </a>
-                    <a class="button button-white" href="<?= esc('https://wa.provident.ae/inquire?phone=' . preg_replace('/\D/', '', (string) ($expert['phone'] ?? ''))) ?>" target="_blank" rel="noreferrer">
+                    <a class="button button-white" href="<?= esc('https://wa.me/' . preg_replace('/\D/', '', (string) ($expert['phone'] ?? ''))) ?>" target="_blank" rel="noreferrer">
                       <span>WhatsApp</span>
                     </a>
                   </div>
                 </div>
               </div>
             <?php endif; ?>
-            <div class="card-view">
-              <img loading="lazy" draggable="false" src="https://d3h330vgpwpjr8.cloudfront.net/x/368x220/Rectangle_551_3ae6d0ae77_2f860c8381.webp" srcset="https://d3h330vgpwpjr8.cloudfront.net/x/368x220/Rectangle_551_3ae6d0ae77_2f860c8381.webp 368w" sizes="(min-width: 180px) 368px" alt="Find The Best Mortgage in Dubai - Zoya Ventures Real Estate">
-              <div class="content">
-                <h4>Find The Best Mortgage in Dubai</h4>
-                <div class="description">
-                  <p>
-                    <span style="white-space:pre-wrap">Get the best mortgage rates and terms in the UAE.
-Your journey begins here.</span>
-                  </p>
-                </div>
-                <a class="button button-orange" href="/property-services/mortgages/">
-                  <span>Get Pre-Approved Now</span>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <?= mortgage_calculator() ?>
-
   <div class="container">
     <div class="qes-bk com">
       <?= questionnaire([
-          'title' => 'Confused About Where to Buy or Invest in Dubai?',
-          'content' => ['data' => ['content' => '<p><strong>Take the 30-Second Dubai Property </strong>Quiz and instantly get matched with the <strong>best projects</strong> in Dubai — tailored to your <strong>budget, goals, and lifestyle</strong>. Perfect for <strong>investors and end users</strong> alike.</p><ul><li><strong>Personalized Results in Seconds</strong> – Instantly discover which Dubai areas and projects best fit your needs.</li><li><strong>Handpicked Projects You Can Trust</strong> – Explore Dubai’s most in-demand developments, carefully curated by our experts for quality, price, and potential.</li><li><strong>Smart Investment Insights</strong> – Instantly see which projects offer the best returns and long-term growth, based on real market data and performance.</li><li><strong>Free Dubai Investment Guidebook</strong> – Get the must-read guide packed with 2025 market insights, top launches, and expert tips to help you invest smart.</li></ul>']],
-          'content1' => ['data' => ['content1' => '<p><strong>Take the 30-Second Quiz Now</strong></p><p>Find your ideal property in Dubai — and unlock your <strong>personalized results</strong> plus the <strong>Dubai Investment Guidebook</strong> instantly.</p>']],
+          'title' => 'Confused About Where to Buy or Invest in Pakistan?',
+          'content' => ['data' => ['content' => '<p><strong>Take the 30-Second Pakistan Property </strong>Quiz and instantly get matched with the <strong>best projects</strong> in Pakistan — tailored to your <strong>budget, goals, and lifestyle</strong>. Perfect for <strong>investors and end users</strong> alike.</p><ul><li><strong>Personalized Results in Seconds</strong> – Instantly discover which Pakistani areas and projects best fit your needs.</li><li><strong>Handpicked Projects You Can Trust</strong> – Explore Pakistan’s most in-demand developments, carefully curated by our experts for quality, price, and potential.</li><li><strong>Smart Investment Insights</strong> – Instantly see which projects offer the best returns and long-term growth, based on real market data and performance.</li><li><strong>Free Pakistan Property Guidebook</strong> – Get the must-read guide packed with 2025 market insights, top launches, and expert tips to help you invest smart.</li></ul>']],
+          'content1' => ['data' => ['content1' => '<p><strong>Take the 30-Second Quiz Now</strong></p><p>Find your ideal property in Pakistan — and unlock your <strong>personalized results</strong> plus the <strong>Pakistan Property Guidebook</strong> instantly.</p>']],
       ]) ?>
     </div>
   </div>
@@ -487,13 +474,13 @@ function listing_title_from_route(string $route, bool $rent, bool $h1 = false): 
     $parts = [];
     if ($h1) {
         if ($type === 'properties') {
-            $parts[] = 'Properties ' . $verb . ' in Dubai';
+            $parts[] = 'Properties ' . $verb . ' in Pakistan';
         } else {
-            $parts[] = ucfirst($type) . ' ' . $verb . ' in Dubai';
+            $parts[] = ucfirst($type) . ' ' . $verb . ' in Pakistan';
         }
         if ($f['area']) $parts[] = 'in ' . area_label($f['area']);
-        if ($f['priceMin'] !== null) $parts[] = 'above AED ' . number_format($f['priceMin'], 0, '.', ',');
-        if ($f['priceMax'] !== null) $parts[] = 'under AED ' . number_format($f['priceMax'], 0, '.', ',');
+        if ($f['priceMin'] !== null) $parts[] = 'above PKR ' . number_format((int) round($f['priceMin'] * 76), 0, '.', ',');
+        if ($f['priceMax'] !== null) $parts[] = 'under PKR ' . number_format((int) round($f['priceMax'] * 76), 0, '.', ',');
         if ($f['bedsMin'] !== null || $f['bedsMax'] !== null) {
             if ($f['bedsMax'] === 0) $parts[] = 'Studios';
             elseif ($f['bedsMin'] !== null && $f['bedsMax'] !== null && $f['bedsMin'] !== $f['bedsMax']) $parts[] = 'with ' . $f['bedsMin'] . ' to ' . $f['bedsMax'] . ' Bedrooms';

@@ -2,7 +2,7 @@ import type { NavLink } from "./types";
 
 export const SITE = {
   name: "Zoya Ventures Real Estate",
-  domain: "provident.ae",
+  domain: "zoyaventures.com",
   phone: "+971 568 308 221",
   phoneLink: "+971568308221",
   waNumber: "971568308221",
@@ -60,8 +60,9 @@ export const NAV_LINKS = [
 ] satisfies NavLink[];
 
 export const SETTINGS = {
-  currencies: ["AED", "USD", "EUR", "GBP", "INR"] as const,
+  currencies: ["AED", "USD", "EUR", "GBP", "SAR"] as const,
   units: ["Sqft", "Sqm"] as const,
-  rates: { AED: 1, USD: 0.273, EUR: 0.252, GBP: 0.216, INR: 22.6 } as Record<string, number>,
+  rates: { AED: 1, USD: 0.273, EUR: 0.252, GBP: 0.216, SAR: 1.021 } as Record<string, number>,
+  symbols: { AED: "AED ", USD: "$", EUR: "€", GBP: "£", SAR: "SAR " } as Record<string, string>,
   perSqmFromUnit: (unit: string) => (unit === "Sqft" ? 10.764 : 1),
 };

@@ -19,6 +19,11 @@ DirectoryIndex index.php
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Force HTTPS (StackCP terminates TLS; detect via forwarded proto)
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
   # Static app routes first — these may collide with real directories
   # (php/login/, php/admin/) that Apache mod_dir would otherwise 301/403.
   RewriteRule ^(login|register|forgot-password|dashboard|admin|list-your-property|book-a-viewing)/?$ index.php?route=$1 [L,QSA]

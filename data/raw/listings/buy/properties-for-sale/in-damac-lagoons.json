@@ -31,29 +31,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/morocco_1_96f6e91cb8.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/morocco_1_96f6e91cb8.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/morocco_2_c17eabde12.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/morocco_2_c17eabde12.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/morocco_3_1676e9a471.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/morocco_3_1676e9a471.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/morocco_5_14a272b0ca.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/morocco_5_14a272b0ca.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/morocco_4_8c0e1ba7d8.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/morocco_4_8c0e1ba7d8.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/morocco_6_15394bddb3.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/morocco_6_15394bddb3.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Morocco_featured_ad176d3eb1.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Morocco_featured_ad176d3eb1.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/Morocco_banner_ff37409feb.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/Morocco_banner_ff37409feb.jpg"
             },
             "ggfx_results": [
               {
@@ -61,12 +61,12 @@
                 "src_cftle": "i/Morocco_featured_ad176d3eb1.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Morocco_featured_ad176d3eb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Morocco_featured_ad176d3eb1.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Morocco_featured_ad176d3eb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Morocco_featured_ad176d3eb1.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -82,45 +82,45 @@
                 "src_cftle": "i/morocco_1_96f6e91cb8.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/morocco_1_96f6e91cb8.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-06-21 18:05:58.577",
                     "updated_at": "2024-06-21 18:05:58.577"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/morocco_1_96f6e91cb8.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-06-26 15:04:52.320",
                     "updated_at": "2024-06-26 15:04:52.320"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/morocco_1_96f6e91cb8.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-01 02:12:05.276",
                     "updated_at": "2024-07-01 02:12:05.276"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/morocco_1_96f6e91cb8.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-01 02:12:05.694",
                     "updated_at": "2024-07-01 02:12:05.694"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/morocco_1_96f6e91cb8.webp",
                     "format": "webp",
                     "transform": "1300x500"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/morocco_1_96f6e91cb8.webp",
                     "format": "webp",
                     "transform": "600x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/416x600/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/416x600/morocco_1_96f6e91cb8.webp",
                     "format": "webp",
                     "transform": "416x600"
                   }
@@ -136,28 +136,28 @@
                 "src_cftle": "i/morocco_2_c17eabde12.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/morocco_2_c17eabde12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/morocco_2_c17eabde12.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-06-21 18:05:58.775",
                     "updated_at": "2024-06-21 18:05:58.775"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/morocco_2_c17eabde12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/morocco_2_c17eabde12.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-10 20:04:05.227",
                     "updated_at": "2024-10-10 20:04:05.227"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/morocco_2_c17eabde12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/morocco_2_c17eabde12.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-01 02:12:04.494",
                     "updated_at": "2024-07-01 02:12:04.494"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/morocco_2_c17eabde12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/morocco_2_c17eabde12.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-01 02:12:09.116",
@@ -175,21 +175,21 @@
                 "src_cftle": "i/morocco_6_15394bddb3.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/morocco_6_15394bddb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/morocco_6_15394bddb3.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-01 02:11:55.871",
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/morocco_6_15394bddb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/morocco_6_15394bddb3.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-21 10:43:43.302",
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/morocco_6_15394bddb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/morocco_6_15394bddb3.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -197,7 +197,7 @@
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/morocco_6_15394bddb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/morocco_6_15394bddb3.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -216,28 +216,28 @@
                 "src_cftle": "i/morocco_3_1676e9a471.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/morocco_3_1676e9a471.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/morocco_3_1676e9a471.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-01 02:12:00.902",
                     "updated_at": "2025-04-29 12:03:07.073"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/morocco_3_1676e9a471.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/morocco_3_1676e9a471.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-21 10:43:43.466",
                     "updated_at": "2025-04-29 12:03:07.073"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/morocco_3_1676e9a471.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/morocco_3_1676e9a471.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-04-29 06:43:08.301",
                     "updated_at": "2025-04-29 12:03:07.073"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/morocco_3_1676e9a471.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/morocco_3_1676e9a471.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-04-29 12:03:07.073",
@@ -255,21 +255,21 @@
                 "src_cftle": "i/video_1c7791aaa6.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/696x/video_1c7791aaa6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/696x/video_1c7791aaa6.webp",
                     "format": "webp",
                     "transform": "696x",
                     "created_at": "2024-07-21 10:43:43.633",
                     "updated_at": "2024-07-21 10:43:43.633"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1968x/video_1c7791aaa6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1968x/video_1c7791aaa6.webp",
                     "format": "webp",
                     "transform": "1968x",
                     "created_at": "2024-07-01 02:12:10.906",
                     "updated_at": "2024-07-01 02:12:10.906"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/336x/video_1c7791aaa6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/336x/video_1c7791aaa6.webp",
                     "format": "webp",
                     "transform": "336x",
                     "created_at": "2024-07-01 02:12:12.806",
@@ -287,63 +287,63 @@
                 "src_cftle": "i/Morocco_banner_ff37409feb.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-07-01 02:12:06.094",
                     "updated_at": "2025-03-23 05:22:40.738"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-07-01 02:12:06.998",
                     "updated_at": "2025-03-23 05:22:40.738"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-07-01 02:12:10.423",
                     "updated_at": "2025-03-23 05:22:40.738"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-03-23 05:22:40.738",
                     "updated_at": "2025-03-23 05:22:40.738"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-03-23 05:22:40.738",
                     "updated_at": "2025-03-23 05:22:40.738"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-03-23 05:22:40.738",
                     "updated_at": "2025-03-23 05:22:40.738"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-03-23 05:22:40.738",
                     "updated_at": "2025-03-23 05:22:40.738"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2026-02-04 04:24:24.759",
                     "updated_at": "2026-02-04 04:24:24.759"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/Morocco_banner_ff37409feb.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/Morocco_banner_ff37409feb.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2026-02-05 10:32:57.136",
@@ -361,21 +361,21 @@
                 "src_cftle": "i/morocco_4_8c0e1ba7d8.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/morocco_4_8c0e1ba7d8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/morocco_4_8c0e1ba7d8.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-01 02:12:06.572",
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/morocco_4_8c0e1ba7d8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/morocco_4_8c0e1ba7d8.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-21 10:43:42.881",
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/morocco_4_8c0e1ba7d8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/morocco_4_8c0e1ba7d8.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -383,7 +383,7 @@
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/morocco_4_8c0e1ba7d8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/morocco_4_8c0e1ba7d8.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -402,14 +402,14 @@
                 "src_cftle": "i/morocco_7_b32a7b6051.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/morocco_7_b32a7b6051.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/morocco_7_b32a7b6051.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-21 10:43:43.939",
                     "updated_at": "2024-07-21 10:43:43.939"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/morocco_7_b32a7b6051.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/morocco_7_b32a7b6051.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-01 02:12:14.485",
@@ -427,14 +427,14 @@
                 "src_cftle": "i/map_9dbdd7dc83.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/map_9dbdd7dc83.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/map_9dbdd7dc83.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-01 02:12:07.933",
                     "updated_at": "2024-07-01 02:12:07.933"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/map_9dbdd7dc83.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/map_9dbdd7dc83.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-21 10:43:43.625",
@@ -452,14 +452,14 @@
                 "src_cftle": "i/Moroco_Mockup_1_838b60586f.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Moroco_Mockup_1_838b60586f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Moroco_Mockup_1_838b60586f.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-21 10:43:43.951",
                     "updated_at": "2024-07-21 10:43:43.951"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Moroco_Mockup_1_838b60586f.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Moroco_Mockup_1_838b60586f.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-01 02:12:12.260",
@@ -477,21 +477,21 @@
                 "src_cftle": "i/morocco_5_14a272b0ca.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/morocco_5_14a272b0ca.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/morocco_5_14a272b0ca.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-21 10:43:43.090",
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/morocco_5_14a272b0ca.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/morocco_5_14a272b0ca.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-02 00:00:44.444",
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/morocco_5_14a272b0ca.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/morocco_5_14a272b0ca.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -499,7 +499,7 @@
                     "updated_at": "2025-05-13 12:52:00.107"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/morocco_5_14a272b0ca.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/morocco_5_14a272b0ca.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -518,14 +518,14 @@
                 "src_cftle": "i/off-plan/null/images/i/morocco_2_c17eabde12.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/morocco_2_c17eabde12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/morocco_2_c17eabde12.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:39.152",
                     "updated_at": "2024-07-23 07:41:39.152"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/morocco_2_c17eabde12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/morocco_2_c17eabde12.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:39.152",
@@ -543,14 +543,14 @@
                 "src_cftle": "i/off-plan/null/images/i/morocco_3_1676e9a471.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/morocco_3_1676e9a471.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/morocco_3_1676e9a471.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:39.152",
                     "updated_at": "2024-07-23 07:41:39.152"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/morocco_3_1676e9a471.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/morocco_3_1676e9a471.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:39.152",
@@ -568,14 +568,14 @@
                 "src_cftle": "i/off-plan/null/images/i/Morocco_featured_ad176d3eb1.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/Morocco_featured_ad176d3eb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/Morocco_featured_ad176d3eb1.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:05:38.542",
                     "updated_at": "2024-10-11 07:05:38.542"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/Morocco_featured_ad176d3eb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/Morocco_featured_ad176d3eb1.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:05:38.542",
@@ -593,13 +593,13 @@
                 "src_cftle": "i/off-plan/null/images/i/morocco_6_15394bddb3.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/morocco_6_15394bddb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/morocco_6_15394bddb3.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/morocco_6_15394bddb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/morocco_6_15394bddb3.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -616,13 +616,13 @@
                 "src_cftle": "i/off-plan/null/images/i/morocco_4_8c0e1ba7d8.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/morocco_4_8c0e1ba7d8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/morocco_4_8c0e1ba7d8.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/morocco_4_8c0e1ba7d8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/morocco_4_8c0e1ba7d8.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -639,13 +639,13 @@
                 "src_cftle": "i/off-plan/null/images/i/morocco_5_14a272b0ca.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/morocco_5_14a272b0ca.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/morocco_5_14a272b0ca.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/morocco_5_14a272b0ca.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/morocco_5_14a272b0ca.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -662,13 +662,13 @@
                 "src_cftle": "i/off-plan/null/images/i/morocco_1_96f6e91cb8.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/morocco_1_96f6e91cb8.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/morocco_1_96f6e91cb8.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/morocco_1_96f6e91cb8.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -779,29 +779,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_1_78e025d998.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_1_78e025d998.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_img_5_26ca3aaab5.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_img_5_26ca3aaab5.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_img_1_bff79b89db.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_img_1_bff79b89db.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_img_7_00500a6bea.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_img_7_00500a6bea.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_img_2_df977daaa9.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_img_2_df977daaa9.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_2_4e606cd2ad.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_2_4e606cd2ad.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_featured_c1a66d9fb3.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_featured_c1a66d9fb3.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/ibiza_banner_25d47fc9c1.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/ibiza_banner_25d47fc9c1.jpg"
             },
             "ggfx_results": [
               {
@@ -809,70 +809,70 @@
                 "src_cftle": "i/ibiza_banner_25d47fc9c1.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-06-21 08:02:59.340",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-06-21 08:02:59.866",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-06-21 08:07:49.531",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "1300x",
                     "created_at": "2025-03-20 12:28:54.859",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-03-20 12:28:54.859",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-03-20 12:28:54.859",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-03-20 12:28:54.859",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-03-20 12:28:54.859",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-05-29 13:44:26.821",
                     "updated_at": "2025-06-30 08:07:07.505"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/ibiza_banner_25d47fc9c1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/ibiza_banner_25d47fc9c1.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-06-30 08:07:07.505",
@@ -890,28 +890,28 @@
                 "src_cftle": "i/ibiza_img_5_26ca3aaab5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/ibiza_img_5_26ca3aaab5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/ibiza_img_5_26ca3aaab5.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-21 08:02:59.873",
                     "updated_at": "2024-06-21 08:02:59.873"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/ibiza_img_5_26ca3aaab5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/ibiza_img_5_26ca3aaab5.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:03:00.999",
                     "updated_at": "2024-06-21 08:03:00.999"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_img_5_26ca3aaab5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_img_5_26ca3aaab5.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-10 20:04:05.514",
                     "updated_at": "2024-10-10 20:04:05.514"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_img_5_26ca3aaab5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_img_5_26ca3aaab5.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-06-26 15:04:52.887",
@@ -929,28 +929,28 @@
                 "src_cftle": "i/ibiza_img_1_bff79b89db.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/ibiza_img_1_bff79b89db.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/ibiza_img_1_bff79b89db.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:02:59.925",
                     "updated_at": "2025-04-29 12:03:07.094"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/ibiza_img_1_bff79b89db.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/ibiza_img_1_bff79b89db.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-13 12:56:24.776",
                     "updated_at": "2025-04-29 12:03:07.094"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_img_1_bff79b89db.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_img_1_bff79b89db.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-04-29 06:43:08.196",
                     "updated_at": "2025-04-29 12:03:07.094"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_img_1_bff79b89db.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_img_1_bff79b89db.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-04-29 12:03:07.094",
@@ -968,40 +968,40 @@
                 "src_cftle": "i/ibiza_1_78e025d998.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/ibiza_1_78e025d998.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-21 08:02:59.943",
                     "updated_at": "2024-06-21 08:02:59.943"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/ibiza_1_78e025d998.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:07:49.519",
                     "updated_at": "2024-06-21 08:07:49.519"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_1_78e025d998.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-06-21 18:05:59.382",
                     "updated_at": "2024-06-21 18:05:59.382"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_1_78e025d998.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-06-26 15:04:52.710",
                     "updated_at": "2024-06-26 15:04:52.710"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/ibiza_1_78e025d998.webp",
                     "format": "webp",
                     "transform": "600x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/ibiza_1_78e025d998.webp",
                     "format": "webp",
                     "transform": "1300x500"
                   }
@@ -1017,21 +1017,21 @@
                 "src_cftle": "i/ibiza_img_7_00500a6bea.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/ibiza_img_7_00500a6bea.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/ibiza_img_7_00500a6bea.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-12 12:00:22.286",
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/ibiza_img_7_00500a6bea.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/ibiza_img_7_00500a6bea.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:07:50.179",
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_img_7_00500a6bea.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_img_7_00500a6bea.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -1039,7 +1039,7 @@
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_img_7_00500a6bea.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_img_7_00500a6bea.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -1058,21 +1058,21 @@
                 "src_cftle": "i/ibiza_img_2_df977daaa9.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/ibiza_img_2_df977daaa9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/ibiza_img_2_df977daaa9.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:03:02.310",
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/ibiza_img_2_df977daaa9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/ibiza_img_2_df977daaa9.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-12 12:00:22.358",
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_img_2_df977daaa9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_img_2_df977daaa9.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -1080,7 +1080,7 @@
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_img_2_df977daaa9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_img_2_df977daaa9.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -1099,21 +1099,21 @@
                 "src_cftle": "i/ibiza_2_4e606cd2ad.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/ibiza_2_4e606cd2ad.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/ibiza_2_4e606cd2ad.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:03:02.846",
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/ibiza_2_4e606cd2ad.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/ibiza_2_4e606cd2ad.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-13 12:56:24.790",
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_2_4e606cd2ad.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_2_4e606cd2ad.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252",
@@ -1121,7 +1121,7 @@
                     "updated_at": "2025-05-13 12:51:47.493"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_2_4e606cd2ad.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_2_4e606cd2ad.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312",
@@ -1140,14 +1140,14 @@
                 "src_cftle": "i/ibiza_b0e543f4fc.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/ibiza_b0e543f4fc.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/ibiza_b0e543f4fc.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-12 12:00:22.753",
                     "updated_at": "2024-07-12 12:00:22.753"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/ibiza_b0e543f4fc.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/ibiza_b0e543f4fc.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:07:49.961",
@@ -1165,14 +1165,14 @@
                 "src_cftle": "i/map_48bdba14a7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/map_48bdba14a7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/map_48bdba14a7.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-12 12:00:23.034",
                     "updated_at": "2024-07-12 12:00:23.034"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/map_48bdba14a7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/map_48bdba14a7.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:07:50.393",
@@ -1190,14 +1190,14 @@
                 "src_cftle": "i/Ibiza_Mockup_1_37f133dc29.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Ibiza_Mockup_1_37f133dc29.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Ibiza_Mockup_1_37f133dc29.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-21 08:03:04.677",
                     "updated_at": "2024-06-21 08:03:04.677"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Ibiza_Mockup_1_37f133dc29.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Ibiza_Mockup_1_37f133dc29.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-13 12:56:24.841",
@@ -1215,21 +1215,21 @@
                 "src_cftle": "i/video_eb29258c2c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/696x/video_eb29258c2c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/696x/video_eb29258c2c.webp",
                     "format": "webp",
                     "transform": "696x",
                     "created_at": "2024-06-21 08:03:05.885",
                     "updated_at": "2024-06-21 08:03:05.885"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/336x/video_eb29258c2c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/336x/video_eb29258c2c.webp",
                     "format": "webp",
                     "transform": "336x",
                     "created_at": "2024-06-21 08:07:50.667",
                     "updated_at": "2024-06-21 08:07:50.667"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1968x/video_eb29258c2c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1968x/video_eb29258c2c.webp",
                     "format": "webp",
                     "transform": "1968x",
                     "created_at": "2024-07-12 12:00:23.340",
@@ -1247,12 +1247,12 @@
                 "src_cftle": "i/ibiza_featured_c1a66d9fb3.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/ibiza_featured_c1a66d9fb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/ibiza_featured_c1a66d9fb3.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/ibiza_featured_c1a66d9fb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/ibiza_featured_c1a66d9fb3.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -1268,14 +1268,14 @@
                 "src_cftle": "i/off-plan/null/images/i/ibiza_img_5_26ca3aaab5.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/ibiza_img_5_26ca3aaab5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/ibiza_img_5_26ca3aaab5.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:49.693",
                     "updated_at": "2024-07-23 07:41:49.693"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/ibiza_img_5_26ca3aaab5.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/ibiza_img_5_26ca3aaab5.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:49.693",
@@ -1293,14 +1293,14 @@
                 "src_cftle": "i/off-plan/null/images/i/ibiza_img_1_bff79b89db.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/ibiza_img_1_bff79b89db.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/ibiza_img_1_bff79b89db.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:49.693",
                     "updated_at": "2024-07-23 07:41:49.693"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/ibiza_img_1_bff79b89db.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/ibiza_img_1_bff79b89db.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:49.693",
@@ -1318,14 +1318,14 @@
                 "src_cftle": "i/off-plan/null/images/i/ibiza_featured_c1a66d9fb3.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/ibiza_featured_c1a66d9fb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/ibiza_featured_c1a66d9fb3.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:05:49.036",
                     "updated_at": "2024-10-11 07:05:49.036"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/ibiza_featured_c1a66d9fb3.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/ibiza_featured_c1a66d9fb3.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:05:49.036",
@@ -1343,13 +1343,13 @@
                 "src_cftle": "i/off-plan/null/images/i/ibiza_img_2_df977daaa9.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/ibiza_img_2_df977daaa9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/ibiza_img_2_df977daaa9.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/ibiza_img_2_df977daaa9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/ibiza_img_2_df977daaa9.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1366,13 +1366,13 @@
                 "src_cftle": "i/off-plan/null/images/i/ibiza_2_4e606cd2ad.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/ibiza_2_4e606cd2ad.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/ibiza_2_4e606cd2ad.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/ibiza_2_4e606cd2ad.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/ibiza_2_4e606cd2ad.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1389,13 +1389,13 @@
                 "src_cftle": "i/off-plan/null/images/i/ibiza_img_7_00500a6bea.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/ibiza_img_7_00500a6bea.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/ibiza_img_7_00500a6bea.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/ibiza_img_7_00500a6bea.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/ibiza_img_7_00500a6bea.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1412,13 +1412,13 @@
                 "src_cftle": "i/off-plan/null/images/i/ibiza_1_78e025d998.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/ibiza_1_78e025d998.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/ibiza_1_78e025d998.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/ibiza_1_78e025d998.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1516,7 +1516,7 @@
             "title": "Properties for Sale in DAMAC Lagoons",
             "area": "damac-lagoons",
             "building_type": null,
-            "description": "<p>DAMAC Lagoons stands as a premier residential enclave in Dubai, offering an array of <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/\">properties for sale</a> that epitomize luxury and elegance. This master-planned community, developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/developed-by-damac-properties/\">DAMAC Properties</a>, draws inspiration from the Mediterranean, featuring eight distinct clusters that mirror the charm of cities like Venice, Portofino, and Santorini. Spanning 45 million square feet, DAMAC Lagoons blends opulent living with serene waterfront vistas, making it an ideal choice for discerning families and astute investors.</p><p>Prospective buyers exploring properties for sale in <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/damac-lagoons/\">DAMAC Lagoons</a> will find a diverse selection, including spacious villas and stylish townhouses. Each residence is meticulously designed to the highest standards, offering a modern architecture that harmoniously integrates with the surrounding azure lagoons and white sandy beaches. Residents enjoy exclusive access to a host of amenities, such as inland white beaches, wave pools, and a floating amphitheater, all contributing to a lifestyle of unparalleled luxury.</p><p>The community is thoughtfully equipped with top-tier educational institutions, healthcare facilities, retail centers, and dining establishments, fostering a self-sufficient and vibrant environment. Strategically located near major thoroughfares like Hessa Street (D61) and Sheikh Zayed Bin Hamdan Al Nahyan Street (D54), DAMAC Lagoons ensures seamless connectivity to key areas including <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/downtown-dubai/\">Downtown Dubai</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-marina/\">Dubai Marina</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/business-bay/\">Business Bay</a>, all while maintaining a tranquil and exclusive ambiance.</p><h2>Why Invest in Properties for Sale in DAMAC Lagoons?</h2><p>Acquiring a property in DAMAC Lagoons presents an exceptional opportunity to indulge in a luxurious lifestyle within one of Dubai's most sought-after locales. The community's unique fusion of Mediterranean-inspired design and modern amenities appeals to both families and investors. Its proximity to prominent areas and premium facilities ensures significant potential for capital appreciation and rental income, solidifying DAMAC Lagoons properties as a prudent investment choice.</p><h2>Prominent Clusters in DAMAC Lagoons</h2><h3>Venice</h3><p>The <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/venice-damac-lagoons/\">Venice </a>cluster offers an exclusive collection of opulent villas set amidst serene waterways. These luxurious properties are designed with intricate interiors and expansive layouts, providing a private and tranquil lifestyle. Residents have access to private gardens, community parks, and swimming pools, making Venice a top choice for those seeking properties for sale in DAMAC Lagoons.</p><h3>Portofino</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/portofino-damac-lagoons/\">Portofino</a> features a selection of townhouses ideal for families. These homes are crafted to offer comfort and elegance, with open-plan living spaces and modern finishes. The community boasts tree-lined pathways, cycling tracks, and family-friendly amenities, making it an ideal location for those exploring properties for sale in DAMAC Lagoons.</p><h3>Santorini</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/santorini-damac-lagoons/\">Santorini </a>offers a collection of contemporary villas with stunning views of the lagoons and the iconic skyline. With easy access to retail and dining options, Santorini is perfect for those who appreciate urban living within a suburban setting. The area is well-connected, making it a popular choice for those looking for properties for sale in DAMAC Lagoons.</p><h3>Costa Brava</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/costa-brava-damac-lagoons/\">Costa Brava</a> is a prestigious villa community overlooking the tranquil lagoons. These luxurious villas are designed for those who seek an exclusive lifestyle surrounded by water features. With spacious layouts, private pools, and premium finishes, Costa Brava properties are among the most sought-after DAMAC Lagoons properties for sale.</p><h3>Malta</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/malta-damac-lagoons/\">Malta</a> offers an elegant selection of townhouses nestled in the heart of DAMAC Lagoons. With its proximity to the central hub and its tranquil surroundings, Malta is ideal for families and professionals seeking properties for sale in Dubai. Residents enjoy modern facilities, including fitness centers, swimming pools, and retail outlets, ensuring a lifestyle of comfort and convenience.</p><h2>Investment Potential in DAMAC Lagoons</h2><p>DAMAC Lagoons stands out as a top investment destination due to its prime location, luxurious properties, and robust community infrastructure. Key advantages include:</p><ul><li>High demand for rentals driven by its proximity to business districts and top-rated schools.</li><li>Seamless access to major highways like Hessa Street, ensuring connectivity to key areas including <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/business-bay/\">Business Bay</a> and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-marina/\">Dubai Marina</a>.</li><li>Properties for sale in DAMAC Lagoons are developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/developed-by-damac-properties/\">DAMAC Properties</a>, ensuring exceptional quality and strong market value.</li><li>Developments like the floating amphitheater and other infrastructure projects further enhance its appeal, promising significant capital growth.</li></ul><h2>Types of Properties in DAMAC Lagoons</h2><p>DAMAC Lagoons offers a diverse range of properties, including expansive villas and stylish townhouses. Each property features modern interiors, high-quality finishes, and thoughtful designs to suit different lifestyles. Whether you are looking for a spacious villa with a private garden or a sleek townhouse with lagoon views, properties in DAMAC Lagoons provide the perfect blend of luxury and functionality.</p><h2>Advantages of Buying Properties for Sale in DAMAC Lagoons</h2><p>Investing in properties for sale in DAMAC Lagoons offers numerous benefits, including:</p><ul><li><strong>Family-friendly amenities:</strong> The community is designed with parks, schools, healthcare centers, and retail outlets to ensure a holistic living experience.</li><li><strong>Strategic connectivity:</strong> With easy access to major roads, residents enjoy quick commutes to <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/downtown-dubai/\">Downtown Dubai</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-marina/\">Dubai Marina</a>, and other prime areas.</li><li><strong>Diverse property options:</strong> From luxurious villas to modern townhouses, DAMAC Lagoons offers properties to suit various preferences and budgets.</li><li><strong>High rental returns:</strong> The area’s premium lifestyle offerings attract families and professionals, ensuring consistent demand and strong investment potential.</li></ul><h2>How to Find the Best Property for Sale in DAMAC Lagoons</h2><p>To find your ideal property in DAMAC Lagoons, collaborating with trusted <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/\">real estate experts</a> is essential. Engaging with experienced professionals at Zoya Ventures Real Estate will ensure a seamless buying experience for those exploring properties for sale in DAMAC Lagoons. You can check out the diverse set of listings on our website to explore and shortlist properties as per your preferences.&nbsp;</p><h2>Properties for Sale in Nearby Areas of DAMAC Lagoons</h2><p>If you are considering other options beyond DAMAC Lagoons, explore these popular communities:</p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-damac-hills/\">Properties for Sale in DAMAC Hills</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-motor-city/\">Properties for Sale in Motor City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-dubai-studio-city/\">Properties for Sale in Dubai Studio City</a></li><li>Properties for Sale in Remraam</li></ul><p>These nearby areas offer diverse property options and easy access to key destinations within Dubai, providing excellent alternatives for those looking to invest in the city's thriving real estate market.</p><h2>Frequently Asked Questions (FAQs)</h2><h3>What types of properties are available for sale in DAMAC Lagoons?</h3><p>DAMAC Lagoons offers villas and townhouses with modern architecture and lagoon views.</p><h3>What amenities are provided in the DAMAC Lagoons community?</h3><p>Residents enjoy white sandy beaches, wave pools, parks, fitness centers, retail outlets, and dining options.</p><h3>Is DAMAC Lagoons suitable for families?</h3><p>Yes, the community offers easy access to family-friendly amenities like schools, healthcare centers, and recreational facilities.</p><h3>What makes DAMAC Lagoons a good investment?</h3><p>Its strategic location, luxurious design, and high rental demand offer excellent potential for capital appreciation and returns.</p><h3>Where is DAMAC Lagoons located in Dubai?</h3><p>DAMAC Lagoons is conveniently located near Hessa Street, neighboured by communities like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/remraam/\">Remraam</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/damac-hills/\">DAMAC Hills</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-studio-city/\">Dubai Studio City</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-motor-city/\">Motor City</a>.</p>"
+            "description": "<p>DAMAC Lagoons stands as a premier residential enclave in Dubai, offering an array of <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/\">properties for sale</a> that epitomize luxury and elegance. This master-planned community, developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/developed-by-damac-properties/\">DAMAC Properties</a>, draws inspiration from the Mediterranean, featuring eight distinct clusters that mirror the charm of cities like Venice, Portofino, and Santorini. Spanning 45 million square feet, DAMAC Lagoons blends opulent living with serene waterfront vistas, making it an ideal choice for discerning families and astute investors.</p><p>Prospective buyers exploring properties for sale in <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/damac-lagoons/\">DAMAC Lagoons</a> will find a diverse selection, including spacious villas and stylish townhouses. Each residence is meticulously designed to the highest standards, offering a modern architecture that harmoniously integrates with the surrounding azure lagoons and white sandy beaches. Residents enjoy exclusive access to a host of amenities, such as inland white beaches, wave pools, and a floating amphitheater, all contributing to a lifestyle of unparalleled luxury.</p><p>The community is thoughtfully equipped with top-tier educational institutions, healthcare facilities, retail centers, and dining establishments, fostering a self-sufficient and vibrant environment. Strategically located near major thoroughfares like Hessa Street (D61) and Sheikh Zayed Bin Hamdan Al Nahyan Street (D54), DAMAC Lagoons ensures seamless connectivity to key areas including <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/downtown-dubai/\">Downtown Dubai</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-marina/\">Dubai Marina</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/business-bay/\">Business Bay</a>, all while maintaining a tranquil and exclusive ambiance.</p><h2>Why Invest in Properties for Sale in DAMAC Lagoons?</h2><p>Acquiring a property in DAMAC Lagoons presents an exceptional opportunity to indulge in a luxurious lifestyle within one of Dubai's most sought-after locales. The community's unique fusion of Mediterranean-inspired design and modern amenities appeals to both families and investors. Its proximity to prominent areas and premium facilities ensures significant potential for capital appreciation and rental income, solidifying DAMAC Lagoons properties as a prudent investment choice.</p><h2>Prominent Clusters in DAMAC Lagoons</h2><h3>Venice</h3><p>The <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/venice-damac-lagoons/\">Venice </a>cluster offers an exclusive collection of opulent villas set amidst serene waterways. These luxurious properties are designed with intricate interiors and expansive layouts, providing a private and tranquil lifestyle. Residents have access to private gardens, community parks, and swimming pools, making Venice a top choice for those seeking properties for sale in DAMAC Lagoons.</p><h3>Portofino</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/portofino-damac-lagoons/\">Portofino</a> features a selection of townhouses ideal for families. These homes are crafted to offer comfort and elegance, with open-plan living spaces and modern finishes. The community boasts tree-lined pathways, cycling tracks, and family-friendly amenities, making it an ideal location for those exploring properties for sale in DAMAC Lagoons.</p><h3>Santorini</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/santorini-damac-lagoons/\">Santorini </a>offers a collection of contemporary villas with stunning views of the lagoons and the iconic skyline. With easy access to retail and dining options, Santorini is perfect for those who appreciate urban living within a suburban setting. The area is well-connected, making it a popular choice for those looking for properties for sale in DAMAC Lagoons.</p><h3>Costa Brava</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/costa-brava-damac-lagoons/\">Costa Brava</a> is a prestigious villa community overlooking the tranquil lagoons. These luxurious villas are designed for those who seek an exclusive lifestyle surrounded by water features. With spacious layouts, private pools, and premium finishes, Costa Brava properties are among the most sought-after DAMAC Lagoons properties for sale.</p><h3>Malta</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/malta-damac-lagoons/\">Malta</a> offers an elegant selection of townhouses nestled in the heart of DAMAC Lagoons. With its proximity to the central hub and its tranquil surroundings, Malta is ideal for families and professionals seeking properties for sale in Dubai. Residents enjoy modern facilities, including fitness centers, swimming pools, and retail outlets, ensuring a lifestyle of comfort and convenience.</p><h2>Investment Potential in DAMAC Lagoons</h2><p>DAMAC Lagoons stands out as a top investment destination due to its prime location, luxurious properties, and robust community infrastructure. Key advantages include:</p><ul><li>High demand for rentals driven by its proximity to business districts and top-rated schools.</li><li>Seamless access to major highways like Hessa Street, ensuring connectivity to key areas including <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/business-bay/\">Business Bay</a> and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-marina/\">Dubai Marina</a>.</li><li>Properties for sale in DAMAC Lagoons are developed by <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/developed-by-damac-properties/\">DAMAC Properties</a>, ensuring exceptional quality and strong market value.</li><li>Developments like the floating amphitheater and other infrastructure projects further enhance its appeal, promising significant capital growth.</li></ul><h2>Types of Properties in DAMAC Lagoons</h2><p>DAMAC Lagoons offers a diverse range of properties, including expansive villas and stylish townhouses. Each property features modern interiors, high-quality finishes, and thoughtful designs to suit different lifestyles. Whether you are looking for a spacious villa with a private garden or a sleek townhouse with lagoon views, properties in DAMAC Lagoons provide the perfect blend of luxury and functionality.</p><h2>Advantages of Buying Properties for Sale in DAMAC Lagoons</h2><p>Investing in properties for sale in DAMAC Lagoons offers numerous benefits, including:</p><ul><li><strong>Family-friendly amenities:</strong> The community is designed with parks, schools, healthcare centers, and retail outlets to ensure a holistic living experience.</li><li><strong>Strategic connectivity:</strong> With easy access to major roads, residents enjoy quick commutes to <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/downtown-dubai/\">Downtown Dubai</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-marina/\">Dubai Marina</a>, and other prime areas.</li><li><strong>Diverse property options:</strong> From luxurious villas to modern townhouses, DAMAC Lagoons offers properties to suit various preferences and budgets.</li><li><strong>High rental returns:</strong> The area’s premium lifestyle offerings attract families and professionals, ensuring consistent demand and strong investment potential.</li></ul><h2>How to Find the Best Property for Sale in DAMAC Lagoons</h2><p>To find your ideal property in DAMAC Lagoons, collaborating with trusted <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/\">real estate experts</a> is essential. Engaging with experienced professionals at Zoya Ventures Real Estate will ensure a seamless buying experience for those exploring properties for sale in DAMAC Lagoons. You can check out the diverse set of listings on our website to explore and shortlist properties as per your preferences.&nbsp;</p><h2>Properties for Sale in Nearby Areas of DAMAC Lagoons</h2><p>If you are considering other options beyond DAMAC Lagoons, explore these popular communities:</p><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-damac-hills/\">Properties for Sale in DAMAC Hills</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-motor-city/\">Properties for Sale in Motor City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-dubai-studio-city/\">Properties for Sale in Dubai Studio City</a></li><li>Properties for Sale in Remraam</li></ul><p>These nearby areas offer diverse property options and easy access to key destinations within Dubai, providing excellent alternatives for those looking to invest in the city's thriving real estate market.</p><h2>Frequently Asked Questions (FAQs)</h2><h3>What types of properties are available for sale in DAMAC Lagoons?</h3><p>DAMAC Lagoons offers villas and townhouses with modern architecture and lagoon views.</p><h3>What amenities are provided in the DAMAC Lagoons community?</h3><p>Residents enjoy white sandy beaches, wave pools, parks, fitness centers, retail outlets, and dining options.</p><h3>Is DAMAC Lagoons suitable for families?</h3><p>Yes, the community offers easy access to family-friendly amenities like schools, healthcare centers, and recreational facilities.</p><h3>What makes DAMAC Lagoons a good investment?</h3><p>Its strategic location, luxurious design, and high rental demand offer excellent potential for capital appreciation and returns.</p><h3>Where is DAMAC Lagoons located in Dubai?</h3><p>DAMAC Lagoons is conveniently located near Hessa Street, neighboured by communities like <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/remraam/\">Remraam</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/damac-hills/\">DAMAC Hills</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-studio-city/\">Dubai Studio City</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-motor-city/\">Motor City</a>.</p>"
           }
         ]
       },

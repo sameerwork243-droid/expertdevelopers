@@ -14,7 +14,7 @@ $page_title = 'Create Account';
 <body>
 <div class="portal-root">
   <header class="portal-appbar">
-    <a class="portal-brand" href="/" aria-label="Zoya Ventures Real Estate"><img draggable="false" src="/lloo.png" alt="Zoya Ventures Real Estate" /></a>
+    <a class="portal-brand" href="/" aria-label="Expert Marketing & Developers"><img draggable="false" src="/images/expertlogo.png" alt="Expert Marketing & Developers" /></a>
     <div class="portal-title">My Account</div>
     <a class="portal-back" href="/">Back to Website</a>
   </header>
@@ -23,9 +23,9 @@ $page_title = 'Create Account';
   <div class="portal-auth">
     <div class="portal-auth-inner">
       <div class="portal-auth-card">
-        <img class="portal-auth-logo" draggable="false" src="/lloo.png" alt="Zoya Ventures Real Estate" />
+        <img class="portal-auth-logo" draggable="false" src="/images/expertlogo.png" alt="Expert Marketing & Developers" />
         <h1>Create your account</h1>
-        <p class="auth-subtitle">Join Zoya Ventures Real Estate to save properties, book viewings and track your inquiries in one place.</p>
+        <p class="auth-subtitle">Join Expert Marketing & Developers to save properties, book viewings and track your inquiries in one place.</p>
 
         <div class="auth-error" id="auth-error" hidden></div>
 
@@ -40,7 +40,7 @@ $page_title = 'Create Account';
           </div>
           <div class="auth-field">
             <label for="reg-phone">Phone (optional)</label>
-            <input id="reg-phone" type="tel" autocomplete="tel" placeholder="+971 50 000 0000" />
+            <input id="reg-phone" type="tel" autocomplete="tel" placeholder="+92 300 000 0000" />
           </div>
           <div class="auth-field">
             <label for="reg-password">Password</label>
@@ -53,14 +53,14 @@ $page_title = 'Create Account';
           <button class="portal-btn block" type="submit">Create Account</button>
         </form>
 
-        <p class="auth-terms">By creating an account you agree to Zoya Ventures Real Estate&apos;s terms of use and privacy policy.</p>
+        <p class="auth-terms">By creating an account you agree to Expert Marketing & Developers&apos;s terms of use and privacy policy.</p>
         <p class="auth-alt">Already have an account? <a href="/login/">Sign in</a></p>
       </div>
     </div>
   </div>
   <footer class="portal-footer">
     <div class="portal-footer-inner">
-      <div class="portal-copy">© 2026, Zoya Ventures Real Estate <a href="/privacy-policy/">Privacy Policy</a></div>
+      <div class="portal-copy">© 2026, Expert Marketing & Developers <a href="/privacy-policy/">Privacy Policy</a></div>
       <div class="portal-siteby">Site by <a rel="nofollow" href="https://hifimarketing.co" target="_blank">hifi</a></div>
     </div>
   </footer>

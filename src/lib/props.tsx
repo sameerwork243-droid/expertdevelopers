@@ -25,6 +25,8 @@ export function propLink(hit: any): string {
   return `${base}${hit.slug || ""}${hit.id}/`;
 }
 
+const SITE_BASE = process.env.NEXT_PUBLIC_SITE_URL || "https://blowdryonwheels-com.wp-arenastaging.com";
+
 export function waLink(hit: any): string {
   const neg = Array.isArray(hit.crm_negotiator_id) ? hit.crm_negotiator_id[0] || {} : hit.crm_negotiator_id || {};
   const phone = neg.phone || "+971 568 308 221";
@@ -33,22 +35,8 @@ export function waLink(hit: any): string {
   const price = hit.price ? "AED " + hit.price.toLocaleString("en-US") : "";
   const loc = addressOf(hit);
   const link = propLink(hit);
-  const text = `Hello Zoya Ventures,\n\nI would like to know more about this property:\n\n• Reference: ${ref}\n• Type: ${type}\n• Price: ${price}\n• Location: ${loc}\n• Link: https://providentestate.com${link}\n\nModifying this message will prevent it from being sent to the agent.`;
-  const searchType = String(hit.search_type || "").toLowerCase();
-  const kind = searchType.includes("rent") || searchType.includes("letting") ? "secondaryrent" : "secondarysale";
-  const params = new URLSearchParams({
-    phone: "971568308221",
-    text,
-    resp_name: neg.name || "",
-    utm_source: "Browser Direct",
-    gclid: '"',
-    type: kind,
-    referrer_url: `https://providentestate.com${link}`,
-    event_type: "Whatsapp Click",
-    utm_platform: '"',
-  });
-  if (neg.email) params.set("email", neg.email);
+  const text = `Hello Zoya Ventures,\n\nI would like to know more about this property:\n\n• Reference: ${ref}\n• Type: ${type}\n• Price: ${price}\n• Location: ${loc}\n• Link: ${SITE_BASE}${link}\n\nModifying this message will prevent it from being sent to the agent.`;
   const respPhone = String(neg.phone || "").replace(/\D/g, "");
-  if (respPhone) params.set("resp_phone", respPhone);
-  return `https://wa.provident.ae/inquire?${params.toString()}`;
+  const target = respPhone || "971568308221";
+  return `https://wa.me/${target}?text=${encodeURIComponent(text)}`;
 }

@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
-import "./provident.css";
+import "./zoya.css";
 import "./header-styles.css";
 import "./developer-styles.css";
 import "./app-styles.css";
@@ -20,9 +19,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Leading Real Estate Agency in Dubai, UAE",
     siteName: "Zoya Ventures Real Estate",
-    images: ["https://www.providentestate.com/icons/icon-512x512.png"],
+    images: ["/icons/icon-512x512.png"],
   },
-  metadataBase: new URL("https://providentestate.com"),
+  metadataBase: new URL("https://blowdryonwheels-com.wp-arenastaging.com"),
 };
 
 export const viewport: Viewport = {
@@ -35,21 +34,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head />
       <body>
-        <Script
-          id="gtm"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PGNHTGZ5');`,
-          }}
-        />
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PGNHTGZ5"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
         {children}
       </body>
     </html>

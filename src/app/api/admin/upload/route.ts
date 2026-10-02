@@ -18,7 +18,7 @@ export async function POST(req: Request) {
   }
 
   const safe = file.name.toLowerCase().replace(/[^a-z0-9.\-_]+/g, "-");
-  const blob = await put(`provident/${Date.now()}-${safe}`, file, {
+  const blob = await put(`zoya/${Date.now()}-${safe}`, file, {
     access: "public",
     addRandomSuffix: true,
     contentType: file.type,

@@ -1,13 +1,13 @@
 <?php
 // database.php — PDO MySQL connection (port of src/server/db.ts)
-// Supports the same PROVIDENT_DATABASE_URL env contract: mysql://user:pass@host:port/dbname
+// Supports the same EXPERT_DATABASE_URL env contract: mysql://user:pass@host:port/dbname
 // If no MySQL URL is configured, db_enabled() returns false and callers fall back to JSON.
 
 require_once __DIR__ . '/env.php';
 
 function db_url(): string
 {
-    return (string) (env('PROVIDENT_DATABASE_URL') ?? env('DATABASE_URL') ?? '');
+    return (string) (env('EXPERT_DATABASE_URL') ?? env('DATABASE_URL') ?? '');
 }
 
 function db_enabled(): bool
@@ -48,8 +48,8 @@ function db_connect(): ?PDO
         $opts[PDO::MYSQL_ATTR_FOUND_ROWS] = true;
     }
 
-    // sslmode=require / PROVIDENT_DB_SSL=1 → enable SSL (Neon-style URLs)
-    if (env('PROVIDENT_DB_SSL') === '1' || str_contains(strtolower($query), 'sslmode=require') || str_contains(strtolower($query), 'sslmode=verify-full')) {
+    // sslmode=require / EXPERT_DB_SSL=1 → enable SSL (Neon-style URLs)
+    if (env('EXPERT_DB_SSL') === '1' || str_contains(strtolower($query), 'sslmode=require') || str_contains(strtolower($query), 'sslmode=verify-full')) {
         $opts[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = false;
     }
 

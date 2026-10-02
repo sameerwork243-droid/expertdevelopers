@@ -38,16 +38,16 @@
               "id": "10664",
               "url": "https://storage.googleapis.com/prov-email-signatures/Hayat.PFb.png",
               "name": "Hayat Daham",
-              "email": "hayat.d@providentestate.com",
+              "email": "hayat.d@zoyaventures.com",
               "phone": "+971504676295",
               "brn_number": "69751"
             },
             "crm_negotiator_id": [
               {
                 "id": "10664",
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/property/PS-0902269/crm_negotiator_id/prov-email-signatures/Hayat.PFb.png",
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/property/PS-0902269/crm_negotiator_id/prov-email-signatures/Hayat.PFb.png",
                 "name": "Hayat Daham",
-                "email": "hayat.d@providentestate.com",
+                "email": "hayat.d@zoyaventures.com",
                 "phone": "+971504676295",
                 "srcUrl": "https://storage.googleapis.com/prov-email-signatures/Hayat.PFb.png",
                 "brn_number": "69751",
@@ -131,29 +131,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_green_1_0c7fae2eae.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_green_1_0c7fae2eae.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_green_2_69ee04e3c7.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_green_2_69ee04e3c7.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_green_3_cf5ba73dfd.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_green_3_cf5ba73dfd.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_green_4_f4b49138c9.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_green_4_f4b49138c9.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_green_5_c207764ee7.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_green_5_c207764ee7.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_green_6_8c34f05b46.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_green_6_8c34f05b46.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_greens_feature_3cbcb63057.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_greens_feature_3cbcb63057.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/golf_green_banner_0b4a6199d0.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/golf_green_banner_0b4a6199d0.jpg"
             },
             "ggfx_results": [
               {
@@ -161,26 +161,26 @@
                 "src_cftle": "i/golf_green_3_cf5ba73dfd.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_green_3_cf5ba73dfd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_green_3_cf5ba73dfd.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-15 05:13:08.933",
                     "updated_at": "2024-06-15 05:13:08.933"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_green_3_cf5ba73dfd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_green_3_cf5ba73dfd.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-15 05:13:11.379",
                     "updated_at": "2024-06-15 05:13:11.379"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_3_cf5ba73dfd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_3_cf5ba73dfd.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_3_cf5ba73dfd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_3_cf5ba73dfd.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -196,14 +196,14 @@
                 "src_cftle": "i/Golf_greens_brochure_ba3fdc6d70.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/Golf_greens_brochure_ba3fdc6d70.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/Golf_greens_brochure_ba3fdc6d70.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-15 05:13:08.879",
                     "updated_at": "2024-06-15 05:13:08.879"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/Golf_greens_brochure_ba3fdc6d70.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/Golf_greens_brochure_ba3fdc6d70.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-11 06:51:56.801",
@@ -221,26 +221,26 @@
                 "src_cftle": "i/golf_green_5_c207764ee7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_green_5_c207764ee7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_green_5_c207764ee7.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-15 05:13:08.964",
                     "updated_at": "2024-06-15 05:13:08.964"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_green_5_c207764ee7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_green_5_c207764ee7.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-17 09:11:28.586",
                     "updated_at": "2024-06-17 09:11:28.586"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_5_c207764ee7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_5_c207764ee7.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_5_c207764ee7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_5_c207764ee7.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -256,40 +256,40 @@
                 "src_cftle": "i/golf_green_2_69ee04e3c7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_green_2_69ee04e3c7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_green_2_69ee04e3c7.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-15 05:13:09.545",
                     "updated_at": "2024-06-15 05:13:09.545"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_green_2_69ee04e3c7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_green_2_69ee04e3c7.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-15 05:13:15.524",
                     "updated_at": "2024-06-15 05:13:15.524"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_2_69ee04e3c7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_2_69ee04e3c7.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-06-21 18:05:58.351",
                     "updated_at": "2024-06-21 18:05:58.351"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_2_69ee04e3c7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_2_69ee04e3c7.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-06-26 15:04:52.234",
                     "updated_at": "2024-06-26 15:04:52.234"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_2_69ee04e3c7.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_2_69ee04e3c7.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_2_69ee04e3c7.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_2_69ee04e3c7.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -305,50 +305,50 @@
                 "src_cftle": "i/golf_green_1_0c7fae2eae.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_green_1_0c7fae2eae.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-15 05:13:08.958",
                     "updated_at": "2024-06-15 05:13:08.958"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_green_1_0c7fae2eae.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-15 05:13:11.446",
                     "updated_at": "2024-06-15 05:13:11.446"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_1_0c7fae2eae.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-06-21 18:05:58.050",
                     "updated_at": "2024-06-21 18:05:58.050"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_1_0c7fae2eae.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-06-26 15:04:52.113",
                     "updated_at": "2024-06-26 15:04:52.113"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/golf_green_1_0c7fae2eae.webp",
                     "format": "webp",
                     "transform": "1300x500"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/golf_green_1_0c7fae2eae.webp",
                     "format": "webp",
                     "transform": "600x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_1_0c7fae2eae.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_1_0c7fae2eae.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_1_0c7fae2eae.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_1_0c7fae2eae.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -364,14 +364,14 @@
                 "src_cftle": "i/golf_greens_map_2916d42d25.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/golf_greens_map_2916d42d25.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/golf_greens_map_2916d42d25.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-11 06:51:56.571",
                     "updated_at": "2024-07-11 06:51:56.571"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_greens_map_2916d42d25.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_greens_map_2916d42d25.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-15 05:13:14.929",
@@ -389,14 +389,14 @@
                 "src_cftle": "i/golf_green_selling_1676c3c8da.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_green_selling_1676c3c8da.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_green_selling_1676c3c8da.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-07-11 09:11:50.988",
                     "updated_at": "2024-07-11 09:11:50.988"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/golf_green_selling_1676c3c8da.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/golf_green_selling_1676c3c8da.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-06-15 05:13:12.913",
@@ -414,26 +414,26 @@
                 "src_cftle": "i/golf_green_6_8c34f05b46.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_green_6_8c34f05b46.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_green_6_8c34f05b46.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-15 05:13:09.788",
                     "updated_at": "2024-06-15 05:13:09.788"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_green_6_8c34f05b46.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_green_6_8c34f05b46.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-15 05:13:11.517",
                     "updated_at": "2024-06-15 05:13:11.517"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_6_8c34f05b46.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_6_8c34f05b46.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_6_8c34f05b46.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_6_8c34f05b46.webp",
                     "format": "webp",
                     "transform": "464x312"
                   }
@@ -449,26 +449,26 @@
                 "src_cftle": "i/golf_green_4_f4b49138c9.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/golf_green_4_f4b49138c9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/golf_green_4_f4b49138c9.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-15 05:13:11.428",
                     "updated_at": "2024-06-15 05:13:11.428"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/golf_green_4_f4b49138c9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/golf_green_4_f4b49138c9.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-17 09:11:28.561",
                     "updated_at": "2024-06-17 09:11:28.561"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_4_f4b49138c9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_4_f4b49138c9.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_4_f4b49138c9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_4_f4b49138c9.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -484,70 +484,70 @@
                 "src_cftle": "i/golf_green_banner_0b4a6199d0.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-06-15 05:13:11.936",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-06-15 05:13:15.607",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-06-17 09:11:28.979",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-03-20 08:02:05.555",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-03-20 08:02:05.555",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "1300x",
                     "created_at": "2025-03-20 08:02:05.555",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-03-20 08:02:05.555",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-03-20 08:02:05.555",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-03-20 08:02:05.555",
                     "updated_at": "2025-03-20 08:02:05.555"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/golf_green_banner_0b4a6199d0.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/golf_green_banner_0b4a6199d0.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-03-20 08:02:05.555",
@@ -565,17 +565,17 @@
                 "src_cftle": "i/golf_greens_feature_3cbcb63057.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_greens_feature_3cbcb63057.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_greens_feature_3cbcb63057.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/golf_greens_feature_3cbcb63057.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/golf_greens_feature_3cbcb63057.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/golf_greens_feature_3cbcb63057.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/golf_greens_feature_3cbcb63057.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -591,14 +591,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_green_3_cf5ba73dfd.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_green_3_cf5ba73dfd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_green_3_cf5ba73dfd.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:30.700",
                     "updated_at": "2024-07-23 07:41:30.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_green_3_cf5ba73dfd.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_green_3_cf5ba73dfd.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:30.700",
@@ -616,14 +616,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_green_2_69ee04e3c7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_green_2_69ee04e3c7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_green_2_69ee04e3c7.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:41:30.700",
                     "updated_at": "2024-07-23 07:41:30.700"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_green_2_69ee04e3c7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_green_2_69ee04e3c7.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:41:30.700",
@@ -641,14 +641,14 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_greens_feature_3cbcb63057.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_greens_feature_3cbcb63057.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_greens_feature_3cbcb63057.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:05:30.106",
                     "updated_at": "2024-10-11 07:05:30.106"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_greens_feature_3cbcb63057.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_greens_feature_3cbcb63057.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:05:30.106",
@@ -666,13 +666,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_green_5_c207764ee7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_green_5_c207764ee7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_green_5_c207764ee7.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_green_5_c207764ee7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_green_5_c207764ee7.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -689,13 +689,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_green_6_8c34f05b46.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_green_6_8c34f05b46.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_green_6_8c34f05b46.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_green_6_8c34f05b46.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_green_6_8c34f05b46.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -712,13 +712,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_green_4_f4b49138c9.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_green_4_f4b49138c9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_green_4_f4b49138c9.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_green_4_f4b49138c9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_green_4_f4b49138c9.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -735,13 +735,13 @@
                 "src_cftle": "i/off-plan/null/images/i/golf_green_1_0c7fae2eae.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/golf_green_1_0c7fae2eae.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/golf_green_1_0c7fae2eae.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/golf_green_1_0c7fae2eae.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -851,29 +851,29 @@
             "agent_category": "B",
             "media_images": [
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_6_6f0d3b58b6.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_6_6f0d3b58b6.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_3_616b65f898.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_3_616b65f898.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_2_1397463ff7.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_2_1397463ff7.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_5_2650c1aa5c.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_5_2650c1aa5c.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_4_12c7daab12.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_4_12c7daab12.jpg"
               },
               {
-                "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_1_f838618bc6.jpg"
+                "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_1_f838618bc6.jpg"
               }
             ],
             "tile_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_feature_6f68835dd4.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_feature_6f68835dd4.jpg"
             },
             "banner_image": {
-              "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/i/camelia_banner_af87643cb1.jpg"
+              "url": "https://d3h330vgpwpjr8.cloudfront.net/i/camelia_banner_af87643cb1.jpg"
             },
             "ggfx_results": [
               {
@@ -881,41 +881,41 @@
                 "src_cftle": "i/camelia_6_6f0d3b58b6.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/camelia_6_6f0d3b58b6.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-16 17:57:54.973",
                     "updated_at": "2024-06-16 17:57:54.973"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_6_6f0d3b58b6.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 18:01:29.371",
                     "updated_at": "2024-06-16 18:01:29.371"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_6_6f0d3b58b6.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_6_6f0d3b58b6.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/camelia_6_6f0d3b58b6.webp",
                     "format": "webp",
                     "transform": "1300x500"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/camelia_6_6f0d3b58b6.webp",
                     "format": "webp",
                     "transform": "600x"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_6_6f0d3b58b6.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_6_6f0d3b58b6.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -931,36 +931,36 @@
                 "src_cftle": "i/camelia_3_616b65f898.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/camelia_3_616b65f898.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/camelia_3_616b65f898.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-16 17:57:55.397",
                     "updated_at": "2024-06-16 17:57:55.397"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_3_616b65f898.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_3_616b65f898.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 18:01:30.063",
                     "updated_at": "2024-06-16 18:01:30.063"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_3_616b65f898.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_3_616b65f898.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_3_616b65f898.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_3_616b65f898.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_3_616b65f898.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_3_616b65f898.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_3_616b65f898.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_3_616b65f898.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   }
@@ -976,70 +976,70 @@
                 "src_cftle": "i/camelia_banner_af87643cb1.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/744x/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/744x/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "744x",
                     "created_at": "2024-06-16 17:57:55.008",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "376x",
                     "created_at": "2024-06-16 18:01:23.471",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/2400x/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/2400x/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "2400x",
                     "created_at": "2024-06-16 18:01:30.120",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2025-04-25 10:45:02.502",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "1300x",
                     "created_at": "2025-04-25 10:45:02.502",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2025-04-25 10:45:02.502",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/600x/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/600x/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "600x",
                     "created_at": "2025-04-25 10:45:02.502",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1300x500/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1300x500/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "1300x500",
                     "created_at": "2025-04-25 10:45:02.502",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1650x/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1650x/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "1650x",
                     "created_at": "2025-04-25 10:45:02.502",
                     "updated_at": "2025-04-25 10:45:02.502"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/376x512/camelia_banner_af87643cb1.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/376x512/camelia_banner_af87643cb1.webp",
                     "format": "webp",
                     "transform": "376x512",
                     "created_at": "2025-04-25 10:45:02.502",
@@ -1057,31 +1057,31 @@
                 "src_cftle": "i/camelia_2_1397463ff7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/camelia_2_1397463ff7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/camelia_2_1397463ff7.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-16 17:57:57.105",
                     "updated_at": "2024-06-16 17:57:57.105"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_2_1397463ff7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_2_1397463ff7.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 18:01:27.604",
                     "updated_at": "2024-06-16 18:01:27.604"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_2_1397463ff7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_2_1397463ff7.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_2_1397463ff7.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_2_1397463ff7.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_2_1397463ff7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_2_1397463ff7.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -1097,36 +1097,36 @@
                 "src_cftle": "i/camelia_5_2650c1aa5c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/camelia_5_2650c1aa5c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/camelia_5_2650c1aa5c.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-16 17:57:57.336",
                     "updated_at": "2024-06-16 17:57:57.336"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_5_2650c1aa5c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_5_2650c1aa5c.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 18:01:30.263",
                     "updated_at": "2024-06-16 18:01:30.263"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_5_2650c1aa5c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_5_2650c1aa5c.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_5_2650c1aa5c.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_5_2650c1aa5c.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_5_2650c1aa5c.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_5_2650c1aa5c.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_5_2650c1aa5c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_5_2650c1aa5c.webp",
                     "format": "webp",
                     "transform": "340x252"
                   }
@@ -1142,31 +1142,31 @@
                 "src_cftle": "i/camelia_4_12c7daab12.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/camelia_4_12c7daab12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/camelia_4_12c7daab12.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-16 17:57:57.453",
                     "updated_at": "2024-06-16 17:57:57.453"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_4_12c7daab12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_4_12c7daab12.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 18:01:30.396",
                     "updated_at": "2024-06-16 18:01:30.396"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_4_12c7daab12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_4_12c7daab12.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_4_12c7daab12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_4_12c7daab12.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_4_12c7daab12.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_4_12c7daab12.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -1182,31 +1182,31 @@
                 "src_cftle": "i/camelia_1_f838618bc6.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/camelia_1_f838618bc6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/camelia_1_f838618bc6.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-06-16 17:57:58.247",
                     "updated_at": "2024-06-16 17:57:58.247"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_1_f838618bc6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_1_f838618bc6.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 18:01:30.549",
                     "updated_at": "2024-06-16 18:01:30.549"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_1_f838618bc6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_1_f838618bc6.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_1_f838618bc6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_1_f838618bc6.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_1_f838618bc6.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_1_f838618bc6.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   }
@@ -1222,14 +1222,14 @@
                 "src_cftle": "i/camelia_selling_5930b62691.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/camelia_selling_5930b62691.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/camelia_selling_5930b62691.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-08-20 10:02:13.503",
                     "updated_at": "2024-08-20 10:02:13.503"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_selling_5930b62691.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_selling_5930b62691.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 18:01:30.593",
@@ -1247,14 +1247,14 @@
                 "src_cftle": "i/camelia_location_6d255ea55c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_location_6d255ea55c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_location_6d255ea55c.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 17:57:58.994",
                     "updated_at": "2024-06-16 17:57:58.994"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1392x/camelia_location_6d255ea55c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1392x/camelia_location_6d255ea55c.webp",
                     "format": "webp",
                     "transform": "1392x",
                     "created_at": "2024-07-21 10:18:26.917",
@@ -1272,21 +1272,21 @@
                 "src_cftle": "i/camelia_video_d923feb809.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/336x/camelia_video_d923feb809.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/336x/camelia_video_d923feb809.webp",
                     "format": "webp",
                     "transform": "336x",
                     "created_at": "2024-06-16 17:57:59.348",
                     "updated_at": "2024-06-16 17:57:59.348"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1968x/camelia_video_d923feb809.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1968x/camelia_video_d923feb809.webp",
                     "format": "webp",
                     "transform": "1968x",
                     "created_at": "2024-07-21 10:18:28.423",
                     "updated_at": "2024-07-21 10:18:28.423"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/696x/camelia_video_d923feb809.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/696x/camelia_video_d923feb809.webp",
                     "format": "webp",
                     "transform": "696x",
                     "created_at": "2024-06-16 18:01:31.117",
@@ -1304,14 +1304,14 @@
                 "src_cftle": "i/camelia_brochure_bcabde7af9.png",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x/camelia_brochure_bcabde7af9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x/camelia_brochure_bcabde7af9.webp",
                     "format": "webp",
                     "transform": "340x",
                     "created_at": "2024-06-16 17:58:00.591",
                     "updated_at": "2024-06-16 17:58:00.591"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/1504x/camelia_brochure_bcabde7af9.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/1504x/camelia_brochure_bcabde7af9.webp",
                     "format": "webp",
                     "transform": "1504x",
                     "created_at": "2024-07-21 10:18:27.505",
@@ -1329,14 +1329,14 @@
                 "src_cftle": "i/off-plan/null/images/i/camelia_3_616b65f898.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/camelia_3_616b65f898.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/camelia_3_616b65f898.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:42:15.104",
                     "updated_at": "2024-07-23 07:42:15.104"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/camelia_3_616b65f898.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/camelia_3_616b65f898.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:42:15.104",
@@ -1354,14 +1354,14 @@
                 "src_cftle": "i/off-plan/null/images/i/camelia_2_1397463ff7.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/camelia_2_1397463ff7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/camelia_2_1397463ff7.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-07-23 07:42:15.104",
                     "updated_at": "2024-07-23 07:42:15.104"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/camelia_2_1397463ff7.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/camelia_2_1397463ff7.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-07-23 07:42:15.104",
@@ -1379,14 +1379,14 @@
                 "src_cftle": "i/off-plan/null/images/i/camelia_feature_6f68835dd4.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/camelia_feature_6f68835dd4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/camelia_feature_6f68835dd4.webp",
                     "format": "webp",
                     "transform": "340x252",
                     "created_at": "2024-10-11 07:06:13.292",
                     "updated_at": "2024-10-11 07:06:13.292"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/camelia_feature_6f68835dd4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/camelia_feature_6f68835dd4.webp",
                     "format": "webp",
                     "transform": "464x312",
                     "created_at": "2024-10-11 07:06:13.292",
@@ -1404,13 +1404,13 @@
                 "src_cftle": "i/off-plan/null/images/i/camelia_1_f838618bc6.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/camelia_1_f838618bc6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/camelia_1_f838618bc6.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/camelia_1_f838618bc6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/camelia_1_f838618bc6.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1427,13 +1427,13 @@
                 "src_cftle": "i/off-plan/null/images/i/camelia_4_12c7daab12.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/camelia_4_12c7daab12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/camelia_4_12c7daab12.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/camelia_4_12c7daab12.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/camelia_4_12c7daab12.webp",
                     "alias": "images2",
                     "format": "webp",
                     "transform": "464x312"
@@ -1450,13 +1450,13 @@
                 "src_cftle": "i/off-plan/null/images/i/camelia_5_2650c1aa5c.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/camelia_5_2650c1aa5c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/camelia_5_2650c1aa5c.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/camelia_5_2650c1aa5c.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/camelia_5_2650c1aa5c.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1473,13 +1473,13 @@
                 "src_cftle": "i/off-plan/null/images/i/camelia_6_6f0d3b58b6.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/340x252/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/340x252/camelia_6_6f0d3b58b6.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/off-plan/null/images/i/464x312/camelia_6_6f0d3b58b6.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/off-plan/null/images/i/464x312/camelia_6_6f0d3b58b6.webp",
                     "alias": "images1",
                     "format": "webp",
                     "transform": "464x312"
@@ -1496,22 +1496,22 @@
                 "src_cftle": "i/camelia_feature_6f68835dd4.jpg",
                 "transforms": [
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_feature_6f68835dd4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_feature_6f68835dd4.webp",
                     "format": "webp",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_feature_6f68835dd4.webp",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_feature_6f68835dd4.webp",
                     "format": "webp",
                     "transform": "340x252"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/464x312/camelia_feature_6f68835dd4.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/464x312/camelia_feature_6f68835dd4.jpg",
                     "format": "jpg",
                     "transform": "464x312"
                   },
                   {
-                    "url": "https://ggfx-providentestate.s3.eu-west-2.amazonaws.com/x/340x252/camelia_feature_6f68835dd4.jpg",
+                    "url": "https://d3h330vgpwpjr8.cloudfront.net/x/340x252/camelia_feature_6f68835dd4.jpg",
                     "format": "jpg",
                     "transform": "340x252"
                   }
@@ -1608,7 +1608,7 @@
             "title": "Properties for Sale in DAMAC Hills",
             "area": "damac-hills",
             "building_type": null,
-            "description": "<p>DAMAC Hills is one of the most sought-after residential destinations in Dubai. Known for its luxurious living experience and wide range of world-class amenities, it’s no wonder that properties for sale in <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/damac-hills/\">DAMAC Hills</a> attract investors and homeowners alike.&nbsp;</p><p>Spanning over 42 million square feet, this premier community is centered around the Trump International Golf Club Dubai. It offers a variety of modern villas, townhouses, and apartments set amidst lush greenery and serene landscapes. It’s perfect for anyone seeking luxury, nature, and leisure in one of Dubai's most vibrant locations.</p><p>Whether you're interested in a contemporary townhouse, a spacious villa, or an elegant apartment, DAMAC Hills has a property to suit every lifestyle. The area boasts excellent connectivity to major roads such as Al Qudra Road and Hessa Street, making it convenient for residents to access all Dubai offers.&nbsp;</p><p>Apart from the pristine golf course, the community also offers an array of outdoor attractions like jogging tracks, a fishing lake, a dog park, a fitness center, and even stable farms. With its commitment to luxury and comfort, DAMAC Hills promises a lifestyle that blends tranquillity with excitement, making it one of the top choices for those searching for properties for sale in DAMAC Hills.</p><h2>Why Should You Buy a Property for Sale in DAMAC Hills?</h2><p>DAMAC Hills offers several compelling reasons to invest in its properties. First, the community is designed with a focus on luxury and a premium lifestyle, making it one of the most prestigious golf communities in Dubai. Residents enjoy high-end homes and access to a range of top-tier amenities, including the Trump International Golf Club, fitness centers, cycling tracks, and multiple parks.</p><p>Another reason to consider buying a property in DAMAC Hills is its proximity to other popular areas in Dubai, such as <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/dubai-motor-city/\">Motor City</a> and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/area-guides/remraam/\">Remraam</a>. Residents can easily access the city's major business districts, shopping malls, and entertainment options with convenient transport links. This connectivity, combined with the natural beauty and peaceful surroundings, makes DAMAC Hills an ideal place to live or invest.</p><h2>Popular Areas to Buy Properties for Sale in DAMAC Hills</h2><h3>1. Legend at DAMAC Hills</h3><p>Starting at AED 1.87 M, Legend at <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/legend-at-damac-hills/\">DAMAC Hills</a> offers an array of elegant villas with 3 to 7 bedrooms. These modern homes come with spacious layouts and high-end finishes. Located in the heart of DAMAC Hills, Legend boasts proximity to the world-renowned Trump Golf Course and other outdoor amenities such as jogging tracks and fitness centers. The community is perfect for those who want a luxurious yet tranquil lifestyle, with excellent connectivity to major roads like Al Qudra Road and Hessa Street.</p><p>Legend at DAMAC Hills provides an exceptional investment opportunity for those looking for luxury properties in one of Dubai’s most prestigious areas.</p><h3>2. Beverly Hills Drive</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/beverly-hills-drive/\">Beverly Hills Drive</a> offers Ultra luxury 7-bedroom villas, with prices starting from AED 13.30 M. These villas have a contemporary design and offer both space and privacy. The development is close to the Trump International Golf Club and offers easy access to amenities such as a dog park, fitness centers, and gourmet restaurants. Beverly Hills Drive presents a prestigious lifestyle within DAMAC Hills, offering exclusivity and convenience for its residents.</p><p>Beverly Hills Drive is ideal for buyers seeking a refined living experience in a well-connected, vibrant community.</p><h3>3. DAMAC Lagoons</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/new-projects/damac-lagoons/\">DAMAC Lagoons</a> offers a diverse range of properties, from 4 to 5-bedroom townhouses to larger 6-bedroom villas, starting at AED 1.70 M. The development features Mediterranean-inspired architecture and beautifully landscaped gardens, providing an idyllic setting for families. Residents can enjoy stunning water features, walking paths, and numerous recreational amenities like swimming pools and gyms. Its location near key roads makes reaching various destinations within Dubai easy.</p><p>DAMAC Lagoons is the perfect choice for families who want a luxurious yet relaxed lifestyle amidst nature and water features.</p><h2>Investment Potential in DAMAC Hills</h2><p>DAMAC Hills offers a promising investment opportunity, with its luxury properties and world-class amenities making it a prime location for local and international buyers. Below are some key reasons why investing in this community is a wise decision:</p><ul><li><strong>High Rental Yields</strong>: Properties in DAMAC Hills consistently generate solid rental returns due to the community's popularity among residents and tourists.</li><li><strong>Capital Appreciation</strong>: As one of Dubai’s most prestigious neighborhoods, DAMAC Hills properties have seen consistent value growth, making them an excellent option for long-term investment.</li><li><strong>Strong Demand</strong>: The demand for homes in DAMAC Hills is high, especially among affluent professionals and families seeking a luxury lifestyle in a green and peaceful environment.</li><li><strong>World-Class Amenities</strong>: The presence of high-end facilities, including the Trump Golf Course, fitness centers, and parks, adds value to properties, making them more desirable to potential buyers and renters.</li></ul><h2>Types of Properties for Sale in DAMAC Hills</h2><p>DAMAC Hills offers a variety of property types, including <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/villa-for-sale/\">villas</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/townhouse-for-sale/\">townhouses</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/apartment-for-sale/\">apartments</a>. Buyers can choose between standalone villas with private gardens, spacious townhouses with modern designs, or apartments offering more affordable options. All properties in the community feature high-end finishes and luxurious interiors, ensuring comfort and style.</p><p>For those seeking a larger home, villas with up to 6 bedrooms are perfect for families. Townhouses are available in various configurations, ideal for smaller families or couples. Apartments provide a more affordable way to live in this prestigious community while enjoying DAMAC Hills' benefits.</p><h2>Advantages of Buying Properties for Sale in DAMAC Hills</h2><ul><li><strong>Luxury Living</strong>: DAMAC Hills offers some of the most luxurious properties in Dubai, featuring high-end finishes, modern designs, and top-tier amenities.</li><li><strong>Prime Location</strong>: DAMAC Hills is close to key roads and other Dubai hotspots, making it perfect for those who want easy access to both nature and city life.</li><li><strong>Exclusive Community</strong>: DAMAC Hills focuses on elite living and is home to some of Dubai’s wealthiest residents, making it a desirable address.</li><li><strong>Outdoor Activities</strong>: The community is designed with plenty of open spaces, parks, and recreational facilities, ideal for outdoor lovers.</li></ul><h2>How to Find the Best Properties for Sale in DAMAC Hills?</h2><p>To find the best properties for sale in DAMAC Hills, consider working with a trusted real estate agency like Zoya Ventures Real Estate. The agency’s extensive portfolio includes ready-to-move-in homes and off-plan projects, ensuring you find the right property for your needs. Take advantage of online listings to explore available properties, and consult with experts to help you make an informed decision.</p><p>Additionally, attending open houses or visiting the community in person will give you a better idea of the lifestyle and amenities offered in DAMAC Hills.</p><h2>Properties for Sale in Nearby DAMAC Hills&nbsp;</h2><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-arabian-ranches/\">Properties for Sale in Arabian Ranches</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-mudon/\">Properties for Sale in Mudon</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-dubai-sports-city/\">Properties for Sale in Dubai Sports City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://providentestate.com/buy/properties-for-sale/in-jumeirah-golf-estates/\">Properties for Sale in Jumeirah Golf Estates</a></li></ul><h2>FAQs</h2><h3>What types of properties are available in DAMAC Hills?&nbsp;</h3><p>DAMAC Hills offers a wide variety of properties, including contemporary villas, modern townhouses, and luxurious apartments. You can choose from properties with 3 to 6 bedrooms, each featuring high-end finishes, spacious layouts, and premium amenities. Whether you’re looking for a family home, a vacation retreat, or an investment property, DAMAC Hills has options to suit different lifestyles and budgets.</p><h3>What is the price range for properties in DAMAC Hills?&nbsp;</h3><p>Prices for properties in DAMAC Hills start from around AED 1,300,000 for 3-bedroom townhouses and can go up to AED 6,000,000 for larger, luxury villas. The price largely depends on the property type, size, and location within the community. There are options available for various budgets, from more affordable townhouses to luxurious villas with private gardens and views of the golf course.</p><h3>What amenities are available in DAMAC Hills?</h3><p>DAMAC Hills boasts world-class amenities, making it one of the most sought-after communities in Dubai. Key amenities include the Trump International Golf Club, fitness centers, swimming pools, jogging tracks, parks, cycling tracks, dog parks, and stable farms. The community also features dining options, grocery stores, and recreational spaces that promote a balanced and active lifestyle.</p><h3>Is DAMAC Hills a good investment?</h3><p>Yes, DAMAC Hills offers strong investment potential. Properties in the community have consistently shown high rental yields due to their appeal among residents and tourists. Additionally, DAMAC Hills is known for its capital appreciation, with property values steadily increasing. The community's luxury offerings, top-tier amenities, and prime location make it a wise choice for long-term investment.</p><h3>How can I buy a property in DAMAC Hills?</h3><p>Purchasing a property in DAMAC Hills can be done through a trusted real estate agent or directly from the developer. It is advisable to consult with a real estate expert who can guide you through the process, help with legal documentation, and ensure a smooth transaction. You can also explore available properties through online listings or visit open houses to get a feel for the community before deciding.</p><h3>What is the location of DAMAC Hills?</h3><p>DAMAC Hills is strategically located near major roads like Al Qudra Road and Hessa Street, providing easy access to critical areas in Dubai. It is also close to popular neighborhoods like Motor City, Remraam, and Arabian Ranches. The community is about 25 minutes from Downtown Dubai, Dubai Marina, and Dubai International Airport, making it a well-connected and convenient location.</p><h3>Can I find affordable properties in DAMAC Hills?</h3><p>While DAMAC Hills is known for its luxury offerings, more affordable options such as townhouses and apartments are available. Property prices start from AED 1,300,000, and the community provides a range of options for high-end buyers and those looking for more budget-friendly choices. With its various properties, DAMAC Hills accommodates different preferences and financial capabilities.</p><h3>Is DAMAC Hills family-friendly?</h3><p>Yes, DAMAC Hills is an ideal location for families. The community features safe green spaces, children’s play areas, and recreational parks, providing a comfortable environment for families to live and thrive. Additionally, schools and nurseries are nearby, making it a convenient location for families with children. The peaceful surroundings and a wide range of family-friendly amenities make DAMAC Hills a great place to raise a family.</p><h3>What are the nearby areas of DAMAC Hills?</h3><p>Several popular neighborhoods surround DAMAC Hills, including Arabian Ranches, The Villa, Victory Heights, Akoya Oxygen, Mudon, Dubai Sports City, Jumeirah Golf Estates, and Motor City. These areas provide additional residential options, leisure facilities, and community amenities, enhancing the overall appeal of DAMAC Hills for both homeowners and investors.</p><h3>What are the connectivity options for DAMAC Hills?</h3><p>DAMAC Hills enjoys excellent connectivity with easy access to major roads such as Al Qudra Road and Hessa Street, which provide convenient routes to other parts of Dubai. The community is also located near Sheikh Mohammed Bin Zayed Road, making it easy to reach key destinations like Downtown Dubai, Dubai Marina, and Dubai International Airport, all within a 25-30 minute drive.</p>"
+            "description": "<p>DAMAC Hills is one of the most sought-after residential destinations in Dubai. Known for its luxurious living experience and wide range of world-class amenities, it’s no wonder that properties for sale in <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/damac-hills/\">DAMAC Hills</a> attract investors and homeowners alike.&nbsp;</p><p>Spanning over 42 million square feet, this premier community is centered around the Trump International Golf Club Dubai. It offers a variety of modern villas, townhouses, and apartments set amidst lush greenery and serene landscapes. It’s perfect for anyone seeking luxury, nature, and leisure in one of Dubai's most vibrant locations.</p><p>Whether you're interested in a contemporary townhouse, a spacious villa, or an elegant apartment, DAMAC Hills has a property to suit every lifestyle. The area boasts excellent connectivity to major roads such as Al Qudra Road and Hessa Street, making it convenient for residents to access all Dubai offers.&nbsp;</p><p>Apart from the pristine golf course, the community also offers an array of outdoor attractions like jogging tracks, a fishing lake, a dog park, a fitness center, and even stable farms. With its commitment to luxury and comfort, DAMAC Hills promises a lifestyle that blends tranquillity with excitement, making it one of the top choices for those searching for properties for sale in DAMAC Hills.</p><h2>Why Should You Buy a Property for Sale in DAMAC Hills?</h2><p>DAMAC Hills offers several compelling reasons to invest in its properties. First, the community is designed with a focus on luxury and a premium lifestyle, making it one of the most prestigious golf communities in Dubai. Residents enjoy high-end homes and access to a range of top-tier amenities, including the Trump International Golf Club, fitness centers, cycling tracks, and multiple parks.</p><p>Another reason to consider buying a property in DAMAC Hills is its proximity to other popular areas in Dubai, such as <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/dubai-motor-city/\">Motor City</a> and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/area-guides/remraam/\">Remraam</a>. Residents can easily access the city's major business districts, shopping malls, and entertainment options with convenient transport links. This connectivity, combined with the natural beauty and peaceful surroundings, makes DAMAC Hills an ideal place to live or invest.</p><h2>Popular Areas to Buy Properties for Sale in DAMAC Hills</h2><h3>1. Legend at DAMAC Hills</h3><p>Starting at AED 1.87 M, Legend at <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/legend-at-damac-hills/\">DAMAC Hills</a> offers an array of elegant villas with 3 to 7 bedrooms. These modern homes come with spacious layouts and high-end finishes. Located in the heart of DAMAC Hills, Legend boasts proximity to the world-renowned Trump Golf Course and other outdoor amenities such as jogging tracks and fitness centers. The community is perfect for those who want a luxurious yet tranquil lifestyle, with excellent connectivity to major roads like Al Qudra Road and Hessa Street.</p><p>Legend at DAMAC Hills provides an exceptional investment opportunity for those looking for luxury properties in one of Dubai’s most prestigious areas.</p><h3>2. Beverly Hills Drive</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/beverly-hills-drive/\">Beverly Hills Drive</a> offers Ultra luxury 7-bedroom villas, with prices starting from AED 13.30 M. These villas have a contemporary design and offer both space and privacy. The development is close to the Trump International Golf Club and offers easy access to amenities such as a dog park, fitness centers, and gourmet restaurants. Beverly Hills Drive presents a prestigious lifestyle within DAMAC Hills, offering exclusivity and convenience for its residents.</p><p>Beverly Hills Drive is ideal for buyers seeking a refined living experience in a well-connected, vibrant community.</p><h3>3. DAMAC Lagoons</h3><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/new-projects/damac-lagoons/\">DAMAC Lagoons</a> offers a diverse range of properties, from 4 to 5-bedroom townhouses to larger 6-bedroom villas, starting at AED 1.70 M. The development features Mediterranean-inspired architecture and beautifully landscaped gardens, providing an idyllic setting for families. Residents can enjoy stunning water features, walking paths, and numerous recreational amenities like swimming pools and gyms. Its location near key roads makes reaching various destinations within Dubai easy.</p><p>DAMAC Lagoons is the perfect choice for families who want a luxurious yet relaxed lifestyle amidst nature and water features.</p><h2>Investment Potential in DAMAC Hills</h2><p>DAMAC Hills offers a promising investment opportunity, with its luxury properties and world-class amenities making it a prime location for local and international buyers. Below are some key reasons why investing in this community is a wise decision:</p><ul><li><strong>High Rental Yields</strong>: Properties in DAMAC Hills consistently generate solid rental returns due to the community's popularity among residents and tourists.</li><li><strong>Capital Appreciation</strong>: As one of Dubai’s most prestigious neighborhoods, DAMAC Hills properties have seen consistent value growth, making them an excellent option for long-term investment.</li><li><strong>Strong Demand</strong>: The demand for homes in DAMAC Hills is high, especially among affluent professionals and families seeking a luxury lifestyle in a green and peaceful environment.</li><li><strong>World-Class Amenities</strong>: The presence of high-end facilities, including the Trump Golf Course, fitness centers, and parks, adds value to properties, making them more desirable to potential buyers and renters.</li></ul><h2>Types of Properties for Sale in DAMAC Hills</h2><p>DAMAC Hills offers a variety of property types, including <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/villa-for-sale/\">villas</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/townhouse-for-sale/\">townhouses</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/apartment-for-sale/\">apartments</a>. Buyers can choose between standalone villas with private gardens, spacious townhouses with modern designs, or apartments offering more affordable options. All properties in the community feature high-end finishes and luxurious interiors, ensuring comfort and style.</p><p>For those seeking a larger home, villas with up to 6 bedrooms are perfect for families. Townhouses are available in various configurations, ideal for smaller families or couples. Apartments provide a more affordable way to live in this prestigious community while enjoying DAMAC Hills' benefits.</p><h2>Advantages of Buying Properties for Sale in DAMAC Hills</h2><ul><li><strong>Luxury Living</strong>: DAMAC Hills offers some of the most luxurious properties in Dubai, featuring high-end finishes, modern designs, and top-tier amenities.</li><li><strong>Prime Location</strong>: DAMAC Hills is close to key roads and other Dubai hotspots, making it perfect for those who want easy access to both nature and city life.</li><li><strong>Exclusive Community</strong>: DAMAC Hills focuses on elite living and is home to some of Dubai’s wealthiest residents, making it a desirable address.</li><li><strong>Outdoor Activities</strong>: The community is designed with plenty of open spaces, parks, and recreational facilities, ideal for outdoor lovers.</li></ul><h2>How to Find the Best Properties for Sale in DAMAC Hills?</h2><p>To find the best properties for sale in DAMAC Hills, consider working with a trusted real estate agency like Zoya Ventures Real Estate. The agency’s extensive portfolio includes ready-to-move-in homes and off-plan projects, ensuring you find the right property for your needs. Take advantage of online listings to explore available properties, and consult with experts to help you make an informed decision.</p><p>Additionally, attending open houses or visiting the community in person will give you a better idea of the lifestyle and amenities offered in DAMAC Hills.</p><h2>Properties for Sale in Nearby DAMAC Hills&nbsp;</h2><ul><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-arabian-ranches/\">Properties for Sale in Arabian Ranches</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-mudon/\">Properties for Sale in Mudon</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-dubai-sports-city/\">Properties for Sale in Dubai Sports City</a></li><li><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"/buy/properties-for-sale/in-jumeirah-golf-estates/\">Properties for Sale in Jumeirah Golf Estates</a></li></ul><h2>FAQs</h2><h3>What types of properties are available in DAMAC Hills?&nbsp;</h3><p>DAMAC Hills offers a wide variety of properties, including contemporary villas, modern townhouses, and luxurious apartments. You can choose from properties with 3 to 6 bedrooms, each featuring high-end finishes, spacious layouts, and premium amenities. Whether you’re looking for a family home, a vacation retreat, or an investment property, DAMAC Hills has options to suit different lifestyles and budgets.</p><h3>What is the price range for properties in DAMAC Hills?&nbsp;</h3><p>Prices for properties in DAMAC Hills start from around AED 1,300,000 for 3-bedroom townhouses and can go up to AED 6,000,000 for larger, luxury villas. The price largely depends on the property type, size, and location within the community. There are options available for various budgets, from more affordable townhouses to luxurious villas with private gardens and views of the golf course.</p><h3>What amenities are available in DAMAC Hills?</h3><p>DAMAC Hills boasts world-class amenities, making it one of the most sought-after communities in Dubai. Key amenities include the Trump International Golf Club, fitness centers, swimming pools, jogging tracks, parks, cycling tracks, dog parks, and stable farms. The community also features dining options, grocery stores, and recreational spaces that promote a balanced and active lifestyle.</p><h3>Is DAMAC Hills a good investment?</h3><p>Yes, DAMAC Hills offers strong investment potential. Properties in the community have consistently shown high rental yields due to their appeal among residents and tourists. Additionally, DAMAC Hills is known for its capital appreciation, with property values steadily increasing. The community's luxury offerings, top-tier amenities, and prime location make it a wise choice for long-term investment.</p><h3>How can I buy a property in DAMAC Hills?</h3><p>Purchasing a property in DAMAC Hills can be done through a trusted real estate agent or directly from the developer. It is advisable to consult with a real estate expert who can guide you through the process, help with legal documentation, and ensure a smooth transaction. You can also explore available properties through online listings or visit open houses to get a feel for the community before deciding.</p><h3>What is the location of DAMAC Hills?</h3><p>DAMAC Hills is strategically located near major roads like Al Qudra Road and Hessa Street, providing easy access to critical areas in Dubai. It is also close to popular neighborhoods like Motor City, Remraam, and Arabian Ranches. The community is about 25 minutes from Downtown Dubai, Dubai Marina, and Dubai International Airport, making it a well-connected and convenient location.</p><h3>Can I find affordable properties in DAMAC Hills?</h3><p>While DAMAC Hills is known for its luxury offerings, more affordable options such as townhouses and apartments are available. Property prices start from AED 1,300,000, and the community provides a range of options for high-end buyers and those looking for more budget-friendly choices. With its various properties, DAMAC Hills accommodates different preferences and financial capabilities.</p><h3>Is DAMAC Hills family-friendly?</h3><p>Yes, DAMAC Hills is an ideal location for families. The community features safe green spaces, children’s play areas, and recreational parks, providing a comfortable environment for families to live and thrive. Additionally, schools and nurseries are nearby, making it a convenient location for families with children. The peaceful surroundings and a wide range of family-friendly amenities make DAMAC Hills a great place to raise a family.</p><h3>What are the nearby areas of DAMAC Hills?</h3><p>Several popular neighborhoods surround DAMAC Hills, including Arabian Ranches, The Villa, Victory Heights, Akoya Oxygen, Mudon, Dubai Sports City, Jumeirah Golf Estates, and Motor City. These areas provide additional residential options, leisure facilities, and community amenities, enhancing the overall appeal of DAMAC Hills for both homeowners and investors.</p><h3>What are the connectivity options for DAMAC Hills?</h3><p>DAMAC Hills enjoys excellent connectivity with easy access to major roads such as Al Qudra Road and Hessa Street, which provide convenient routes to other parts of Dubai. The community is also located near Sheikh Mohammed Bin Zayed Road, making it easy to reach key destinations like Downtown Dubai, Dubai Marina, and Dubai International Airport, all within a 25-30 minute drive.</p>"
           }
         ]
       },

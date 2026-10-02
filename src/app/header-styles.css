@@ -1,4 +1,4 @@
-/* Header styling is provided by provident.css (live site.css).
+/* Header styling is provided by zoya.css (live site.css).
    These overrides fix mobile responsiveness issues for the ported header/drawer. */
 
 /* --- Mobile brand text: match live site behavior (logo-name hidden <=743px) --- */
@@ -12,7 +12,7 @@
    Hardening: the desktop nav (mega menus) and brand text must NEVER render
    on small screens regardless of stylesheet load order or overrides.
    Root cause of the reported overlap: the only rule hiding .nav-menu-list
-   below 1200px is a low-specificity bare rule in provident.css that any
+   below 1200px is a low-specificity bare rule in zoya.css that any
    later override could defeat. These !important gates make it bulletproof.
    ========================================================================== */
 

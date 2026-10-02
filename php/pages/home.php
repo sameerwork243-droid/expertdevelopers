@@ -10,7 +10,7 @@ $transparent = true;
 $page_title = '';
 $hj = load_json('pages/index.json')['result']['data']['strapiPage'] ?? [];
 $banner = is_array($hj['banner'] ?? null) ? $hj['banner'] : [];
-$title = $banner['title'] ?? 'Find your home in Dubai.';
+$title = $banner['title'] ?? 'Find your home in Pakistan.';
 
 $desc = $banner['description']['data']['description'] ?? null;
 if ($desc) {

@@ -130,17 +130,46 @@
 
   /* ---------- SortDropdown (listing order) ---------- */
 
-  var sortRoot = document.querySelector(".sort-dropdown");
-  if (sortRoot) {
+  function sortValue(card, key) {
+    if (key === "price") {
+      var pa = card.getAttribute("data-sort-price");
+      if (pa !== null) return parseInt(pa, 10) || 0;
+      var pe = card.querySelector("[data-save-price]");
+      if (pe) return parseInt(pe.getAttribute("data-save-price"), 10) || 0;
+      var pEl = card.querySelector(".content-section .price");
+      var pv = pEl ? parseInt((pEl.textContent || "").replace(/[^\d]/g, ""), 10) : NaN;
+      return isNaN(pv) ? 0 : pv;
+    }
+    if (key === "bed") {
+      var ba = card.getAttribute("data-sort-bed");
+      if (ba !== null) return parseInt(ba, 10) || 0;
+      var be = card.querySelector(".bedrooms span, .beds span");
+      var bv = be ? parseInt((be.textContent || "").replace(/[^\d]/g, ""), 10) : NaN;
+      return isNaN(bv) ? 0 : bv;
+    }
+    if (key === "size") {
+      var sa = card.getAttribute("data-sort-size");
+      if (sa !== null) return parseInt(sa, 10) || 0;
+      var se = card.querySelector(".size span");
+      var sv = se ? parseInt((se.textContent || "").replace(/[^\d]/g, ""), 10) : NaN;
+      return isNaN(sv) ? 0 : sv;
+    }
+    return 0;
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll(".sort-dropdown"), function (sortRoot) {
     var sortBtn = sortRoot.querySelector(".sort-section");
     var sortMenu = sortRoot.querySelector(".sort-menu");
     var sortLabel = sortRoot.querySelector(".text.button-text span");
-    var listContainer = document.querySelector("#property-page-1") || document.querySelector(".property-list-section.list-view");
+    var targetSel = sortRoot.getAttribute("data-sort-target");
+    var listContainer = targetSel
+      ? document.querySelector(targetSel)
+      : document.querySelector("#property-page-1") || document.querySelector(".property-list-section");
     var originalOrder = null;
 
     function closeSort() {
       if (sortMenu) sortMenu.classList.remove("show");
-      if (sortBtn) sortBtn.setAttribute("aria-expanded", "false");
+      if (sortBtn) { sortBtn.classList.remove("show"); sortBtn.setAttribute("aria-expanded", "false"); }
     }
 
     if (sortBtn && sortMenu) sortBtn.addEventListener("click", function (e) {
@@ -149,24 +178,29 @@
       closeSort();
       if (!open) {
         sortMenu.classList.add("show");
+        sortBtn.classList.add("show");
         sortBtn.setAttribute("aria-expanded", "true");
       }
     });
 
     function applySort(sortBy) {
       if (!listContainer) return;
-      var cards = Array.prototype.slice.call(listContainer.querySelectorAll(".property-card-wrapper"));
+      var cards = Array.prototype.slice.call(listContainer.querySelectorAll(".property-card-wrapper, .offplan-card-wrap"));
       if (!cards.length) return;
       if (!originalOrder) originalOrder = cards.slice();
-      if (sortBy === "price-desc" || sortBy === "price-asc") {
-        cards.sort(function (a, b) {
-          var paEl = a.querySelector("[data-save-price]");
-          var pbEl = b.querySelector("[data-save-price]");
-          var pa = paEl ? (parseInt(paEl.getAttribute("data-save-price"), 10) || 0) : 0;
-          var pb = pbEl ? (parseInt(pbEl.getAttribute("data-save-price"), 10) || 0) : 0;
-          if (pa === pb) return 0;
-          return sortBy === "price-desc" ? pb - pa : pa - pb;
+      var key = null, dir = 0;
+      if (sortBy === "price-desc" || sortBy === "price-asc") { key = "price"; dir = sortBy === "price-desc" ? -1 : 1; }
+      else if (sortBy === "bed-desc" || sortBy === "bed-asc") { key = "bed"; dir = sortBy === "bed-desc" ? -1 : 1; }
+      else if (sortBy === "size-desc" || sortBy === "size-asc") { key = "size"; dir = sortBy === "size-desc" ? -1 : 1; }
+      if (key) {
+        var normal = cards.filter(function (c) { return !c.classList.contains("more-box"); });
+        var boxes = cards.filter(function (c) { return c.classList.contains("more-box"); });
+        normal.sort(function (a, b) {
+          var va = sortValue(a, key), vb = sortValue(b, key);
+          if (va === vb) return 0;
+          return dir < 0 ? vb - va : va - vb;
         });
+        cards = normal.concat(boxes);
       } else {
         cards = originalOrder.slice();
       }
@@ -180,11 +214,17 @@
       if (sortLabel) sortLabel.textContent = opt.textContent;
       closeSort();
     });
+  });
 
-    document.addEventListener("click", function (e) {
-      if (!sortRoot.contains(e.target)) closeSort();
+  document.addEventListener("click", function (e) {
+    Array.prototype.forEach.call(document.querySelectorAll(".sort-dropdown"), function (root) {
+      if (root.contains(e.target)) return;
+      var m = root.querySelector(".sort-menu");
+      var b = root.querySelector(".sort-section");
+      if (m) m.classList.remove("show");
+      if (b) { b.classList.remove("show"); b.setAttribute("aria-expanded", "false"); }
     });
-  }
+  });
 
   /* ---------- Map / Grid toggle (listing results) ---------- */
 
@@ -193,7 +233,7 @@
   var mapAreaValue = (function () {
     var inp = document.querySelector("#search-input-field");
     var v = inp ? (inp.value || "").trim() : "";
-    return v || "Dubai";
+    return v || "Pakistan";
   })();
   var MAP_POPUP_SLUGS = {};
 
@@ -285,36 +325,5 @@
     });
   });
 
-  /* ---------- MortgageCalculator ---------- */
-
-  document.querySelectorAll("#mortgage-calculator").forEach(function (calc) {
-    var inputs = calc.querySelectorAll(".input-item");
-    if (inputs.length < 4) return;
-    var priceEl = inputs[0], downEl = inputs[1], rateEl = inputs[2], yearsEl = inputs[3];
-    var monthlyEl = calc.querySelector(".pric-bx .results") || calc.querySelector(".left-side .results");
-    var loanEl = calc.querySelector(".nn-bt .one-bk .con");
-    var durationEl = loanEl ? calc.querySelectorAll(".nn-bt .one-bk .con")[1] : null;
-    var fixTxt = calc.querySelector(".fix-txt");
-    var label = calc.querySelector(".input-section .label");
-    var currency = fixTxt ? fixTxt.textContent.trim() : (label ? (label.textContent.match(/\(([^)]+)\)/) || [null, "AED"])[1].trim() : "AED");
-
-    function compute() {
-      var p = parseFloat((priceEl.value || "").replace(/,/g, "")) || 0;
-      var down = parseFloat(downEl.value) || 0;
-      var rate = parseFloat(rateEl.value) || 0;
-      var years = parseFloat(yearsEl.value) || 0;
-      var principal = p * (1 - down / 100);
-      var r = rate / 12 / 100;
-      var n = years * 12;
-      var monthly = p > 0 && r > 0 && n > 0 ? (principal * r) / (1 - Math.pow(1 + r, -n)) : 0;
-      var fmt = function (v) { return v ? Math.round(v).toLocaleString("en-US") : "0"; };
-      if (monthlyEl) monthlyEl.textContent = currency + " " + fmt(monthly) + " /month";
-      if (loanEl) loanEl.textContent = currency + " " + fmt(principal);
-      if (durationEl) durationEl.textContent = years + " Years";
-    }
-    Array.prototype.forEach.call(inputs, function (inp) {
-      inp.addEventListener("input", compute);
-      inp.addEventListener("change", compute);
-    });
-  });
+  /* ---------- [mortgage calculator removed] ---------- */
 })();

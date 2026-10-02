@@ -9,7 +9,7 @@ require_once __DIR__ . '/../includes/head.php';
 $content = $model['data'] ?? [];
 $route = $model['route'] ?? '/';
 $banner = is_array($content['banner'] ?? null) ? $content['banner'] : [];
-$page_title = $banner['title'] ?? $content['page_name'] ?? $content['title'] ?? 'Zoya Ventures Real Estate';
+$page_title = $banner['title'] ?? $content['page_name'] ?? $content['title'] ?? 'Expert Marketing & Developers';
 $body = content_pages_dispatch($content, $route);
 ?><!DOCTYPE html>
 <html lang="en">

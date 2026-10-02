@@ -12,7 +12,7 @@ function questionnaire(array $m): string
     $body1 = $m['content1']['data']['content1'] ?? null;
 
     $html = '<div class="qes-bk"><div class="container"><div class="question-banner-wrap"><div class=""><div class="question-banner-container">';
-    $html .= '<div class="bg-img"><img loading="lazy" draggable="false" src="https://d3h330vgpwpjr8.cloudfront.net/x/640x700/pro_quiz_banner_a8c3cbc202.webp" srcset="https://d3h330vgpwpjr8.cloudfront.net/x/320x260/pro_quiz_banner_a8c3cbc202.webp 320w, https://d3h330vgpwpjr8.cloudfront.net/x/640x700/pro_quiz_banner_a8c3cbc202.webp 640w" sizes="(max-width: 480px) 320px, (min-width: 481px) 640px" alt="Confused About Where to Buy or Invest in Dubai? - Zoya Ventures Real Estate"></div>';
+    $html .= '<div class="bg-img"><img loading="lazy" draggable="false" src="https://d3h330vgpwpjr8.cloudfront.net/x/640x700/pro_quiz_banner_a8c3cbc202.webp" srcset="https://d3h330vgpwpjr8.cloudfront.net/x/320x260/pro_quiz_banner_a8c3cbc202.webp 320w, https://d3h330vgpwpjr8.cloudfront.net/x/640x700/pro_quiz_banner_a8c3cbc202.webp 640w" sizes="(max-width: 480px) 320px, (min-width: 481px) 640px" alt="Confused About Where to Buy or Invest in Pakistan? - Expert Marketing & Developers"></div>';
     $html .= '<div class="content-section"><div class="div-pad">';
     $html .= '<div class="content"><p class="title">' . esc($title) . '</p><div class="description">' . rich($body) . '</div></div>';
     $html .= '<div class="cta-section">';

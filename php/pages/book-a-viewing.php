@@ -31,7 +31,10 @@ function bav_price_text(array $p): string
 {
     $qual = $p['price_qualifier'] ?? 'AED';
     if (is_array($qual)) $qual = $qual[0] ?? 'AED';
-    return trim($qual . ' ' . number_format((int) ($p['price'] ?? 0), 0, '.', ','));
+    $num = (int) ($p['price'] ?? 0);
+    $yearly = is_string($qual) && stripos((string) $qual, 'yearly') !== false;
+    $txt = $num > 0 ? expert_price_text($num) . ($yearly ? ' / yearly' : '') : trim((string) $qual . ' 0');
+    return '<span' . data_aed($num) . ($yearly ? ' data-qual="yearly"' : '') . '>' . esc($txt) . '</span>';
 }
 
 function bav_preview_image(array $p): string
@@ -54,14 +57,14 @@ function bav_specs(array $p): array
     $area = $p['floorarea_min'] ?? $p['floorarea_max'] ?? $p['area_sqft'] ?? null;
     if ($bed !== null) $out[] = $bed . ' ' . ((int) $bed === 1 ? 'bed' : 'beds');
     if ($bath !== null) $out[] = $bath . ' ' . ((int) $bath === 1 ? 'bath' : 'baths');
-    if ($area !== null && $area !== '') $out[] = number_format((int) $area, 0, '.', ',') . ' sqft';
+    if ($area !== null && $area !== '') $out[] = '<span' . data_sqft((int) $area) . '>' . esc(expert_area_text((int) $area)) . '</span>';
     return $out;
 }
 
 function bav_preview_card(array $p): string
 {
-    $title = (string) ($p['title'] ?? ((string) ($p['building'][0] ?? 'Property') . ' in ' . (string) ($p['display_address'] ?? 'Dubai')));
-    $location = (string) ($p['display_address'] ?? ($p['address_full']['area'] ?? $p['community'] ?? 'Dubai'));
+    $title = (string) ($p['title'] ?? ((string) ($p['building'][0] ?? 'Property') . ' in ' . (string) ($p['display_address'] ?? 'Pakistan')));
+    $location = (string) ($p['display_address'] ?? ($p['address_full']['area'] ?? $p['community'] ?? 'Pakistan'));
     $img = bav_preview_image($p);
     $ref = $p['crm_id'] ?? $p['id'] ?? null;
     $sp = bav_specs($p);
@@ -72,12 +75,12 @@ function bav_preview_card(array $p): string
         $html .= save_button_markup('/book-a-viewing/', (string) ($p['slug'] ?? ''), $title, (int) ($p['price'] ?? 0), $img, 'button');
     }
     $html .= '</div><div class="bv-preview-body">'
-        . '<p class="bv-preview-price">' . esc(bav_price_text($p)) . '</p>'
+        . '<p class="bv-preview-price">' . bav_price_text($p) . '</p>'
         . '<h3 class="bv-preview-title">' . esc($title) . '</h3>'
         . '<p class="bv-preview-loc">'
         . '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>'
         . esc($location) . '</p>';
-    if (count($sp)) $html .= '<p class="bv-preview-specs">' . esc(implode('  |  ', $sp)) . '</p>';
+    if (count($sp)) $html .= '<p class="bv-preview-specs">' . implode('  |  ', $sp) . '</p>';
     $html .= '</div></div>';
     return $html;
 }
@@ -85,7 +88,7 @@ function bav_preview_card(array $p): string
 function bav_form(?array $p): string
 {
     $countries = [
-        ['code' => 'AE', 'dial' => '+971'], ['code' => 'GB', 'dial' => '+44'], ['code' => 'US', 'dial' => '+1'],
+        ['code' => 'PK', 'dial' => '+92'], ['code' => 'GB', 'dial' => '+44'], ['code' => 'US', 'dial' => '+1'],
         ['code' => 'IN', 'dial' => '+91'], ['code' => 'PK', 'dial' => '+92'], ['code' => 'SA', 'dial' => '+966'],
         ['code' => 'EG', 'dial' => '+20'], ['code' => 'PH', 'dial' => '+63'], ['code' => 'BD', 'dial' => '+880'],
         ['code' => 'LK', 'dial' => '+94'], ['code' => 'JO', 'dial' => '+962'], ['code' => 'LB', 'dial' => '+961'],
@@ -97,7 +100,7 @@ function bav_form(?array $p): string
         'IQ' => '🇮🇶', 'IR' => '🇮🇷', 'OM' => '🇴🇲', 'QA' => '🇶🇦', 'KW' => '🇰🇼', 'BH' => '🇧🇭'];
     $opts = '';
     foreach ($countries as $c) {
-        $sel = $c['dial'] === '+971' ? ' selected' : '';
+        $sel = $c['dial'] === '+92' ? ' selected' : '';
         $opts .= '<option value="' . esc($c['dial']) . '"' . $sel . '>' . $flags[$c['code']] . ' ' . esc($c['dial']) . '</option>';
     }
     $langs = '';
@@ -129,7 +132,6 @@ function bav_form(?array $p): string
         . '<select class="bv-input" id="bv-language">' . $langs . '</select></div>'
         . '<div class="bv-field bv-field-full"><label class="bv-label" for="bv-message">Message</label>'
         . '<textarea class="bv-input bv-textarea" id="bv-message" placeholder="Any questions or special requests?" rows="4"></textarea></div>'
-        . '<label class="bv-check"><input type="checkbox" id="bv-mortgage"><span>Interested in mortgage advice?</span></label>'
         . '<div class="bv-submit-row">'
         . '<p class="bv-fail" style="display:none"></p>'
         . '<button class="bv-submit" type="submit"><span>Submit Details</span></button>'

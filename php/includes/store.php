@@ -46,31 +46,17 @@ function neg_of(array $hit): array
 function wa_link_property(array $hit): string
 {
     $neg = neg_of($hit);
-    $phone = $neg['phone'] ?? '+971 568 308 221';
+    $phone = $neg['phone'] ?? '+92 312 5170194';
     $ref = (string) ($hit['crm_id'] ?? '');
     $type = $hit['building'][0] ?? $hit['building_type'] ?? '';
     if (is_array($type)) $type = $type['name'] ?? $type[0] ?? '';
-    $price = !empty($hit['price']) ? 'AED ' . number_format((int) $hit['price'], 0, '.', ',') : '';
+    $price = !empty($hit['price']) ? 'PKR ' . number_format((int) $hit['price'] * 76, 0, '.', ',') : '';
     $loc = address_of($hit);
     $link = prop_link($hit);
-    $text = "Hello Zoya Ventures,\n\nI would like to know more about this property:\n\n• Reference: $ref\n• Type: $type\n• Price: $price\n• Location: $loc\n• Link: " . site_base_url() . $link . "\n\nModifying this message will prevent it from being sent to the agent.";
-    $searchType = strtolower((string) ($hit['search_type'] ?? ''));
-    $kind = (str_contains($searchType, 'rent') || str_contains($searchType, 'letting')) ? 'secondaryrent' : 'secondarysale';
-    $params = [
-        'phone' => '971568308221',
-        'text' => $text,
-        'resp_name' => $neg['name'] ?? '',
-        'utm_source' => 'Browser Direct',
-        'gclid' => '"',
-        'type' => $kind,
-        'referrer_url' => site_base_url() . $link,
-        'event_type' => 'Whatsapp Click',
-        'utm_platform' => '"',
-    ];
-    if (!empty($neg['email'])) $params['email'] = $neg['email'];
+    $text = "Hello Expert Marketing & Developers,\n\nI would like to know more about this property:\n\n• Reference: $ref\n• Type: $type\n• Price: $price\n• Location: $loc\n• Link: " . site_base_url() . $link . "\n\nModifying this message will prevent it from being sent to the agent.";
     $respPhone = preg_replace('/\D/', '', (string) ($neg['phone'] ?? ''));
-    if ($respPhone !== '') $params['resp_phone'] = $respPhone;
-    return 'https://wa.provident.ae/inquire?' . http_build_query($params, '', '&', PHP_QUERY_RFC3986);
+    $target = $respPhone !== '' ? $respPhone : '923125170194';
+    return 'https://wa.me/' . $target . '?text=' . rawurlencode($text);
 }
 
 function long_desc(array $hit): string
@@ -431,7 +417,7 @@ function type_hub_data(string $t): array
         'page' => 0,
         'nbPages' => 1,
         'hitsPerPage' => count($hits) ?: 1,
-        'content' => ['title' => 'Off-Plan ' . strtoupper(substr($t, 0, 1)) . substr($t, 1) . ' Projects in Dubai'],
+        'content' => ['title' => 'Off-Plan ' . strtoupper(substr($t, 0, 1)) . substr($t, 1) . ' Projects in Pakistan'],
     ];
 }
 
@@ -529,6 +515,66 @@ function team_members(int $limit = 1000): array
     });
     $cache = $out;
     return array_slice($out, 0, $limit);
+}
+
+/* ------------------------------ team DB bridge (content-bridge.ts port) ------------------------------ */
+
+/** Map a stored agent role onto the team page category tabs (roleCategories port). */
+function role_categories(string $role): array
+{
+    $r = strtolower($role);
+    $cats = [];
+    if (preg_match('/associate|consultant|negotiator/', $r)) $cats[] = 'Associate';
+    if (preg_match('/sales manager|manager/', $r)) $cats[] = 'Manager - Sales';
+    if (preg_match('/primary broker|broker/', $r)) $cats[] = 'Primary Brokers';
+    if (preg_match('/secondary broker/', $r)) $cats[] = 'Secondary Brokers';
+    if (preg_match('/management|ceo|director|founder|head of|general manager|president/', $r)) $cats[] = 'Management';
+    return $cats;
+}
+
+/** Published agents from the database, shaped like static team members (dbTeamMembers port). */
+function db_team_members(): array
+{
+    if (!db_enabled()) return [];
+    $out = [];
+    foreach (db_rows('SELECT * FROM agents WHERE published = 1 ORDER BY name ASC') as $a) {
+        $out[] = [
+            'slug' => (string) ($a['slug'] ?? ''),
+            'name' => (string) ($a['name'] ?? ''),
+            'designation' => (string) ($a['role'] ?? ''),
+            'image' => (string) ($a['img'] ?? ''),
+            'phone' => (string) ($a['phone'] ?? ''),
+            'email' => (string) ($a['email'] ?? ''),
+            'license' => (string) ($a['brn_number'] ?? ''),
+            'bio' => (string) ($a['bio'] ?? ''),
+            'category' => role_categories((string) ($a['role'] ?? '')),
+            'languages' => db_json_arr($a['languages'] ?? null),
+        ];
+    }
+    return $out;
+}
+
+/** A published agent by slug, shaped for content_team_detail (dbTeamBySlug port). */
+function db_team_by_slug(string $slug): ?array
+{
+    if (!db_enabled()) return null;
+    $a = db_row('SELECT * FROM agents WHERE slug = ? AND published = 1 LIMIT 1', [$slug]);
+    if (!$a) return null;
+    $t = [
+        'slug' => (string) ($a['slug'] ?? ''),
+        'name' => (string) ($a['name'] ?? ''),
+        'designation' => (string) ($a['role'] ?? ''),
+        'phone' => (string) ($a['phone'] ?? ''),
+        'email' => (string) ($a['email'] ?? ''),
+        'license' => (string) ($a['brn_number'] ?? ''),
+        'bio' => (string) ($a['bio'] ?? ''),
+        'image' => !empty($a['img']) ? ['url' => (string) $a['img']] : null,
+        'extra' => ['profile_image' => (string) ($a['img'] ?? '')],
+        'about' => !empty($a['bio']) ? ['data' => ['about' => (string) $a['bio']]] : null,
+        'category' => ['strapi_json_value' => role_categories((string) ($a['role'] ?? ''))],
+        'languages' => ['strapi_json_value' => db_json_arr($a['languages'] ?? null)],
+    ];
+    return $t;
 }
 
 function project_hits(int $limit = 6): array
@@ -654,15 +700,15 @@ function db_negotiator(array $p): array
 {
     $name = trim((string) ($p['agent_name'] ?? ''));
     if ($name === '') {
-        return ['name' => 'Zoya Ventures Real Estate', 'phone' => '+971 568 308 221', 'email' => 'zoyaventure15@gmail.com'];
+        return ['name' => 'Expert Marketing & Developers', 'phone' => '+92 312 5170194', 'email' => 'buildersexpert42@gmail.com'];
     }
     return [
         'name' => $name,
         'url' => (string) ($p['agent_img'] ?? ''),
         'designation' => (string) ($p['agent_role'] ?? 'Sales Associate'),
         'brn_number' => (string) ($p['agent_brn'] ?? ''),
-        'phone' => (string) ($p['agent_phone'] ?? '') ?: '+971 568 308 221',
-        'email' => (string) ($p['agent_email'] ?? '') ?: 'zoyaventure15@gmail.com',
+        'phone' => (string) ($p['agent_phone'] ?? '') ?: '+92 312 5170194',
+        'email' => (string) ($p['agent_email'] ?? '') ?: 'buildersexpert42@gmail.com',
     ];
 }
 

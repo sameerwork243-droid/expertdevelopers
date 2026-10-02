@@ -3,7 +3,7 @@
 // Password policy per migration spec:
 //   - New passwords: password_hash() (bcrypt/argon2)
 //   - Legacy scrypt "salt:hash" (hex) hashes verified, then rehashed to password_hash on login
-// Sessions: random token in cookie `provident_session`, sha256(token) stored in `sessions` table.
+// Sessions: random token in cookie `expert_session`, sha256(token) stored in `sessions` table.
 
 require_once __DIR__ . '/functions.php';
 
@@ -46,7 +46,7 @@ function hash_token(string $token): string
 
 /* -------------------------------- sessions -------------------------------- */
 
-const SESSION_COOKIE_NAME = 'provident_session';
+const SESSION_COOKIE_NAME = 'expert_session';
 
 function session_secure(): bool
 {
@@ -154,7 +154,7 @@ function require_user(): array
 {
     $user = get_auth_user();
     if (!$user) {
-        header('Location: /login/');
+        header('Location: ' . url('/login/'));
         exit;
     }
     return $user;
@@ -165,7 +165,7 @@ function require_admin(): array
 {
     $user = require_user();
     if ($user['role'] !== 'admin') {
-        header('Location: /dashboard/');
+        header('Location: ' . url('/dashboard/'));
         exit;
     }
     return $user;
@@ -176,7 +176,7 @@ function require_guest(): ?array
 {
     $user = get_auth_user();
     if ($user) {
-        header('Location: ' . (in_array($user['role'], ['admin', 'agent'], true) ? '/admin/' : '/dashboard/'));
+        header('Location: ' . url(in_array($user['role'], ['admin', 'agent'], true) ? '/admin/' : '/dashboard/'));
         exit;
     }
     return null;

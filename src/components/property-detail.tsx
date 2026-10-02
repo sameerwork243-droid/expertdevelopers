@@ -1,4 +1,5 @@
 import { cft } from "@/lib/store";
+import type { ReactNode } from "react";
 import { Rich, stripHtml } from "./rich";
 import { PropertyCard } from "./property-card";
 import { SaveButton } from "./save-button";
@@ -43,6 +44,7 @@ export async function PropertyDetailPage({ data, route }: { data: any; route: st
   const status = p.status || "Ready";
   const waHref = waLink({ ...p, search_type: sale ? "rent" : "sale" });
   const qualifier = Array.isArray(p.price_qualifier) ? p.price_qualifier[0] || "AED" : p.price_qualifier || "AED";
+  const isYearly = typeof qualifier === "string" && qualifier.toLowerCase().includes("yearly");
 
   return (
     <div>
@@ -104,12 +106,12 @@ export async function PropertyDetailPage({ data, route }: { data: any; route: st
                       {type} for {sale ? "rent" : "sale"} with {p.bedroom} bedroom in {p.display_address || "Dubai"} at {p.price ? "AED " + p.price.toLocaleString() : ""} [{p.crm_id}]
                     </h1>
                      <div className="price-section">
-                       <h2 className="price">
+                       <h2 className="price" data-aed={p.price || undefined} data-qual={isYearly ? "yearly" : undefined}>
                          {p.price_qualifier ? `${p.price_qualifier} ` : "AED "}
                          {(p.price || 0).toLocaleString()}
                        </h2>
-                       {pricePerSqFt && (
-                         <p className="price-per-sqft">
+                       {pricePerSqFt && size && (
+                         <p className="price-per-sqft" data-aed={p.price || undefined} data-sqft={size}>
                            AED {pricePerSqFt.toLocaleString()} / sq ft
                          </p>
                        )}
@@ -152,7 +154,7 @@ export async function PropertyDetailPage({ data, route }: { data: any; route: st
                           <svg width="16" height="16" className="arrow-4-icon" viewBox="0 0 16 16" fill="none">
                             <path d="M2.5 2.5V5.5M2.5 2.5H5.5M2.5 2.5L6 6M2.5 13.5V10.5M2.5 13.5H5.5M2.5 13.5L6 10M13.5 2.5L10.5 2.5M13.5 2.5V5.5M13.5 2.5L10 6M13.5 13.5H10.5M13.5 13.5V10.5M13.5 13.5L10 10" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
-                          <span>{Number(size).toLocaleString()} sq ft</span>
+                          <span data-sqft={size}>{Number(size).toLocaleString()} sq ft</span>
                         </p>
                       )}
                     </div>
@@ -164,7 +166,7 @@ export async function PropertyDetailPage({ data, route }: { data: any; route: st
                          <KeyInfo label="Completion" value={completion} />
                          <KeyInfo label="Completion Year" value={completionYear} />
                          <KeyInfo label="Furnishing Type" value={furnishing} />
-                         {size && <KeyInfo label="Size" value={`${Number(size).toLocaleString()} sq ft`} />}
+                         {size && <KeyInfo label="Size" value={<span data-sqft={size}>{Number(size).toLocaleString()} sq ft</span>} />}
                          <KeyInfo label="Property ID" value={p.crm_id || ""} />
                        </div>
                      </div>
@@ -316,7 +318,7 @@ export async function PropertyDetailPage({ data, route }: { data: any; route: st
   );
 }
 
-function KeyInfo({ label, value }: { label: string; value: string }) {
+function KeyInfo({ label, value }: { label: string; value: ReactNode }) {
   return (
     <div className="key-info-item">
       <div>

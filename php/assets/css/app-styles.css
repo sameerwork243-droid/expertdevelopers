@@ -2,7 +2,7 @@
    The base media query applies margin-left:80px to the page-level
    .form-section, which fights the flexible content | form side-by-side
    layout. These overrides keep the container deterministic regardless of
-   load order. The form itself is a single centered column (see provident.css). */
+   load order. The form itself is a single centered column (see expert.css). */
 @media screen and (min-width: 1200px) {
   #Book_a_Valuation.contact-form-wrapper .content-section,
   #Book_a_Valuation.contact-form-wrapper .form-section {
@@ -559,8 +559,6 @@
    white-space: nowrap;
  }
 
- .app-chip:hover {
-
 .app-chip.active {
   background: #005480;
   border-color: #005480;
@@ -1078,11 +1076,117 @@
   }
 }
 
-/* ---------- Landing banner bg fallback (missing banner images) ---------- */
-.banner-wrap.banner-landing-wrap .bg-section:not(:has(img)) {
-  background: radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%);
-  min-height: 320px;
+/* ---------- Mortgage calculator: results grid + a11y (scoped to #mortgage-calculator) ---------- */
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt {
+  align-items: start;
+  display: grid;
+  gap: 18px 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk {
+  min-width: 0;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk .tit {
+  margin-bottom: 2px;
+}
+.results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt .one-bk.tif {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+}
+.results-calculator .property-mortagage-wrap .input-item:focus,
+.results-calculator .property-mortagage-wrap .input-item:focus-visible {
+  border-color: #005480;
+  box-shadow: 0 0 0 1px #005480;
+  outline: none;
+}
+@media screen and (max-width: 560px) {
+  .results-calculator .property-mortagage-wrap .property-calc .result-section .nn-bt {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Landing / service hero: full-bleed bg, no top gap ---------- */
+.banner-wrap.banner-landing-wrap {
+  background-color: #07234b;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 0;
+}
+.banner-wrap.banner-landing-wrap .bg-section {
+  bottom: 0;
+  left: 0;
+  min-height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.banner-wrap.banner-landing-wrap .bg-section:not(:has(img)) {
+  background-image: var(--hero-bg, radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-wrap.banner-home-wrap {
+  background-color: #07234b;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 0;
+}
+.banner-wrap.banner-home-wrap .bg-section-gradient {
+  background-image: var(--hero-bg, radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* ---------- Listing page heroes (blog, developers, offplan, videos) ----------
+   .listing-page-top renders an EMPTY .bg-section-gradient (no img/overlay in the
+   PHP port), so the original expert rule `display:none` left a white hero.
+   Full-bleed navy gradient, matching the banner-landing-wrap hero treatment. */
+.listing-page-wrap .listing-page-top {
+  position: relative;
+}
+.listing-page-wrap .listing-page-top .bg-section-gradient {
+  background-image: var(--hero-bg, radial-gradient(120% 160% at 20% 0%, #1d4f8f 0%, #0f2f5c 55%, #07234b 100%));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: -1;
+}
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap,
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap a.breadcrumb-link,
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap a.breadcrumb-link:hover,
+.listing-page-wrap .listing-page-top .breadcrumbs-wrap .breadcrumb-item.active a {
+  color: #fff;
+}
+.listing-page-wrap .listing-page-top .banner-listing-wrap .title,
+.listing-page-wrap .listing-page-top .banner-listing-wrap .description {
+  color: #fff;
+}
+.news_landing_page .banner-listing-wrap {
+  padding-bottom: 120px;
+}
+/* Per-page hero image hook — set --hero-bg on a page/body class, for example:
+body.property-management .banner-wrap.banner-landing-wrap {
+  --hero-bg: url("/assets/img/hero-property-management.jpg");
+}
+*/
 
 /* ---------- Area guides amenity dropdown ---------- */
 .area-guides-select .react-select__menu {
@@ -1251,9 +1355,18 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.blog-listing-wrap .pagination-wrapper .pagination-numbers .pagination-number,
+.blog-listing-wrap .pagination-wrapper .pagination-button {
+  cursor: pointer;
+}
+.blog-listing-wrap .pagination-wrapper .pagination-number[disabled],
+.blog-listing-wrap .pagination-wrapper .pagination-button[disabled] {
+  cursor: not-allowed;
+}
 @media (max-width: 767.98px) {
   .blog-listing-wrap .category-section .max-filter {
     gap: 8px;
+    flex-wrap: wrap;
   }
   .blog-listing-wrap .max-filter .search-box-comm,
   .blog-listing-wrap .max-filter .blog-category-wrap {
@@ -1502,4 +1615,131 @@
   .contact-form-wrapper:not(.bc-block):not(#Book_a_Valuation) .contact-form-container > .form-section {
     min-width: 0;
   }
+}
+
+/* ===== Settings selects (currency / area) in header + footer ===== */
+.footer-cta-section-wrap.settings .react-select,
+.mobile-drawer-settings .react-select,
+.header .dev-to .dev-to-open .react-select {
+  position: relative;
+  display: block;
+}
+
+.footer-cta-section-wrap.settings .react-select .react-select__menu,
+.mobile-drawer-settings .react-select .react-select__menu,
+.header .dev-to .dev-to-open .react-select .react-select__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  z-index: 30;
+  min-width: 100%;
+  width: max-content;
+  max-width: 300px;
+  max-height: 260px;
+  overflow: auto;
+  background: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(9, 30, 66, 0.15);
+  padding: 4px;
+}
+
+.footer-cta-section-wrap.settings .react-select .react-select__menu .react-select__option,
+.mobile-drawer-settings .react-select .react-select__menu .react-select__option,
+.header .dev-to .dev-to-open .react-select .react-select__menu .react-select__option {
+  border-radius: 4px;
+  color: #35373c;
+  cursor: pointer;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.footer-cta-section-wrap.settings .react-select .react-select__menu .react-select__option:hover,
+.mobile-drawer-settings .react-select .react-select__menu .react-select__option:hover,
+.header .dev-to .dev-to-open .react-select .react-select__menu .react-select__option:hover,
+.mobile-drawer-settings .react-select .react-select__menu .react-select__option:hover {
+  background: #f0f3f8;
+}
+
+.header .dev-to .dev-to-open .react-select__option {
+  border-radius: 4px;
+  color: #35373c;
+  cursor: pointer;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.header .dev-to .dev-to-open .react-select__option:hover {
+  background: #f0f3f8;
+}
+
+.header .dev-to .dev-to-open .react-select__option.react-select__option--is-focused {
+  color: #ee7133;
+  font-weight: 700;
+}
+
+.header .dev-to .dev-to-open {
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.header .dev-to .dev-to-open .react-select__menu {
+  z-index: 9999;
+}
+
+.footer-cta-section-wrap.settings .react-select__option[data-focus="1"],
+.mobile-drawer-settings .react-select__option[data-focus="1"],
+.header .dev-to .dev-to-open .react-select__option[data-focus="1"] {
+  background: #eef3fb;
+}
+
+.footer-cta-section-wrap.settings .react-select__menu.react-select__menu--top,
+.mobile-drawer-settings .react-select__menu.react-select__menu--top,
+.header .dev-to .dev-to-open .react-select__menu.react-select__menu--top {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.mobile-drawer-settings {
+  background: #f7f9fc;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.mobile-drawer-settings .label {
+  color: #35373c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12px;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+
+.mobile-drawer-settings .settings-label-area,
+.header .dev-to .dev-to-open .settings-label-area {
+  margin-top: 14px;
+}
+
+.mobile-drawer-settings .filter-select .react-select .react-select__control {
+  background: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 44px;
+  padding: 12px 16px;
+}
+
+.mobile-drawer-settings .filter-select .react-select .react-select__control .react-select__single-value {
+  color: #35373c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  line-height: 140%;
 }

@@ -1,7 +1,8 @@
 // property.js — client behaviour ported from property-gallery.tsx, property-enquiry-form.tsx,
-// save-button.tsx (button variant) and the mortgage-link scroll.
+// save-button.tsx (button variant).
 (function () {
   "use strict";
+  var APP_BASE = (window.EXPERT_BASE || "");
 
   /* ---------- PropertyGallery lightbox ---------- */
 
@@ -100,17 +101,6 @@
   }
   initGallery();
 
-  /* ---------- mortgage-link scroll ---------- */
-
-  document.addEventListener("click", function (e) {
-    var btn = e.target.closest ? e.target.closest(".mortgage-link") : null;
-    if (btn) {
-      e.preventDefault();
-      var target = document.getElementById("mortgage-calculator");
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
-
   /* ---------- PropertyEnquiryForm ---------- */
 
   document.addEventListener("submit", function (e) {
@@ -145,14 +135,14 @@
     submitBtn.disabled = true;
     submitBtn.querySelector("span").textContent = "Sending…";
 
-    fetch("/api/inquiries", {
+    fetch(APP_BASE + "/api/inquiries", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
       body: "json=" + encodeURIComponent(JSON.stringify({
         kind: "viewing",
         name: (nameEl.value || "").trim(),
         email: (emailEl.value || "").trim(),
-        phone: ((dialEl ? dialEl.value : "+971") + " " + (phoneEl.value || "").trim()).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + (phoneEl.value || "").trim()).trim(),
         message: (msgEl.value || "").trim(),
         property_ref: form.getAttribute("data-property-ref") || "",
         property_slug: form.getAttribute("data-property-slug") || "",
@@ -197,7 +187,6 @@
     var timeEl = form.querySelector("#bv-time");
     var langEl = form.querySelector("#bv-language");
     var msgEl = form.querySelector("#bv-message");
-    var mortgageEl = form.querySelector("#bv-mortgage");
     var submitBtn = form.querySelector(".bv-submit");
     var failEl = form.querySelector(".bv-fail");
     var successEl = form.querySelector(".bv-success");
@@ -253,19 +242,18 @@
     if (title) message += "Viewing request for \"" + title + "\"\n";
     message += "Preferred date: " + fmtDate + "\n"
       + "Preferred time: " + time + "\n"
-      + "Preferred language: " + (langEl ? langEl.value : "") + "\n"
-      + "Interested in mortgage advice: " + (mortgageEl && mortgageEl.checked ? "Yes" : "No");
+      + "Preferred language: " + (langEl ? langEl.value : "") + "\n";
     var notes = (msgEl ? msgEl.value : "").trim();
     if (notes) message += "\nMessage: " + notes;
 
-    fetch("/api/inquiries", {
+    fetch(APP_BASE + "/api/inquiries", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
       body: "json=" + encodeURIComponent(JSON.stringify({
         kind: "viewing",
         name: name,
         email: email,
-        phone: ((dialEl ? dialEl.value : "+971") + " " + phone).trim(),
+        phone: ((dialEl ? dialEl.value : "+92") + " " + phone).trim(),
         message: message,
         property_ref: form.getAttribute("data-property-ref") || "",
         property_slug: form.getAttribute("data-property-slug") || "",
@@ -298,7 +286,7 @@
 
   function readSavedState(wrap) {
     var ref = wrap.getAttribute("data-save-ref");
-    fetch("/api/user/saved?ref=" + encodeURIComponent(ref || ""))
+    fetch(APP_BASE + "/api/user/saved?ref=" + encodeURIComponent(ref || ""))
       .then(function (r) { return r.json().catch(function () { return null; }); })
       .then(function (d) { applySaved(wrap, !!d && !!d.saved); })
       .catch(function () { applySaved(wrap, false); });
@@ -333,7 +321,7 @@
     if (wrap.dataset.saveBusy) return;
     wrap.dataset.saveBusy = "1";
     var saved = wrap.classList.contains("saved");
-    fetch("/api/user/saved", {
+    fetch(APP_BASE + "/api/user/saved", {
       method: saved ? "DELETE" : "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
       body: "json=" + encodeURIComponent(JSON.stringify({
@@ -346,7 +334,7 @@
     })
       .then(function (res) {
         if (res.status === 401) {
-          window.location.href = "/login/";
+          window.location.href = APP_BASE + "/login/";
           return;
         }
         return res.json().catch(function () { return {}; }).then(function (d) {

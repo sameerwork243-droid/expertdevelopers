@@ -14,7 +14,7 @@ $page_title = 'Reset Password';
 <body>
 <div class="portal-root">
   <header class="portal-appbar">
-    <a class="portal-brand" href="/" aria-label="Zoya Ventures Real Estate"><img draggable="false" src="/lloo.png" alt="Zoya Ventures Real Estate" /></a>
+    <a class="portal-brand" href="/" aria-label="Expert Marketing & Developers"><img draggable="false" src="/images/expertlogo.png" alt="Expert Marketing & Developers" /></a>
     <div class="portal-title">My Account</div>
     <a class="portal-back" href="/">Back to Website</a>
   </header>
@@ -24,13 +24,13 @@ $page_title = 'Reset Password';
     <div class="portal-auth-inner">
       <div class="portal-auth-card">
         <h1>Reset your password</h1>
-        <p class="auth-subtitle">For security reasons, self-service password reset is not available on this demo. Please contact support at support@providentestate.com.</p>
+        <p class="auth-subtitle">For security reasons, self-service password reset is not available on this demo. Please contact support at <?= APP_EMAIL ?>.</p>
       </div>
     </div>
   </div>
   <footer class="portal-footer">
     <div class="portal-footer-inner">
-      <div class="portal-copy">© 2026, Zoya Ventures Real Estate <a href="/privacy-policy/">Privacy Policy</a></div>
+      <div class="portal-copy">© 2026, Expert Marketing & Developers <a href="/privacy-policy/">Privacy Policy</a></div>
       <div class="portal-siteby">Site by <a rel="nofollow" href="https://hifimarketing.co" target="_blank">hifi</a></div>
     </div>
   </footer>

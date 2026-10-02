@@ -1,7 +1,7 @@
 <?php
 // seed.php — one-time DB seeding (port of src/server/seed.ts ensureSeeded)
 // Run via CLI: php -r "require 'config/seed.php'; seed();"
-// No-op unless PROVIDENT_DATABASE_URL (mysql://...) is configured.
+// No-op unless EXPERT_DATABASE_URL (mysql://...) is configured.
 
 require_once __DIR__ . '/env.php';
 env_load(dirname(__DIR__) . '/.env');          // php/.env (deploy)
@@ -38,10 +38,10 @@ const SEED_DEFAULT_CATEGORIES = [
 ];
 
 const SEED_CONTACT_INFO = [
-    ['phone', '+971 50 539 0249'],
-    ['email', 'info@providentestate.com'],
-    ['whatsapp', 'https://wa.provident.ae/inquire?phone=971505423503'],
-    ['address', 'Dubai, United Arab Emirates'],
+    ['phone', '+92 312 5170194'],
+    ['email', 'buildersexpert42@gmail.com'],
+    ['whatsapp', 'https://wa.me/923125170194'],
+    ['address', '1st floor Abdul Majeed Plaza Main Chakri Road Near Punjab College, Rawalpindi, Pakistan'],
 ];
 
 /** seed.ts slugify — replaces & with " and " before slugging. */
@@ -112,11 +112,11 @@ function ensure_seeded(): void
 
     if (seed_count('users') === 0) {
         $isProd = env('NODE_ENV') === 'production';
-        $adminEmail = strtolower((string) (env('PROVIDENT_ADMIN_EMAIL') ?? ($isProd ? '' : 'sameerwork243@gmail.com')));
-        $adminPassword = (string) (env('PROVIDENT_ADMIN_PASSWORD') ?? ($isProd ? '' : 'Sameer@12'));
+        $adminEmail = strtolower((string) (env('EXPERT_ADMIN_EMAIL') ?? ($isProd ? '' : 'sameerwork243@gmail.com')));
+        $adminPassword = (string) (env('EXPERT_ADMIN_PASSWORD') ?? ($isProd ? '' : 'Sameer@12'));
         if ($adminEmail === '' || $adminPassword === '') {
             throw new RuntimeException(
-                '[seed] Cannot create the initial admin user: set PROVIDENT_ADMIN_EMAIL and PROVIDENT_ADMIN_PASSWORD. This only runs against an empty users table.'
+                '[seed] Cannot create the initial admin user: set EXPERT_ADMIN_EMAIL and EXPERT_ADMIN_PASSWORD. This only runs against an empty users table.'
             );
         }
         $adminRole = (int) (db_row("SELECT id FROM roles WHERE name = 'admin'")['id'] ?? 1);
@@ -128,7 +128,7 @@ function ensure_seeded(): void
         if (!$isProd) {
             db_run(
                 'INSERT INTO users (email, password_hash, name, role_id, is_active, created_at) VALUES (?, ?, ?, ?, 1, ?)',
-                ['demo@provident.ae', hash_password('Demo@1234'), 'Demo User', $userRole, db_now()]
+                ['demo@expertmarketinganddevelopers.com', hash_password('Demo@1234'), 'Demo User', $userRole, db_now()]
             );
         }
     }

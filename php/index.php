@@ -38,7 +38,7 @@ $ALIASES = [
     '/let' => '/let/properties-for-rent',
 ];
 if (isset($ALIASES[$route])) {
-    header('Location: ' . $ALIASES[$route], true, 308);
+    header('Location: ' . url($ALIASES[$route]), true, 308);
     exit;
 }
 
@@ -72,6 +72,8 @@ if (str_starts_with($route, '/api/')) {
 }
 
 /* ------------------------------ static pages ------------------------------ */
+
+ob_start('rewrite_base_attributes');
 
 switch ($route) {
     case '/':
@@ -153,7 +155,7 @@ if (preg_match('#^/new-projects/developed-by-([a-z0-9-]+)$#', $routeBase, $m)) {
         'page' => 0,
         'nbPages' => 1,
         'hitsPerPage' => count($hits) ?: 1,
-        'content' => ['title' => 'New Projects in ' . str_replace('-', ' ', $m[1])],
+        'content' => ['title' => 'New Projects in ' . pak_area_name($m[1])],
     ];
     $model = ['kind' => 'project', 'data' => $hub, 'route' => $routeBase];
     $isHub = true;
@@ -168,8 +170,8 @@ if (preg_match('#^/new-projects/developed-by-([a-z0-9-]+)$#', $routeBase, $m)) {
         'nbPages' => 1,
         'hitsPerPage' => count($hits) ?: 1,
         'content' => ['title' => $isCompletion
-            ? ($key === 'ready' ? 'Ready New Projects in Dubai' : 'Under-Construction Projects in Dubai')
-            : 'Off-Plan ' . strtoupper(substr($key, 0, 1)) . substr($key, 1) . ' Projects in Dubai'],
+            ? ($key === 'ready' ? 'Ready New Projects in Pakistan' : 'Under-Construction Projects in Pakistan')
+            : 'Off-Plan ' . strtoupper(substr($key, 0, 1)) . substr($key, 1) . ' Projects in Pakistan'],
     ];
 
     // DB merge: replace hub hits with curated DB projects of the same type/status.
@@ -289,6 +291,12 @@ if (!isset($model)) {
     if (!$model && preg_match('#^/(buy|let)/#', $routeBase)) {
         $dbp = db_property_by_route($routeBase);
         if ($dbp) $model = ['kind' => 'property', 'data' => $dbp['data'], 'route' => $routeBase];
+    }
+
+    // DB team member detail fallback (dbTeamBySlug port — admin-created agents link to /team/{slug}/)
+    if (!$model && preg_match('#^/team/([a-z0-9-]+)$#i', $routeBase, $tm)) {
+        $dbT = db_team_by_slug($tm[1]);
+        if ($dbT) $model = ['kind' => 'page', 'data' => $dbT, 'route' => $routeBase];
     }
 
     // DB-only fallbacks (no DB in fallback mode — corpus covers content pages)
@@ -422,3 +430,5 @@ switch ($model['kind']) {
         require __DIR__ . '/pages/content.php';
         break;
 }
+
+ob_end_flush();

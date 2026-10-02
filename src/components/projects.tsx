@@ -8,6 +8,13 @@ import { RegisterInterestForm } from "./register-interest-form";
 import { dbProjectDetailBySlug } from "@/server/content-bridge";
 import { ProjectNav, AmenitySlider, FloorPlanPicker, FaqAccordion, ProjectGallery } from "./project-detail-ui";
 
+function projectPriceNum(p: any): number | undefined {
+  const dp = String(p?.display_price ?? "");
+  if (/^[\d,]+$/.test(dp)) return parseInt(dp.replace(/,/g, ""), 10);
+  const pr = Number(p?.price ?? 0);
+  return pr > 0 ? pr : undefined;
+}
+
 export function ProjectPages({ data, route, hub = false }: { data: any; route: string; hub?: boolean }) {
   const hits = (data?.hits || []).filter((h: any) => h && h.slug);
   const content = data?.content || null;
@@ -88,11 +95,24 @@ export function ProjectPages({ data, route, hub = false }: { data: any; route: s
                   <div className="sort-divider"></div>
                   <div className="d-flex align-items-center">
                     <div className="sort-dropdown dropdown">
-                      <div className="sort-field">
-                        <svg width="16" height="16" className="sort-icon" viewBox="0 0 16 16" fill="none">
-                          <path d="M3 4h10M6 8h4M8.5 12h-1" stroke="#07234B" strokeLinecap="round" />
-                        </svg>
-                        <span>Sort By</span>
+                      <button className="sort-section dropdown-toggle" aria-expanded="false">
+                        <div className="sort-field">
+                          <p className="text button-text">
+                            <span>Most Recent</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="arrow-down-icon">
+                              <path d="M13 5.5L8 10.5L3 5.5" stroke="#07234B" strokeLinecap="round" strokeLinejoin="round"></path>
+                            </svg>
+                          </p>
+                        </div>
+                      </button>
+                      <div className="sort-menu dropdown-menu dropdown-menu-right">
+                        <button type="button" className="sort-option" data-sort="most-recent">Most Recent</button>
+                        <button type="button" className="sort-option" data-sort="price-desc">Price: High to Low</button>
+                        <button type="button" className="sort-option" data-sort="price-asc">Price: Low to High</button>
+                        <button type="button" className="sort-option" data-sort="bed-desc">Bedrooms: High to Low</button>
+                        <button type="button" className="sort-option" data-sort="bed-asc">Bedrooms: Low to High</button>
+                        <button type="button" className="sort-option" data-sort="size-desc">Size: High to Low</button>
+                        <button type="button" className="sort-option" data-sort="size-asc">Size: Low to High</button>
                       </div>
                     </div>
                   </div>
@@ -210,7 +230,7 @@ function OffplanCard({ h }: { h: any }) {
         )}
         <div className="price">
           {h.display_price && <span>Starting Price </span>}
-          {h.display_price ? `AED ${h.display_price}` : h.price ? `AED ${Number(h.price).toLocaleString()}` : ""}
+          {(h.display_price || h.price) ? <span data-aed={projectPriceNum(h)}>{h.display_price ? `AED ${h.display_price}` : `AED ${Number(h.price).toLocaleString()}`}</span> : ""}
         </div>
         <div className="more-info">
           {h.display_address && (
@@ -334,7 +354,7 @@ function SimpleProjectDetail({ hit, route }: { hit: any; route: string }) {
               <div className="right-section">
                 <div className="item-wrap">
                   <p className="label">Starting Price</p>
-                  <p className="value">{hit.display_price ? `AED ${hit.display_price}` : hit.price ? `AED ${Number(hit.price).toLocaleString()}` : "—"}</p>
+                  <p className="value" data-aed={projectPriceNum(hit)}>{hit.display_price ? `AED ${hit.display_price}` : hit.price ? `AED ${Number(hit.price).toLocaleString()}` : "—"}</p>
                 </div>
                 {beds && (
                   <div className="item-wrap">
@@ -452,7 +472,7 @@ function LiveProjectDetail({ hit, detail, route }: { hit: any; detail: any; rout
     .flatMap((g: any) => (Array.isArray(g.add_single_plan) ? g.add_single_plan : []))
     .map((p: any) => ({ title: String(p.title || ""), description: String(p.description || "") }));
   const videoUrl = detail.video_module?.video_url || null;
-  const whatsapp = `https://wa.provident.ae/inquire?phone=971505390249`;
+  const whatsapp = `https://wa.me/971568308221`;
   const tel = "tel:+971505390249";
   const navIds = [
     { label: "Details", id: "offplan-details" },
@@ -535,7 +555,7 @@ function LiveProjectDetail({ hit, detail, route }: { hit: any; detail: any; rout
             {displayPrice && (
               <div className="item-wrap">
                 <p>Starting Price</p>
-                <p className="value">{displayPrice}</p>
+                <p className="value" data-aed={projectPriceNum({ display_price: detail.display_price, price: detail.price || hit.price })}>{displayPrice}</p>
               </div>
             )}
             {(detail.completion_year || hit.completion_year) && (

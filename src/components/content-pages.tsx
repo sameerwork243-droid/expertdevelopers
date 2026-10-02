@@ -10,6 +10,13 @@ import { cfw, cft, blogPosts, projectsByArea, projectBySlug, areaGuidesData, dev
 import { CountryFlag } from "./phone-flag";
 import { ReadMore } from "./read-more";
 
+function projectPriceNum(p: any): number | undefined {
+  const dp = String(p?.display_price ?? "");
+  if (/^[\d,]+$/.test(dp)) return parseInt(dp.replace(/,/g, ""), 10);
+  const pr = Number(p?.price ?? 0);
+  return pr > 0 ? pr : undefined;
+}
+
 const QUICK_LINKS = [
   { label: "Buy", href: "/buy/properties-for-sale/" },
   { label: "Rent", href: "/let/properties-for-rent/" },
@@ -521,7 +528,7 @@ function TeamDetail({ t, route }: { t: any; route: string }) {
                 </a>
               )}
               {waPhone && (
-                <a className="property-cta whats" target="_blank" rel="noreferrer" href={`https://wa.provident.ae/inquire?phone=${waPhone}&text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.`}>
+                <a className="property-cta whats" target="_blank" rel="noreferrer" href={`https://wa.me/${waPhone}?text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.`}>
                   <span>WhatsApp</span>
                 </a>
               )}
@@ -686,7 +693,7 @@ function AreaGuideDetail({ a, route }: { a: any; route: string }) {
                     </a>
                     <div className="price">
                       <span>Starting Price </span>
-                      {p.display_price ? `AED ${p.display_price}` : ""}
+                      {p.display_price ? <span data-aed={projectPriceNum(p)}>AED {p.display_price}</span> : ""}
                     </div>
                     {p.display_address && <p className="location">{p.display_address}</p>}
                   </div>
@@ -734,9 +741,9 @@ function AreaGuideDetail({ a, route }: { a: any; route: string }) {
                         </a>
                       )}
                       <div className="price">
-                        <span>Starting Price </span>
-                        {p.display_price ? `AED ${p.display_price}` : ""}
-                      </div>
+                      <span>Starting Price </span>
+                      {p.display_price ? <span data-aed={projectPriceNum(p)}>AED {p.display_price}</span> : ""}
+                    </div>
                       <div className="more-info">
                         {p.display_address && <p className="location">{p.display_address}</p>}
                       </div>
@@ -957,7 +964,7 @@ export function ProjectsInAreaSlider({ slug }: { slug: string }) {
                   </a>
                   <div className="price">
                     <span>Starting Price </span>
-                    {p.display_price ? `AED ${p.display_price}` : ""}
+                    {p.display_price ? <span data-aed={projectPriceNum(p)}>AED {p.display_price}</span> : ""}
                   </div>
                 </div>
               </div>

@@ -37,8 +37,8 @@
 .shell-brand {
   align-items: center;
   display: flex;
-  height: 110px;
-  padding: 18px 16px 0;
+  height: 180px;
+  padding: 20px 16px 0;
 }
 
 .shell-brand a {
@@ -51,10 +51,10 @@
 .shell-brand img {
   display: block;
   height: auto;
-  max-height: 90px;
+  max-height: 150px;
   max-width: 100%;
   object-fit: contain;
-  width: 100%;
+  width: auto;
 }
 
 .shell-nav {

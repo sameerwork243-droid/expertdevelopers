@@ -3,6 +3,7 @@
 
 (function () {
   "use strict";
+  var APP_BASE = (window.EXPERT_BASE || "");
 
   function showError(el, msg) {
     if (!el) return;
@@ -31,13 +32,13 @@
       btn.disabled = true;
       btn.textContent = "Signing in…";
       try {
-        var res = await submitJSON("/api/auth/login", { email: email, password: password });
+        var res = await submitJSON(APP_BASE + "/api/auth/login", { email: email, password: password });
         if (!res.ok) {
           showError(errorEl, res.data.error || "Unable to sign in. Please try again.");
           return;
         }
         var role = res.data.user && res.data.user.role;
-        window.location.href = (role === "admin" || role === "agent") ? "/admin/" : "/dashboard/";
+        window.location.href = (role === "admin" || role === "agent") ? APP_BASE + "/admin/" : APP_BASE + "/dashboard/";
       } catch (err) {
         showError(errorEl, "Network error. Please try again.");
       } finally {
@@ -65,14 +66,14 @@
       btn.disabled = true;
       btn.textContent = "Creating account…";
       try {
-        var res = await submitJSON("/api/auth/register", {
+        var res = await submitJSON(APP_BASE + "/api/auth/register", {
           name: name, email: email, phone: phone, password: password,
         });
         if (!res.ok) {
           showError(errorEl, res.data.error || "Unable to create your account. Please try again.");
           return;
         }
-        window.location.href = "/dashboard/";
+        window.location.href = APP_BASE + "/dashboard/";
       } catch (err) {
         showError(errorEl, "Network error. Please try again.");
       } finally {

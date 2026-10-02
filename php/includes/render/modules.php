@@ -74,14 +74,14 @@ function review_stars(int $n = 5): string
 function module_developer_slider(array $m): string
 {
     $h = $m['heading'] ?? '';
-    $h = (is_string($h) && !str_contains($h, "\xEF\xBF\xBD")) ? $h : "Partners with Dubai's leading developers";
+    $h = (is_string($h) && !str_contains($h, "\xEF\xBF\xBD")) ? $h : "Partners with Pakistan's leading developers";
     $cards = '';
     foreach ([...dev_logos(), ...dev_logos()] as $d) {
         $file = rawurlencode((string) $d['file']);
         $cards .= '<div class="developer-card">'
             . '<a class="developer-image" href="/new-projects/developed-by-' . esc((string) $d['slug']) . '/">'
             . '<img loading="lazy" draggable="false" src="/assets/images/dev-logos/' . $file . '" '
-            . 'alt="' . esc($d['name'] . ' - Zoya Ventures Real Estate') . '" />'
+            . 'alt="' . esc($d['name'] . ' - Expert Marketing & Developers') . '" />'
             . '</a></div>';
     }
     return '<div class="developer-slider-wrap">'
@@ -105,7 +105,7 @@ function module_reviews_slider(): string
         $card = '<div class="review-card">'
             . '<div class="d-flex card-bio">'
             . '<img loading="lazy" draggable="false" src="https://d3h330vgpwpjr8.cloudfront.net/x/70x70/' . $icon . '" '
-            . 'srcSet="https://d3h330vgpwpjr8.cloudfront.net/x/70x70/' . $icon . ' 70w" sizes="(min-width: 100px) 70px" alt="' . esc(($r['name'] ?? '') . ' - Zoya Ventures Real Estate') . '" />'
+            . 'srcSet="https://d3h330vgpwpjr8.cloudfront.net/x/70x70/' . $icon . ' 70w" sizes="(min-width: 100px) 70px" alt="' . esc(($r['name'] ?? '') . ' - Expert Marketing & Developers') . '" />'
             . '<div><p class="name">' . esc((string) ($r['name'] ?? '')) . '</p><p class="date">' . esc((string) ($r['date'] ?? '')) . '</p>'
             . '<div class="icons-wrap">' . review_stars(5) . '</div></div></div>'
             . '<p class="title-review">' . esc((string) ($r['title'] ?? '')) . '</p>';
@@ -151,7 +151,7 @@ function module_dubai_communities(): string
     }
     return '<div class="dubai-communities-wrap section-p">'
         . '<div class="dubai-communities-container container">'
-        . '<h2 class="title">Popular Properties in Dubai Communities</h2>'
+        . '<h2 class="title">Popular Properties in Pakistani Communities</h2>'
         . '<div class="dubai-communities-tab-section d-none d-md-block" data-com-tabs>'
         . '<div class="tab-header-section"><div class="custom-tabs tab-header">'
         . '<button class="tab-button button selected-tab" type="button" data-com-tab="For Sale">For Sale</button>'
@@ -172,7 +172,7 @@ function module_contact_module(array $m): string
     $out .= '<p class="title">' . esc((string) ($m['title'] ?? '')) . '</p>'
         . '<div class="cta-section">'
         . '<a class="button button-orange" href="/contact/"><span>Contact Us</span></a>'
-        . '<a class="button button-white-outline" href="tel:+971568308221"><span>' . country_flag() . ' +971 568 308 221</span></a>'
+        . '<a class="button button-white-outline" href="tel:+923125170194"><span>' . country_flag('PK') . ' +92 312 5170194</span></a>'
         . '</div></div></div></div>';
     return $out;
 }
@@ -198,7 +198,7 @@ function module_news_section(array $m): string
         . '<div class="img-section-wrap img-zoom"><a class="img-section" href="/blog/' . esc((string) ($feat['slug'] ?? '')) . '/">';
     if (!empty($feat['category'])) $out .= '<p class="img-tag">' . esc((string) $feat['category']) . '</p>';
     if (!empty($feat['image'])) {
-        $out .= '<img loading="lazy" draggable="false" src="' . esc((string) $feat['image']) . '" srcSet="' . esc((string) $feat['image']) . ' 1260w, " sizes="100px 1260px, " alt="' . esc(($feat['title'] ?? '') . ' - Zoya Ventures Real Estate') . '" />';
+        $out .= '<img loading="lazy" draggable="false" src="' . esc((string) $feat['image']) . '" srcSet="' . esc((string) $feat['image']) . ' 1260w, " sizes="100px 1260px, " alt="' . esc(($feat['title'] ?? '') . ' - Expert Marketing & Developers') . '" />';
     }
     $out .= '</a></div>'
         . '<div class="content-section">'
@@ -213,7 +213,7 @@ function module_news_section(array $m): string
         $out .= '<div class="small-news-card">'
             . '<div class="img-section-wrap img-zoom"><a class="img-section" href="/blog/' . esc((string) ($b['slug'] ?? '')) . '/">';
         if (!empty($b['image'])) {
-            $out .= '<img loading="lazy" draggable="false" src="' . esc((string) $b['image']) . '" srcSet="' . esc((string) $b['image']) . ' 340w, " sizes="100px 340px, " alt="' . esc(($b['title'] ?? '') . ' - Zoya Ventures Real Estate') . '" />';
+            $out .= '<img loading="lazy" draggable="false" src="' . esc((string) $b['image']) . '" srcSet="' . esc((string) $b['image']) . ' 340w, " sizes="100px 340px, " alt="' . esc(($b['title'] ?? '') . ' - Expert Marketing & Developers') . '" />';
         }
         $out .= '</a></div>'
             . '<div class="content-section">'
@@ -245,7 +245,7 @@ function module_featured_slider($m)
         if (!empty($m['logo_image']['url'])) {
             $out .= '<img loading="lazy" draggable="false" src="' . esc(cft($m['logo_image']['url'], 216, 96))
                 . '" srcSet="' . esc(cft($m['logo_image']['url'], 160, 71)) . ' 160w, ' . esc(cft($m['logo_image']['url'], 216, 96)) . ' 216w"'
-                . ' sizes="(max-width: 1199px) 160px, (min-width: 1199px) 216px" alt="banner-bg - Zoya Ventures Real Estate" class="sign-img" />';
+                . ' sizes="(max-width: 1199px) 160px, (min-width: 1199px) 216px" alt="banner-bg - Expert Marketing & Developers" class="sign-img" />';
         }
         $out .= '<div class="row"><div class="col-xl-12 col-md-9"><div class="content">'
             . rich($m['description']['data']['description'] ?? null)
@@ -265,7 +265,7 @@ function module_featured_slider($m)
     }
     $out = '<div class="featured-slider-module-wrap section-m">'
         . '<div class="featured-slider-module-container container">'
-        . '<div class="content-section tiv"><h2 class="title"><span>' . esc(($m['title'] ?? '') ?: 'Explore Property in Dubai.') . '</span></h2></div>'
+        . '<div class="content-section tiv"><h2 class="title"><span>' . esc(($m['title'] ?? '') ?: 'Explore Property in Pakistan.') . '</span></h2></div>'
         . '<div class="featured-slider-tab-section" data-fs-tabs>'
         . '<div class="tab-header-section">'
         . '<div class="custom-tabs tab-header">'
@@ -295,7 +295,7 @@ function module_featured_slider($m)
     foreach ($offplan as $h) {
         $offplanSlides[] = property_card($h, false, false);
     }
-    $offplanSlides[] = more_box('Explore Thousands of Off-Plan Projects', "Discover Dubai's Finest Upcoming Developments", '/new-projects/', 'View more');
+    $offplanSlides[] = more_box('Explore Thousands of Off-Plan Projects', "Discover Pakistan's Finest Upcoming Developments", '/new-projects/', 'View more');
 
     $out .= '<div class="tab-body fs-panel" data-fs-panel="sale">' . slick_shell('featured-slider', $saleSlides, 3) . '</div>'
         . '<div class="tab-body fs-panel" data-fs-panel="rent" style="display:none">' . slick_shell('featured-slider', $rentSlides, 3) . '</div>'
@@ -327,7 +327,7 @@ function module_content_and_links($m)
         if (!empty($c['icon']['url'])) {
             $out .= '<img loading="lazy" draggable="false" src="' . esc(cft($c['icon']['url'], 48, 48))
                 . '" srcSet="' . esc(cft($c['icon']['url'], 40, 40)) . ' 40w, ' . esc(cft($c['icon']['url'], 48, 48)) . ' 48w"'
-                . ' sizes="(max-width: 1199px) 40px, (min-width: 1199px) 48px" alt="icon - Zoya Ventures Real Estate" width="48" height="48" />';
+                . ' sizes="(max-width: 1199px) 40px, (min-width: 1199px) 48px" alt="icon - Expert Marketing & Developers" width="48" height="48" />';
         }
         $out .= '</div><div class="link-content ' . $cls . '">';
         if ($href && $href !== '#') {
@@ -359,7 +359,7 @@ function module_ads_banner($m)
         . '<div class="banner-section">';
     if (!empty($b['bg_image']['url'])) {
         $out .= '<div class="bg-img"><img loading="lazy" draggable="false" src="' . esc(cf_original($b['bg_image']['url']))
-            . '" alt="' . esc(($b['title'] ?? '') . ' - Zoya Ventures Real Estate') . '" /></div>';
+            . '" alt="' . esc(($b['title'] ?? '') . ' - Expert Marketing & Developers') . '" /></div>';
     }
     $out .= '<div class="content-section"><div class="content">';
     if (!empty($b['heading'])) {
@@ -402,7 +402,7 @@ function module_tile_block($m)
         $out .= '<img loading="lazy" draggable="false" src="' . esc($base)
             . '" srcSet="' . esc($small) . ' ' . $sw . 'w, ' . esc($base) . ' ' . $W . 'w, "'
             . ' sizes="(max-width: 480px) ' . $sw . 'px, (min-width: 700px) ' . $W . 'px, "'
-            . ' alt="' . esc(($m['title'] ?? '') . ' - Zoya Ventures Real Estate') . '" />';
+            . ' alt="' . esc(($m['title'] ?? '') . ' - Expert Marketing & Developers') . '" />';
     }
     if (!empty($m['video_url']) && $isYoutube) {
         $out .= '<a class="video-link-wrap" href="' . esc((string) $m['video_url']) . '" target="_blank" rel="noreferrer" aria-label="Play video">'
@@ -491,7 +491,7 @@ function award_badge_markup(): string
         'M54.1199 113.424H51.335V102.435H54.1199V103.552C54.9296 102.548 55.9162 102.045 57.0999 102.045C58.2238 102.045 59.1118 102.443 59.7644 103.238C60.417 104.033 60.7445 105.024 60.7445 106.212V113.424H57.9596V106.945C57.9596 106.192 57.7415 105.571 57.3054 105.083C56.8692 104.596 56.3131 104.352 55.657 104.352C55.001 104.352 54.4684 104.578 54.0592 105.03C53.6692 105.464 53.4743 106.023 53.4743 106.706V113.424H54.1199Z',
         'M68.4337 113.958C67.1927 113.958 66.2016 113.562 65.4609 112.77C64.7196 111.998 64.3483 110.957 64.3483 109.647C64.3483 108.337 64.7196 107.306 65.4609 106.533C66.2016 105.761 67.1927 105.385 68.4337 105.385C69.6747 105.385 70.6657 105.761 71.4065 106.533C72.1477 107.306 72.519 108.337 72.519 109.647C72.519 110.957 72.1477 111.998 71.4065 112.77C70.6657 113.562 69.6747 113.958 68.4337 113.958ZM68.4136 111.526C69.0858 111.526 69.607 111.319 69.976 110.905C70.3449 110.491 70.5295 109.965 70.5295 109.328C70.5295 108.69 70.3449 108.164 69.976 107.75C69.607 107.336 69.0858 107.129 68.4136 107.129C67.7415 107.129 67.2203 107.336 66.8513 107.75C66.4823 108.164 66.2977 108.69 66.2977 109.328C66.2977 109.965 66.4823 110.491 66.8513 110.905C67.2203 111.319 67.7415 111.526 68.4136 111.526Z',
     ];
-    $out = '<a href="/blog/provident-estate-great-place-to-work-certification/" aria-label="Great Place to Work certification">'
+    $out = '<a href="/blog/great-place-to-work-certification/" aria-label="Great Place to Work certification">'
         . '<svg xmlns="http://www.w3.org/2000/svg" width="77" height="131" viewBox="0 0 77 131" fill="none">';
     foreach ($badgePaths as $i => $d) {
         $fill = $i === 0 ? '#002171' : ($i === 1 ? '#002171' : ($i === 2 ? '#FF1628' : 'white'));
@@ -566,7 +566,7 @@ function module_our_services($m)
         $src = $u ? cf_original($u) : $placeholder;
         $card = '<div class="service-item">'
             . '<a class="img-section img-zoom" href="' . esc($href) . '">'
-            . '<img loading="lazy" draggable="false" src="' . esc($src) . '" alt="' . esc(((string) $label ?: 'Service') . ' - Zoya Ventures Real Estate') . '" />'
+            . '<img loading="lazy" draggable="false" src="' . esc($src) . '" alt="' . esc(((string) $label ?: 'Service') . ' - Expert Marketing & Developers') . '" />'
             . '</a>'
             . '<div class="content-section false">'
             . '<a class="title" href="' . esc($href) . '"><span>' . esc((string) $label) . '</span></a>';
@@ -600,7 +600,7 @@ function module_office_location($m)
             . ($maps ? ' data-maps="' . esc($maps) . '"' : '') . ' data-href="' . $href . '">'
             . '<a class="img-section img-zoom" href="' . $href . '">';
         if (!empty($o['tile_image']['url'])) {
-            $out .= '<img loading="lazy" draggable="false" src="' . esc((string) $o['tile_image']['url']) . '" alt="' . esc(($o['title'] ?? '') . ' - Zoya Ventures Real Estate') . '" />';
+            $out .= '<img loading="lazy" draggable="false" src="' . esc((string) $o['tile_image']['url']) . '" alt="' . esc(($o['title'] ?? '') . ' - Expert Marketing & Developers') . '" />';
         }
         $out .= '</a>'
             . '<div class="about-office">'
@@ -627,14 +627,14 @@ function module_office_location($m)
     return $out;
 }
 
-function countries_options(string $selected = '+971'): string
+function countries_options(string $selected = '+92'): string
 {
     $countries = [
-        ['code' => 'AE', 'name' => 'United Arab Emirates', 'dial' => '+971', 'flag' => "\xF0\x9F\x87\xA6\xF0\x9F\x87\xAA"],
+        ['code' => 'PK', 'name' => 'Pakistan', 'dial' => '+92', 'flag' => "\xF0\x9F\x87\xB5\xF0\x9F\x87\xB0"],
         ['code' => 'GB', 'name' => 'United Kingdom', 'dial' => '+44', 'flag' => "\xF0\x9F\x87\xAC\xF0\x9F\x87\xA7"],
         ['code' => 'US', 'name' => 'United States', 'dial' => '+1', 'flag' => "\xF0\x9F\x87\xBA\xF0\x9F\x87\xB8"],
         ['code' => 'IN', 'name' => 'India', 'dial' => '+91', 'flag' => "\xF0\x9F\x87\xAE\xF0\x9F\x87\xB3"],
-        ['code' => 'PK', 'name' => 'Pakistan', 'dial' => '+92', 'flag' => "\xF0\x9F\x87\xB5\xF0\x9F\x87\xB0"],
+        ['code' => 'AE', 'name' => 'United Arab Emirates', 'dial' => '+971', 'flag' => "\xF0\x9F\x87\xA6\xF0\x9F\x87\xAA"],
         ['code' => 'SA', 'name' => 'Saudi Arabia', 'dial' => '+966', 'flag' => "\xF0\x9F\x87\xB8\xF0\x9F\x87\xA6"],
         ['code' => 'EG', 'name' => 'Egypt', 'dial' => '+20', 'flag' => "\xF0\x9F\x87\xAA\xF0\x9F\x87\xAC"],
         ['code' => 'PH', 'name' => 'Philippines', 'dial' => '+63', 'flag' => "\xF0\x9F\x87\xB5\xF0\x9F\x87\xAD"],
@@ -672,7 +672,7 @@ function module_partner($m)
         $src = $u ? cft($u, 304, 160) : $placeholder;
         $slides[] = '<div class="partner-item">'
             . '<div class="img-section img-zoom">'
-            . '<img loading="lazy" draggable="false" src="' . esc($src) . '" alt="' . esc(($p['name'] ?? '') . ' - Zoya Ventures Real Estate') . '" />'
+            . '<img loading="lazy" draggable="false" src="' . esc($src) . '" alt="' . esc(($p['name'] ?? '') . ' - Expert Marketing & Developers') . '" />'
             . '</div>'
             . '<div class="content-section">'
             . '<p class="title">' . esc((string) ($p['name'] ?? '')) . '</p>'
@@ -693,7 +693,7 @@ function module_images_slider($m)
     foreach (($m['images'] ?? []) as $im) {
         if (!is_array($im) || empty($im['url'])) continue;
         $i++;
-        $slides[] = '<div class="image-item"><img loading="lazy" src="' . esc(cft($im['url'], 1128, 752)) . '" alt="Zoya Ventures Real Estate ' . $i . '" /></div>';
+        $slides[] = '<div class="image-item"><img loading="lazy" src="' . esc(cft($im['url'], 1128, 752)) . '" alt="Expert Marketing & Developers ' . $i . '" /></div>';
     }
     $out .= slick_shell('images-slider', $slides, 3, true)
         . '</div></div>';
@@ -727,7 +727,7 @@ function module_form_module($m)
         . '</svg></div>'
         . '<div class="cta-content">'
         . '<p class="cta-label">WhatsApp</p>'
-        . '<a class="cta-value" href="https://wa.provident.ae/inquire?phone=971568308221&amp;text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.&amp;utm_source=Browser%20Direct&amp;gclid=%22%22&amp;event_type=Whatsapp%20Click&amp;utm_platform=%22%22" target="_blank" rel="noreferrer">Click to WhatsApp</a>'
+        . '<a class="cta-value" href="https://wa.me/923125170194?text=Hello%20Expert%20Marketing%20%26%20Developers%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent." target="_blank" rel="noreferrer">Click to WhatsApp</a>'
         . '</div></div>'
         . '<div class="divider"></div>'
         . '<div class="cta-item">'
@@ -737,7 +737,7 @@ function module_form_module($m)
         . '</svg></div>'
         . '<div class="cta-content phone-content">'
         . '<p class="cta-label">Phone</p>'
-        . '<a class="cta-value" href="tel:+971568308221">' . country_flag('AE') . ' +971 568 308 221</a>'
+        . '<a class="cta-value" href="tel:+923125170194">' . country_flag('PK') . ' +92 312 5170194</a>'
         . '</div></div>'
         . '<div class="divider"></div>'
         . '<div class="cta-item">'
@@ -747,7 +747,7 @@ function module_form_module($m)
         . '</svg></div>'
         . '<div class="cta-content">'
         . '<p class="cta-label">Email</p>'
-        . '<a class="cta-value" href="mailto:zoyaventure15@gmail.com" target="_blank" rel="noreferrer">zoyaventure15@gmail.com</a>'
+        . '<a class="cta-value" href="mailto:buildersexpert42@gmail.com" target="_blank" rel="noreferrer">buildersexpert42@gmail.com</a>'
         . '</div></div></div>'
         . '</div>'
         . '<div class="form-section">'
@@ -771,7 +771,7 @@ function contact_enquiry_form(?string $propertyRef = null): string
         . '<div class="input-box input-box-telephone">'
         . '<label class="input-label" for="cef-phone-1">Phone Number</label>'
         . '<div class="phone-field-row">'
-        . '<select class="input-field country-select" aria-label="Country code" name="dial">' . countries_options('+971') . '</select>'
+        . '<select class="input-field country-select" aria-label="Country code" name="dial">' . countries_options('+92') . '</select>'
         . '<input class="input-field" type="tel" name="phone" id="cef-phone-1" placeholder="Phone Number" />'
         . '</div></div>'
         . '<div class="input-box input-box-email">'
@@ -824,7 +824,7 @@ function list_property_form(?string $propertyRef = null): string
         . '<div class="input-box input-box-telephone">'
         . '<label class="input-label" for="lp-phone-1">Phone Number</label>'
         . '<div class="phone-field-row">'
-        . '<select class="input-field country-select" aria-label="Country code" name="dial">' . countries_options('+971') . '</select>'
+        . '<select class="input-field country-select" aria-label="Country code" name="dial">' . countries_options('+92') . '</select>'
         . '<input class="input-field" type="tel" name="phone" id="lp-phone-1" placeholder="Phone Number" required />'
         . '</div></div>'
         . '<div class="input-box">'
@@ -838,7 +838,7 @@ function list_property_form(?string $propertyRef = null): string
         . '</div>'
         . '<div class="input-box">'
         . '<label class="input-label" for="lp-area-1">Community / Area</label>'
-        . '<input class="input-field" type="text" id="lp-area-1" name="community" placeholder="e.g. Dubai Marina" />'
+        . '<input class="input-field" type="text" id="lp-area-1" name="community" placeholder="e.g. Defence, Karachi" />'
         . '</div>'
         . '<div class="input-box">'
         . '<label class="input-label" for="lp-lang-1">Preferred Language</label>'
@@ -860,7 +860,7 @@ function list_property_form(?string $propertyRef = null): string
         . '<input class="input-field" type="number" min="0" id="lp-size-1" name="size_sqft" placeholder="e.g. 1,500" />'
         . '</div>'
         . '<div class="input-box">'
-        . '<label class="input-label" for="lp-price-1">Expected Price (AED)</label>'
+        . '<label class="input-label" for="lp-price-1">Expected Price (PKR)</label>'
         . '<input class="input-field" type="number" min="0" id="lp-price-1" name="expected_price" placeholder="e.g. 2,500,000" />'
         . '</div>'
         . '<div class="input-box">'
@@ -871,7 +871,7 @@ function list_property_form(?string $propertyRef = null): string
         . '</select></div>'
         . '<div class="input-box">'
         . '<label class="input-label" for="lp-addr-1">Property Address</label>'
-        . '<input class="input-field" type="text" id="lp-addr-1" name="property_address" placeholder="e.g. Marina Gate 1, Dubai Marina" />'
+        . '<input class="input-field" type="text" id="lp-addr-1" name="property_address" placeholder="e.g. Creek Vista, Clifton, Karachi" />'
         . '</div>'
         . '<div class="input-box input-box-message">'
         . '<label class="input-label" for="lp-msg-1">Additional Details</label>'
@@ -949,19 +949,19 @@ function quiz_data(): array
         ],
         [
             'key' => 'area',
-            'heading' => 'What is your area of preference in Dubai?',
+            'heading' => 'What is your area of preference in Pakistan?',
             'rows' => 2,
             'options' => [
-                ['id' => 'downtown-dubai', 'label' => 'Downtown Dubai', 'img' => $areaImgs['downtown-dubai']],
-                ['id' => 'business-bay', 'label' => 'Business Bay'],
-                ['id' => 'arabian-ranches', 'label' => 'Arabian Ranches'],
-                ['id' => 'dubai-hills-estate', 'label' => 'Dubai Hills Estate', 'img' => $areaImgs['dubai-hills-estate']],
-                ['id' => 'dubai-marina', 'label' => 'Dubai Marina', 'img' => $areaImgs['dubai-marina']],
-                ['id' => 'damac-islands', 'label' => 'Damac Islands'],
-                ['id' => 'palm-jumeirah', 'label' => 'Palm Jumeirah', 'img' => $areaImgs['palm-jumeirah']],
-                ['id' => 'dubai-creek-harbour', 'label' => 'Dubai Creek Harbour'],
-                ['id' => 'palm-jebel-ali', 'label' => 'Palm Jebel Ali'],
-                ['id' => 'expo-city', 'label' => 'Expo City'],
+                ['id' => 'downtown-dubai', 'label' => 'Clifton, Karachi', 'img' => $areaImgs['downtown-dubai']],
+                ['id' => 'business-bay', 'label' => 'Gulberg, Lahore'],
+                ['id' => 'arabian-ranches', 'label' => 'Bahria Town, Karachi'],
+                ['id' => 'dubai-hills-estate', 'label' => 'DHA Phase 5, Lahore', 'img' => $areaImgs['dubai-hills-estate']],
+                ['id' => 'dubai-marina', 'label' => 'Defence, Karachi', 'img' => $areaImgs['dubai-marina']],
+                ['id' => 'damac-islands', 'label' => 'Hyderabad'],
+                ['id' => 'palm-jumeirah', 'label' => 'DHA Phase 6, Karachi', 'img' => $areaImgs['palm-jumeirah']],
+                ['id' => 'dubai-creek-harbour', 'label' => 'Blue Area, Islamabad'],
+                ['id' => 'palm-jebel-ali', 'label' => 'Lahore'],
+                ['id' => 'expo-city', 'label' => 'Expo City, Lahore'],
             ],
         ],
         [
@@ -1002,7 +1002,7 @@ function quiz_data(): array
         ],
         [
             'key' => 'purchaseTimeline',
-            'heading' => 'When are you looking to buy a property in Dubai?',
+            'heading' => 'When are you looking to buy a property in Pakistan?',
             'rows' => 1,
             'options' => [
                 ['id' => 'immediately', 'label' => 'Immediately'],
@@ -1034,7 +1034,7 @@ function quiz_data(): array
         ],
     ];
     $countries = [];
-    foreach ([['AE', 'United Arab Emirates', '+971'], ['GB', 'United Kingdom', '+44'], ['US', 'United States', '+1'], ['IN', 'India', '+91'], ['PK', 'Pakistan', '+92'], ['SA', 'Saudi Arabia', '+966'], ['EG', 'Egypt', '+20'], ['PH', 'Philippines', '+63'], ['BD', 'Bangladesh', '+880'], ['LK', 'Sri Lanka', '+94'], ['JO', 'Jordan', '+962'], ['LB', 'Lebanon', '+961'], ['IQ', 'Iraq', '+964'], ['IR', 'Iran', '+98'], ['OM', 'Oman', '+968'], ['QA', 'Qatar', '+974'], ['KW', 'Kuwait', '+965'], ['BH', 'Bahrain', '+973']] as $c) {
+    foreach ([['PK', 'Pakistan', '+92'], ['GB', 'United Kingdom', '+44'], ['US', 'United States', '+1'], ['IN', 'India', '+91'], ['AE', 'United Arab Emirates', '+971'], ['SA', 'Saudi Arabia', '+966'], ['EG', 'Egypt', '+20'], ['PH', 'Philippines', '+63'], ['BD', 'Bangladesh', '+880'], ['LK', 'Sri Lanka', '+94'], ['JO', 'Jordan', '+962'], ['LB', 'Lebanon', '+961'], ['IQ', 'Iraq', '+964'], ['IR', 'Iran', '+98'], ['OM', 'Oman', '+968'], ['QA', 'Qatar', '+974'], ['KW', 'Kuwait', '+965'], ['BH', 'Bahrain', '+973']] as $c) {
         $countries[] = ['code' => $c[0], 'name' => $c[1], 'dial' => $c[2]];
     }
     $data = [
@@ -1056,7 +1056,7 @@ function module_questionnaire($m)
         . '<img loading="lazy" draggable="false" src="https://d3h330vgpwpjr8.cloudfront.net/x/640x700/pro_quiz_banner_a8c3cbc202.webp"'
         . ' srcSet="https://d3h330vgpwpjr8.cloudfront.net/x/320x260/pro_quiz_banner_a8c3cbc202.webp 320w, https://d3h330vgpwpjr8.cloudfront.net/x/640x700/pro_quiz_banner_a8c3cbc202.webp 640w"'
         . ' sizes="(max-width: 480px) 320px, (min-width: 481px) 640px"'
-        . ' alt="Confused About Where to Buy or Invest in Dubai? - Zoya Ventures Real Estate" />'
+        . ' alt="Confused About Where to Buy or Invest in Pakistan? - Expert Marketing & Developers" />'
         . '</div>'
         . '<div class="content-section"><div class="div-pad">'
         . '<div class="content">'
@@ -1135,6 +1135,19 @@ function module_news_listing()
 function module_team_listing()
 {
     $members = team_members(1000);
+    // Merge admin-created agents (agents table) so they appear on the team page (TeamListing port).
+    if (function_exists('db_team_members')) {
+        $seen = [];
+        foreach ($members as $m) {
+            $seen[(string) ($m['slug'] ?? '')] = true;
+        }
+        foreach (db_team_members() as $dbm) {
+            if ((string) ($dbm['slug'] ?? '') !== '' && !isset($seen[$dbm['slug']])) {
+                $members[] = $dbm;
+                $seen[$dbm['slug']] = true;
+            }
+        }
+    }
     if (!count($members)) return '';
     $langs = [];
     foreach ($members as $m) {

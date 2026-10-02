@@ -37,7 +37,6 @@ $ic = [
 $F = [
     'projects' => [
         ['key' => 'title', 'label' => 'Project name', 'required' => true, 'full' => true],
-        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
         ['key' => 'status', 'label' => 'Status', 'type' => 'select', 'options' => ['ready', 'pending', 'under_construction', 'future_launch', 'off-plan']],
         ['key' => 'price', 'label' => 'Price (AED)', 'type' => 'number'],
         ['key' => 'currency', 'label' => 'Currency'],
@@ -58,7 +57,6 @@ $F = [
     ],
     'services' => [
         ['key' => 'title', 'label' => 'Title', 'required' => true, 'full' => true],
-        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
         ['key' => 'icon', 'label' => 'Icon URL', 'full' => true, 'file' => true],
         ['key' => 'banner_image', 'label' => 'Banner image URL', 'full' => true, 'file' => true],
         ['key' => 'description', 'label' => 'Description', 'type' => 'textarea', 'full' => true],
@@ -70,7 +68,6 @@ $F = [
     ],
     'agents' => [
         ['key' => 'name', 'label' => 'Name', 'required' => true, 'full' => true],
-        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
         ['key' => 'role', 'label' => 'Role'],
         ['key' => 'phone', 'label' => 'Phone'],
         ['key' => 'email', 'label' => 'Email', 'full' => true],
@@ -83,7 +80,6 @@ $F = [
     ],
     'developers' => [
         ['key' => 'name', 'label' => 'Name', 'required' => true, 'full' => true],
-        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
         ['key' => 'region', 'label' => 'Region'],
         ['key' => 'founded', 'label' => 'Founded', 'type' => 'number'],
         ['key' => 'deliveries', 'label' => 'Deliveries', 'type' => 'number'],
@@ -93,7 +89,6 @@ $F = [
     ],
     'communities' => [
         ['key' => 'name', 'label' => 'Name', 'required' => true, 'full' => true],
-        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
         ['key' => 'region', 'label' => 'Region', 'full' => true],
         ['key' => 'published', 'label' => 'Published', 'type' => 'checkbox', 'hint' => 'Visible on the public site'],
     ],
@@ -119,7 +114,6 @@ $F = [
     ],
     'jobs' => [
         ['key' => 'title', 'label' => 'Job title', 'required' => true, 'full' => true],
-        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
         ['key' => 'location', 'label' => 'Location'],
         ['key' => 'summary', 'label' => 'Summary', 'type' => 'textarea', 'full' => true],
         ['key' => 'job_details', 'label' => 'Full details (HTML)', 'type' => 'textarea', 'full' => true],
@@ -127,7 +121,6 @@ $F = [
     ],
     'blogs' => [
         ['key' => 'title', 'label' => 'Post title', 'required' => true, 'full' => true],
-        ['key' => 'slug', 'label' => 'Slug', 'required' => true, 'full' => true],
         ['key' => 'category', 'label' => 'Category'],
         ['key' => 'author', 'label' => 'Author'],
         ['key' => 'date', 'label' => 'Date (YYYY-MM-DD)'],
@@ -267,8 +260,8 @@ $loadingCard = '<div class="app-card"><p class="app-empty">Loading&hellip;</p></
 <div class="shell-root">
   <aside class="shell-sidebar" data-portal-sidebar>
     <div class="shell-brand">
-      <a href="/" aria-label="Zoya Ventures Real Estate">
-        <img draggable="false" src="/lloo.png" alt="Zoya Ventures Real Estate" />
+      <a href="/" aria-label="Expert Marketing & Developers">
+        <img draggable="false" src="/images/expertlogo.png" alt="Expert Marketing & Developers" style="border-radius:50%;background:#ffffff;padding:6px;box-sizing:border-box;object-fit:contain" />
       </a>
     </div>
     <nav class="shell-nav"><?php echo $navHtml; ?></nav>
@@ -327,7 +320,7 @@ $loadingCard = '<div class="app-card"><p class="app-empty">Loading&hellip;</p></
     <footer class="portal-footer">
       <div class="portal-footer-inner">
         <div class="portal-copy">
-          &copy; 2026, Zoya Ventures Real Estate
+          &copy; 2026, Expert Marketing & Developers
           <a href="/privacy-policy/">Privacy Policy</a>
         </div>
         <div class="portal-siteby">Site by <a rel="nofollow" href="https://hifimarketing.co" target="_blank">hifi</a></div>

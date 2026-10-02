@@ -9,7 +9,6 @@ $FOOTER_COLS = [
         ['Properties for Sale', '/buy/properties-for-sale/'],
         ['Guide to Buying', '/property-buying-dubai-guide/'],
         ['Signature Collection', '/#singnature'],
-        ['Mortgages', '/property-services/mortgages/'],
         ['Property Management', '/property-services/property-management/'],
         ['Legal Services', '/property-services/conveyancing/'],
         ['Currency Exchange', '/ifx-dubai/'],
@@ -23,8 +22,8 @@ $FOOTER_COLS = [
     ['title' => 'Off plan', 'links' => [
         ['New Projects', '/new-projects/'],
         ['Guide to Buying Off Plan', '/offplan-property-buying-dubai-guide/'],
-        ['Best Dubai Communities', '/area-guides/'],
-        ['Top Dubai Developers', '/developers/'],
+        ['Best Areas in Pakistan', '/area-guides/'],
+        ['Top Developers in Pakistan', '/developers/'],
         ['Snagging & Inspection', '/property-services/property-snagging/'],
         ['Upcoming Roadshows', '/roadshow/'],
         ['Branded Residences', '/branded-residences-in-dubai/'],
@@ -38,13 +37,12 @@ $FOOTER_COLS = [
     ['title' => 'services', 'links' => [
         ['Properties for Sale', '/buy/properties-for-sale/'],
         ['Leasing', '/property-services/leasing/'],
-        ['Mortgages', '/property-services/mortgages/'],
         ['Conveyancing', '/property-services/conveyancing/'],
         ['Property Management', '/property-services/property-management/'],
         ['Snagging & Inspection', '/property-services/property-snagging/'],
         ['Holiday Homes', '/property-services/short-term-rentals/'],
         ['Currency Exchange', '/ifx-dubai/'],
-        ['Partner with Zoya Ventures', '/property-services/partner-program/'],
+        ['Partner with Expert Marketing & Developers', '/property-services/partner-program/'],
         ['PRYPCO', '/property-services/prypco/'],
         ['Ethnovate', '/property-services/ethnovate/'],
     ]],
@@ -54,56 +52,61 @@ $FOOTER_COLS = [
         ['Our Awards', '/about/our-awards/'],
         ['Careers', '/careers/'],
         ['Philanthropy', '/about/philanthropy/'],
-        ['Dubai News & Blog', '/blog/'],
+        ['Pakistan News & Blog', '/blog/'],
         ['Sustainability Initiative', '/about/sustainability-initiative/'],
     ]],
 ];
 
-const FOOTER_WA_LINK = 'https://wa.provident.ae/inquire?phone=971568308221&text=Hello%20Zoya%20Ventures%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.&utm_source=Browser%20Direct&gclid=%22%22&event_type=Whatsapp%20Click&utm_platform=%22%22';
+const FOOTER_WA_LINK = 'https://wa.me/923125170194?text=Hello%20Expert%20Marketing%20%26%20Developers%2C%0A%0AI%20would%20like%20to%20know%20more%20about%20this%20page%3A%0A%0A%E2%80%A2%20Page%20Name%3A%20%0A%E2%80%A2%20Link%3A%20%0A%0AModifying%20this%20message%20will%20prevent%20it%20from%20being%20sent%20to%20the%20agent.';
 
-$FOOTER_CURRENCIES = ['Pound Sterling - GBP £', 'UAE Dirams - AED د.إ', 'USD - $', 'EUR - €', 'SAR - ر.س'];
-$FOOTER_UNITS = ['SQ M', 'SQ FT'];
+$FOOTER_CURRENCIES = expert_currency_options();
+$FOOTER_UNITS = [
+    ['label' => 'SQ FT', 'code' => 'Sqft'],
+    ['label' => 'SQ M', 'code' => 'Sqm'],
+];
+
+function footer_settings_select(array $options, string $role, string $activeCode): void
+{
+    $selected = $options[0];
+    foreach ($options as $o) {
+        if ($o['code'] === $activeCode) { $selected = $o; break; }
+    }
+    $json = json_encode($options, JSON_UNESCAPED_UNICODE | JSON_HEX_APOS);
+    ?>
+    <div class="react-select-wrap filter-select currency-type-select">
+      <div class="react-select css-b62m3t-container">
+        <div class="react-select__control css-14qho42-control js-footer-select" data-role="<?= esc($role) ?>" data-options='<?= esc($json) ?>' role="button" tabindex="0">
+          <div class="react-select__value-container react-select__value-container--has-value css-hlgwow">
+            <div class="react-select__single-value css-1ubv46r-singleValue js-footer-selected"><?= esc($selected['label']) ?></div>
+          </div>
+          <div class="react-select__indicators css-1wy0on6">
+            <span class="react-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>
+            <div class="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">
+              <svg width="16" height="16" class="arrow-down-icon">
+                <path d="M13 5.5L8 10.5L3 5.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="react-select__menu" data-role="<?= esc($role) ?>" hidden>
+          <?php foreach ($options as $o): ?>
+            <div class="react-select__option<?= $o['code'] === $selected['code'] ? ' react-select__option--is-focused' : '' ?>" data-code="<?= esc($o['code']) ?>" role="option"><?= esc($o['label']) ?></div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </div>
+    <?php
+}
 
 function footer_settings_selects(): void
 {
-    global $FOOTER_CURRENCIES, $FOOTER_UNITS;
+    $prefs = expert_prefs();
     ?>
     <div class="footer-cta-section-wrap settings">
       <p class="settings-heading">Settings</p>
-      <div class="react-select-wrap filter-select currency-type-select">
-        <div class="react-select css-b62m3t-container">
-          <div class="react-select__control css-14qho42-control js-footer-select" data-options='<?= esc(json_encode($FOOTER_CURRENCIES, JSON_UNESCAPED_UNICODE | JSON_HEX_APOS)) ?>' role="button" tabindex="0">
-            <div class="react-select__value-container react-select__value-container--has-value css-hlgwow">
-              <div class="react-select__single-value css-1ubv46r-singleValue"><?= esc($FOOTER_CURRENCIES[0]) ?></div>
-            </div>
-            <div class="react-select__indicators css-1wy0on6">
-              <span class="react-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>
-              <div class="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">
-                <svg width="16" height="16" class="arrow-down-icon">
-                  <path d="M13 5.5L8 10.5L3 5.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="react-select-wrap filter-select currency-type-select">
-        <div class="react-select css-b62m3t-container">
-          <div class="react-select__control css-14qho42-control js-footer-select" data-options='<?= esc(json_encode($FOOTER_UNITS, JSON_UNESCAPED_UNICODE | JSON_HEX_APOS)) ?>' role="button" tabindex="0">
-            <div class="react-select__value-container react-select__value-container--has-value css-hlgwow">
-              <div class="react-select__single-value css-1ubv46r-singleValue"><?= esc($FOOTER_UNITS[0]) ?></div>
-            </div>
-            <div class="react-select__indicators css-1wy0on6">
-              <span class="react-select__indicator-separator css-1uei4ir-indicatorSeparator"></span>
-              <div class="dropdown-indicator react-select__indicator react-select__dropdown-indicator css-15ctyzv-indicatorContainer" aria-hidden="true">
-                <svg width="16" height="16" class="arrow-down-icon">
-                  <path d="M13 5.5L8 10.5L3 5.5" stroke="#07234B" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+      footer_settings_select($GLOBALS['FOOTER_UNITS'], 'unit', $prefs['unit']);
+      ?>
     </div>
     <?php
 }
@@ -150,7 +153,7 @@ function footer_settings_selects(): void
       </div>
       <div class="bottom-section new-logo-gptw">
         <div class="gptw">
-          <a href="/blog/provident-estate-great-place-to-work-certification/">
+          <a href="/blog/great-place-to-work-certification/">
             <svg width="77" height="131" viewBox="0 0 77 131" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Great Place To Work">
               <rect width="77" height="131" fill="#002171"/>
               <path d="M38.5 16 14 38.5V94.5L38.5 117 63 94.5V38.5L38.5 16Z" stroke="#FF1628" stroke-width="2.5"/>
@@ -160,17 +163,17 @@ function footer_settings_selects(): void
             </svg>
           </a>
           <div class="d-block d-md-none">
-            <p>Zoya Ventures Real Estate is proud to announce that we are now officially certified as a Great Place to Work®</p>
+            <p>Expert Marketing & Developers is proud to announce that we are now officially certified as a Great Place to Work®</p>
           </div>
         </div>
         <div class="no-top">
           <div class="socials-section">
-            <a href="https://facebook.com/providentestate" target="_blank" rel="noreferrer" aria-label="Facebook" class="fb-icon"></a>
-            <a href="https://twitter.com/providentagents" target="_blank" rel="noreferrer" aria-label="Twitter" class="tw-icon"></a>
-            <a href="https://instagram.com/providentestate/" target="_blank" rel="noreferrer" aria-label="Instagram" class="ig-icon"></a>
-            <a href="https://ae.linkedin.com/company/providentestate" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="in-icon"></a>
-            <a href="https://youtube.com/@Providentestate" target="_blank" rel="noreferrer" aria-label="YouTube" class="yt-icon"></a>
-            <a href="https://t.me/dubaipropertynews" target="_blank" rel="noreferrer" aria-label="Telegram" class="tg-icon"></a>
+            <a href="https://www.facebook.com/Expertmarketingdev" target="_blank" rel="noreferrer" aria-label="Facebook" class="fb-icon"></a>
+            <a href="https://x.com/Expertmarketingdev" target="_blank" rel="noreferrer" aria-label="Twitter" class="tw-icon"></a>
+            <a href="https://www.instagram.com/Expertmarketingdev" target="_blank" rel="noreferrer" aria-label="Instagram" class="ig-icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="in-icon"></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube" class="yt-icon"></a>
+            <a href="https://t.me/expertmarketinganddevelopers" target="_blank" rel="noreferrer" aria-label="Telegram" class="tg-icon"></a>
             <a href="<?= FOOTER_WA_LINK ?>" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="wa-icon"></a>
           </div>
           <div class="terms-section">
@@ -179,12 +182,12 @@ function footer_settings_selects(): void
             <a href="/sitemap/">Sitemap</a>
           </div>
           <div class="copyright-section">
-            <p>Copyright © <?= date('Y') ?>. Zoya Ventures Real Estate</p>
+            <p>Copyright © <?= date('Y') ?>. Expert Marketing & Developers</p>
             <span>|</span>
             <p class="">ORN No:<span class="orn-no">1933</span></p>
           </div>
           <div class="copyright-section">
-            <p>Zoya Ventures® is a registered trademark since 2008</p>
+            <p>Expert Marketing & Developers® is a registered trademark since 2008</p>
           </div>
           <p class="site-by">Site by <a rel="nofollow" href="https://hifimarketing.co" target="_blank" class="site-by-name">hifi</a></p>
         </div>
